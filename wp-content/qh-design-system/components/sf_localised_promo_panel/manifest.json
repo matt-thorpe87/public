@@ -1,0 +1,196 @@
+{
+    "component": {
+        "name": "SF Localised Promo Panel",
+        "description": "This component is designed to make it easy for publishers to create multi-column content using the 12 column grid system built into our design system, tailored for the Service Finder for localised promotions based on users location.",
+        "version": "1.0",
+        "status": "In Development",
+        "type": "datastore",
+        "ds_queries": [
+			{
+				"name": "facility",
+				"collection": "facilities",
+				"document": "<document>"
+			},
+			{
+				"name": "services",
+				"collection": "services"
+			}
+		],
+        "data": {
+            "metadata": {
+                "body_background": {
+                    "type": "metadata_field_select",
+                    "description": "",
+                    "friendly_name": "Background colour",
+                    "value": "qld__body--alt-dark",
+                    "options": {
+						"": "Light",
+                        "qld__body--alt": "Alternate",
+                        "qld__body--dark": "Dark",
+                        "qld__body--alt-dark": "Alternate Dark"
+                    },
+                    "required": false,
+                    "editable": true
+                },
+				"promo_image": {
+                    "type": "metadata_field_related_asset",
+                    "description": "",
+                    "friendly_name": "Image",
+                    "value": "",
+                    "required": false,
+                    "editable": true
+                },
+				"image_alignment": {
+                    "type": "metadata_field_select",
+                    "description": "",
+                    "friendly_name": "Image alignment",
+                    "value": "qld__promo_panel--image-right",
+                    "options": {
+						"qld__promo_panel--image-left": "Left",
+                        "qld__promo_panel--image-right": "Right"
+                    },
+                    "required": false,
+                    "editable": true
+                },
+				"title": {
+                    "type": "metadata_field_text",
+                    "description": "",
+                    "friendly_name": "Title",
+                    "value": "Title",
+                    "required": false,
+                    "editable": true
+                },
+				"abstract": {
+                    "type": "metadata_field_wysiwyg",
+                    "description": "",
+                    "friendly_name": "Abstract",
+                    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    "required": false,
+                    "editable": true
+                },
+				"body": {
+                    "type": "metadata_field_wysiwyg",
+                    "description": "",
+                    "friendly_name": "Body",
+                    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    "required": false,
+                    "editable": true
+                },
+				"link_type": {
+                    "type": "metadata_field_select",
+                    "description": "",
+                    "friendly_name": "Link Type",
+                    "value": "button",
+                    "options": {
+						"cta": "CTA",
+                        "button": "Button"
+                    },
+                    "required": false,
+                    "editable": true
+                },
+				"cta_link_title": {
+                    "type": "metadata_field_text",
+                    "description": "",
+                    "friendly_name": "CTA Title",
+                    "value": "Find out more",
+                    "required": false,
+                    "editable": true,
+                    "display_if": {
+                        "show": true,
+                        "operator": "AND",
+                        "rules": [{
+                            "field": "link_type",
+                            "operator": "equals",
+                            "value": "cta"
+                        }]
+                    }
+                },
+                "cta_link": {
+                    "type": "metadata_field_related_asset",
+                    "description": "",
+                    "friendly_name": "CTA Link",
+                    "value": "",
+                    "required": false,
+                    "editable": true,
+                    "display_if": {
+                        "show": true,
+                        "operator": "AND",
+                        "rules": [{
+                            "field": "link_type",
+                            "operator": "equals",
+                            "value": "cta"
+                        }]
+                    }
+                },
+				"primary_link_title": {
+                    "type": "metadata_field_text",
+                    "description": "",
+                    "friendly_name": "Primary Button Title",
+                    "value": "Find out more",
+                    "required": false,
+                    "editable": true,
+                    "display_if": {
+                        "show": true,
+                        "operator": "AND",
+                        "rules": [{
+                            "field": "link_type",
+                            "operator": "equals",
+                            "value": "button"
+                        }]
+                    }
+                },
+                "primary_link": {
+                    "type": "metadata_field_related_asset",
+                    "description": "",
+                    "friendly_name": "Primary Button Link",
+                    "value": "",
+                    "required": false,
+                    "editable": true,
+                    "display_if": {
+                        "show": true,
+                        "operator": "AND",
+                        "rules": [{
+                            "field": "link_type",
+                            "operator": "equals",
+                            "value": "button"
+                        }]
+                    }
+                },
+				"secondary_link_title": {
+                    "type": "metadata_field_text",
+                    "description": "",
+                    "friendly_name": "Secondary Button Title",
+                    "value": "Find out more",
+                    "required": false,
+                    "editable": true,
+                    "display_if": {
+                        "show": true,
+                        "operator": "AND",
+                        "rules": [{
+                            "field": "link_type",
+                            "operator": "equals",
+                            "value": "button"
+                        }]
+                    }
+                },
+                "secondary_link": {
+                    "type": "metadata_field_related_asset",
+                    "description": "",
+                    "friendly_name": "Secondary Button Link",
+                    "value": "",
+                    "required": false,
+                    "editable": true,
+                    "display_if": {
+                        "show": true,
+                        "operator": "AND",
+                        "rules": [{
+                            "field": "link_type",
+                            "operator": "equals",
+                            "value": "button"
+                        }]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+	"component": {
+		"name": "sf_localised_facilities",
+		"description": "",
+		"version": "1.0",
+		"status": "In Development",
+		"type": "datastore",
+		"ds_queries": [{
+			"name": "facilities",
+			"collection": "facilities",
+			"filters": [
+				{
+					"val1": "hhs_id",
+					"val2": "<hhs>",
+					"operator": "==="
+				},
+				{
+					"val1": "status",
+					"val2": "active",
+					"operator": "==="
+				}
+			]
+		}]
+	}
+}

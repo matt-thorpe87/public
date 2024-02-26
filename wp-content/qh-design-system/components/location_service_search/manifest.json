@@ -1,0 +1,10 @@
+{
+	"component": {
+		"name": "Location Service Search",
+		"description": "",
+		"version": "1.0",
+		"status": "Released",
+		"type": "design",
+		"data": {}
+	}
+}

@@ -1,0 +1,103 @@
+<section class="qld__body qld__body--alt">
+    <div class="container-fluid">
+        <div class="qld__top_services">
+
+            <!--@@ Location Modal @@-->
+            <div id="modal--allow-geolocate" class="qld__modal qld__set-location-permissions qld__modal--small" tabindex="-1">
+                <div class="qld__modal__underlay">
+                </div>
+                <div class="qld__modal__body text-center">
+                    <div class="qld__modal__body__header">
+                        <h3 class="qld__modal__body__heading">We'll use your location to give you relevant local content.</h3>
+                    </div>
+                    <div class="qld__modal__body__controls">
+                        <ul class="qld__link-list">
+                            <li><button class="qld__btn qld__cta-btn qld__modal__deny" data-action="deny-location">
+                            Block
+                        </button></li>
+                            <li><button class="qld__btn qld__modal__accept" data-action="allow-location">
+                            Allow
+                        </button></li>
+                        </ul>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal--set-location" class="qld__modal qld__update-location" tabindex="-1">
+                <div class="qld__modal__underlay">
+                </div>
+                <div class="qld__modal__body">
+                    <div class="qld__modal__body__header">
+                        <h3 class="qld__modal__body__heading">Set or change your location</h3>
+                        <button class="qld__modal__close qld__btn" data-action="close">
+                            <span class="sr-only">
+                                Close modal
+                            </span>
+                            <i class="fal fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="qld__modal__body__content">
+                        <form class="qld__search qld__service-finder">
+                            <label for="query-inner" class="qld__search__label">Search for location</label>
+                            <div class="qld__search__inner">
+                                <input required="required" id="query-text" name="query-text" type="text"
+                                    accesskey="q" placeholder="Enter town or postcode" autocomplete="off" class="qld__update-location-input qld__text-input" title="location input" value="">
+                                <div class="qld__search__btn">
+                                    <button class="qld__btn qld__btn--search qld__update-location-btn" type="submit" data-action="set-location">
+                                        <i class="fas fa-location"></i>
+                                        <span class="qld__btn__text">Set location</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="qld__modal__body__controls">
+                        <button class="qld__use-current-location-btn" data-action="set-current-location">
+                            <span>Use current location</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--@@ Top Services Header @@-->
+            <div class="qld__top_services__header qld__top_services__header--right">
+                    <p>
+                    <a class="qld__top_services__set-location qld__open-modal" data-modaltarget="modal--set-location" href="#"><i class="far fa-map-marker-alt"></i>Select location</a>
+                    </p>
+            </div>
+
+            <!--@@ Top Services Search @@-->
+            <div class="qld__top_services__search">
+                <form class="qld__search qld__search--responsive qld__service-finder" action="" method="GET">
+                    
+                    
+                    <label for="query-inner" class="qld__search__label">Search query</label>
+                    <div class="qld__search__inner">
+                        <input required="" name="query" id="query" title="Search query" type="text" accesskey="q" value="" placeholder="Search by services, hospital or location" class="qld__text-input query" autocomplete="off">
+                        <div class="qld__search__btn">
+                            <button class="qld__btn qld__btn--search" id="query-submit" type="submit" autocomplete="off">
+                                <span class="qld__btn__icon"></span>
+                                <span class="qld__btn__text">Search</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div id="search-results-instant"></div>
+            </div>
+
+            <!--@@ Top Services Cards @@-->
+                <div class="qld__top_services__cards">
+                    <div class="row">
+                        <ul class="qld__card-list qld__card-list--matchheight qld__top_services__cards__list">
+                            <li class="col-xs-12 qld__card-list__footer">
+                                <a href="" class="qld__cta-link qld__cta-link--view-all">See all services</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,92 @@
+{
+	"component": {
+		"name": "video",
+		"description": "",
+		"version": "1.0",
+		"status": "In Development",
+        "data": {
+            "assetid": "123",
+            "metadata": {
+                "video_url": {
+                    "type": "metadata_field_text",
+                    "description": "Enter a Vimeo or Youtube URL",
+                    "friendly_name": "Video URL",
+                    "value": "https://www.youtube.com/watch?v=xgPwZiaI1A4",
+                    "value2": "https://vimeo.com/569691751",
+                    "required": false,
+                    "editable": true
+                },
+                "thumbnail_image": {
+                    "type": "metadata_field_related_asset",
+                    "description": "",
+                    "friendly_name": "Thumbnail Image",
+                    "value": "/mysource_files/banner-bg.png",
+                    "required": false,
+                    "editable": true
+                },
+                "caption": {
+                    "type": "metadata_field_wysiwyg",
+                    "description": "",
+                    "friendly_name": "Video Caption",
+                    "value": "<p>Video Caption text with <a href=\"#\">link</a></p>",
+                    "required": false,
+                    "editable": true
+                },
+                "layout_video": {
+                    "type": "metadata_field_select",
+                    "description": "",
+                    "friendly_name": "Video Layout",
+                    "value": "two_col",
+                    "options": {
+                        "one_col": "One Column",
+                        "two_col": "Two Column"
+                    },
+                    "required": false,
+                    "editable": true
+                },
+                "heading": {
+                    "type": "metadata_field_text",
+                    "description": "",
+                    "friendly_name": "Video Heading",
+                    "value": "Video Heading text Video Heading text Video Heading text Video Heading text Video Heading text",
+                    "required": false,
+                    "editable": true
+                },
+                "body": {
+                    "type": "metadata_field_wysiwyg",
+                    "description": "",
+                    "friendly_name": "Video Body",
+                    "value": "Video Body Text Video Body Text Video Body Text Video Body Text Video Body Text Video Body Text Video Body Text Video Body Text Video Body Text Video Body Text Video Body Text ",
+                    "required": false,
+                    "editable": true
+                },
+                "layout_column": {
+                    "type": "metadata_field_select",
+                    "description": "",
+                    "friendly_name": "Display video in column",
+                    "value": "left",
+                    "options": {
+                        "left": "Left Column",
+                        "right": "Right Column"
+                    },
+                    "required": false,
+                    "editable": true
+                },
+                "layout_text": {
+                    "type": "metadata_field_select",
+                    "description": "",
+                    "friendly_name": "Text layout",
+                    "value": "above",
+                    "options": {
+                        "above": "Heading & body above video",
+                        "split": "Heading above & body below video",
+                        "below": "Heading & body below video"
+                    },
+                    "required": false,
+                    "editable": true
+                }
+
+            }
+        }
+    }
+}

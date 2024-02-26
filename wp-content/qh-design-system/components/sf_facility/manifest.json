@@ -1,0 +1,49 @@
+{
+	"component": {
+		"name": "Service Finder - Facility",
+		"description": "",
+		"version": "1.0",
+		"status": "In Development",
+		"type": "datastore",
+		"ds_queries": [
+			{
+				"name": "facility",
+				"collection": "facilities",
+				"document": "<document>"
+			},
+			{
+				"name": "services",
+				"collection": "services"
+			},
+			{
+				"name": "service_locations",
+				"collection": "service-locations",
+				"filters": [
+					{
+						"val1": "facility_id",
+						"val2": "<document>",
+						"operator": "==="
+					},
+					{
+						"val1": "status",
+						"val2": "active",
+						"operator": "==="
+					}
+				]
+			}
+		],
+		"data": {
+			"assetid": "123",
+			"metadata": {
+				"field1": {
+					"type": "metadata_field_text",
+					"description": "A text field",
+					"friendly_name": "Field 1",
+					"value": "Example text",
+					"required": false,
+					"editable": true
+				}
+			}
+		}
+	}
+}

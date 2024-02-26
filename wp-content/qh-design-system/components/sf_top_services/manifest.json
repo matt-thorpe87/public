@@ -1,0 +1,35 @@
+{
+	"component": {
+		"name": "top_services",
+		"description": "",
+		"version": "1.0",
+		"status": "In Development",
+		"type": "datastore",
+		"ds_queries": [
+			{
+				"name": "hhs",
+				"collection": "hhs",
+				"document": "<hhs>"
+			},
+			{
+				"name": "hhs_top_services",
+				"collection": "services",
+				"filters": [
+					{
+						"val1": "top_in_hhs",
+						"val2": "<hhs>",
+						"operator": "@>"
+					},
+					{
+						"val1": "status",
+						"val2": "active",
+						"operator": "==="
+					}
+				]
+			}
+		],
+		"data": {
+			"metadata": {}
+		}
+	}
+}

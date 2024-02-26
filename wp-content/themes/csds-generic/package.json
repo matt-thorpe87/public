@@ -1,0 +1,25 @@
+{
+  "name": "csds-generic",
+  "version": "1.0.0",
+  "description": "A generic WordPress theme using the Queensland Health Design System.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CSDS Digital and Design",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "@babel/register": "^7.21.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.1",
+    "yargs": "^17.7.2"
+  },
+  "dependencies": {
+    "php": "^1.0.2",
+    "slick-carousel": "^1.8.1"
+  },
+  "type": "module"
+}
