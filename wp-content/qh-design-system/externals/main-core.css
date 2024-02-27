@@ -290,10 +290,10 @@
 
     cursor: pointer;
 
-    color: #000;
+    color: #000000;
     border: 0;
     outline: none;
-    background: transparent;
+    /* background: transparent; */
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
@@ -322,7 +322,7 @@
     text-align: center;
 
     opacity: .25;
-    color: black;
+    color: #000000;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -330,7 +330,7 @@
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: black;
+    color: #000000;
 }
 
 pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}/*!

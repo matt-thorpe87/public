@@ -180,16 +180,126 @@
 <!-- HEADER END -->
 
 <!-- MAIN NAVIGATION -->
-<?php if (has_nav_menu('main_nav_menu')) : ?>
 <nav class="qld__main-nav qld__main-nav--mega qld__main-nav--dark" id="#mainmenu" aria-label="main">
-<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'primary',
-					'menu_class'     => 'nav-menu',
-				)
-			);
-			?>
-</nav>
-<?php endif; ?>
+    <div class="container-fluid">
+        <div class="qld__main-nav__content " id="main-nav">
+            <div class="qld__main-nav__menu qld__main-nav__menu--dark-alt">
+                <div class="qld__main-nav__menu-inner">
+                    <div class="qld__main-nav__focus-trap-top"></div>
+                    <div class="qld__main-nav__header">
+                        <h6 class="qld__main-nav__menu-heading">Menu</h6>
+                        <button
+                            aria-controls="main-nav"
+                            class="qld__main-nav__toggle qld__main-nav__toggle--close">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="qld__icon qld__icon--md ">
+                                <use href="<?php echo content_url('/qh-design-system/mysource_files/img/svg-icons.svg#qld__icon__close') ?>"></use></svg>
+                            <span class="qld__main-nav__toggle-text">Close</span>
+                        </button>
+                    </div>
+
+                    <ul class="qld__link-list">
+                        <li class="qld__main-nav__item ">
+                            <div class="qld__main-nav__item-title">
+                                <a class="qld__main-nav__item-home qld__main-nav__item-link"  href="<?php echo site_url(); ?>">
+                                    <span class="qld__main-nav__item-icon">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="qld__icon qld__icon--md ">
+                                          <!-- <use href="/mysource_files/img/svg-icons.svg#qld__icon__home"></use> -->
+                                          <use href='<?php echo content_url( $path = 'qh-design-system/mysource_files/img/svg-icons.svg#qld__icon__home' )?>'></use>
+                                        </svg>
+                                    </span>
+
+                                    <span class="qld__main-nav__item-text" data-name="">Home</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="qld__main-nav__item  ">
+                            <div class="qld__main-nav__item-title">
+                                <a class="qld__main-nav__item-link  qld__main-nav__item-link--desktop-hide" href="<?php echo site_url('about-us'); ?>">About us</a>
+                                    <button class="qld__main-nav__item-toggle qld__accordion--closed" aria-controls="mega-nav-/components.html" aria-expanded="false" aria-selected="false" aria-label="Toggle navigation, Components" >
+                                        <span class="qld__main-nav__item-toggle-text" data-name="Components">About us</span>
+                                        <svg class="qld__icon qld__icon--md">
+                                        <use href=""></use>
+                                        <use href='<?php echo content_url( $path = 'qh-design-system/mysource_files/img/svg-icons.svg#qld__icon__chevron-up' )?>'></use>
+                                        </svg>
+                                    </button>
+                            </div>
+
+                            <div class="qld__main-nav__menu-sub qld__accordion--closed qld__accordion__body" id="mega-nav-/components.html" style="display: none;">
+                                <div class="qld__main-nav__menu-sub-inner">
+                                <div class="qld__main-nav__sub-head">
+                                <a class="qld__main-nav__sub-heading " href="/components.html">
+                                <span class="qld__main-nav__sub-item-text qld__display-lg">About us</span>
+                                <svg class="qld__icon qld__icon--lg"><use href="/mysource_files/img/svg-icons.svg#qld__icon__arrow-right"></use></svg>
+                                </a>
+                                <p class="qld__main-nav__item-desc">This is level one short description</p>
+                                </div>
+
+                                <hr class="qld__horizontal-rule qld__horizontal-rule--lg">
+                                    <ul class="qld__link-columns qld__link-columns--3-col qld__link-list">
+                                        <li class="qld__main-nav__item--has-desc"><a href="/components.html"><span class="qld__main-nav__sub-item-text">Link 1</span></a>
+                                        <p class="qld__main-nav__item-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque pena.</p>
+                                        </li>
+                                        <li class=""><a href="<?php echo site_url('/our-team'); ?>"><span class="qld__main-nav__sub-item-text">Our team</span></a></li>
+                                        <li class=""><a href="<?php echo site_url('/our-vision'); ?>"><span class="qld__main-nav__sub-item-text">Our vision</span></a></li>
+                                        <li class=""><a href="/site-templates.html"><span class="qld__main-nav__sub-item-text">Link 4</span></a></li>
+                                        <li class=""><a href="/site-templates.html"><span class="qld__main-nav__sub-item-text">Link 5</span></a></li>
+                                    </ul>
+                                    <div class="qld__main-nav__sub-footer">
+                                        <hr class="qld__horizontal-rule qld__horizontal-rule--lg">
+                                        <a class="qld__cta-link qld__cta-link--view-all" href="/components.html">View all</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="qld__main-nav__item  ">
+                            <div class="qld__main-nav__item-title">
+                                <a class="qld__main-nav__item-link"href="<?php echo site_url('/affiliates'); ?>">Affiliates</a>
+                            </div>
+                        </li>
+
+                        <li class="qld__main-nav__item  ">
+                            <div class="qld__main-nav__item-title">
+                                <a class="qld__main-nav__item-link"href="<?php echo site_url('/our-partners'); ?>">Our partners</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                          <!-- <?php wp_nav_menu(array(
+                              'theme_location' => 'main_nav_menu',
+                              'container' => 'false',
+                              'menu_class' => 'qld__link-list',
+                              'walker' => new walker_main_nav()
+                          ))?>  -->
+
+           
+                    <div class="qld__main-nav__cta-wrapper">
+                        <ul class="qld__link-list">
+                            <li class="qld__main-nav__item qld__main-nav__item--cta ">
+                                <div class="qld__main-nav__item-title">
+                                    <a class="qld__main-nav__item-link"  href="#" >
+                                        <span class="qld__main-nav__item-icon"><i class="fa fa-stethoscope" aria-hidden="true"></i></span>
+                                        <span class="qld__main-nav__item-text" data-name="Link 1">Link 1</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="qld__main-nav__item qld__main-nav__item--cta ">
+                                <div class="qld__main-nav__item-title">
+                                    <a class="qld__main-nav__item-link"  href="#" >
+                                        <span class="qld__main-nav__item-icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                                        <span class="qld__main-nav__item-text" data-name="Link 2">Link 2</span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="qld__main-nav__focus-trap-bottom"></div>
+                </div>
+            </div>
+            <div
+                class="qld__main-nav__overlay" aria-controls="main-nav"></div>
+            </div>
+      </div>
+  </nav>
   <!-- MAIN NAVIGATION END -->
