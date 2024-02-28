@@ -74,7 +74,9 @@ if ( ! function_exists( 'register_theme_nav' ) ) {
         'footer_column_one'  => __( 'Footer column one', 'text_domain' ),
         'footer_column_two'  => __( 'Footer column two', 'text_domain' ),
         'footer_column_three'  => __( 'Footer column three', 'text_domain' ),
-        'side_menu'  => __( 'Side menu', 'text_domain' )
+        'side_menu'  => __( 'Side menu', 'text_domain' ),
+        'mega_menu' => __( 'Mega menu', 'text_domain')
+
 		) );
 	}
 	add_action( 'init', 'register_theme_nav' );
@@ -99,7 +101,7 @@ add_filter('nav_menu_link_attributes', 'add_additional_class_on_a', 1, 3);
 /* To add a class on the side navigation menu's <a> tag  */
 
 function add_menu_link_sidenav( $atts, $item, $args ) {
-    $atts['class'] = 'qld__sidenav__link';
+    $atts['class'] = 'qld__sidenav__link qld__main-nav__item-home qld__main-nav__item-link';
     return $atts;
 }
 add_filter( 'nav_menu_link_attributes', 'add_menu_link_sidenav', 10, 3 );
@@ -128,7 +130,6 @@ function theme_features(){
 }
 
 add_action('after_setup_theme', 'theme_features');
-
 
 ?>
 
