@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php 
+/* Template Name: Deafult No Sidebar */
+get_header(); ?>
 <main class="main" role="main">
 
 
@@ -77,32 +79,7 @@
 <section class="qld__body ">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-12 col-lg-3">
-            <!-- side navigation -->
-            <div class="qld__side-nav qld__accordion">
-    <button class="qld__side-nav__toggle qld__accordion__title qld__accordion--closed" aria-controls="nav-default" aria-expanded="false" aria-selected="false" >
-    In Design
-    </button>
-    <nav aria-label="side navigation" id="nav-default" class="qld__side-nav__content qld__accordion--closed qld__accordion__body">
-        <h2 class="qld__sidenav__title">
-            <a class="qld__sidenav__link" href="/">Design</a>
-        </h2>
-
-        <?php wp_nav_menu(array(
-                'theme_location' => 'side_menu',
-                'container' => 'false',
-                'menu_class' => 'qld__link-list',
-                'walker' => new Walker_Sidebar_Menu()
-                
-             ));?>           
-
-    </nav>
-</div>
-
-            <!-- end side navigation -->
-            </div>
-
-            <div class="col-xs-12 col-lg-9"><!-- right pane content section -->
+            <div class="col-xs-12 col-lg-12">
               <div class="container-fluid">
                 <?php
                 while(have_posts()){
@@ -112,7 +89,7 @@
                 <?php } ?>
 
               </div>
-            </div> <!-- end right pane content section -->
+            </div> 
           </div>
         </div>
     </div>
