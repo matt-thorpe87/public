@@ -150,6 +150,8 @@ class Walker_Nav_Menu extends Walker {
 
 		$classes   = empty( $menu_item->classes ) ? array() : (array) $menu_item->classes;
 		$classes[] = 'menu-item-' . $menu_item->ID;
+		$classes[] = ($args->walker->has_children) ? 'dropdown' : '';
+
 
 		/**
 		 * Filters the arguments for a single nav menu item.
@@ -211,7 +213,10 @@ class Walker_Nav_Menu extends Walker {
 		$li_attributes = $this->build_atts( $li_atts );
 
 		$output .= $indent . '<li' . $li_attributes . '>';
-
+		if (is_object($args) && $args->walker->has_children) {
+            //$classes[] = 'dropdown';
+            $li_attributes .= ' data-dropdown="dropdown"';
+        }
 		$atts           = array();
 		$atts['title']  = ! empty( $menu_item->attr_title ) ? $menu_item->attr_title : '';
 		$atts['target'] = ! empty( $menu_item->target ) ? $menu_item->target : '';
