@@ -9,10 +9,10 @@
 // }
 // exports.default = defaultTask
 
-// gulp.task('hello', function(done){
-//   console.log('hello, gutom na ka?');
-//   done();
-//   });
+gulp.task('hello', function(done){
+  console.log('hello, gutom na ka?');
+  done();
+  });
 
 
 import gulp from 'gulp';
@@ -28,4 +28,4 @@ export const styles = () => {
     .pipe(gulp.dest('dist/asset/css'));
 }
 
-// export default hello;
+export default hello;

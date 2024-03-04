@@ -31,8 +31,6 @@
 
                   <!--@@ Hero image @@-->
                   <div class="qld__banner__hero col-xs-12 col-md-6 col-lg-5">
-                      <!-- <div class="qld__banner__image " style="background-image: url('https://via.placeholder.com/782x520');">
-                    </div> -->
                     <?php if(!empty(get_field('page_banner_image'))) : ?>
                     <div class="qld__banner__image ">
 
@@ -43,7 +41,7 @@
                         $img_title = $pgBannerImg['title'];
                         ?>
                         <div class="bannerImgWrapper">
-                            <img style="height:100%"; src="<?php echo $displayPgBannerImg ?>" alt="<?php echo esc_attr(get_the_title());?>" title="<?echo $img_title ?>">
+                            <img src="<?php echo $displayPgBannerImg ?>" alt="<?php echo $img_alt;?>" title="<?echo $img_title ?>">
                         </div>
                     </div>
                     <?php endif ?>
