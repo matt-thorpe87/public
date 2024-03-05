@@ -15,33 +15,52 @@
     src: url('./fonts/slick.eot');
     src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
+
+.qld__slick-slide-controls{
+    display:flex;
+    -webkit-box-flex:1;
+    -ms-flex:1;
+    flex:1;
+    justify-content: center;
+    padding: .5rem;
+  }
+
 /* Arrows */
 .slick-prev,
-.slick-next
+.slick-next, .qld__slick-prev, .qld__slick-next
 {
-    font-size: 0;
-    line-height: 0;
+  position: static;
+  opacity: .8;
+  background: rgba(0, 0, 0, 0);
+  border: 0;
+  cursor: pointer;
+  line-height: 1rem;
+  font-size: 1.25rem;
+  padding: 16px;
+  padding: 1rem;
+  z-index: 1;
 
-    position: absolute;
-    top: 50%;
+  color: #09549F;
 
-    display: block;
-
-    width: 20px;
-    height: 20px;
-    padding: 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-
-    cursor: pointer;
-
-    color: transparent;
-    border: none;
-    outline: none;
-    background: transparent;
 }
-.slick-prev:hover,
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before, .qld__slick-prev.slick-disabled:before, .qld__slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev, .qld__slick-prev
+{
+    order: 0;
+}
+
+.slick-next, .qld__slick-next
+{
+    order: 2;
+}
+
+/* .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus
@@ -111,18 +130,13 @@
 [dir='rtl'] .slick-next:before
 {
     content: '←';
-}
+} */
 
 /* Dots */
-.slick-dotted.slick-slider{
-    margin-bottom:0px !important;
-}
 
-.slick-dots
+.slick-dots, .slider-dots-custom
 {
     position: absolute;
-    margin-bottom: -30px;
-    bottom: 0px;
 
     display: block;
 
@@ -134,7 +148,8 @@
 
     text-align: center;
 }
-.slick-dots li
+
+.slick-dots li, .slider-dots-custom li
 {
     position: relative;
 
@@ -147,59 +162,62 @@
 
     cursor: pointer;
 }
-.slick-dots li button
+.slick-dots li button, .slider-dots-custom li button
 {
     font-size: 0;
     line-height: 0;
 
     display: block;
+
     width: 20px;
     height: 20px;
     padding: 5px;
+
     cursor: pointer;
 
-    color: #000000;
+    color: transparent;
     border: 0;
     outline: none;
     background: transparent;
 }
 .slick-dots li button:hover,
-.slick-dots li button:focus
+.slick-dots li button:focus, .slider-dots-custom li button:hover, .slider-dots-custom li button:focus
 {
     outline: none;
-
 }
 .slick-dots li button:hover:before,
-.slick-dots li button:focus:before
+.slick-dots li button:focus:before, .slider-dots-custom li button:hover:before, .slider-dots-custom li button:focus:before
 {
     opacity: 1;
 }
-.slick-dots li button:before
+.slick-dots li.slick-active button:before, .slider-dots-custom li.slick-active button:before
 {
-    font-family: 'initial';
+    /* opacity: .75; */
+    background-color: #09549F;
+}
+.slick-dots li button:before, .slider-dots-custom li button:before
+{
+    font-family: 'slick';
     font-size: 12px;
     line-height: 20px;
-
+    border: 1px solid #09549F;
+    border-radius: 50%;
     position: absolute;
     top: 0;
     left: 0;
 
-    width: 20px;
-    height: 20px;
+    width: 0.875rem;
+    height: 0.875rem;
 
-    content: '•';
+    content: '\2022';
     text-align: center;
 
-    opacity: .25;
-    color: #000000 !important;
+    /* opacity: .25; */
+    color: transparent;
+    background:transparent;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-.slick-dots li.slick-active button:before
-{
-    opacity: .75;
-    color: #000000;
 }
 .slick-slide{
     padding-left: 1rem;

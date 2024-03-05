@@ -25,18 +25,18 @@ $news_slider = new wp_query( array(
 <div class="container-fluid">
     <div class="posts-slick px-5">
         
-    <!-- News Slider   -->
+        <!-- News Slider   -->
   
-<?php 
-    while($news_slider->have_posts()) {
-        $news_slider->the_post(); 
-        $post_ID = get_the_ID();
-        $post_title = get_the_title();
-        $post_exerpt = get_the_excerpt();
-		$post_featured_image = wp_get_attachment_image( get_post_thumbnail_id( $post_ID ), 'single-post-thumbnail' );
-        $alt_text_image = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true );
-        $post_link = get_post_permalink();
-    ?>
+        <?php 
+            while($news_slider->have_posts()) {
+                $news_slider->the_post(); 
+                $post_ID = get_the_ID();
+                $post_title = get_the_title();
+                $post_exerpt = get_the_excerpt();
+                $post_featured_image = wp_get_attachment_image( get_post_thumbnail_id( $post_ID ), 'single-post-thumbnail' );
+                $alt_text_image = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true );
+                $post_link = get_post_permalink();
+            ?>
 
         <div>
 
@@ -71,14 +71,19 @@ $news_slider = new wp_query( array(
                 
             </div>
         </div>
+
         <?php } ?>
     <!-- End slider -->
     </div>
+    <div class="qld__slick-controls">
+        <button class="qld__slick-prev slick-arrow" aria-disabled="true" style=""><span class="fa fa-angle-left" aria-hidden="true"></span><span class="sr-only">Prev</span></button>
+        <button class="qld__slick-next slick-arrow" aria-disabled="false" style=""><span class="fa fa-angle-right" aria-hidden="true"></span><span class="sr-only">Next</span></button>
+    </div>
+
 </div>
 </div>
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 <script>( function( $ ) {
-    console.log("hey hey hey");
     class SlickCarousel {
         
       constructor() {
@@ -86,13 +91,17 @@ $news_slider = new wp_query( array(
       }
   
       initiateCarousel() {
-        console.log('yo yo');
         $( '.posts-slick' ).slick( {
           autoplay: false,
           autoplaySpeed: 7000,
           slidesToShow: 3,
           slidesToScroll: 1,
           dots: true,
+          appendArrows: '.qld__slick-controls',
+          appendDots: '.qld__slick-controls',
+          dotsClass: 'slider-dots-custom',
+          nextArrow: '.qld__slick-next',
+          prevArrow: '.qld__slick-prev',
           responsive: [
             {
             breakpoint: 1024,
@@ -100,7 +109,7 @@ $news_slider = new wp_query( array(
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: true
+                dots: true,
             }
             },
             {

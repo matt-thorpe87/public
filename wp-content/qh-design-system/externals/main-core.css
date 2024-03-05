@@ -148,136 +148,80 @@
     src: url(./mysource_files/slick.eot);
     src: url(./mysource_files/slick.eot?#iefix) format('embedded-opentype'), url(./mysource_files/slick.woff) format('woff'), url(./mysource_files/slick.ttf) format('truetype'), url(mysource_files/slick.svg#slick) format('svg');
 }
+
+.qld__slick-slide-controls{
+  display:flex;
+  -webkit-box-flex:1;
+  -ms-flex:1;
+  flex:1;
+  justify-content: center;
+  padding: .5rem;
+}
 /* Arrows */
 .slick-prev,
-.slick-next
+.slick-next, .qld__slick-prev, .qld__slick-next
 {
-    font-size: 0;
-    line-height: 0;
+  position: static;
+  opacity: .8;
+  background: rgba(0, 0, 0, 0);
+  border: 0;
+  cursor: pointer;
+  line-height: 1rem;
+  font-size: 1.25rem;
+  padding: 16px;
+  padding: 1rem;
+  z-index: 1;
 
-    position: absolute;
-    top: 50%;
+  color: #09549F;
 
-    display: block;
-
-    width: 20px;
-    height: 20px;
-    padding: 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-
-    cursor: pointer;
-
-    color: transparent;
-    border: none;
-    outline: none;
-    background: transparent;
 }
-.slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus
-{
-    color: transparent;
-    outline: none;
-    background: transparent;
-}
-.slick-prev:hover:before,
-.slick-prev:focus:before,
-.slick-next:hover:before,
-.slick-next:focus:before
-{
-    opacity: 1;
-}
+
 .slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before
+.slick-next.slick-disabled:before, .qld__slick-prev.slick-disabled:before, .qld__slick-next.slick-disabled:before
 {
     opacity: .25;
 }
 
-.slick-prev:before,
-.slick-next:before
+.slick-prev, .qld__slick-prev
 {
-    font-family: 'slick';
-    font-size: 20px;
-    line-height: 1;
-
-    opacity: .75;
-    color: white;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    order: 0;
 }
 
-.slick-prev
+.slick-next, .qld__slick-next
 {
-    left: -25px;
-}
-[dir='rtl'] .slick-prev
-{
-    right: -25px;
-    left: auto;
-}
-.slick-prev:before
-{
-    content: '\2190';
-}
-[dir='rtl'] .slick-prev:before
-{
-    content: '\2192';
+    order: 2;
 }
 
-.slick-next
-{
-    right: -25px;
-}
-[dir='rtl'] .slick-next
-{
-    right: auto;
-    left: -25px;
-}
-.slick-next:before
-{
-    content: '\2192';
-}
-[dir='rtl'] .slick-next:before
-{
-    content: '\2190';
-}
 
 /* Dots */
 
 
-.slick-dots
+.slick-dots, .slider-dots-custom
 {
-    position: absolute;
-
-    display: block;
-
-    width: 100%;
+    position: static;
+    display: flex;
+    width: auto;
     padding: 0;
     margin: 0;
-
     list-style: none;
-
     text-align: center;
+    order: 1;
 }
 
-.slick-dots li
+.slick-dots li, .slider-dots-custom li
 {
     position: relative;
 
     display: inline-block;
 
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
+    width: 0.875rem;
+    height: 0.875rem;
+    margin: 0.125rem 0.625rem;
     padding: 0;
 
     cursor: pointer;
 }
-.slick-dots li button
+.slick-dots li button, .slider-dots-custom li button
 {
     font-size: 0;
     line-height: 0;
@@ -290,48 +234,51 @@
 
     cursor: pointer;
 
-    color: #000000;
+    color: transparent;
     border: 0;
     outline: none;
-    /* background: transparent; */
+    background: transparent;
 }
 .slick-dots li button:hover,
-.slick-dots li button:focus
+.slick-dots li button:focus, .slider-dots-custom li button:hover, .slider-dots-custom li button:focus
 {
     outline: none;
 }
 .slick-dots li button:hover:before,
-.slick-dots li button:focus:before
+.slick-dots li button:focus:before, .slider-dots-custom li button:hover:before, .slider-dots-custom li button:focus:before
 {
     opacity: 1;
 }
-.slick-dots li button:before
+.slick-dots li.slick-active button:before, .slider-dots-custom li.slick-active button:before
+{
+    /* opacity: .75; */
+    background-color: #09549F;
+}
+.slick-dots li button:before, .slider-dots-custom li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 12px;
     line-height: 20px;
-
+    border: 1px solid #09549F;
+    border-radius: 50%;
     position: absolute;
     top: 0;
     left: 0;
 
-    width: 20px;
-    height: 20px;
+    width: 0.875rem;
+    height: 0.875rem;
 
     content: '\2022';
     text-align: center;
 
-    opacity: .25;
-    color: #000000;
+    /* opacity: .25; */
+    color: transparent;
+    background:transparent;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.slick-dots li.slick-active button:before
-{
-    opacity: .75;
-    color: #000000;
-}
+
 
 pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}/*!
   Theme: GitHub

@@ -75,6 +75,8 @@ if ($hero_banner->have_posts()) : while($hero_banner->have_posts()) : $hero_bann
 
 
 </div>
+<div class="qld__slick-slide-controls">
+    </div>
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 <script>( function( $ ) {
     class SlickCarousel {
@@ -84,13 +86,18 @@ if ($hero_banner->have_posts()) : while($hero_banner->have_posts()) : $hero_bann
   
       initiateCarousel() {
         $( '.posts-carousel' ).slick( {
-          autoplay: false,
+          autoplay: true,
           autoplaySpeed: 7000,
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: true,
           fade: true,
           fadeSpeed:1000,
+          dotsClass: 'slider-dots-custom',
+          appendDots: '.qld__slick-slide-controls',
+          appendArrows: '.qld__slick-slide-controls',
+
+
         } );
       }
     }
