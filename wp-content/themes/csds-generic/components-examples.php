@@ -86,6 +86,7 @@ get_header(); ?>
                     the_post(); ?>
                 <p><?php the_content();?>
                 <h2>Core Components</h2>
+                <p>Components are reusable parts of the design system. Each component has been developed to meet a user interface need. All components work together to create different patterns and templates.</p><br>
                 <div class="row">
                     <div class="col-xs-12 col-lg-6">
                         <ul>
@@ -119,6 +120,76 @@ get_header(); ?>
                             <li><a href="/wp-content/qh-design-system/_core_component-Widgets.html">Widgets</a></li>
                         </ul>
                     </div>
+                </div>
+                <h2>Extended Components</h2><br>
+
+                <div class="row">
+                    <div class="col-xs-12 col-lg-6">
+                        <ul>
+                            <li><a href="wp-content/qh-design-system/component-article_home.html">Article Home</a></li>
+                            <li><a href="wp-content/qh-design-system/component-article_index.html">Article Index</a></li>
+                            <li><a href="wp-content/qh-design-system/component-article.html">Article</a></li>
+                            <li><a href="wp-content/qh-design-system/component-contact_details.html">Contact Details</a></li>
+                            <li><a href="wp-content/qh-design-system/component-enhanced_search.html">Enhanced Search</a></li>
+                            <li><a href="wp-content/qh-design-system/component-facility_map.html">Facility Map</a></li>
+                            <li><a href="wp-content/qh-design-system/component-feature-article.html">Feature Article</a></li>
+                            <li><a href="wp-content/qh-design-system/component-location_service_details.html">Location Service Details</a></li>
+                            <li><a href="wp-content/qh-design-system/component-location_service_search.html">Location Service Search</a></li>
+                            <li><a href="wp-content/qh-design-system/component-news_article.html">News Article</a></li>
+                            <li><a href="wp-content/qh-design-system/component-news_feed.html">News Feed</a></li>
+                            <li><a href="wp-content/qh-design-system/component-news_home.html">News Home </a></li>
+                            <li><a href="wp-content/qh-design-system/component-news_index.html">News Index</a></li>
+                            <li><a href="wp-content/qh-design-system/component-podcast_episode.html">Podcast Episode</a></li>
+                            <li><a href="wp-content/qh-design-system/component-podcast_series.html">Podcast Series</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
+                        <ul>
+                            <li><a href="wp-content/qh-design-system/component-promo_panel.html">Promo Panel</a></li>
+                            <li><a href="wp-content/qh-design-system/component-sf_facilities_a-z.html">SF Facilities A-Z</a></li>
+                            <li><a href="wp-content/qh-design-system/component-sf_localised_facilities.html">SF Localised Facilities</a></li>
+                            <li><a href="wp-content/qh-design-system/component-sf_localised_promo_panel.html">SF Localised Promo Panel</a></li>
+                            <li><a href="wp-content/qh-design-system/component-sf_service_location.html">SF Service Location</a></li>
+                            <li><a href="wp-content/qh-design-system/component-sf_services_search_v2.html">SF Service Search</a></li>
+                            <li><a href="wp-content/qh-design-system/component-sf_top_services_widget.html">Top Services Widget</a></li>
+                            <li><a href="wp-content/qh-design-system/component-tag_list_linked.html">Tag List Linked</a></li>
+                            <li><a href="wp-content/qh-design-system/component-tag_list.html">Tag List</a></li>
+                            <li><a href="wp-content/qh-design-system/component-tags_metadata.html">Tags Metadata</a></li>
+                            <li><a href="wp-content/qh-design-system/component-tags.html">Tags</a></li>
+                            <li><a href="wp-content/qh-design-system/component-video_cards.html">Video Cards</a></li>
+                            <li><a href="wp-content/qh-design-system/component-video_player.html">Video Player</a></li>
+                            <li><a href="wp-content/qh-design-system/component-video.html">Video</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <h2>Service Finder Components</h2><br>
+                <div class="row">
+                    <div class="col-xs-12 col-lg-6">
+                        <ul>
+                            <li><a href="wp-content/qh-design-system/sf_admin_details.html">SF Admin Details</a></li>
+                            <li><a href="wp-content/qh-design-system/sf_admin_form.html">SF Admin Form</a></li>
+                            <li><a href="wp-content/qh-design-system/sf_admin_importer.html">SF Admin Importer</a></li>
+                            <li><a href="wp-content/qh-design-system/sf_admin_list.html">SF Admin List</a></li>
+                            <li><a href="wp-content/qh-design-system/sf_admin_top_services.html">SF Admin Top Services Form</a></li>
+                            <li><a href="wp-content/qh-design-system/sf_admin_visiting_service_importer.html">SF Admin Visiting Service Importer</a></li>
+                            <li><a href="wp-content/qh-design-system/sf_facilities_a-z.html">SF Facilities A-Z</a></li>
+                            <li><a href="wp-content/qh-design-system/sf_facility_page.html">SF Facility Page</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
+                        <ul>
+
+                            <li><a href="wp-content/qh-design-system/sf_service_finder.html">SF Service Finder</a></li>
+                            <li><a href="wp-content/qh-design-system/sf_service_location_page.html">SF Service Location Page</a></li>
+                            <li><a href="wp-content/qh-design-system/sf_service_page.html">SF Service Page</a></li>
+                            <li><a href="wp-content/qh-design-system/sf_service_search_form_example.html">SF Service Search Form Example</a></li>
+                            <li><a href="wp-content/qh-design-system/sf_service_search.html">SF Service Search</a></li>
+                            <li><a href="wp-content/qh-design-system/sf_service_search_v2.html">SF Service Search V2</a></li>
+                            <li><a href="wp-content/qh-design-system/sf_services_a-z.html">SF Service A-Z</a></li>
+                            <li><a href="wp-content/qh-design-system/sf_top_services_facility.html">SF Top Services Facility</a></li>
+                        </ul>
+                    </div>
+
                 </div>
                 </p>
                 <?php } ?>
