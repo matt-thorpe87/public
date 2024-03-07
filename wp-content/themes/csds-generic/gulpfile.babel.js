@@ -9,23 +9,40 @@
 // }
 // exports.default = defaultTask
 
-gulp.task('hello', function(done){
-  console.log('hello, gutom na ka?');
-  done();
-  });
-
 
 import gulp from 'gulp';
 import yargs from 'yargs';
-import sass from 'gulp-sass';
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+import cleanCss from 'gulp-clean-css';
+import gulpIf from 'gulp-if';
+import sourceMaps from 'gulp-sourcemaps';
 
-const PRODUCTION = yargs.argv;
-const sass = require('gulp-sass')(require('sass'));
+const sass = gulpSass(dartSass)
 
-export const styles = () => {
-  return gulp.src('src/assets/scss/bundle.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('dist/asset/css'));
+// const PRODUCTION = yargs.argv.prod;
+const paths = {
+  styles: {
+    src: ['styles/customThemeStyles.css', 'styles/slider.css'],
+    dest: 'dist/assets/css'
+  }
 }
 
-export default hello;
+// export const styles = () => {
+//   return gulp.src(paths.styles.src)
+//     .pipe(sourceMaps.init())
+//     .pipe(sass().on('error', sass.logError))
+//     .pipe(sourceMaps.write())
+//     .pipe(gulp.dest(paths.styles.dest));
+//   };
+
+export const build = () => {
+  return gulp.src(paths.styles.src)
+  .pipe(sass().on('error', sass.logError))
+  .pipe(cleanCss({compatibility: 'ie8'}))
+  .pipe(gulp.dest(paths.styles.dest));
+}
+
+export const watch = () => {
+  gulp.watch('styles/*.css')
+}

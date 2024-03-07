@@ -23,7 +23,9 @@
   height: 100%; 
   text-align: right;
 }
-
+.temp-text-matt{
+  color: blue;
+}
 .bannerImgWrapper img{
   height: 100%;
 }
@@ -48,7 +50,7 @@
 .qld__card__image-link .qld__responsive-media-img--bg img{
   border-radius: 0px 0px 6.0882800609%/10.8108108108% 0px;
 }
-..qld__card .qld__responsive-media-img--bg{
+.qld__card .qld__responsive-media-img--bg{
   outline:0px;
 }
 @media screen and (max-width: 1024px) {

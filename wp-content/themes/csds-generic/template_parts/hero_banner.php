@@ -49,7 +49,9 @@ if ($hero_banner->have_posts()) : while($hero_banner->have_posts()) : $hero_bann
                         <h1><?php the_field('main_tagline'); ?></h1>
                     <!--@@ Abstract @@-->
                         <div class="qld__banner__content--body qld__abstract">
-                            <p><?php the_field('sub-tagline'); ?></p></div>
+                            <p><?php the_field('sub-tagline'); ?></p>
+                            <span><p class="temp-text-matt">hey hey hey</p></span>
+                        </div>
 
                     <!--@@ CTA Buttons @@-->
                         <ul class="qld__banner__content--cta qld__link-list">

@@ -46,6 +46,7 @@ $news_slider = new wp_query( array(
                     </div>
                 </a>
                 <div class="qld__card__inner">
+                    <span><p class="temp-test">Hey Hey</p></span>
                     <div class="qld__card__content">
                         <div class="qld__card__content-inner">
                             <h3 class="qld__card__title"><a href=" <?php  echo $post_link;  ?> " class="news-slider-link-title qld__card--clickable__link"><?php echo $post_title  ?></a></h3>
