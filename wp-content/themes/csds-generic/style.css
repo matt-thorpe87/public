@@ -3,7 +3,7 @@ Theme Name: CSDS Generic Theme
 Author: CSDS Digital and Design
 Version: 1.0
 */
-@import url("dist/asset/css/customThemeStyles.css");
+@import url("dist/assets/css/customThemeStyles.css");
 
 /* below line can be removed when moving to production build */
 @import url("styles/customThemeStyles.css");
