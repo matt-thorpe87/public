@@ -99,6 +99,7 @@ get_header(); ?>
                             <li><a href="/wp-content/qh-design-system/_core_component-breadcrumbs.html">Breadcrumbs</a></li>
                             <li><a href="/wp-content/qh-design-system/_core_component-btn.html">Button</a></li>
                             <li><a href="/wp-content/qh-design-system/_core_component-callout.html">Callout</a></li>
+                            <li><a href="/wp-content/qh-design-system/_core_component-callout-with-image.html">Callout with Image</a></li>
                             <li><a href="/wp-content/qh-design-system/_core_component-card_multi_action.html">Card Multi Action</a></li>
                             <li><a href="/wp-content/qh-design-system/_core_component-card_no_action.html">Card No Action</a></li>
                             <li><a href="/wp-content/qh-design-system/_core_component-card_single_action.html">Card Single Action</a></li>

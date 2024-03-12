@@ -9,6 +9,7 @@ import imagemin from 'gulp-imagemin';
 import del from 'del';
 import webpack from 'webpack-stream';
 import uglify from 'gulp-uglify';
+import zip from 'gulp-zip';
 
 const sass = gulpSass(dartSass)
 
@@ -30,6 +31,10 @@ const paths = {
     src: ['src/assets/**/*', '!src/assets/{images,js,scss}/**/*'],
     dest: 'dist/assets'
   },
+  package: {
+    src: ['**/*', '!src{,/**}', '!node_modules{,/**}', '!packaged{,/**}', '!babelrc', '!gulpfile.babel.js', '!package.json', '!package-lock.json', '!styles{,/**}'],
+    dest: 'packaged'
+  }
 }
 
 
@@ -88,6 +93,12 @@ export const copy = () => {
 export const clean = (done) => {
   gulp.task(del([ 'dist' ]));
   done();
+}
+
+export const compress = () => {
+  return gulp.src(paths.package.src)
+  .pipe(zip('csds-generic.zip'))
+  .pipe(gulp.dest(paths.package.dest));
 }
 
 // not working yet when dist file is not present - gulp if empty don't clean(?)
