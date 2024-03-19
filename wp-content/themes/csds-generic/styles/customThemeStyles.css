@@ -1,9 +1,10 @@
-
-
 .qld__body p, .qld__footer p{ /* QH DS style is set to max-width: 46rem */
   max-width: 100%;
 }
 
+.qld__icon-box{
+  font-size:5rem;
+}
 .qld__callout{
   max-width: 100%; /* QH DS original style is set to max-width: 46rem; */
 }

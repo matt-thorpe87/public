@@ -54,8 +54,8 @@
                     var compiled = Handlebars.compile(componentPreview.componentClean);
                     var output = compiled({
                         "component": componentModel.component,
-                        "current": current,
-                        "site": site,
+                        "current": this.current,
+                        "site": this.site,
                         "content":"Lorem Ipsum"
                     }).replace(/\.\/\?a=/g, '');
                     

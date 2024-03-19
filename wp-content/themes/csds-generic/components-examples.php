@@ -90,7 +90,9 @@ get_header(); ?>
                 <div class="row">
                     <div class="col-xs-12 col-lg-6">
                         <ul>
-                            <li><a href="/wp-content/qh-design-system/_core_component-accordion.html">Accordion</a></li>
+                        <li><a href="/wp-content/qh-design-system/_core_component-abstract.html">Abstract</a></li>
+
+                        <li><a href="/wp-content/qh-design-system/_core_component-accordion.html">Accordion</a></li>
                             <li><a href="/wp-content/qh-design-system/_core_component-banner_advanced.html">Banner Advanced</a></li>
                             <li><a href="/wp-content/qh-design-system/_core_component-banner_basic.html">Banner Basic</a></li>
                             <li><a href="/wp-content/qh-design-system/_core_component-banner_intermediate.html">Banner Intermediate</a></li>
@@ -111,7 +113,10 @@ get_header(); ?>
                             <li><a href="/wp-content/qh-design-system/_core_component-footer.html">Footer</a></li>
                             <li><a href="/wp-content/qh-design-system/_core_component-global_alert.html">Global Alert</a></li>
                             <li><a href="/wp-content/qh-design-system/_core_component-header.html">Header</a></li>
+                            <li><a href="/wp-content/qh-design-system/_core_component-icon-box.html">Icon Box</a></li>
+                            <li><a href="/wp-content/qh-design-system/_core_component-image-icon-group.html">Image/Icon Group</a></li>
                             <li><a href="/wp-content/qh-design-system/_core_component-internal_navigation.html">Internal Navigation</a></li>
+                            <li><a href="/wp-content/qh-design-system/_core_component-link-list.html">Link List</a></li>
                             <li><a href="/wp-content/qh-design-system/_core_component-main_navigation.html">Main Navigation</a></li>
                             <li><a href="/wp-content/qh-design-system/_core_component-mega_main_navigation.html">Mega Main Navigation</a></li>
                             <li><a href="/wp-content/qh-design-system/_core_component-multi_column.html">Multi Column</a></li>
