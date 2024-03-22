@@ -124,3 +124,28 @@ h4.qld__footer__heading{
   width: 100%;
 }
 }
+.qld__service_search__result__header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+
+@media(min-width: 992px) {
+   .qld__service_search__result__header {
+    display:flex;
+      -webkit-box-orient:horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+  }
+
+}
