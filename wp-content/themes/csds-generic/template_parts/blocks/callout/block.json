@@ -1,0 +1,16 @@
+{
+    "name": "callout",
+    "title": "Callout",
+    "description": "A custom block with a callout.",
+    "icon": "text",
+    "style": [ "file:../../../styles/customThemeStyles.css", "file:./callout.scss"],
+    "category": "qh-design",
+    "keywords": ["callout"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "callout.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "accordion",
+    "title": "Accordion",
+    "description": "A custom block with an accordion.",
+    "icon": "excerpt-view",
+    "style": [ "file:../../../styles/customThemeStyles.css", "file:./accordion.scss"],
+    "category": "qh-design",
+    "keywords": ["accordion", "text", "content"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "accordion.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

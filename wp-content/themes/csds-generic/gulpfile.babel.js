@@ -34,9 +34,8 @@ const paths = {
   package: {
     src: ['**/*', '!src{,/**}', '!node_modules{,/**}', '!packaged{,/**}', '!babelrc', '!gulpfile.babel.js', '!package.json', '!package-lock.json', '!styles{,/**}'],
     dest: 'packaged'
-  }
+  },
 }
-
 
 export const styles = () => {
   return gulp.src(paths.styles.src)

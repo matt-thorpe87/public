@@ -1,0 +1,31 @@
+.button__container{
+    .qld__btn__primary{
+        background-color: var(--QLD-color-light-button);
+        color: var(--QLD-color-light-button__text);
+        border-color: var(--QLD-color-light-button);
+    }
+    .qld__btn__secondary{
+        background-color: var(--QLD-color-dark-button);
+        color:  var(--QLD-color-dark-button__text);
+        border-color:  var(--QLD-color-dark-button);
+    }
+    .qld__btn__secondary:hover{
+        border-color: var(--QLD-color-dark-button__hover);
+        color: var(--QLD-color-dark-button__text);
+        background-color: var(--QLD-color-dark-button__hover);
+        text-decoration-color: var(--QLD-color-dark-button__text) !important;
+    }
+}
+
+.qld__btn--left{
+    text-align: left;
+}
+.qld__btn--{
+    text-align: left;
+}
+.qld__btn--right{
+    text-align: right;
+}
+.qld__btn--center{
+    text-align: center;
+}

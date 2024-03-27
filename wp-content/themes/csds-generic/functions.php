@@ -146,3 +146,35 @@ function theme_assets()
 }
 
 add_action('wp_enqueue_scripts', 'theme_assets');
+
+
+function register_acf_blocks()
+{
+    register_block_type(__DIR__ . '/template_parts/blocks/callout_with_image');
+    register_block_type(__DIR__ . '/template_parts/blocks/callout');
+    register_block_type(__DIR__ . '/template_parts/blocks/accordion');
+    register_block_type(__DIR__ . '/template_parts/blocks/banner-basic');
+    register_block_type(__DIR__ . '/template_parts/blocks/banner-intermediate');
+    register_block_type(__DIR__ . '/template_parts/blocks/button');
+
+}
+
+if (function_exists('register_acf_blocks')) {
+    add_action('init', 'register_acf_blocks');
+}
+
+function example_block_category($categories, $post)
+{
+    $qh_category = array(
+        'slug' => 'qh-design',
+        'title' => 'QH Design Components',
+    );
+    $categories_sorted = array();
+    $categories_sorted[0] = $qh_category;
+
+    foreach ($categories as $category) {
+        $categories_sorted[] = $category;
+    }
+    return $categories_sorted;
+}
+add_filter('block_categories_all', 'example_block_category', 10, 2);

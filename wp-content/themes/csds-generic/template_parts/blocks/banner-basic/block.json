@@ -1,0 +1,16 @@
+{
+    "name": "banner-basic",
+    "title": "Banner - Basic",
+    "description": "A custom block with a basic banner.",
+    "icon": "star-filled",
+    "style": [ "file:../../../styles/customThemeStyles.css", "file:./banner-basic.scss"],
+    "category": "qh-design",
+    "keywords": ["banner", "basic banner", "cta", "hero"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "banner-basic.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "button",
+    "title": "Button",
+    "description": "A custom block with a button.",
+    "icon": "button",
+    "style": [ "file:../../../styles/customThemeStyles.css", "file:./button.scss"],
+    "category": "qh-design",
+    "keywords": ["button", "link"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "button.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": [ "left", "right", "center" ]
+    }
+}
