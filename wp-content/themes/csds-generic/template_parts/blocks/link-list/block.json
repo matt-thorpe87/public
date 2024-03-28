@@ -1,0 +1,16 @@
+{
+    "name": "link-list",
+    "title": "Link List",
+    "description": "A custom block with a list of links.",
+    "icon": "editor-ul",
+    "style": [ "file:../../../styles/customThemeStyles.css", "file:./link-list.scss"],
+    "category": "qh-design",
+    "keywords": ["link list", "list", "link"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "link-list.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

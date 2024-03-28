@@ -1,0 +1,17 @@
+{
+    "name": "card",
+    "title": "Card",
+    "description": "A custom block with a card.",
+    "icon": "text",
+    "style": [ "file:../../../styles/customThemeStyles.css", "file:./card.scss"],
+    "category": "qh-design",
+    "keywords": ["card", "text", "content"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "card.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": [ "left", "right", "center" ]
+    }
+}

@@ -3,6 +3,8 @@
       color:var(--QLD-color-dark-heading) !important;
     }
   }
-  .callout-temp {
-    color: red !important;
+  .qld__callout{
+    .qld__callout__heading{
+      max-width:100%;
+    }
   }

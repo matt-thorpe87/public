@@ -1,6 +1,6 @@
 <?php
 /**
- * Callout Block template.
+ * Basic Banner Block template.
  *
  * @param array $block The block settings and attributes.
  */
@@ -14,19 +14,19 @@ $image = get_field('banner_image');
 
 // Support custom "anchor" values.
 $anchor = '';
-if (!empty ($block['anchor'])) {
+if (!empty($block['anchor'])) {
     $anchor = 'id="' . esc_attr($block['anchor']) . '" ';
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
 $className = 'banner';
-if (!empty ($block['className'])) {
+if (!empty($block['className'])) {
     $className .= ' ' . $block['className'];
 }
-if (!empty ($block['align'])) {
+if (!empty($block['align'])) {
     $className .= ' ' . $block['align'];
 }
-if (!empty ($image)) {
+if (!empty($image)) {
     $className .= ' qld__banner--has-hero';
 }
 // build style attributes for background and text colours using QH theme design
@@ -40,7 +40,7 @@ if ($color_settings == 'dark') {
     $className .= '';
 }
 // add breadcrumbs 
-if (!empty ($breadcrumbs && $breadcrumbs == 'yes')) {
+if (!empty($breadcrumbs && $breadcrumbs == 'yes')) {
     $className .= ' qld__banner--breadcrumbs';
 }
 ?>
@@ -62,7 +62,7 @@ if (!empty ($breadcrumbs && $breadcrumbs == 'yes')) {
             <div class="qld__banner__main row">
 
                 <!--@@ Hero image @@-->
-                <?php if (!empty ($image)) { ?>
+                <?php if (!empty($image)) { ?>
                     <div class="qld__banner__hero col-xs-12 qld__banner__hero--scale col-md-6 col-lg-5 col-xl-4">
                         <div class="qld__banner__image " style="background-image: url('<?php echo $image; ?>');">
                         </div>
@@ -71,22 +71,22 @@ if (!empty ($breadcrumbs && $breadcrumbs == 'yes')) {
                 <div class="qld__banner__content col-xs-12 col-md-6 col-lg-7">
 
                     <!--@@ Breadcrumbs - Desktop @@-->
-                    <?php if (!empty ($breadcrumbs && $breadcrumbs == 'yes')) { ?>
-                        <nav class="qld__breadcrumbs qld__breadcrumbs--dark qld__banner__breadcrumbs qld__banner__breadcrumbs--desktop"
+                    <?php if (!empty($breadcrumbs && $breadcrumbs == 'yes')) { ?>
+                        <nav class="qld__breadcrumbs qld__banner__breadcrumbs qld__banner__breadcrumbs--desktop"
                             aria-label="breadcrumb">
                             <?php custom_breadcrumbs(); ?>
                         </nav>
                     <?php } ?>
 
                     <!--@@ Heading(s) @@-->
-                    <?php if (!empty ($heading)) { ?>
+                    <?php if (!empty($heading)) { ?>
                         <h1 class="qld__banner__content--title">
                             <?php echo $heading; ?>
                         </h1>
                     <?php } ?>
 
                     <!--@@ Abstract @@-->
-                    <?php if (!empty ($content)) { ?>
+                    <?php if (!empty($content)) { ?>
                         <div class="qld__banner__content--body qld__abstract">
                             <?php echo $content; ?>
                         </div>

@@ -1,22 +1,38 @@
-.button__container{
-    .qld__btn__primary{
-        background-color: var(--QLD-color-light-button);
-        color: var(--QLD-color-light-button__text);
-        border-color: var(--QLD-color-light-button);
+.button__container, .qld__banner__buttons{
+        .qld__btn__primary{
+            background-color: var(--QLD-color-light-button);
+            color: var(--QLD-color-light-button__text);
+            border-color: var(--QLD-color-light-button);
+        }
+        .qld__btn__secondary{
+            background-color: var(--QLD-color-dark-button);
+            color:  var(--QLD-color-dark-button__text);
+            border-color:  var(--QLD-color-dark-button);
+        }
+        .qld__btn__secondary:hover{
+            border-color: var(--QLD-color-dark-button__hover);
+            color: var(--QLD-color-dark-button__text);
+            background-color: var(--QLD-color-dark-button__hover);
+            text-decoration-color: var(--QLD-color-dark-button__text) !important;
+        }
     }
-    .qld__btn__secondary{
-        background-color: var(--QLD-color-dark-button);
-        color:  var(--QLD-color-dark-button__text);
-        border-color:  var(--QLD-color-dark-button);
-    }
-    .qld__btn__secondary:hover{
-        border-color: var(--QLD-color-dark-button__hover);
-        color: var(--QLD-color-dark-button__text);
-        background-color: var(--QLD-color-dark-button__hover);
-        text-decoration-color: var(--QLD-color-dark-button__text) !important;
-    }
-}
 
+.qld__banner--dark{
+    .qld__btn{
+        &.qld__btn__primary{
+            background-color: var(--QLD-color-light-button);
+            color: var(--QLD-color-light-button__text);
+            border-color: var(--QLD-color-light-button);
+        }
+        &.qld__btn__primary:hover {
+            color: var(--QLD-color-light-button__text);
+            background-color: var(--QLD-color-light-button__hover);
+            text-decoration-color: var(--QLD-color-dark-hover-underline);
+            border-color: var(--QLD-color-light-button__hover);
+            text-decoration-color: var(--QLD-color-light-button__text);
+        }
+    }
+} 
 .qld__btn--left{
     text-align: left;
 }

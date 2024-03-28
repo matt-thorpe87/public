@@ -30,6 +30,18 @@
     .qld__btn__secondary:focus{
         outline: 2px solid var(--QLD-color-dark-button) !important;
         text-decoration-color: var(--QLD-color-dark-button__text) !important;
+    }
+}
 
+.qld__banner--dark, .qld__banner--dark-alt{
+    .qld__breadcrumbs{
+        color: var(--QLD-color-dark-text__muted);   
+        a{
+            color: var(--QLD-color-dark-link);        
+        } 
+        a:visited{
+            color: var(--QLD-color-dark-text__muted);   
+
+        }
     }
 }

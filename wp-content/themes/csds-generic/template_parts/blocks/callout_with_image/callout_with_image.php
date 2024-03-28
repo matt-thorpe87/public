@@ -15,17 +15,17 @@ $color_settings = get_field('callout_with_image_colour_settings');
 
 // Support custom "anchor" values.
 $anchor = '';
-if (!empty ($block['anchor'])) {
+if (!empty($block['anchor'])) {
     $anchor = 'id="' . esc_attr($block['anchor']) . '" ';
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
 $className = 'callout_with_image';
-if (!empty ($block['className'])) {
+if (!empty($block['className'])) {
     $className .= ' ' . $block['className'];
 }
-if (!empty ($block['align'])) {
-    $className .= ' ' . $block['align'];
+if (!empty($block['align'])) {
+    $className .= ' qld__align--' . $block['align'];
 }
 
 // build style attributes for background and text colours using QH theme design

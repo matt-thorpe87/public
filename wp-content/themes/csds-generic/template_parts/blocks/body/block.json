@@ -1,0 +1,17 @@
+{
+    "name": "body",
+    "title": "Body",
+    "description": "A custom block with body text.",
+    "icon": "text",
+    "style": [ "file:../../../styles/customThemeStyles.css", "file:./body.scss"],
+    "category": "qh-design",
+    "keywords": ["body", "text", "content"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "body.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": [ "left", "right", "center" ]
+    }
+}

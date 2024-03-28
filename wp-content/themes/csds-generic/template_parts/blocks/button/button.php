@@ -1,6 +1,6 @@
 <?php
 /**
- * Callout Block template.
+ * Button Block template.
  *
  * @param array $block The block settings and attributes.
  */
@@ -12,16 +12,16 @@ $color = get_field('button_colour_settings');
 
 // Support custom "anchor" values.
 $anchor = '';
-if (!empty ($block['anchor'])) {
+if (!empty($block['anchor'])) {
     $anchor = 'id="' . esc_attr($block['anchor']) . '" ';
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
 $className = 'qld__btn';
-if (!empty ($block['className'])) {
+if (!empty($block['className'])) {
     $className .= ' ' . $block['className'];
 }
-if (!empty ($block['align'])) {
+if (!empty($block['align'])) {
     $containerClassName = ' qld__btn--' . $block['align'];
 }
 
@@ -33,7 +33,7 @@ if ($color == 'secondary') {
 }
 ?>
 <div class="qld__body">
-    <div class="container-fluid button__container <?php if (!empty ($containerClassName)) {
+    <div class="container-fluid button__container <?php if (!empty($containerClassName)) {
         echo $containerClassName;
     }
     ; ?>">

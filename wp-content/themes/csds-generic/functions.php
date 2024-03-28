@@ -92,7 +92,7 @@ if (!function_exists('register_theme_nav')) {
 
 function add_additional_class_on_a($classes, $item, $args)
 {
-    if (isset ($args->add_a_class)) {
+    if (isset($args->add_a_class)) {
         $classes['class'] = $args->add_a_class;
     }
     return $classes;
@@ -156,6 +156,9 @@ function register_acf_blocks()
     register_block_type(__DIR__ . '/template_parts/blocks/banner-basic');
     register_block_type(__DIR__ . '/template_parts/blocks/banner-intermediate');
     register_block_type(__DIR__ . '/template_parts/blocks/button');
+    register_block_type(__DIR__ . '/template_parts/blocks/body');
+    register_block_type(__DIR__ . '/template_parts/blocks/card');
+    register_block_type(__DIR__ . '/template_parts/blocks/link-list');
 
 }
 
