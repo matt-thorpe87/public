@@ -2,7 +2,7 @@
     "name": "card",
     "title": "Card",
     "description": "A custom block with a card.",
-    "icon": "text",
+    "icon": "id",
     "style": [ "file:../../../styles/customThemeStyles.css", "file:./card.scss"],
     "category": "qh-design",
     "keywords": ["card", "text", "content"],

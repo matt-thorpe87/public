@@ -1,0 +1,99 @@
+.qld__global_alert{
+    padding: 1rem;
+}
+.qld__body--dark{
+    background: var(--QLD-color-dark-background);
+    color: var(--QLD-color-dark-text);
+    .qld__global_alert__content .qld__global_alert__action{
+        a, a:visited{
+            color: var(--QLD-color-dark-text) !important;
+            text-decoration-color: var(--QLD-color-dark-text);
+        }
+    }
+}
+.qld__body--green{
+    background-color: #28a745;
+    color: var(--QLD-color-dark-text);
+    .qld__global_alert__content .qld__global_alert__action{
+        a, a:visited{
+        color: var(--QLD-color-dark-text) !important;
+        text-decoration-color: var(--QLD-color-dark-text);
+        }
+    }
+}
+.qld__body--red{
+    background-color: #dc3545!important;
+        color: var(--QLD-color-dark-text);
+    .qld__global_alert__content .qld__global_alert__action{
+        a, a:visited{
+        color: var(--QLD-color-dark-text) !important;
+        text-decoration-color: var(--QLD-color-dark-text);
+        }
+    }
+}
+.qld__body--alt{
+    background-color: var(--QLD-color-light-alt-background);    
+}
+.qld__body--dark-alt{
+    background-color: var(--QLD-color-dark-alt-background);
+    color: var(--QLD-color-dark-text);
+    .qld__global_alert__content .qld__global_alert__action{
+        a, a:visited{
+        color: var(--QLD-color-dark-text) !important;
+        text-decoration-color: var(--QLD-color-dark-text);
+        }
+    }
+}
+.qld__global_alert__main{
+    .material-icons.qld__body--dark-alt{
+        background-color: var(--QLD-color-dark-alt-background);
+        color: var(--QLD-color-dark-text);
+    }
+    .material-icons.qld__body--dark{
+        background: var(--QLD-color-dark-background);
+        color: var(--QLD-color-dark-text);
+    }
+    .material-icons.qld__body--alt{
+        background-color: var(--QLD-color-light-alt-background);    
+    }
+    .material-icons.qld__body--green{
+        background-color: #28a745;
+        color: var(--QLD-color-dark-text);
+    }
+    .material-icons.qld__body--red{
+        background-color: #dc3545;
+        color: var(--QLD-color-dark-text);
+    }
+    .material-icons.qld__global_alert--default{
+        background-color: #ffcc2c;
+    }
+}
+.qld__body--red, .qld__body--green, .qld__body--dark, .qld__body--dark-alt{
+    .qld__global_alert__close{
+        button.close{
+            .material-icons{
+                color: var(--QLD-color-dark-text);
+
+            }
+        }
+    }
+}
+.qld__global_alert__close{
+    button.close{
+        background-color: rgba(0,0,0,0);
+        margin-right:1rem;
+    }
+    .qld-material-icons{
+        padding: 0;
+        background-color: rgba(0,0,0,0);
+    }
+}
+.close-alert{
+
+    transition: visibility 0.5s, opacity 0.5s ease-out;
+    display: hidden;
+    opacity: 0;
+}
+.close-alert-height{
+    height: 0;
+}

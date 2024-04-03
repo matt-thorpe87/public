@@ -1,0 +1,16 @@
+{
+    "name": "global-alert",
+    "title": "Global Alert",
+    "description": "A custom block with global alert.",
+    "icon": "warning",
+    "style": [ "file:../../../styles/customThemeStyles.css", "file:./global-alert.scss"],
+    "category": "qh-design",
+    "keywords": ["global-alert", "global", "alert"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "global-alert.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

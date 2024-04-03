@@ -1,0 +1,16 @@
+{
+    "name": "video ",
+    "title": "Video",
+    "description": "A custom block with a video.",
+    "icon": "video",
+    "style": [ "file:../../../styles/customThemeStyles.css", "file:./video.scss"],
+    "category": "qh-design",
+    "keywords": ["video"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "video.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

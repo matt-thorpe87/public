@@ -1,0 +1,16 @@
+{
+    "name": "page-alert",
+    "title": "Page Alert",
+    "description": "A custom block with page alert.",
+    "icon": "sticky",
+    "style": [ "file:../../../styles/customThemeStyles.css", "file:./page-alert.scss"],
+    "category": "qh-design",
+    "keywords": ["page-alert", "alert"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "page-alert.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

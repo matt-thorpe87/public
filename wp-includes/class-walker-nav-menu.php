@@ -151,7 +151,6 @@ class Walker_Nav_Menu extends Walker {
 		$classes   = empty( $menu_item->classes ) ? array() : (array) $menu_item->classes;
 		$classes[] = 'menu-item-' . $menu_item->ID;
 
-
 		/**
 		 * Filters the arguments for a single nav menu item.
 		 *

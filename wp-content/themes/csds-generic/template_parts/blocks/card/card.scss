@@ -1,0 +1,20 @@
+.qld__card{
+    &.qld__body--alt{
+        background-color: var(--QLD-color-light-alt-background);
+    }
+    &.qld__body--dark{
+        background-color: var(--QLD-color-dark-background);
+        color: var(--QLD-color-dark-text);
+        }
+    &.qld__body--dark-alt{
+        background-color: var(--QLD-color-dark-alt-background);
+        color: var(--QLD-color-dark-text);
+        h3.qld__card__title{
+            color: var(--QLD-color-dark-text);
+            a{
+                color: var(--QLD-color-dark-text) !important;
+                text-decoration-color: var(--QLD-color-dark-text) !important ;
+            }
+        }
+    }
+}

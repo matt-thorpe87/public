@@ -1,0 +1,17 @@
+{
+    "name": "icon-box",
+    "title": "Icon Box",
+    "description": "A custom block with an Icon Box.",
+    "icon": "awards",
+    "style": [ "file:../../../styles/customThemeStyles.css", "file:./icon-box.scss"],
+    "category": "qh-design",
+    "keywords": ["icon-box", "icons", "icon"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "icon-box.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align" : true
+    }
+}

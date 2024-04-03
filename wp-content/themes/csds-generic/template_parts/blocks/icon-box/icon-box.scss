@@ -1,0 +1,9 @@
+.row{
+    &.qld__icon-top{
+        flex-direction: column !important;
+    }
+    &.qld__icon-right{
+        flex-direction: row-reverse !important;
+
+    }
+}

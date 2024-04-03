@@ -159,7 +159,12 @@ function register_acf_blocks()
     register_block_type(__DIR__ . '/template_parts/blocks/body');
     register_block_type(__DIR__ . '/template_parts/blocks/card');
     register_block_type(__DIR__ . '/template_parts/blocks/link-list');
-
+    register_block_type(__DIR__ . '/template_parts/blocks/multi-column');
+    register_block_type(__DIR__ . '/template_parts/blocks/global-alert');
+    register_block_type(__DIR__ . '/template_parts/blocks/icon-box');
+    register_block_type(__DIR__ . '/template_parts/blocks/image-group');
+    register_block_type(__DIR__ . '/template_parts/blocks/page-alert');
+    register_block_type(__DIR__ . '/template_parts/blocks/video');
 }
 
 if (function_exists('register_acf_blocks')) {

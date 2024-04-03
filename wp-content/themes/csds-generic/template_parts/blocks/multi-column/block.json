@@ -1,0 +1,16 @@
+{
+    "name": "multi-column",
+    "title": "Multi Column",
+    "description": "A custom block with multi-column text.",
+    "icon": "columns",
+    "style": [ "file:../../../styles/customThemeStyles.css", "file:./multi-column.scss"],
+    "category": "qh-design",
+    "keywords": ["multi-column", "content", "text", "column", "multi"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "multi-column.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}
