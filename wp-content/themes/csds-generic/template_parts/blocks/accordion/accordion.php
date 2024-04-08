@@ -38,7 +38,7 @@ if ($color_settings == 'dark') {
 }
 
 ?>
-<section class="qld__body">
+<section class="qld__accordion__section">
     <div class="container-fluid">
         <h2>
             <?php echo $heading; ?>

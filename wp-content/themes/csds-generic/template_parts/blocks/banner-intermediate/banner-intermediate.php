@@ -49,20 +49,8 @@ if (!empty($breadcrumbs && $breadcrumbs == 'yes')) {
 }
 ?>
 
-<style>
-    @media (min-width:699px) {
-        #banner-123 {
-            background-image: url();
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position-x: ;
-        }
-    }
-</style>
-
 <!--@@ Banner @@-->
-<section <?php echo esc_attr($anchor); ?> id="banner-123"
-    class="qld__banner qld__banner__basic <?php echo esc_attr($className); ?>">
+<section <?php echo esc_attr($anchor); ?> class="qld__banner qld__banner__basic <?php echo esc_attr($className); ?>">
     <div class="container-fluid">
         <div class="qld__banner__wrapper">
             <div class="qld__banner__main row">
@@ -129,11 +117,8 @@ if (!empty($breadcrumbs && $breadcrumbs == 'yes')) {
                                         } ?>
                                     </a>
                                 </li>
-
                             <?php endwhile ?>
                         <?php endif; ?>
-
-
                     </ul>
                 </div>
             </div>

@@ -6,7 +6,7 @@
  */
 
 //  Load values and assign defaults
-$card = get_field('card');
+$card = get_field('video_card');
 $color_settings = get_field('card_colour');
 
 // Support custom "anchor" values.
@@ -20,9 +20,6 @@ $className = 'qld__card';
 if (!empty($block['className'])) {
     $className .= ' ' . $block['className'];
 }
-if (!empty($image)) {
-    $className .= ' qld__card--image';
-}
 if (!empty($color_settings)) {
     $className .= ' qld__body--' . $color_settings;
 }
@@ -34,13 +31,12 @@ if (!empty($color_settings)) {
     <div class="container-fluid">
         <div class="row">
             <ul class="qld__card-list qld__card-list--matchheight">
-                <?php if (have_rows('card')):
-                    while (have_rows('card')):
+                <?php if (have_rows('video_card')):
+                    while (have_rows('video_card')):
                         the_row();
                         $heading = get_sub_field('card_heading');
                         $content = get_sub_field('card_content');
-                        $footer = get_sub_field('card_footer');
-                        $image = get_sub_field('card_image');
+                        $video = get_sub_field('card_video');
                         $link = get_sub_field('card_link');
                         if ($link) {
                             $className .= ' qld__card__action';
@@ -48,14 +44,14 @@ if (!empty($color_settings)) {
                             $className .= '';
                         }
 
-
                         ?>
                         <li class="col-sm-12 col-md-6 col-lg-4">
                             <div class="<?php echo esc_attr($className); ?>">
 
-                                <?php if (!empty($image)) { ?>
-                                    <div class="qld__responsive-media-img--bg"
-                                        style="background-image: url('<?php echo $image ?>');"></div>
+                                <?php if (!empty($video)) { ?>
+                                    <div class="qld__video_vid">
+                                        <?php echo $video; ?>
+                                    </div>
                                 <?php } ?>
 
                                 <div class="qld__card__inner">
@@ -74,20 +70,10 @@ if (!empty($color_settings)) {
                                                 }
                                                 ?>
                                             </h3>
-
                                             <p class="qld__card__description">
                                                 <?php echo $content; ?>
                                             </p>
                                         </div>
-                                        <?php if (!empty($footer)) { ?>
-                                            <div class="qld__card__footer">
-                                                <hr class="qld__horizontal-rule">
-                                                <div class="qld__card__footer-inner">
-                                                    <?php echo $footer; ?>
-                                                </div>
-                                            </div>
-                                        <?php } ?>
-
                                     </div>
                                 </div>
                             </div>

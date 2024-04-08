@@ -6,7 +6,7 @@
         padding-left:1rem;
     }
 }
-#banner-123{
+.qld__banner{
     margin-bottom:1rem;
 }
 .qld__banner__buttons{
@@ -40,7 +40,7 @@
             color: var(--QLD-color-dark-link);        
         } 
         a:visited{
-            color: var(--QLD-color-dark-text__muted);   
+            color: var(--QLD-color-dark-text__muted) !important;   
 
         }
     }

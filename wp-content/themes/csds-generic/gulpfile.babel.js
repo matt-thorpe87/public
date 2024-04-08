@@ -10,11 +10,16 @@ import del from 'del';
 import webpack from 'webpack-stream';
 import uglify from 'gulp-uglify';
 import zip from 'gulp-zip';
+import concat from 'gulp-concat';
 
 const sass = gulpSass(dartSass)
 
 // Paths array for source and destination of files and folders //
 const paths = {
+  blockstyles: {
+    src: ['template_parts/blocks/*/**.scss'],
+    dest: 'dist/assets/css'
+  },
   styles: {
     src: ['styles/customThemeStyles.css'],
     dest: 'dist/assets/css'
@@ -35,6 +40,13 @@ const paths = {
     src: ['**/*', '!src{,/**}', '!node_modules{,/**}', '!packaged{,/**}', '!babelrc', '!gulpfile.babel.js', '!package.json', '!package-lock.json', '!styles{,/**}'],
     dest: 'packaged'
   },
+}
+export const blockstyles = () => {
+  return gulp.src(paths.blockstyles.src)
+  .pipe(sass().on('error', sass.logError))
+  .pipe(concat("customBlocks.css"))
+  .pipe(cleanCss({compatibility: 'ie8'}))
+  .pipe(gulp.dest(paths.blockstyles.dest));
 }
 
 export const styles = () => {
@@ -101,7 +113,7 @@ export const compress = () => {
 }
 
 // not working yet when dist file is not present - gulp if empty don't clean(?)
-export const dev = gulp.series(clean, gulp.parallel(styles, images, copy, scripts), watch);
-export const build = gulp.series(clean, gulp.parallel(styles, images, copy, scripts));
+export const dev = gulp.series(clean, gulp.parallel(blockstyles, styles, images, copy, scripts), watch);
+export const build = gulp.series(clean, gulp.parallel(blockstyles, styles, images, copy, scripts));
 
 

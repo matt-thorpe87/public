@@ -18,6 +18,7 @@
     "del-cli": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^9.0.0",
     "gulp-sass": "^5.1.0",
@@ -31,6 +32,7 @@
   },
   "dependencies": {
     "@wordpress/blocks": "^12.30.0",
+    "gulp-concat-css": "^3.1.0",
     "php": "^1.0.2",
     "slick-carousel": "^1.8.1"
   },

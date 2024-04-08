@@ -14,7 +14,6 @@ function themeFiles()
     wp_enqueue_script('leaflet_esri_script', '//unpkg.com/esri-leaflet@3.0.1/dist/esri-leaflet.js');
     wp_enqueue_script('leaflet_esri_vector', '//unpkg.com/esri-leaflet-vector@3.0.0/dist/esri-leaflet-vector.js');
     wp_enqueue_script('qh_base_script_runtime', content_url('/qh-design-system/js/runtime.js'));
-
     wp_enqueue_script('qh_base_main_core_script', content_url('/qh-design-system/externals/main-core.js'));
     wp_enqueue_style('qh_base_main_core_style', content_url('/qh-design-system/externals/main-core.css'));
     wp_enqueue_script('qh_base_script_main', content_url('/qh-design-system/js/main.js'));
@@ -165,6 +164,8 @@ function register_acf_blocks()
     register_block_type(__DIR__ . '/template_parts/blocks/image-group');
     register_block_type(__DIR__ . '/template_parts/blocks/page-alert');
     register_block_type(__DIR__ . '/template_parts/blocks/video');
+    register_block_type(__DIR__ . '/template_parts/blocks/video-cards');
+
 }
 
 if (function_exists('register_acf_blocks')) {

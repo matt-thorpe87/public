@@ -17,7 +17,7 @@ if (!empty($block['anchor'])) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'qld__body';
+$className = 'qld__multi-column__section';
 if (!empty($block['className'])) {
     $className .= ' ' . $block['className'];
 }
@@ -38,10 +38,10 @@ if ($color_settings == 'altdark') {
 
 ?>
 
-<section class="qld__body--full-width <?php echo esc_attr($className) ?>" id="<?php echo esc_attr($anchor) ?>">
+<section class="<?php echo esc_attr($className) ?>" id="<?php echo esc_attr($anchor) ?>">
 
     <div class="container-fluid">
-        <div class="qld__body__text">
+        <div class="body__text">
             <div class="row">
 
                 <div class="col-xs-12 col-lg-6">

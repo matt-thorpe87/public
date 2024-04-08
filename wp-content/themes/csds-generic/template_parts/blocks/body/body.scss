@@ -1,9 +1,19 @@
 .qld__body--half-width{
     max-width: 50%;
 }
-.qld__body__text{
-    padding:1rem;
-}
+.body__text{
+        padding:1.5rem;
+    }
 .qld__body__text h1, .qld__body__text h2, .qld__body__text h3, .qld__body__text h4, .qld__body__text h5, .qld__body__text h6{
     max-width:100% !important;
 }  
+section.qld__body__text__section{
+    padding: 1.5rem 0
+}
+.qld__body__text__section{
+    &.qld__body--dark, .qld__body--dark-alt{
+        h1, h2, h3, h4, h5, h6{
+            color: var(--QLD-color-dark-text);
+        }
+    }
+}

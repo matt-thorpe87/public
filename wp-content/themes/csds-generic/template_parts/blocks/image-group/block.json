@@ -2,7 +2,7 @@
     "name": "image-group",
     "title": "Image Group",
     "description": "A custom block with a group of images.",
-    "icon": "gallery",
+    "icon": "media",
     "style": [ "file:../../../styles/customThemeStyles.css", "file:./image-group.scss"],
     "category": "qh-design",
     "keywords": ["image-group", "image", "images"],

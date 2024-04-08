@@ -40,7 +40,7 @@ if ($color_settings == 'qhdarkalt') {
 ?>
 
 <section class="alert qld__global_alert <?php echo esc_attr($className);
-echo esc_attr($bgColor) ?>" id="alert">
+echo esc_attr($bgColor) ?>" <?php echo esc_attr($anchor); ?>>
     <div class="container-fluid">
         <div class="qld__global_alert__main">
             <span class="material-icons qld-material-icons md-40 md-dark <?php echo esc_attr($bgColor) ?>">
@@ -79,7 +79,7 @@ echo esc_attr($bgColor) ?>" id="alert">
 
     </div>
 
-    </div>
+
     <script>function closeAlert() {
             document.querySelector('#alert').classList.add('close-alert');
             setTimeout(function () {

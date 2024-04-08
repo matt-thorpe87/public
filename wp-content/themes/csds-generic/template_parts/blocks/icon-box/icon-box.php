@@ -33,7 +33,7 @@ if (!empty($position)) {
 
 
 ?>
-<section <?php echo esc_attr($anchor); ?> class="qld__body qld__body--full-width">
+<section <?php echo esc_attr($anchor); ?> class="qld__icon__box__section">
 
     <div class="container-fluid">
 

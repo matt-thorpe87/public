@@ -30,7 +30,7 @@ if ($color_settings) {
 
 ?>
 
-<section class="qld__body" <?php echo esc_attr($anchor) ?>>
+<section class="qld__page__alert__section" <?php echo esc_attr($anchor) ?>>
     <div class="container-fluid">
         <div class="qld__page-alerts <?php echo esc_attr($className) ?>">
             <div class="qld__page-alerts--heading qld__display-lg">

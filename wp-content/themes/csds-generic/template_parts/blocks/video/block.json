@@ -2,7 +2,7 @@
     "name": "video ",
     "title": "Video",
     "description": "A custom block with a video.",
-    "icon": "video",
+    "icon": "video-alt3",
     "style": [ "file:../../../styles/customThemeStyles.css", "file:./video.scss"],
     "category": "qh-design",
     "keywords": ["video"],

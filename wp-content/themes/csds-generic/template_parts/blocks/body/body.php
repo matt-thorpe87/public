@@ -17,7 +17,7 @@ if (!empty($block['anchor'])) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'qld__body';
+$className = 'qld__body__text__section';
 if (!empty($block['className'])) {
     $className .= ' ' . $block['className'];
 }

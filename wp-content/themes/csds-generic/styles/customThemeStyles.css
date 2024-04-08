@@ -67,6 +67,11 @@
     .qld__banner__main .qld__banner__content {
       padding: 0 2.2rem;
     }
+    @media (max-width:600px){
+      .qld__banner__main .qld__banner__content {
+        padding: 0 1rem;
+      }
+    }
   
     .qld__footer.qld__footer--dark-alt{
       padding: 0 1.5rem 2rem 1.5rem;

@@ -6,3 +6,17 @@
         padding-left:1rem;
     }
 }
+.qld__banner:not(.qld__banner--has-hero){
+        .qld__banner__content{
+            padding-top: 1rem !important;
+        }
+}
+.qld__banner--alt .qld__banner__hero{
+    background-color: var(--QLD-color-light-alt-background) !important;
+}
+@media (min-width:699px) {
+    .qld__banner {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

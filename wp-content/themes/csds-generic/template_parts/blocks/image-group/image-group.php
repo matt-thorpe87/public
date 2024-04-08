@@ -26,7 +26,7 @@ if (!empty($block['align'])) {
 }
 
 ?>
-<section class="qld__body qld__body--full-width <?php echo esc_attr($className) ?>" <?php echo esc_attr($anchor); ?>>
+<section class="qld__image__group__section <?php echo esc_attr($className) ?>" <?php echo esc_attr($anchor); ?>>
 
     <div class="container-fluid">
         <div class="col icon-group-title-col">
