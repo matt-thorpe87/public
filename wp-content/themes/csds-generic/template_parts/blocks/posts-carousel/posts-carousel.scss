@@ -1,0 +1,15 @@
+.qld__body--dark, .qld__body--dark-alt{
+    .qld__card__tags{
+        li{
+            .qld__tag.qld__tag--link{
+                background-color: var(--QLD-color-dark-button);
+                border-color: var(--QLD-color-dark-button);
+            }
+            .qld__tag.qld__tag--link:hover{
+                background-color: var(--QLD-color-dark-button__hover);
+                color: var(--QLD-color-light-link);
+                border-color: var(--QLD-color-dark-button__hover);
+            }
+        }
+    }
+}

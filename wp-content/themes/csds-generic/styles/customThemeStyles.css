@@ -24,13 +24,6 @@
     height: 100%; 
     text-align: right;
   }
-  .temp-text-matt{
-    color: purple;
-  }
-  .temp-test{
-    color: red !important;
-    font-weight: 600 !important;
-  }
   .bannerImgWrapper img{
     height: 100%;
   }
@@ -162,3 +155,50 @@
     }
   
   }
+.qld__banner__content .slick-slide-title, .qld__banner__content--cta{
+  padding-left: 1rem;
+}
+:root,
+::after,
+::before{
+  --QLD-color-light-siteTitle: #022A50;
+  --QLD-color-light-designAccent: #6BBE27;
+  --QLD-color-light-heading: #03213F;
+  --QLD-color-light-text: #414141;
+  --QLD-color-light-text__muted: #636363;
+  --QLD-color-light-link: #09549F;
+  --QLD-color-light-link__visited: #551A8B;
+  --QLD-color-light-button__text: #FFFFFF;
+  --QLD-color-light-button: #09549F;
+  --QLD-color-light-button__hover: #003E7D;
+  --QLD-color-light-focus: #0085B3;
+  --QLD-color-light-border: #EBEBEB;
+  --QLD-color-light-background: #FFFFFF;
+  --QLD-color-light-background__shade: #F5F5F5;
+  --QLD-color-light-hint: #6f777b;
+  --QLD-color-light-alt-button: #008733;
+  --QLD-color-light-alt-button__hover: #00702B;
+  --QLD-color-light-alt-border: #818181;
+  --QLD-color-light-alt-background: #EBEBEB;
+  --QLD-color-light-alt-background__shade: #E0E0E0;
+  --QLD-color-light-alt-hint: #61696B;
+  --QLD-color-dark-siteTitle: #FFFFFF;
+  --QLD-color-dark-designAccent: #6BBE27;
+  --QLD-color-dark-heading: #FFFFFF;
+  --QLD-color-dark-text: #FFFFFF;
+  --QLD-color-dark-text__muted: #DEEBF9;
+  --QLD-color-dark-link: #FFFFFF;
+  --QLD-color-dark-link__visited: #A668F4;
+  --QLD-color-dark-button__text: #121940;
+  --QLD-color-dark-button: #9AC02C;
+  --QLD-color-dark-button__hover: #ADD33F;
+  --QLD-color-dark-focus: #01B0E5;
+  --QLD-color-dark-border: #1D9AC6;
+  --QLD-color-dark-background: #09549F;
+  --QLD-color-dark-background__shade: #04498F;
+  --QLD-color-dark-alt-button: #EFD700;
+  --QLD-color-dark-alt-button__hover: #FFE817;
+  --QLD-color-dark-alt-border: #11B2D4;
+  --QLD-color-dark-alt-background: #05325F;
+  --QLD-color-dark-alt-background__shade: #052C53
+}

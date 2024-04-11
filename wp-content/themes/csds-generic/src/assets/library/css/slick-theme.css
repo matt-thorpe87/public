@@ -27,7 +27,7 @@
 
 /* Arrows */
 .slick-prev,
-.slick-next, .qld__slick-prev, .qld__slick-next
+.slick-next, .qld__slick-prev, .qld__slick-next, .qld__slick-carousel-prev, .qld__slick-carousel-next
 {
   position: static;
   opacity: .8;
@@ -39,23 +39,21 @@
   padding: 16px;
   padding: 1rem;
   z-index: 1;
-
   color: #09549F;
-
 }
 
 .slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before, .qld__slick-prev.slick-disabled:before, .qld__slick-next.slick-disabled:before
+.slick-next.slick-disabled:before, .qld__slick-prev.slick-disabled:before, .qld__slick-next.slick-disabled:before, .qld__slick-carousel-prev-disabled:before, .qld__slick-carousel-next-disabled:before
 {
     opacity: .25;
 }
 
-.slick-prev, .qld__slick-prev
+.slick-prev, .qld__slick-prev, .qld__slick-carousel-prev
 {
     order: 0;
 }
 
-.slick-next, .qld__slick-next
+.slick-next, .qld__slick-next, .qld__slick-carousel-next
 {
     order: 2;
 }
@@ -134,7 +132,7 @@
 
 /* Dots */
 
-.slick-dots, .slider-dots-custom
+.slick-dots, .slider-dots-custom, .slider-dots-custom-carousel
 {
     position: absolute;
 
@@ -149,7 +147,7 @@
     text-align: center;
 }
 
-.slick-dots li, .slider-dots-custom li
+.slick-dots li, .slider-dots-custom li, .slider-dots-custom-carousel li
 {
     position: relative;
 
@@ -162,7 +160,7 @@
 
     cursor: pointer;
 }
-.slick-dots li button, .slider-dots-custom li button
+.slick-dots li button, .slider-dots-custom li button, .slider-dots-custom-carousel li button
 {
     font-size: 0;
     line-height: 0;
@@ -181,21 +179,21 @@
     background: transparent;
 }
 .slick-dots li button:hover,
-.slick-dots li button:focus, .slider-dots-custom li button:hover, .slider-dots-custom li button:focus
+.slick-dots li button:focus, .slider-dots-custom li button:hover, .slider-dots-custom li button:focus, .slider-dots-custom-carousel li button:focus, .slider-dots-custom-carousel li button:hover
 {
     outline: none;
 }
 .slick-dots li button:hover:before,
-.slick-dots li button:focus:before, .slider-dots-custom li button:hover:before, .slider-dots-custom li button:focus:before
+.slick-dots li button:focus:before, .slider-dots-custom li button:hover:before, .slider-dots-custom li button:focus:before, .slider-dots-custom-carousel li button:hover:before, .slider-dots-custom-carousel li button:focus:before
 {
     opacity: 1;
 }
-.slick-dots li.slick-active button:before, .slider-dots-custom li.slick-active button:before
+.slick-dots li.slick-active button:before, .slider-dots-custom li.slick-active button:before, .slider-dots-custom-carousel li.slick-active button:before
 {
     /* opacity: .75; */
     background-color: #09549F;
 }
-.slick-dots li button:before, .slider-dots-custom li button:before
+.slick-dots li button:before, .slider-dots-custom li button:before, .slider-dots-custom-carousel li button:before
 {
     font-family: 'slick';
     font-size: 12px;

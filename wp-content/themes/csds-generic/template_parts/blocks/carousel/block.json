@@ -1,0 +1,16 @@
+{
+    "name": "carousel",
+    "title": "Carousel",
+    "description": "A custom block with a carousel.",
+    "icon": "slides",
+    "style": [ "file:../../../styles/customThemeStyles.css", "file:./carousel.scss"],
+    "category": "qh-design",
+    "keywords": ["carousel"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "carousel.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

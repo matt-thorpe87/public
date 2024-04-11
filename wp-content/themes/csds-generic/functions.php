@@ -165,6 +165,10 @@ function register_acf_blocks()
     register_block_type(__DIR__ . '/template_parts/blocks/page-alert');
     register_block_type(__DIR__ . '/template_parts/blocks/video');
     register_block_type(__DIR__ . '/template_parts/blocks/video-cards');
+    register_block_type(__DIR__ . '/template_parts/blocks/posts-carousel');
+    register_block_type(__DIR__ . '/template_parts/blocks/carousel');
+    register_block_type(__DIR__ . '/template_parts/blocks/contact-form');
+
 
 }
 

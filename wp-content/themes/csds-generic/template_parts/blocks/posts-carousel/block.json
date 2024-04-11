@@ -1,0 +1,16 @@
+{
+    "name": "posts-carousel",
+    "title": "Posts Carousel",
+    "description": "A custom block with a carousel of posts.",
+    "icon": "slides",
+    "style": [ "file:../../../styles/customThemeStyles.css", "file:./posts-carousel.scss"],
+    "category": "qh-design",
+    "keywords": ["posts", "carousel", "posts-carousel"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "posts-carousel.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

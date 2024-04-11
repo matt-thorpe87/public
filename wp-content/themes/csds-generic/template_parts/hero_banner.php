@@ -55,7 +55,7 @@ $hero_banner = new wp_query([
 
                             <div class="qld__banner__content col-xs-12 col-md-6 col-lg-7">
                                 <!--@@ Heading(s) @@ -->
-                                <h1>
+                                <h1 class="slick-slide-title">
                                     <?php the_field('main_tagline'); ?>
                                 </h1>
                                 <!--@@ Abstract @@-->
@@ -105,7 +105,7 @@ $hero_banner = new wp_query([
 
             initiateCarousel() {
                 $('.posts-carousel').slick({
-                    autoplay: true,
+                    autoplay: false,
                     autoplaySpeed: 7000,
                     slidesToShow: 1,
                     slidesToScroll: 1,

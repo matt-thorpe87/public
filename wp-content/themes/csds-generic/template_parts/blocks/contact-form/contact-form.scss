@@ -1,0 +1,35 @@
+.container-fluid{
+    &.qld__contact-details__row{
+        .qld__contact-details, .contact-form{
+            width:50%;
+        }
+        @media (max-width: 699px){
+            .qld__contact-details, .contact-form{
+                width: 100%;
+            }
+        }
+        @media (max-width: 991px){
+            .qld__contact-details{
+                padding-right: 1rem;
+            }
+        }
+        @media (min-width: 992px){
+            .qld__contact-details__row-layout{
+                .qld__contact-details__col{
+                    margin-top:1rem;
+                }
+                .qld__contact-details__first{
+                    border-left: 1px solid var(--QLD-color-light-border);
+                    padding-left: 1rem;
+                }
+            }
+        }
+        @media (min-width:1312px){
+            .qld__contact-details__row-layout{
+                .qld__contact-details__first{
+                    padding: 0rem 2rem 0rem 2rem;
+                }
+            }
+        }
+    }
+}
