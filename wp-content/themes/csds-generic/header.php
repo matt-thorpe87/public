@@ -10,6 +10,124 @@
 
     <?php wp_head(); ?>
 </head>
+<style>
+    :root {
+        --QLD-color-light-background:
+            <?php the_field('background', 'option'); ?>
+        ;
+        --QLD-color-light-background__shade:
+            <?php the_field('background_shade', 'option'); ?>
+        ;
+        --QLD-color-light-border:
+            <?php the_field('border', 'option'); ?>
+        ;
+        --QLD-color-light-button:
+            <?php the_field('button', 'option'); ?>
+        ;
+        --QLD-color-light-button__hover:
+            <?php the_field('button_hover', 'option'); ?>
+        ;
+        --QLD-color-light-designAccent:
+            <?php the_field('accent', 'option'); ?>
+        ;
+        --QLD-color-dark-background:
+            <?php the_field('dark_background', 'option'); ?>
+        ;
+        --QLD-color-dark-background__shade:
+            <?php the_field('dark_background_shade', 'option'); ?>
+        ;
+        --QLD-color-dark-border:
+            <?php the_field('dark_border', 'option'); ?>
+        ;
+        --QLD-color-dark-button:
+            <?php the_field('dark_button', 'option'); ?>
+        ;
+        --QLD-color-dark-button__hover:
+            <?php the_field('dark_button_hover', 'option'); ?>
+        ;
+        --QLD-color-dark-designAccent:
+            <?php the_field('dark_accent', 'option'); ?>
+        ;
+        --QLD-color-light-siteTitle:
+            <?php the_field('site_title', 'option'); ?>
+        ;
+        --QLD-color-light-heading:
+            <?php the_field('text_heading', 'option'); ?>
+        ;
+        --QLD-color-light-text:
+            <?php the_field('text_paragraph', 'option'); ?>
+        ;
+        --QLD-color-light-text__muted:
+            <?php the_field('text_muted', 'option'); ?>
+        ;
+        --QLD-color-light-link:
+            <?php the_field('text_link', 'option'); ?>
+        ;
+        --QLD-color-light-link__visited:
+            <?php the_field('text_link_visited', 'option'); ?>
+        ;
+        --QLD-color-light-button__text:
+            <?php the_field('button_text', 'option'); ?>
+        ;
+        --QLD-color-light-focus:
+            <?php the_field('focus', 'option'); ?>
+        ;
+        --QLD-color-dark-siteTitle:
+            <?php the_field('dark_site_title', 'option'); ?>
+        ;
+        --QLD-color-dark-heading:
+            <?php the_field('dark_text_heading', 'option'); ?>
+        ;
+        --QLD-color-dark-text:
+            <?php the_field('dark_text_paragraph', 'option'); ?>
+        ;
+        --QLD-color-dark-text__muted:
+            <?php the_field('dark_text_muted', 'option'); ?>
+        ;
+        --QLD-color-dark-link:
+            <?php the_field('dark_text_link', 'option'); ?>
+        ;
+        --QLD-color-dark-link__visited:
+            <?php the_field('dark_text_link_visited', 'option'); ?>
+        ;
+        --QLD-color-dark-button__text:
+            <?php the_field('dark_button_text', 'option'); ?>
+        ;
+        --QLD-color-dark-focus:
+            <?php the_field('dark_focus', 'option'); ?>
+        ;
+        --QLD-color-light-alt-background:
+            <?php the_field('alt_background', 'option'); ?>
+        ;
+        --QLD-color-light-alt-background__shade:
+            <?php the_field('alt_background_shade', 'option'); ?>
+        ;
+        --QLD-color-light-alt-border:
+            <?php the_field('alt_border', 'option'); ?>
+        ;
+        --QLD-color-light-alt-button:
+            <?php the_field('alt_button', 'option'); ?>
+        ;
+        --QLD-color-light-alt-button__hover:
+            <?php the_field('alt_button_hover', 'option'); ?>
+        ;
+        --QLD-color-dark-alt-background:
+            <?php the_field('dark_alt_background', 'option'); ?>
+        ;
+        --QLD-color-dark-alt-background__shade:
+            <?php the_field('dark_alt_background_shade', 'option'); ?>
+        ;
+        --QLD-color-dark-alt-border:
+            <?php the_field('dark_alt_border', 'option'); ?>
+        ;
+        --QLD-color-dark-alt-button:
+            <?php the_field('dark_alt_button', 'option'); ?>
+        ;
+        --QLD-color-dark-alt-button__hover:
+            <?php the_field('dark_alt_button_hover', 'option'); ?>
+        ;
+    }
+</style>
 
 <body class="qld__grid">
 
@@ -18,42 +136,40 @@
             <a class="qld__skip-link__link" href="#content">Skip to main content</a>
             <a class="qld__skip-link__link" href="#main-nav">Skip to main navigation</a>
         </nav>
-        <div class="qld__header__pre-header qld__header__pre-header--dark-alt">
+        <?php
+        $top_colour = get_field('header_top_colour', 'options');
+        $top_class = "qld__header__pre-header--" . $top_colour;
+
+        ?>
+        <div class="qld__header__pre-header <?php echo esc_attr($top_class) ?>">
             <div class="container-fluid logo_navcontrol_wrapper">
-                <a href="https://qld.gov.au">
-                    <span class="qld__header__pre-header-url">qld.gov.au</span>
-                    <img class="qld__header__pre-header-brand-image" alt="Queensland Government"
-                        src="<?php echo content_url('/qh-design-system/mysource_files/img/header-logo-qgov--light.svg') ?>" />
+                <a href="https://www.health.qld.gov.au/">
+                    <span class="qld__header__pre-header-url">www.health.qld.gov.au</span>
+                    <img class="qld__header__pre-header-brand-image" alt="Queensland Government" <?php
+                    $logo = get_field('site_logo', 'option');
+                    $mobile_logo = get_field('mobile_logo', 'option');
+
+                    if (!empty($logo)) { ?> src="<?php echo esc_attr($mobile_logo) ?>" />
+                    <?php } else { ?>
+
+                        src="<?php echo content_url('/qh-design-system/mysource_files/img/header-logo-qgov--light.svg') ?>"
+                        />
+                    <?php } ?>
                 </a>
 
-                <!-- <div class="qld__header__cta-wrapper">
-                <a class="qld__header__cta-link" href="#">
-                    <span class="qld__header__cta-link-icon">
-                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                    </span>
-                    <span class="qld__header__cta-link-text">Link 1</span>
-                </a>
-
-                <a class="qld__header__cta-link" href="#">
-                    <span class="qld__header__cta-link-icon">
-                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                    </span>
-                    <span class="qld__header__cta-link-text">Link 2</span>
-                </a>
-            </div> -->
-
-                <?php wp_nav_menu(
-                    array(
-                        'theme_location' => 'top_right_nav_menu',
-                        'container' => 'false',
-                        'menu_class' => 'qld__header__cta-wrapper',
-                        'items_wrap' => '<div id="%1$s" class="%2$s">%3$s</div>',
-                        'walker' => new walker_top_right_menu()
-                    )
-                ); ?>
-
-
-
+                <?php
+                if (has_nav_menu('top_right_nav_menu')) {
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'top_right_nav_menu',
+                            'container' => 'false',
+                            'menu_class' => 'qld__header__cta-wrapper',
+                            'items_wrap' => '<div id="%1$s" class="%2$s">%3$s</div>',
+                            'walker' => new walker_top_right_menu()
+                        )
+                    );
+                }
+                ?>
 
                 <div class="qld__header__main-nav-controls">
                     <button aria-controls="qld-header-search"
@@ -86,14 +202,18 @@
 
             </div>
         </div>
+        <?php
+        $header_colour = get_field('header_colour', 'options');
+        $header_class = "qld__header__main--" . $header_colour;
 
-        <div class="qld__header__main qld__header__main--dark">
+        ?>
+        <div class="qld__header__main <?php echo esc_attr($header_class); ?>">
             <div class="container-fluid">
 
                 <div class="qld__header__brand">
                     <a href="<?php echo site_url(); ?>">
                         <div class="qld__header__brand-image">
-                            <svg width="170" height="56" viewBox="0 0 170 56" fill="none"
+                            <!-- <svg width="170" height="56" viewBox="0 0 170 56" fill="none"
                                 xmlns="http://www.w3.org/2000/svg" role="img">
                                 <title>Queensland Government</title>
                                 <g clip-path="url(#clip0)">
@@ -265,29 +385,44 @@
                                         <rect width="170" height="56" fill="currentColor" />
                                     </clipPath>
                                 </defs>
-                            </svg>
-                        </div>
+                            </svg> -->
+                            <img class="qld__header__header-brand-image" alt="Queensland Government" <?php
+                            $logo = get_field('site_logo', 'option');
 
+                            if (!empty($logo)) { ?>
+                                    src="<?php echo esc_attr($logo) ?>" />
+                            <?php } else { ?>
+
+                                src="<?php echo content_url('/qh-design-system/mysource_files/img/header-logo-qgov--light.svg') ?>"
+                                />
+                            <?php } ?>
+                        </div>
 
                         <div class="qld__header__site-name">
                             <span class="qld__header__heading">
-                                Queensland Design System Starter
+                                <?php echo get_bloginfo('name'); ?>
                             </span>
                             <span class="qld__header__subline">
-                                QGDS
+                                <?php echo get_bloginfo('description'); ?>
+
                             </span>
                         </div>
 
                     </a>
 
                 </div>
+                <?php
+                $search = get_field('search_form', 'option');
+                if ($search != 'no') {
+                    ?>
 
-                <div class="qld__header__search" id="qld-header-search">
-                    <div class="qld__main-nav__focus-trap-top"></div>
-                    <?php get_search_form(); ?>
+                    <div class="qld__header__search" id="qld-header-search">
+                        <div class="qld__main-nav__focus-trap-top"></div>
+                        <?php get_search_form(); ?>
 
-                    <div class="qld__main-nav__focus-trap-bottom"></div>
-                </div>
+                        <div class="qld__main-nav__focus-trap-bottom"></div>
+                    </div>
+                <?php } ?>
 
             </div>
 

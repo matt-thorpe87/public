@@ -39,31 +39,6 @@ function themeFiles()
 add_action('wp_enqueue_scripts', 'themeFiles');
 
 
-// function themeFeatures(){
-//   register_nav_menu('main_nav_menu', 'Main nav menu');
-//   register_nav_menu('top_right_nav_menu', 'Top right menu');
-//   register_nav_menu('footer_column_one', 'Footer column one');
-//   register_nav_menu('footer_column_two', 'Footer column two');
-//   register_nav_menu('footer_column_three', 'Footer column three');
-//   register_nav_menu('inner_page_side_menu', 'Inner page side menu');
-// }
-
-// add_action('after_setup_theme', 'themeFeatures');
-
-
-// function add_additional_class_on_li($classes, $item, $args){
-//   if(isset($args->add_li_class)){
-//     $classes[] = $args->add_li_class;
-//   }
-//   return $classes;
-// }
-
-// add_filter('nav_menu_css_class','add_additional_class_on_li', 1, 3)
-
-
-
-
-
 /* register menu locations */
 if (!function_exists('register_theme_nav')) {
 
@@ -86,7 +61,6 @@ if (!function_exists('register_theme_nav')) {
 }
 
 
-
 /* to add a QH class on the nav menu's anchor tag */
 
 function add_additional_class_on_a($classes, $item, $args)
@@ -98,7 +72,6 @@ function add_additional_class_on_a($classes, $item, $args)
 }
 
 add_filter('nav_menu_link_attributes', 'add_additional_class_on_a', 1, 3);
-
 
 
 /* To add a class on the side navigation menu's <a> tag  */
@@ -191,3 +164,4 @@ function example_block_category($categories, $post)
     return $categories_sorted;
 }
 add_filter('block_categories_all', 'example_block_category', 10, 2);
+

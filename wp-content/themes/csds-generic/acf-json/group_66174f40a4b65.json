@@ -3,9 +3,393 @@
     "title": "Site Settings",
     "fields": [
         {
-            "key": "field_66174f413a209",
-            "label": "Primary Colour",
-            "name": "primary_colour",
+            "key": "field_66178161e3fab",
+            "label": "Theme Settings",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_661cbdfa832bb",
+            "label": "Site Logo",
+            "name": "site_logo",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_661dc2bdfdb44",
+            "label": "Mobile Logo",
+            "name": "mobile_logo",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_661e0eae5236b",
+            "label": "Header Settings",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_661e0ec843d50",
+            "label": "Header Colour",
+            "name": "header_colour",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "light": "Light",
+                "dark": "Dark",
+                "alt": "Alternate",
+                "dark-alt": "Dark Alternate"
+            },
+            "default_value": "light",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_661e0ee843d51",
+            "label": "Header Top Colour",
+            "name": "header_top_colour",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "light": "Light",
+                "dark": "Dark",
+                "alt": "Alternate",
+                "dark-alt": "Dark Alternate"
+            },
+            "default_value": "light",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_661e14be9ef5d",
+            "label": "Display Search Form",
+            "name": "search_form",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": "yes",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_661dca28c621e",
+            "label": "Footer Settings",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_661de0bcc8927",
+            "label": "Footer Colour",
+            "name": "footer_colour",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "light": "Light",
+                "dark": "Dark",
+                "alt": "Alternate",
+                "dark-alt": "Dark Alternate"
+            },
+            "default_value": "light",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_661ddd2342795",
+            "label": "Contact Column Header",
+            "name": "contact_header",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Contact Us",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_661ddd49184e3",
+            "label": "Contact Column Subheading",
+            "name": "contact_header_sub",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Get in touch for enquiries, feedback or complaints and compliments.",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_661ddee4b136d",
+            "label": "Contact Button",
+            "name": "contact_button",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_661de330aa28d",
+            "label": "Key Links One Header",
+            "name": "col_one_header",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Key links",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_661de35f268dd",
+            "label": "Key Links Two Header",
+            "name": "col_two_header",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_661debe1bf125",
+            "label": "Social Links Header",
+            "name": "social_header",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Follow us",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_661dca5bd52c5",
+            "label": "Footer Acknowledgement",
+            "name": "acknowledgement",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_661dca9374458",
+            "label": "Footer Copyright",
+            "name": "copyright",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "© The State of Queensland 2024 (Queensland Health)",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6617813dbba16",
+            "label": "Light Theme Colours",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_661785e93755f",
+            "label": "Background",
+            "name": "background",
             "aria-label": "",
             "type": "color_picker",
             "instructions": "",
@@ -16,14 +400,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "#ffffff",
             "enable_opacity": 0,
             "return_format": "string"
         },
         {
-            "key": "field_66174f5b357c7",
-            "label": "Secondary Colour",
-            "name": "secondary_colour",
+            "key": "field_661785e937560",
+            "label": "Background Shade",
+            "name": "background_shade",
             "aria-label": "",
             "type": "color_picker",
             "instructions": "",
@@ -34,7 +418,723 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "#F5F5F5",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661785e937561",
+            "label": "Border",
+            "name": "border",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#EBEBEB",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661785e937562",
+            "label": "Button",
+            "name": "button",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#09549F",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661785e937563",
+            "label": "Button Hover",
+            "name": "button_hover",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#003E7D",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661785e937565",
+            "label": "Accent",
+            "name": "accent",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#6BBE27",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661c790001acd",
+            "label": "Dark Theme Colours",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_661782265f48b",
+            "label": "Background",
+            "name": "dark_background",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#09549F",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_6617830c27d28",
+            "label": "Background Shade",
+            "name": "dark_background_shade",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#04498F",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661783c0fd1ac",
+            "label": "Border",
+            "name": "dark_border",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#1D9AC6",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661782509ba32",
+            "label": "Button",
+            "name": "dark_button",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#9AC02C",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_66178349cea96",
+            "label": "Button Hover",
+            "name": "dark_button_hover",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#ADD33F",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661782d37cfd1",
+            "label": "Accent",
+            "name": "dark_accent",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#6BBE27",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661c7da98cfe3",
+            "label": "Alternate Theme Colours",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_661c7de7c125d",
+            "label": "Alternate Background",
+            "name": "alt_background",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#EBEBEB",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661c7e23d806c",
+            "label": "Alternate Background Shade",
+            "name": "alt_background_shade",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#E0E0E0",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661c7e420e991",
+            "label": "Alternate Border",
+            "name": "alt_border",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#818181",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661c7e4d0e992",
+            "label": "Alternate Button",
+            "name": "alt_button",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#008733",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661c7e5d0e993",
+            "label": "Alternate Button Hover",
+            "name": "alt_button_hover",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#00702B",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661c84bc82940",
+            "label": "Dark Alternate Theme Colours",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_661c859b48bc8",
+            "label": "Dark Alternate Background",
+            "name": "dark_alt_background",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#05325F",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661c858648bc7",
+            "label": "Dark Alternate Background Shade",
+            "name": "dark_alt_background_shade",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#052C53",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661c85657ab58",
+            "label": "Dark Alternate Border",
+            "name": "dark_alt_border",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#11B2D4",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661c854a8f6dc",
+            "label": "Dark Alternate Button",
+            "name": "dark_alt_button",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#EFD700",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661c852757c09",
+            "label": "Dark Alternate Button Hover",
+            "name": "dark_alt_button_hover",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#FFE817",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661c799a3865d",
+            "label": "Text Settings",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_661785e937564",
+            "label": "Button Text",
+            "name": "button_text",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#FFFFFF",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661785e937566",
+            "label": "Text Heading",
+            "name": "text_heading",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#03213F",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661785e937567",
+            "label": "Text Link",
+            "name": "text_link",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#09549F",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661785e937568",
+            "label": "Text Paragraph",
+            "name": "text_paragraph",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#414141",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661785e937569",
+            "label": "Text Site Title",
+            "name": "site_title",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#022A50",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661785e93756a",
+            "label": "Text Muted",
+            "name": "text_muted",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#636363",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661785e93756b",
+            "label": "Text Link Visited",
+            "name": "text_link_visited",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#551A8B",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661785e93756c",
+            "label": "Focus",
+            "name": "focus",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#0085B3",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661784b5928af",
+            "label": "Dark Button Text",
+            "name": "dark_button_text",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#121940",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_6617843f5bf2f",
+            "label": "Dark Text Heading",
+            "name": "dark_text_heading",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#ffffff",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_6617849062f19",
+            "label": "Dark Text Link",
+            "name": "dark_text_link",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#ffffff",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661784525bf30",
+            "label": "Dark Text Paragraph",
+            "name": "dark_text_paragraph",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#fff",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_6617842e5bf2e",
+            "label": "Dark Text Site Title",
+            "name": "dark_site_title",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#ffffff",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_661784e5928b0",
+            "label": "Dark Text Muted",
+            "name": "dark_text_muted",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#DEEBF9",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_66178507928b1",
+            "label": "Dark Text Link Visited",
+            "name": "dark_text_link_visited",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#A668F4",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_6617852f928b2",
+            "label": "Dark Focus",
+            "name": "dark_focus",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#01B0E5",
             "enable_opacity": 0,
             "return_format": "string"
         }
@@ -57,5 +1157,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1712803749
+    "modified": 1713247447
 }
