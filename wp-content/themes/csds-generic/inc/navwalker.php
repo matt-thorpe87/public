@@ -84,7 +84,7 @@ class walker_mega_nav extends Walker_Nav_menu{
             <span class="qld__main-nav__item-toggle-text" data-name="'. $item->title . '">' . $item->title . '</span>
                 <svg class="qld__icon qld__icon--md">
                 <use href=""></use>
-                <use href="/wp-content/qh-design-system/mysource_files/img/svg-icons.svg#qld__icon__chevron-up"></use>
+                <use href="/wp-content//themes/csds-generic/src/mysource_files/img/svg-icons.svg#qld__icon__chevron-up"></use>
                 </svg>
             </button><a/></div>' : '<a class="qld__main-nav__item-link" ' . $attributes . '>' . $item->title . '</a></div> ';
             $item_output .= $args->after;
@@ -102,10 +102,10 @@ class walker_mega_nav extends Walker_Nav_menu{
         // add View all link to megamenu footer
         // $urlfooter = $this->curItem->url;
         $output .= "\n</ul>";
-        $output .= "\n<div class=\"qld__main-nav__sub-footer\">
-        <hr class=\"qld__horizontal-rule qld__horizontal-rule--lg\">
-        <a class=\"qld__cta-link qld__cta-link--view-all\" href=\"#\">View all</a>
-    </div>";
+    //     $output .= "\n<div class=\"qld__main-nav__sub-footer\">
+    //     <hr class=\"qld__horizontal-rule qld__horizontal-rule--lg\">
+    //     <a class=\"qld__cta-link qld__cta-link--view-all\" href=\"#\">View all</a>
+    // </div>";
     }
 }
 

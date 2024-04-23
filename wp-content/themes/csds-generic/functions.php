@@ -18,21 +18,8 @@ function themeFiles()
     wp_enqueue_style('qh_base_main_core_style', content_url('/qh-design-system/externals/main-core.css'));
     wp_enqueue_script('qh_base_script_main', content_url('/qh-design-system/js/main.js'));
     wp_enqueue_style('qh_base_style', content_url('/qh-design-system/main.css'));
+    wp_enqueue_style('qh_base_styles', content_url('/qh-design-system/qh-theme.css'));
 
-    // wp_enqueue_style('qh_base_colours', content_url('/qh-design-system/colours-spacings.css'));
-    // wp_enqueue_script('qh_base_script_esri-leaflet-vector', content_url('/qh-design-system/externals/esri-leaflet-vector.js'));
-    // wp_enqueue_script('qh_base_script_esri-leaflet', content_url('/qh-design-system/externals/esri-leaflet.js'));
-
-    // wp_enqueue_script('qh_base_script_fb-handlebars', content_url('/qh-design-system/externals/fb-handlebars.min.js'));
-    // wp_enqueue_script('qh_base_script_fb-typeahead', content_url('/qh-design-system/externals/fb-typeahead.bundle.min.js'));
-    // wp_enqueue_script('qh_base_script_funnelback_autocompletion', content_url('/qh-design-system/externals/funnelback.autocompletion-2.6.0.js'));
-    // wp_enqueue_script('qh_base_script_getPagination', content_url('/qh-design-system/externals/getPagination.js'));
-    // wp_enqueue_script('qh_base_script_leaflet', content_url('/qh-design-system/externals/leaflet.js'));
-    // wp_enqueue_script('qh_base_script_populateDatastoreSim', content_url('/qh-design-system/externals/populateDatastoreSim.js'));
-    // wp_enqueue_script('qh_base_script_runtime-core', content_url('/qh-design-system/externals/runtime-core.js'));
-
-    // wp_enqueue_style('qh_base_slider_style', content_url('/qh-design-system/slider.css'));
-    // wp_enqueue_script('qh_base_slider_script', content_url('/qh-design-system/js/slider.js')); 
     wp_enqueue_style('custom_theme_style', get_theme_file_uri('/styles/customThemeStyles.css'));
 }
 

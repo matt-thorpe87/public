@@ -51,20 +51,6 @@
     "location": [
         [
             {
-                "param": "post_type",
-                "operator": "==",
-                "value": "post"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "!=",
-                "value": "hero_banner"
-            }
-        ],
-        [
-            {
                 "param": "page_template",
                 "operator": "==",
                 "value": "default"
@@ -80,5 +66,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1712723967
+    "modified": 1713843855
 }

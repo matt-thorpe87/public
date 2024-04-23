@@ -145,16 +145,17 @@
             <div class="container-fluid logo_navcontrol_wrapper">
                 <a href="https://www.health.qld.gov.au/">
                     <span class="qld__header__pre-header-url">www.health.qld.gov.au</span>
+
                     <img class="qld__header__pre-header-brand-image" alt="Queensland Government" <?php
-                    $logo = get_field('site_logo', 'option');
                     $mobile_logo = get_field('mobile_logo', 'option');
+                    $svg_path =  content_url('/themes/csds-generic/src/mysource_files/img/header-logo-qgov--light.svg');
 
-                    if (!empty($logo)) { ?> src="<?php echo esc_attr($mobile_logo) ?>" />
+                    if (!empty($mobile_logo)) { ?>
+                            src="<?php echo esc_attr($mobile_logo) ?>" />
                     <?php } else { ?>
-
-                        src="<?php echo content_url('/qh-design-system/mysource_files/img/header-logo-qgov--light.svg') ?>"
-                        />
+                        src="<?php echo $svg_path ?>" />
                     <?php } ?>
+
                 </a>
 
                 <?php
@@ -178,13 +179,14 @@
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                             class="qld__icon qld__icon--lg qld__main-nav__toggle-search-icon">
                             <use
-                                href="<?php echo content_url('/qh-design-system/mysource_files/img/svg-icons.svg#qld__icon__search'); ?>">
+                                href="<?php echo content_url('/themes/csds-generic/src/mysource_files/img/svg-icons.svg#qld__icon__search'); ?>">
                             </use>
                         </svg>
+
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                             class="qld__icon qld__icon--lg qld__main-nav__toggle-search-close-icon">
                             <use
-                                href="<?php echo content_url('/qh-design-system/mysource_files/img/svg-icons.svg#qld__icon__search'); ?>">
+                                href="<?php echo content_url('/themes/csds-generic/src/mysource_files/img/svg-icons.svg#qld__icon__close'); ?>">
                             </use>
                         </svg>
                         <span class="qld__main-nav__toggle-text">Search</span>
@@ -193,7 +195,7 @@
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                             class="qld__icon qld__icon--lg">
                             <use
-                                href="<?php echo content_url('/qh-design-system/mysource_files/img/svg-icons.svg#qld__icon__mobile-menu') ?>">
+                                href="<?php echo content_url('/themes/csds-generic/src/mysource_files/img/svg-icons.svg#qld__icon__mobile-menu') ?>">
                             </use>
                         </svg>
                         <span class="qld__main-nav__toggle-text">Menu</span>
@@ -386,16 +388,19 @@
                                     </clipPath>
                                 </defs>
                             </svg> -->
+
                             <img class="qld__header__header-brand-image" alt="Queensland Government" <?php
                             $logo = get_field('site_logo', 'option');
+                            $svg_logo_path =  content_url('/themes/csds-generic/src/mysource_files/img/header-logo-qgov--dark.svg');
 
                             if (!empty($logo)) { ?>
                                     src="<?php echo esc_attr($logo) ?>" />
                             <?php } else { ?>
 
-                                src="<?php echo content_url('/qh-design-system/mysource_files/img/header-logo-qgov--light.svg') ?>"
+                                src="<?php echo $svg_logo_path ?>"
                                 />
                             <?php } ?>
+
                         </div>
 
                         <div class="qld__header__site-name">
@@ -411,18 +416,19 @@
                     </a>
 
                 </div>
-                <?php
-                $search = get_field('search_form', 'option');
-                if ($search != 'no') {
-                    ?>
 
-                    <div class="qld__header__search" id="qld-header-search">
-                        <div class="qld__main-nav__focus-trap-top"></div>
+
+                <div class="qld__header__search" id="qld-header-search">
+                    <div class="qld__main-nav__focus-trap-top"></div>
+                    <?php
+                    $search = get_field('search_form', 'option');
+                    if ($search != 'no') {
+                        ?>
                         <?php get_search_form(); ?>
+                    <?php } ?>
+                    <div class="qld__main-nav__focus-trap-bottom"></div>
+                </div>
 
-                        <div class="qld__main-nav__focus-trap-bottom"></div>
-                    </div>
-                <?php } ?>
 
             </div>
 
@@ -431,11 +437,14 @@
     <!-- HEADER END -->
 
     <!-- MAIN NAVIGATION -->
-
-    <nav class="qld__main-nav qld__main-nav--mega qld__main-nav--dark" id="#mainmenu" aria-label="main">
+    <?php
+    $nav_colour = get_field('nav_colour', 'option');
+    $nav_class = ' qld__main-nav--' . $nav_colour;
+    ?>
+    <nav class="qld__main-nav qld__main-nav--mega <?php echo esc_attr($nav_class); ?>" id="#mainmenu" aria-label="main">
         <div class="container-fluid">
             <div class="qld__main-nav__content " id="main-nav">
-                <div class="qld__main-nav__menu qld__main-nav__menu--dark-alt">
+                <div class="qld__main-nav__menu">
                     <div class="qld__main-nav__menu-inner">
                         <div class="qld__main-nav__focus-trap-top"></div>
                         <div class="qld__main-nav__header">
@@ -444,7 +453,7 @@
                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                                     class="qld__icon qld__icon--md ">
                                     <use
-                                        href="<?php echo content_url('/qh-design-system/mysource_files/img/svg-icons.svg#qld__icon__close') ?>">
+                                        href="<?php echo content_url('/themes/csds-generic/src/mysource_files/img/svg-icons.svg#qld__icon__close') ?>">
                                     </use>
                                 </svg>
                                 <span class="qld__main-nav__toggle-text">Close</span>
@@ -472,8 +481,11 @@
                             );
                         }
                         ?>
+                        <div class="qld__main-nav__focus-trap-bottom"></div>
+
                     </div>
                 </div>
+                <div class="qld__main-nav__overlay" aria-controls="main-nav"></div>
             </div>
         </div>
     </nav>

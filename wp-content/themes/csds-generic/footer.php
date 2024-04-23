@@ -18,7 +18,7 @@ $className = ' qld__footer--' . $footer_colour;
     </div>
 
     <div class="container-fluid">
-        <div class="row">
+        <div class="row qld__footer__row">
             <div class="col-xs-12 col-lg-3 qld__footer__column">
                 <div class="container-fluid">
                     <div class="row ">
@@ -108,10 +108,12 @@ $className = ' qld__footer--' . $footer_colour;
                 </div>
             <?php } ?>
             <!-- social media menu -->
-            <?php if (has_nav_menu('footer_column_three')) {
+            <?php
+            $socials = get_field('social_media_links', 'option');
+            if (!empty($socials)) {
                 ?>
                 <div class="col-xs-12 col-lg-2 qld__footer__column">
-                    <nav class="qld__footer__social" aria-label="social media links">
+                    <nav class="qld__footer__social qld__footer__navigation" aria-label="social media links">
                         <h4 class="qld__footer__heading">
                             <?php
                             $social_header = get_field('social_header', 'option');
@@ -120,15 +122,21 @@ $className = ' qld__footer--' . $footer_colour;
                             }
                             ?>
                         </h4>
+                        <?php if (have_rows('social_media_links', 'option')): ?>
+                            <ul class="qld__link-list" id="menu-social-media">
+                                <?php
+                                while (have_rows('social_media_links', 'option')):
+                                    the_row();
+                                    $social_title = get_sub_field('title');
+                                    $social_url = get_sub_field('url');
+                                    $social_icon = get_sub_field('icon'); ?>
+                                    <li><a class="qld__footer__clickable__link" href="<?php echo $social_url; ?>" target="_blank"><i
+                                                class="fa-brands <?php echo $social_icon; ?>"></i><span><?php echo $social_title; ?></span></a>
+                                    </li>
+                                <?php endwhile ?>
 
-                        <?php wp_nav_menu(
-                            array(
-                                'theme_location' => 'footer_column_three',
-                                'container' => 'null',
-                                'menu_class' => 'qld__link-list',
-                                'add_a_class' => 'qld__footer__clickable__link'
-                            )
-                        ) ?>
+                            </ul>
+                        <?php endif ?>
                     </nav>
                 </div>
             <?php } ?>
