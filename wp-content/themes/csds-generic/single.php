@@ -60,6 +60,24 @@
                                 ><i class="fab fa-linkedin-in" style="color: #ffffff;";></i
                               ></a>
                             </li>
+                            <li>
+                              <a
+                              href="https://www.x.com/share?url=<?php the_permalink(); ?>&title=<?php the_title(); ?>"
+                                target="_blank"
+                                data-action="close"
+                                ><span class="sr-only">Share via X (Twitter)</span
+                                ><i class="fab fa-x-twitter" style="color: #ffffff;";></i
+                              ></a>
+                            </li>
+                            <li>
+                                <a
+                                href="mailto:?subject=<?php the_title(); ?>&body=View This Page <?php the_permalink(); ?>"
+                                target="_blank"
+                                data-action="close"
+                                ><span class="sr-only">Share via Email</span
+                                ><i class="far fa-envelope" style="color: #ffffff;"></i
+                                ></a>
+                            </li>
                           </ul>
                           <p>Or copy link</p>
                           <p class="qld__news-article__copy-link">
@@ -133,17 +151,16 @@
                             $cats[] = array( 'name' => $c->name, 'slug' => $c->slug );
                             // Or we can just print it directly ?>
                             <li>
-                        <a
-                          class="qld__tag qld__tag--large qld__tag--link"
-                          href="<?php echo get_category_link($c->term_id); ?>"
-                          ><?php echo $c->name ;?></a
-                        >
-                      </li><?php
-                        }	
-                    }
-                    ?>
-                      
-                    </ul>
+                                <a
+                                class="qld__tag qld__tag--large qld__tag--link"
+                                href="<?php echo get_category_link($c->term_id); ?>"
+                                ><?php echo $c->name ;?></a
+                                >
+                            </li><?php
+                                }	
+                            }
+                            ?>
+                        </ul>
                   </div>
                   <p class="qld__news-article__updated-date">
                     <strong>Last updated:</strong> <?php echo get_the_modified_date() ?>
@@ -169,6 +186,24 @@
                           ><i class="fab fa-linkedin-in"></i
                         ></a>
                       </li>
+                      <li>
+                        <a
+                        href="https://www.x.com/share?url=<?php the_permalink(); ?>&title=<?php the_title(); ?>"
+                        target="_blank"
+                        data-action="close"
+                        ><span class="sr-only">Share via X (Twitter)</span
+                        ><i class="fab fa-x-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                        href="mailto:?subject=<?php the_title(); ?>&body=View This Page <?php the_permalink(); ?>"
+                        target="_blank"
+                        data-action="close"
+                        ><span class="sr-only">Share via Email</span
+                        ><i class="far fa-envelope"></i
+                        ></a>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -183,8 +218,9 @@
                 $term_list = wp_list_pluck( $terms, 'slug' );
                 $related_args = array(
                     'post_type' => 'post',
-                    'posts_per_page' => 5,
+                    'posts_per_page' => 10,
                     'post_status' => 'publish',
+                    'post__not_in' => array( get_the_ID() ),
                     'order' => 'DESC',
                     'tax_query' => array(
                         array(
@@ -227,48 +263,59 @@
                     <?php endwhile; ?>
                 </ul>
                 <?php endif; ?>
+                <?php 
+                // $terms_featured = get_the_terms( get_the_ID(), 'category' );
+                // $term_list_featured = wp_list_pluck( $terms, 'slug' );
+                $featured_args = array(
+                    'post_type' => array(
+                        'post',
+                        'topics',
+                    ),
+                    'posts_per_page' => 3,
+                    'post_status' => 'publish',
+                    'post__not_in' => array( get_the_ID() ),
+                    'order' => 'DESC',
+                    'tax_query' => array(
+                        array(
+                            'taxonomy' => 'category',
+                            'field' => 'slug',
+                            'terms' => 'featured',
+                        )
+                    )
+                );
+                $featured = new WP_Query( $featured_args );
+                if($featured->have_posts() ) :
+                ?>
                 <h3
                   class="qld__news-article__aside__sub-heading qld__display-md"
                 >
-                  <i class="far fa-newspaper"></i>Featured News
+                  <i class="far fa-newspaper"></i>Featured
                 </h3>
                 <ul class="qld__card-list qld__card-list--matchheight">
-                  <li class="col-xs-12">
-                    <div class="qld__card qld__card__action">
-                      <div class="qld__card__inner">
-                        <div class="qld__card__content">
-                          <div class="qld__card__content-inner">
-                            <h4 class="qld__card__title">
-                              <a
-                                class="qld__card--clickable__link"
-                                href="https://cairns-hinterland.health.qld.gov.au/about-us/news/mareeba-stroke-first-aid"
-                                >Mareeba stroke averted</a
-                              >
-                            </h4>
-                          </div>
+                    <?php
+                    while ($featured->have_posts()): $featured->the_post();
+                    ?>
+                    <li class="col-xs-12">
+                        <div class="qld__card qld__card__action">
+                        <div class="qld__card__inner">
+                            <div class="qld__card__content">
+                            <div class="qld__card__content-inner">
+                                <h4 class="qld__card__title">
+                                <a
+                                    class="qld__card--clickable__link"
+                                    href="<?php the_permalink(); ?>"
+                                    ><?php the_title() ?></a
+                                >
+                                </h4>
+                            </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="col-xs-12">
-                    <div class="qld__card qld__card__action">
-                      <div class="qld__card__inner">
-                        <div class="qld__card__content">
-                          <div class="qld__card__content-inner">
-                            <h4 class="qld__card__title">
-                              <a
-                                class="qld__card--clickable__link"
-                                href="https://cairns-hinterland.health.qld.gov.au/about-us/news/lessons-learned-from-cyclone-yasi-10-years-on"
-                                >Lessons learned from Cyclone Yasi, 10 years
-                                on</a
-                              >
-                            </h4>
-                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </li>
+                    </li>
+                    <?php endwhile; ?>
                 </ul>
+                <?php endif; ?>
+
               </aside>
             </div>
           </article>

@@ -41,9 +41,9 @@
     justify-content: center;
   }
   
-  .qld__card__image-link .qld__responsive-media-img--bg{
+  /* .qld__card__image-link .qld__responsive-media-img--bg{
     padding-bottom: 0px;
-  }
+  } */
   
   .qld__card__image-link .qld__responsive-media-img--bg img{
     border-radius: 0px 0px 6.0882800609%/10.8108108108% 0px;
@@ -266,4 +266,7 @@
     background-color: var(--QLD-color-dark-background-shade);
 
   }
+}
+.qld__card-list.qld__card-list--matchheight .col-md-4{
+  margin-top: 2rem;
 }

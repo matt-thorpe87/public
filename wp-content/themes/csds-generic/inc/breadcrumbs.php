@@ -4,7 +4,7 @@
 function custom_breadcrumbs() {
     global $post;
     echo '<ul class="qld__link-list qld__link-list--inline">';
-    if (!is_home()) {
+    if (!is_front_page()) {
         echo '<li><a href="';
         echo get_option('home');
         echo '">Home</a></li>';
@@ -32,6 +32,11 @@ function custom_breadcrumbs() {
             echo '<li>';
             echo the_title();
             echo '</li>';
+        } elseif (is_home()){
+            echo '<li>';
+            echo get_the_title( get_option('page_for_posts', true) );
+            echo '</li>';
+
         }
     }
     echo '</ul>';
