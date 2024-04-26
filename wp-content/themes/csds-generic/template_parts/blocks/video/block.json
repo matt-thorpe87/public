@@ -3,7 +3,7 @@
     "title": "Video",
     "description": "A custom block with a video.",
     "icon": "video-alt3",
-    "style": [ "file:../../../styles/customThemeStyles.css", "file:./video.scss"],
+    "style": [  "file:./video.scss"],
     "category": "qh-design",
     "keywords": ["video"],
     "acf": {

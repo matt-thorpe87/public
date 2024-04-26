@@ -3,7 +3,7 @@
     "title": "Posts Carousel",
     "description": "A custom block with a carousel of posts.",
     "icon": "slides",
-    "style": [ "file:../../../styles/customThemeStyles.css", "file:./posts-carousel.scss"],
+    "style": [  "file:./posts-carousel.scss"],
     "category": "qh-design",
     "keywords": ["posts", "carousel", "posts-carousel"],
     "acf": {

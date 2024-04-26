@@ -3,7 +3,7 @@
     "title": "Accordion",
     "description": "A custom block with an accordion.",
     "icon": "excerpt-view",
-    "style": [ "file:../../../styles/customThemeStyles.css", "file:./accordion.scss"],
+    "style": [ "file:./accordion.scss"],
     "category": "qh-design",
     "keywords": ["accordion", "text", "content"],
     "acf": {

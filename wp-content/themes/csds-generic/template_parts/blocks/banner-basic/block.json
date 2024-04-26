@@ -3,7 +3,7 @@
     "title": "Banner - Basic",
     "description": "A custom block with a basic banner.",
     "icon": "star-filled",
-    "style": [ "file:../../../styles/customThemeStyles.css", "file:./banner-basic.scss"],
+    "style": [ "file:./banner-basic.scss"],
     "category": "qh-design",
     "keywords": ["banner", "basic banner", "cta", "hero"],
     "acf": {

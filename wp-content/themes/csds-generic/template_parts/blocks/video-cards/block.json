@@ -3,7 +3,7 @@
     "title": "Video Cards",
     "description": "A custom block with video cards.",
     "icon": "video-alt2",
-    "style": [ "file:../../../styles/customThemeStyles.css", "file:./video-cards.scss"],
+    "style": [ "file:./video-cards.scss"],
     "category": "qh-design",
     "keywords": ["video", "video card", "card"],
     "acf": {

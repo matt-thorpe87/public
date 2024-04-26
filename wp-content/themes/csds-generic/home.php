@@ -121,7 +121,7 @@ get_header(); ?>
                         'post',
                         'topics',
                     ),
-                    'posts_per_page' => 3,
+                    'posts_per_page' => 9,
                     'post_status' => 'publish',
                     'order' => 'DESC',
                 );
@@ -182,6 +182,8 @@ get_header(); ?>
 
                 <?php endif; ?>
             </div>
+
+            
             <div class="row">
                 <!-- <div class="qld__card-list__footer centered col-xs-12"> -->
                     <!-- <nav class="text-center hidden-print qld__search-pagination" aria-label="pagination">
@@ -254,6 +256,41 @@ get_header(); ?>
                 
         </div>
     </section>
+    <!-- subscription form -->
+    <?php 
+$index_form = get_field('add_index_form_shortcode');
+$index_heading = get_field('blog_index_form_heading');
+$index_content = get_field('blog_index_form_content');
+$index_colour = get_field('blog_index_form_colour');
+
+// colour selector
+if (!empty($index_colour)) {
+    $index_classColour = ' qld__body--' . $index_colour;
+}
+
+if(!empty($index_form)) :
+?>
+
+<section class="qld__body <?php echo esc_attr($index_classColour); ?> qld__subscription">
+    <div class="container-fluid">
+        <div class="qld__subscription__container">
+            <!-- content -->
+            <div class="qld__sub__form-content">
+                <div class="qld__subscription__form__content">
+                    <h2 class="qld__display-xl"><?php echo esc_attr($index_heading); ?></h2>
+                    <div class="qld__abstract"><?php echo esc_attr($index_content); ?></div>
+                </div>
+            </div>
+             <!-- form -->
+             <div class="qld__blog__form qld__sub__form-content">
+                <div class="qld__subscription__form"><?php echo do_shortcode($index_form); ?></div>                
+            </div>
+        </div>
+    </div>
+</section>
+<?php 
+ endif 
+?>
 </main>
 
 <?php

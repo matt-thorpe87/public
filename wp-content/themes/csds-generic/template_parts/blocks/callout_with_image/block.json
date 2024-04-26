@@ -3,7 +3,7 @@
     "title": "Callout with Image",
     "description": "A custom block with a callout including an image.",
     "icon": "flag",
-    "style": [ "file:../../../styles/customThemeStyles.css", "file:./callout_with_image.scss"],
+    "style": [ "file:./callout_with_image.scss"],
     "category": "qh-design",
     "keywords": ["callout", "callout with image", "image"],
     "acf": {

@@ -3,7 +3,7 @@
     "title": "Page Alert",
     "description": "A custom block with page alert.",
     "icon": "sticky",
-    "style": [ "file:../../../styles/customThemeStyles.css", "file:./page-alert.scss"],
+    "style": [ "file:./page-alert.scss"],
     "category": "qh-design",
     "keywords": ["page-alert", "alert"],
     "acf": {

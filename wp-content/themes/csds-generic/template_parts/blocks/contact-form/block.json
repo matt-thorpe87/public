@@ -3,7 +3,7 @@
     "title": "Contact Form",
     "description": "A custom block with space for a contact form.",
     "icon": "forms",
-    "style": [ "file:../../../styles/customThemeStyles.css", "file:./contact-form.scss"],
+    "style": [  "file:./contact-form.scss"],
     "category": "qh-design",
     "keywords": ["contact", "form", "contact-form"],
     "acf": {

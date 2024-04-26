@@ -3,7 +3,7 @@
     "title": "Body",
     "description": "A custom block with body text.",
     "icon": "text",
-    "style": [ "file:../../../styles/customThemeStyles.css", "file:./body.scss"],
+    "style": [ "file:./body.scss"],
     "category": "qh-design",
     "keywords": ["body", "text", "content"],
     "acf": {

@@ -3,7 +3,7 @@
     "title": "Carousel",
     "description": "A custom block with a carousel.",
     "icon": "slides",
-    "style": [ "file:../../../styles/customThemeStyles.css", "file:./carousel.scss"],
+    "style": [  "file:./carousel.scss"],
     "category": "qh-design",
     "keywords": ["carousel"],
     "acf": {

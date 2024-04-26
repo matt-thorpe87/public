@@ -3,7 +3,7 @@
     "title": "Callout",
     "description": "A custom block with a callout.",
     "icon": "flag",
-    "style": [ "file:../../../styles/customThemeStyles.css", "file:./callout.scss", "file:../../../../../../qh-design-system/main.css"],
+    "style": [ "file:./callout.scss"],
     "category": "qh-design",
     "keywords": ["callout"],
     "acf": {

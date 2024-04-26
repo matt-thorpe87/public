@@ -3,7 +3,7 @@
     "title": "Button",
     "description": "A custom block with a button.",
     "icon": "button",
-    "style": [ "file:../../../styles/customThemeStyles.css", "file:./button.scss"],
+    "style": [  "file:./button.scss"],
     "category": "qh-design",
     "keywords": ["button", "link"],
     "acf": {

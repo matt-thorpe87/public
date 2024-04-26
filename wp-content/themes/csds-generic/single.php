@@ -133,6 +133,10 @@
                   <p><?php the_content();?></p>
                   </div>
                 </div>
+                <?php 
+                $blog_sub = 'template_parts/blog_form';
+                get_template_part( $blog_sub );
+                ?>
                 <hr />
                 <div class="qld__news-article__footer">
                   <div class="qld__news-article__footer__tags">
