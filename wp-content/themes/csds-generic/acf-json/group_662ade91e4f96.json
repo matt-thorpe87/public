@@ -27,7 +27,7 @@
             "label": "Content",
             "name": "blog_form_content",
             "aria-label": "",
-            "type": "textarea",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -36,11 +36,11 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Stay up to date with the latest news from the Clinical Skills Development Service by subscribing to our blog posts.",
+            "default_value": "",
             "maxlength": "",
-            "rows": "",
             "placeholder": "",
-            "new_lines": ""
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_662ade92f8641",
@@ -109,5 +109,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1714103559
+    "modified": 1715142567
 }

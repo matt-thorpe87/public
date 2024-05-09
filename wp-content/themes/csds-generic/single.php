@@ -100,9 +100,7 @@
                         </button>
                       </div>
                     </div>
-                    <div class="qld__tag qld__tag--large">
-                      Read time will display here.
-                    </div>
+              
                   </div>
                 </div>
                 <hr />

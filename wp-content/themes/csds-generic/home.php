@@ -1,5 +1,4 @@
 <?php 
-
 /*
 Template name: Blog
 */
@@ -9,7 +8,7 @@ get_header(); ?>
 <main class="main" role="main">
     <section class="qld__body qld__body--alt qld__body--breadcrumb">
     <div class="container-fluid">
-        <nav class="qld__breadcrumbs" aria-label="breadcrumb">
+        <nav class="qld__breadcrumbs row" aria-label="breadcrumb">
         <?php custom_breadcrumbs(); ?>
         </nav>
     </div>
@@ -21,7 +20,15 @@ get_header(); ?>
             <div class="row">
                 <div class="qld__card-intro col-xs-12 qld__card-intro--sm">
                     <h1 class="capitalised" data-action="tag-paramater">
-                        Our stories
+                        <?php 
+                        $posts_id = get_option( 'page_for_posts' );
+                        $featured = get_field('featured_title', $posts_id);
+                        if(!empty($featured)) {
+                            echo esc_html($featured);
+                        } else {
+                            echo 'Featured Posts';
+                        }
+                        ?>
                     </h1>
                 </div>
             </div>
@@ -31,9 +38,8 @@ get_header(); ?>
                     'post_type' => 'post',
                     'posts_per_page' => 2,
                     'post_status' => 'publish',
-                    'post__not_in' => array( get_the_ID() ),
-                    'order' => 'DESC',
-                    
+                    'order' => 'desc',
+                    'category_name' => 'featured',                  
                 );
                 $posts = new WP_Query( $posts_args );
                 if($posts->have_posts() ) :
@@ -111,7 +117,18 @@ get_header(); ?>
         <div class="container-fluid">
             <div class="row">
                 <div class="qld__card-intro col-xs-12 qld__card-intro--no-top-p">
-                    <h2>Latest articles</h2>
+                    <?php 
+                    $latest_title = get_field('latest_posts_title', $posts_id);
+                    ?>
+                    <h2>
+                    <?php
+                    if(!empty($latest_title)){
+                        echo $latest_title;
+                    } else {
+                        echo 'Latest Posts';
+                    }
+                    ?>
+                    </h2>
                 </div>
             </div>
             <div class="row">
@@ -183,85 +200,29 @@ get_header(); ?>
                 <?php endif; ?>
             </div>
 
-            
-            <div class="row">
-                <!-- <div class="qld__card-list__footer centered col-xs-12"> -->
-                    <!-- <nav class="text-center hidden-print qld__search-pagination" aria-label="pagination">
-                        <h2 class="sr-only">Pagination</h2>
-                        <ul class="qld__search-pagination__list"> -->
-                                        <!-- Start the pagination functions after the loop. -->
-                <div class="nav-previous alignleft qld__search-pagination_link"><?php echo next_posts_link( 'Older posts' ); ?></div>
-                <div class="nav-next alignright qld__search-pagination_link"><?php  echo previous_posts_link( 'Newer posts' ); ?></div>
-                <!-- End the pagination functions after the loop. -->
-                                <!-- <li class="num active">
-                                    
-                                        <a class="qld__search-pagination_link" href="?&amp;start_rank&#x3D;1">1</a></li>
-
-                                </li>
-                            
-
-                                <li class="num">
-                                    
-                                        <a class="qld__search-pagination_link" href="?&amp;start_rank&#x3D;4">2</a></li>
-
-                                </li>
-                            
-
-                                <li class="num">
-                                    
-                                        <a class="qld__search-pagination_link" href="?&amp;start_rank&#x3D;7">3</a></li>
-
-                                </li>
-                            
-
-                                <li class="num">
-                                    
-                                        <a class="qld__search-pagination_link" href="?&amp;start_rank&#x3D;10">4</a></li>
-
-                                </li>
-                            
-
-                                <li class="num">
-                                    
-                                        <a class="qld__search-pagination_link" href="?&amp;start_rank&#x3D;13">5</a></li>
-
-                                </li>
-                            
-                                    <li class="ellipsis">
-                                        <span>
-                                            <i class="fa fa-ellipsis-h"></i>
-                                        </span>
-                                    </li>
-
-                                <li class="last">
-                                    
-                                        <a class="qld__search-pagination_link" href="?&amp;start_rank&#x3D;22">8</a></li>
-
-                                </li>
-                            
-
-                                <li class="next">
-                                    
-
-                                        <a class="qld__search-pagination_link" href="?&amp;start_rank&#x3D;4" rel="next" aria-label="Next page of results">
-                                            <span>Next</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true" focusable="false" width="16" height="16" role="img"><path fill="currentColor" d="M443.7 266.8l-165.9 176C274.5 446.3 269.1 448 265.5 448c-3.986 0-7.988-1.375-11.16-4.156c-6.773-5.938-7.275-16.06-1.118-22.59L393.9 272H16.59c-9.171 0-16.59-7.155-16.59-15.1S7.421 240 16.59 240h377.3l-140.7-149.3c-6.157-6.531-5.655-16.66 1.118-22.59c6.789-5.906 17.27-5.469 23.45 1.094l165.9 176C449.4 251.3 449.4 260.7 443.7 266.8z"/></svg>
-                                        </a>
-                                </li> -->
-                            
-                        </ul>
-                    </nav>
-                </div>
+            <?php
+            $link = get_field('all_posts_link', $posts_id);
+            if($link){ 
+                $link_url = $link['url'];
+                $link_title = $link['title'];
+                $link_target = $link['target'] ? $link['target'] : '_self';?>
+            <div class="qld__card-intro row">
+               <a href="<?php echo esc_url($link_url); ?>" class="all-links" target="<?php echo esc_attr( $link_target ); ?>">
+               <h3 class="qld__card__title qld__all_posts__link"><?php if(!empty($link_title)){
+                    echo esc_html($link_title);
+                } else {
+                    echo "View All Posts";
+                }  ?></h3></a>
             </div>
-                
+                <?php }  ?>
         </div>
     </section>
     <!-- subscription form -->
     <?php 
-$index_form = get_field('add_index_form_shortcode');
-$index_heading = get_field('blog_index_form_heading');
-$index_content = get_field('blog_index_form_content');
-$index_colour = get_field('blog_index_form_colour');
+$index_form = get_field('add_index_form_shortcode', $posts_id);
+$index_heading = get_field('blog_index_form_heading', $posts_id);
+$index_content = get_field('blog_index_form_content', $posts_id);
+$index_colour = get_field('blog_index_form_colour', $posts_id);
 
 // colour selector
 if (!empty($index_colour)) {

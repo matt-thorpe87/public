@@ -83,7 +83,7 @@
     </button>
     <nav aria-label="side navigation" id="nav-default" class="qld__side-nav__content qld__accordion--closed qld__accordion__body">
         <h2 class="qld__sidenav__title">
-            <a class="qld__sidenav__link" href="/">Design</a>
+            <a class="qld__sidenav__link" href=""><?php echo get_the_title( $post->post_parent); ?></a>
         </h2>
 
         <?php wp_nav_menu(array(

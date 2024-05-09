@@ -10,8 +10,8 @@
   }
   
   .qld__grid main>.qld__body>.container-fluid>.row {
-    margin-left:-1rem;
-    margin-right:-1rem;
+    margin-left:1rem;
+    margin-right:1rem;
   }
   
   .qld__callout--wrapper.qld__body {
@@ -50,6 +50,9 @@
   }
   .qld__card .qld__responsive-media-img--bg{
     outline:0px;
+  }
+  .qld__header__pre-header{
+    z-index:2;
   }
   @media screen and (max-width: 1024px) {
     .qld__header .qld__header__main.qld__header__main--dark, .qld__header__pre-header.qld__header__pre-header--dark-alt, .qld__main-nav.qld__main-nav--dark .qld__link-list, .qld__banner__content
@@ -159,7 +162,7 @@
     }
   
   }
-.qld__banner__content .slick-slide-title, .qld__banner__content--cta{
+.qld__banner__content .slick-slide-title, .qld__banner__content--cta, .qld__banner__content h1{
   padding-left: 1rem;
 }
 :root,
@@ -209,9 +212,9 @@
 .qld__header__header-brand-image{
   max-width: 170px;
 }
-.qld__header .qld__header__search{
+/* .qld__header .qld__header__search{
   z-index: 0;
-}
+} */
 .qld__main-nav--mega.qld__main-nav--dark li.dropdown button:hover{
   background: var(--QLD-color-dark-background) !important;
   border-color: var(--QLD-color-dark-alt-button__hover);
@@ -299,4 +302,16 @@
   text-decoration-color: var(--QLD-color-dark-hover-underline);
   border-color: var(--QLD-color-dark-button__hover);
   text-decoration-color: var(--QLD-color-dark-button__text);
+}
+.qld__all_posts__link{
+  padding-top:2rem;
+}
+.qld__pagination__row{
+  margin: auto;
+}
+.page-numbers{
+  padding-left:.5rem;
+}
+.qld__not__found__heading{
+  margin-bottom:2rem;
 }

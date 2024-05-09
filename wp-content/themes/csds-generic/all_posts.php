@@ -1,7 +1,7 @@
 <?php 
 
 /*
-Template name: Latest News
+Template name: All Posts
 */
 
 get_header(); ?>
@@ -16,19 +16,21 @@ get_header(); ?>
             </div>
             <div class="row">
             <?php 
-                $latest_args = array(
+                $all_args = array(
                     'post_type' => array(
                         'post',
                         'topics',
+                        'resources',
                     ),
+                    'paged' => $paged,
                     'post_status' => 'publish',
                     'order' => 'DESC',
                 );
-                $latest = new WP_Query( $latest_args );
-                if($latest->have_posts() ) :
+                $all = new WP_Query( $all_args );
+                if($all->have_posts() ) :
                 ?>
                 <ul class="qld__card-list qld__card-list--matchheight">
-                    <?php while ($latest->have_posts()): $latest->the_post(); 
+                    <?php while ($all->have_posts()): $all->the_post(); 
                         $image_id_latest = get_post_thumbnail_id();
                         $image_alt_latest = get_post_meta($image_id_latest, '_wp_attachment_image_alt', TRUE); 
                         ?>
@@ -78,21 +80,19 @@ get_header(); ?>
 
                 </ul>
                     <!-- pagination -->
-                <div class="row">
-                    <nav class="pagination">
+                <div class="qld__pagination__row">
+                    <nav class="pagination qld__all_posts__link">
                         <?php   
                         global $paged;
                         $big = 999999999; // need an unlikely integer
                         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                         echo paginate_links( array(
                             'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-                            'paged' => get_query_var('paged'),
+                            'paged' => $paged,
                             'format' => '?paged=%#%',
-                            'current' => max( 1, get_query_var('paged') ),
-                            'total' => $latest->max_num_pages
+                            'current' => max( 1, $paged ),
+                            'total' => $all->max_num_pages
                         ) ); 
-
-
                         wp_reset_query();
                         ?>
                     </nav>

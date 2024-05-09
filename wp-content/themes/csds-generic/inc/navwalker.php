@@ -16,7 +16,7 @@ class walker_top_right_menu extends Walker_Nav_menu{
 
 }
 
-
+// Mega Menu
 class walker_mega_nav extends Walker_Nav_menu{  
 
     private $curItem;

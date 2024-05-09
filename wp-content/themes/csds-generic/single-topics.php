@@ -36,7 +36,6 @@ $topics = New wp_query([
       </nav>
       <div class="container-fluid">
           <div class="qld__banner__wrapper">
-
               <div class="qld__banner__main row">
 
                   <!--@@ Hero image @@-->
@@ -46,15 +45,18 @@ $topics = New wp_query([
 
                     <div class="qld__banner__image ">
                         <?php 
-                        $pgBannerImg = get_field('page_banner_image');  
-                        $displayPgBannerImg = $pgBannerImg['sizes']['large'];
-                        $img_alt = $pgBannerImg['alt'];
-                        $img_title = $pgBannerImg['title'];
-                        ?>
-                        <div class="bannerImgWrapper">
-                            <img src="<?php echo $displayPgBannerImg ?>" alt="<?php echo esc_attr(get_the_title());?>" title="<?echo $img_title ?>">
-                        </div>
-                    </div>
+                        $pgBannerImg = get_field('page_banner_image');
+                        if(!empty($pgBannerImg)) {
+                            $displayPgBannerImg = $pgBannerImg['sizes']['large'];
+                            $img_alt = $pgBannerImg['alt'];
+                            $img_title = $pgBannerImg['title'];
+                            ?>
+                            <div class="bannerImgWrapper">
+                                <img src="<?php echo $displayPgBannerImg ?>" alt="<?php echo esc_attr(get_the_title());?>" title="<?echo $img_title ?>">
+                            </div>
+    <?php
+                        }  
+?>                    </div>
                   </div>
 
                   <div class="qld__banner__content col-xs-12 col-md-6 col-lg-7">
