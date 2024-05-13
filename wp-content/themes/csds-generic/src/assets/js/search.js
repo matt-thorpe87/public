@@ -1,15 +1,3 @@
-// function search (){
-//     var btn = document.querySelector(".qld__main-nav__toggle-search");
-//     var s = document.querySelector(".qld__header__search");
-
-//     // var i = document.querySelector(".qld__main-nav__toggle-search-icon");
-//     // var c = document.querySelector(".qld__main-nav__toggle-search-close-icon");
-//     s.style.display = "block";
-//     btn.classList.remove("qld__main-nav__toggle-search--open"),
-//     btn.classList.add("qld__main-nav__toggle-search--close"),
-//     btn.setAttribute('aria-expanded', true);
-//     document.querySelector(".qld__text-input").focus();
-// }
 
 function search (e, t) {
     !(function () {

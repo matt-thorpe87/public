@@ -1,0 +1,18 @@
+{
+	"component": {
+		"name": "service_contact-details",
+		"description": "",
+		"version": "1.0",
+		"status": "In Development"
+	},
+	"data": {
+		"field1": {
+			"type": "metadata_field_text",
+			"description": "A text field",
+			"friendly_name": "Field 1",
+			"value": "Example text",
+			"required": false,
+			"editable": true
+		}
+	}
+}

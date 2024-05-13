@@ -1,0 +1,2600 @@
+{
+	"component": {
+		"name": "sf_services_search_v2",
+		"description": "",
+		"version": "1.0",
+		"status": "In Development"
+	},
+	"data": {
+		"field1": {
+			"type": "metadata_field_text",
+			"description": "A text field",
+			"friendly_name": "Field 1",
+			"value": "Example text",
+			"required": false,
+			"editable": true
+		}
+	},
+	"facets": [
+		{
+			"name": "Categories",
+			"unselectAllUrl": "?f.Top+in+HHS%7CtopInHhs=hhs-1&query=%21padrenull&collection=qld-health-core-service-finder__meta",
+			"categories": [
+				{
+					"label": null,
+					"queryStringParamName": "f.Categories|categories",
+					"values": [
+						{
+							"data": "cat-1",
+							"label": "cat-1",
+							"count": 2,
+							"queryStringParam": "f.Categories%7Ccategories=cat-1",
+							"constraint": "categories",
+							"selected": false,
+							"queryStringParamName": "f.Categories|categories",
+							"queryStringParamValue": "cat-1",
+							"toggleUrl": "?f.Top+in+HHS%7CtopInHhs=hhs-1&query=%21padrenull&collection=qld-health-core-service-finder__meta&f.Categories%7Ccategories=cat-1"
+						},
+						{
+							"data": "cat-2",
+							"label": "cat-2",
+							"count": 1,
+							"queryStringParam": "f.Categories%7Ccategories=cat-2",
+							"constraint": "categories",
+							"selected": false,
+							"queryStringParamName": "f.Categories|categories",
+							"queryStringParamValue": "cat-2",
+							"toggleUrl": "?f.Top+in+HHS%7CtopInHhs=hhs-1&query=%21padrenull&collection=qld-health-core-service-finder__meta&f.Categories%7Ccategories=cat-2"
+						},
+						{
+							"data": "cat-3",
+							"label": "cat-3",
+							"count": 2,
+							"queryStringParam": "f.Categories%7Ccategories=cat-3",
+							"constraint": "categories",
+							"selected": false,
+							"queryStringParamName": "f.Categories|categories",
+							"queryStringParamValue": "cat-3",
+							"toggleUrl": "?f.Top+in+HHS%7CtopInHhs=hhs-1&query=%21padrenull&collection=qld-health-core-service-finder__meta&f.Categories%7Ccategories=cat-3"
+						},
+						{
+							"data": "cat-4",
+							"label": "cat-4",
+							"count": 3,
+							"queryStringParam": "f.Categories%7Ccategories=cat-4",
+							"constraint": "categories",
+							"selected": false,
+							"queryStringParamName": "f.Categories|categories",
+							"queryStringParamValue": "cat-4",
+							"toggleUrl": "?f.Top+in+HHS%7CtopInHhs=hhs-1&query=%21padrenull&collection=qld-health-core-service-finder__meta&f.Categories%7Ccategories=cat-4"
+						},
+						{
+							"data": "cat-5",
+							"label": "cat-5",
+							"count": 3,
+							"queryStringParam": "f.Categories%7Ccategories=cat-5",
+							"constraint": "categories",
+							"selected": false,
+							"queryStringParamName": "f.Categories|categories",
+							"queryStringParamValue": "cat-5",
+							"toggleUrl": "?f.Top+in+HHS%7CtopInHhs=hhs-1&query=%21padrenull&collection=qld-health-core-service-finder__meta&f.Categories%7Ccategories=cat-5"
+						}
+					],
+					"categories": []
+				}
+			],
+			"customData": {},
+			"selectionType": "MULTIPLE",
+			"constraintJoin": "OR",
+			"order": [
+				"CATEGORY_DEFINITION_ORDER",
+				"LABEL_ASCENDING"
+			],
+			"facetValues": "FROM_UNSCOPED_ALL_QUERY",
+			"guessedDisplayType": "CHECKBOX",
+			"allValues": [
+				{
+					"data": "cat-1",
+					"label": "cat-1",
+					"count": 2,
+					"queryStringParam": "f.Categories%7Ccategories=cat-1",
+					"constraint": "categories",
+					"selected": false,
+					"queryStringParamName": "f.Categories|categories",
+					"queryStringParamValue": "cat-1",
+					"toggleUrl": "?f.Top+in+HHS%7CtopInHhs=hhs-1&query=%21padrenull&collection=qld-health-core-service-finder__meta&f.Categories%7Ccategories=cat-1"
+				},
+				{
+					"data": "cat-2",
+					"label": "cat-2",
+					"count": 1,
+					"queryStringParam": "f.Categories%7Ccategories=cat-2",
+					"constraint": "categories",
+					"selected": false,
+					"queryStringParamName": "f.Categories|categories",
+					"queryStringParamValue": "cat-2",
+					"toggleUrl": "?f.Top+in+HHS%7CtopInHhs=hhs-1&query=%21padrenull&collection=qld-health-core-service-finder__meta&f.Categories%7Ccategories=cat-2"
+				},
+				{
+					"data": "cat-3",
+					"label": "cat-3",
+					"count": 2,
+					"queryStringParam": "f.Categories%7Ccategories=cat-3",
+					"constraint": "categories",
+					"selected": false,
+					"queryStringParamName": "f.Categories|categories",
+					"queryStringParamValue": "cat-3",
+					"toggleUrl": "?f.Top+in+HHS%7CtopInHhs=hhs-1&query=%21padrenull&collection=qld-health-core-service-finder__meta&f.Categories%7Ccategories=cat-3"
+				},
+				{
+					"data": "cat-4",
+					"label": "cat-4",
+					"count": 3,
+					"queryStringParam": "f.Categories%7Ccategories=cat-4",
+					"constraint": "categories",
+					"selected": false,
+					"queryStringParamName": "f.Categories|categories",
+					"queryStringParamValue": "cat-4",
+					"toggleUrl": "?f.Top+in+HHS%7CtopInHhs=hhs-1&query=%21padrenull&collection=qld-health-core-service-finder__meta&f.Categories%7Ccategories=cat-4"
+				},
+				{
+					"data": "cat-5",
+					"label": "cat-5",
+					"count": 3,
+					"queryStringParam": "f.Categories%7Ccategories=cat-5",
+					"constraint": "categories",
+					"selected": false,
+					"queryStringParamName": "f.Categories|categories",
+					"queryStringParamValue": "cat-5",
+					"toggleUrl": "?f.Top+in+HHS%7CtopInHhs=hhs-1&query=%21padrenull&collection=qld-health-core-service-finder__meta&f.Categories%7Ccategories=cat-5"
+				}
+			],
+			"selectedValues": [],
+			"selected": false
+		},
+		{
+			"name": "Top in HHS",
+			"unselectAllUrl": "?query=%21padrenull&collection=qld-health-core-service-finder__meta",
+			"categories": [
+				{
+					"label": null,
+					"queryStringParamName": "f.Top in HHS|topInHhs",
+					"values": [
+						{
+							"data": "hhs-1",
+							"label": "hhs-1",
+							"count": 3,
+							"queryStringParam": "f.Top+in+HHS%7CtopInHhs=hhs-1",
+							"constraint": "topInHhs",
+							"selected": true,
+							"queryStringParamName": "f.Top in HHS|topInHhs",
+							"queryStringParamValue": "hhs-1",
+							"toggleUrl": "?query=%21padrenull&collection=qld-health-core-service-finder__meta"
+						},
+						{
+							"data": "hhs-2",
+							"label": "hhs-2",
+							"count": 5,
+							"queryStringParam": "f.Top+in+HHS%7CtopInHhs=hhs-2",
+							"constraint": "topInHhs",
+							"selected": false,
+							"queryStringParamName": "f.Top in HHS|topInHhs",
+							"queryStringParamValue": "hhs-2",
+							"toggleUrl": "?f.Top+in+HHS%7CtopInHhs=hhs-1&f.Top+in+HHS%7CtopInHhs=hhs-2&query=%21padrenull&collection=qld-health-core-service-finder__meta"
+						},
+						{
+							"data": "hhs-3",
+							"label": "hhs-3",
+							"count": 4,
+							"queryStringParam": "f.Top+in+HHS%7CtopInHhs=hhs-3",
+							"constraint": "topInHhs",
+							"selected": false,
+							"queryStringParamName": "f.Top in HHS|topInHhs",
+							"queryStringParamValue": "hhs-3",
+							"toggleUrl": "?f.Top+in+HHS%7CtopInHhs=hhs-1&f.Top+in+HHS%7CtopInHhs=hhs-3&query=%21padrenull&collection=qld-health-core-service-finder__meta"
+						}
+					],
+					"categories": []
+				}
+			],
+			"customData": {},
+			"selectionType": "MULTIPLE",
+			"constraintJoin": "OR",
+			"order": [
+				"CATEGORY_DEFINITION_ORDER",
+				"LABEL_ASCENDING"
+			],
+			"facetValues": "FROM_UNSCOPED_QUERY",
+			"guessedDisplayType": "CHECKBOX",
+			"allValues": [
+				{
+					"data": "hhs-1",
+					"label": "hhs-1",
+					"count": 3,
+					"queryStringParam": "f.Top+in+HHS%7CtopInHhs=hhs-1",
+					"constraint": "topInHhs",
+					"selected": true,
+					"queryStringParamName": "f.Top in HHS|topInHhs",
+					"queryStringParamValue": "hhs-1",
+					"toggleUrl": "?query=%21padrenull&collection=qld-health-core-service-finder__meta"
+				},
+				{
+					"data": "hhs-2",
+					"label": "hhs-2",
+					"count": 5,
+					"queryStringParam": "f.Top+in+HHS%7CtopInHhs=hhs-2",
+					"constraint": "topInHhs",
+					"selected": false,
+					"queryStringParamName": "f.Top in HHS|topInHhs",
+					"queryStringParamValue": "hhs-2",
+					"toggleUrl": "?f.Top+in+HHS%7CtopInHhs=hhs-1&f.Top+in+HHS%7CtopInHhs=hhs-2&query=%21padrenull&collection=qld-health-core-service-finder__meta"
+				},
+				{
+					"data": "hhs-3",
+					"label": "hhs-3",
+					"count": 4,
+					"queryStringParam": "f.Top+in+HHS%7CtopInHhs=hhs-3",
+					"constraint": "topInHhs",
+					"selected": false,
+					"queryStringParamName": "f.Top in HHS|topInHhs",
+					"queryStringParamValue": "hhs-3",
+					"toggleUrl": "?f.Top+in+HHS%7CtopInHhs=hhs-1&f.Top+in+HHS%7CtopInHhs=hhs-3&query=%21padrenull&collection=qld-health-core-service-finder__meta"
+				}
+			],
+			"selectedValues": [
+				{
+					"data": "hhs-1",
+					"label": "hhs-1",
+					"count": 3,
+					"queryStringParam": "f.Top+in+HHS%7CtopInHhs=hhs-1",
+					"constraint": "topInHhs",
+					"selected": true,
+					"queryStringParamName": "f.Top in HHS|topInHhs",
+					"queryStringParamValue": "hhs-1",
+					"toggleUrl": "?query=%21padrenull&collection=qld-health-core-service-finder__meta"
+				}
+			],
+			"selected": true
+		}
+	],
+	"resultPacket": {
+        "details": {
+            "padreVersion": "FUNNELBACK_PADRE_15.22.0.2 MDPLFS (Web/Ent) [64 bit]",
+            "collectionSize": "/opt/funnelback/data/qld-health-core-service-finder__meta/live/idx/index: 0.1 MB, 105 docs",
+            "collectionUpdated": 1642477528000
+        },
+        "query": "!padrenull",
+        "queryAsProcessed": "!padrenull",
+        "queryRaw": "!padrenull",
+        "querySystemRaw": null,
+        "queryCleaned": "!padrenull",
+        "collection": "qld-health-core-service-finder__meta",
+        "resultsSummary": {
+            "fullyMatching": 105,
+            "collapsed": 0,
+            "partiallyMatching": 0,
+            "totalMatching": 105,
+            "estimatedCounts": false,
+            "carriedOverFtd": null,
+            "totalDistinctMatchingUrls": null,
+            "numRanks": 10,
+            "currStart": 1,
+            "currEnd": 10,
+            "prevStart": null,
+            "nextStart": 11,
+            "totalSecurityObscuredUrls": null,
+            "anyUrlsPromoted": false,
+            "resultDiversificationApplied": true
+        },
+        "spell": null,
+        "bestBets": [],
+        "results": [
+            {
+                "rank": 1,
+                "score": 1000,
+                "title": "Orthopaedics - Toowoomba Hospital",
+                "collection": "qld-health-core-service-finder__service-locations",
+                "component": 1,
+                "collapsed": null,
+                "liveUrl": "http://e37a77e9-39f2-4095-aa84-c76165df8eb4",
+                "summary": "An orthopaedic doctor will help you if you need treatment or surgery on your bones, joints or tendons. ",
+                "allSummaryText": null,
+                "cacheUrl": "/s/cache?collection=qld-health-core-service-finder__service-locations&url=http%3A%2F%2Fe37a77e9-39f2-4095-aa84-c76165df8eb4&profile=_default",
+                "date": null,
+                "fileSize": 39162,
+                "fileType": "xml",
+                "tier": 1,
+                "docNum": 0,
+                "exploreLink": null,
+                "kmFromOrigin": null,
+                "listMetadata": {
+                    "webpath": [
+                        "orthopaedics-toowoomba-hospital"
+                    ],
+                    "c": [
+                        "<p>An orthopaedic doctor will help you if you need treatment or surgery on your bones, joints or tendons.&nbsp;</p>",
+                        "<h2>Our services&nbsp;</h2> <p>An orthopaedic doctor will be able to treat: &nbsp;</p> <ul> <li>injuries, like broken, fractured or"
+                    ],
+                    "facilityId": [
+                        "9588b5b1-85f3-47f4-8311-80a17572b4d8"
+                    ],
+                    "physicalAddressStreet": [
+                        "Pechey Street"
+                    ],
+                    "latitude": [
+                        "-27.566668"
+                    ],
+                    "FunResponseTimeBand": [
+                        "1000-2000"
+                    ],
+                    "physicalAddressSuburb": [
+                        "Toowoomba"
+                    ],
+                    "FunResponseTime": [
+                        "1286"
+                    ],
+                    "t": [
+                        "Orthopaedics - Toowoomba Hospital"
+                    ],
+                    "fbid": [
+                        "e37a77e9-39f2-4095-aa84-c76165df8eb4"
+                    ],
+                    "physicalAddressPostcode": [
+                        "4350"
+                    ],
+                    "servicewebpath": [
+                        "orthopaedics/orthopaedics-toowoomba-hospital"
+                    ],
+                    "serviceId": [
+                        "90686ab7-e4ec-4812-9d06-a519887f151f"
+                    ],
+                    "longitude": [
+                        "151.949997"
+                    ],
+                    "status": [
+                        "active"
+                    ]
+                },
+                "metaData": {
+                    "fbid": "e37a77e9-39f2-4095-aa84-c76165df8eb4",
+                    "facilityId": "9588b5b1-85f3-47f4-8311-80a17572b4d8",
+                    "servicewebpath": "orthopaedics/orthopaedics-toowoomba-hospital",
+                    "longitude": "151.949997",
+                    "t": "Orthopaedics - Toowoomba Hospital",
+                    "physicalAddressSuburb": "Toowoomba",
+                    "physicalAddressStreet": "Pechey Street",
+                    "FunResponseTimeBand": "1000-2000",
+                    "latitude": "-27.566668",
+                    "serviceId": "90686ab7-e4ec-4812-9d06-a519887f151f",
+                    "webpath": "orthopaedics-toowoomba-hospital",
+                    "status": "active",
+                    "FunResponseTime": "1286",
+                    "c": "<p>An orthopaedic doctor will help you if you need treatment or surgery on your bones, joints or tendons.&nbsp;</p>|<h2>Our services&nbsp;</h2> <p>An orthopaedic doctor will be able to treat: &nbsp;</p> <ul> <li>injuries, like broken, fractured or",
+                    "physicalAddressPostcode": "4350"
+                },
+                "tags": [],
+                "quickLinks": null,
+                "displayUrl": "http://e37a77e9-39f2-4095-aa84-c76165df8eb4",
+                "clickTrackingUrl": "/s/redirect?collection=qld-health-core-service-finder__meta&url=http%3A%2F%2Fe37a77e9-39f2-4095-aa84-c76165df8eb4&auth=En6zN1IFJX1ufN505o%2BPYA&profile=_default&rank=1&query=%21padrenull",
+                "explain": null,
+                "indexUrl": "http://e37a77e9-39f2-4095-aa84-c76165df8eb4",
+                "gscopesSet": [],
+                "customData": {},
+                "relatedDocuments": {},
+                "documentVisibleToUser": true,
+                "promoted": false,
+                "diversified": false
+            },
+            {
+                "rank": 2,
+                "score": 1000,
+                "title": "Stomal therapy - Toowoomba Hospital",
+                "collection": "qld-health-core-service-finder__service-locations",
+                "component": 1,
+                "collapsed": null,
+                "liveUrl": "http://9789ff62-a67d-42e1-95ba-c3106314196f",
+                "summary": "Stomal therapy services help you adjust to living with a temporary or permanent stoma.",
+                "allSummaryText": null,
+                "cacheUrl": "/s/cache?collection=qld-health-core-service-finder__service-locations&url=http%3A%2F%2F9789ff62-a67d-42e1-95ba-c3106314196f&profile=_default",
+                "date": null,
+                "fileSize": 0,
+                "fileType": "txt",
+                "tier": 1,
+                "docNum": 1,
+                "exploreLink": null,
+                "kmFromOrigin": null,
+                "listMetadata": {
+                    "webpath": [
+                        "stomal-therapy-toowoomba-hospital"
+                    ],
+                    "c": [
+                        "<p>Stomal therapy services help you adjust to living with a temporary or permanent stoma.</p>",
+                        "<h2>Our services&nbsp;</h2> <p>A stoma is a surgically created opening on the tummy (abdominal) wall that allows faeces and urine to leave the body.</p>"
+                    ],
+                    "facilityId": [
+                        "9588b5b1-85f3-47f4-8311-80a17572b4d8"
+                    ],
+                    "physicalAddressStreet": [
+                        "Pechey Street"
+                    ],
+                    "latitude": [
+                        "-27.566668"
+                    ],
+                    "physicalAddressSuburb": [
+                        "Toowoomba"
+                    ],
+                    "building": [
+                        "Level 5 Medical Block, Toowoomba Hospital"
+                    ],
+                    "emailAddress": [
+                        "<p>test@test.com</p>"
+                    ],
+                    "phoneNumber": [
+                        "<p>0436 923 976</p>"
+                    ],
+                    "t": [
+                        "Stomal therapy - Toowoomba Hospital"
+                    ],
+                    "fbid": [
+                        "9789ff62-a67d-42e1-95ba-c3106314196f"
+                    ],
+                    "physicalAddressPostcode": [
+                        "4350"
+                    ],
+                    "faxNumber": [
+                        "<p>07 3111 1111 (test)</p>"
+                    ],
+                    "openingHours": [
+                        "<p>Monday to Friday 7.30am till 3.00pm</p>"
+                    ],
+                    "servicewebpath": [
+                        "stomal-therapy/stomal-therapy-toowoomba-hospital"
+                    ],
+                    "facilityLevel": [
+                        "major"
+                    ],
+                    "serviceId": [
+                        "b6707175-54d8-4622-9792-06833ea76405"
+                    ],
+                    "longitude": [
+                        "151.949997"
+                    ],
+                    "status": [
+                        "active"
+                    ]
+                },
+                "metaData": {
+                    "c": "<p>Stomal therapy services help you adjust to living with a temporary or permanent stoma.</p>|<h2>Our services&nbsp;</h2> <p>A stoma is a surgically created opening on the tummy (abdominal) wall that allows faeces and urine to leave the body.</p>",
+                    "phoneNumber": "<p>0436 923 976</p>",
+                    "openingHours": "<p>Monday to Friday 7.30am till 3.00pm</p>",
+                    "servicewebpath": "stomal-therapy/stomal-therapy-toowoomba-hospital",
+                    "facilityId": "9588b5b1-85f3-47f4-8311-80a17572b4d8",
+                    "fbid": "9789ff62-a67d-42e1-95ba-c3106314196f",
+                    "longitude": "151.949997",
+                    "webpath": "stomal-therapy-toowoomba-hospital",
+                    "physicalAddressSuburb": "Toowoomba",
+                    "physicalAddressStreet": "Pechey Street",
+                    "faxNumber": "<p>07 3111 1111 (test)</p>",
+                    "facilityLevel": "major",
+                    "latitude": "-27.566668",
+                    "serviceId": "b6707175-54d8-4622-9792-06833ea76405",
+                    "building": "Level 5 Medical Block, Toowoomba Hospital",
+                    "status": "active",
+                    "t": "Stomal therapy - Toowoomba Hospital",
+                    "physicalAddressPostcode": "4350",
+                    "emailAddress": "<p>test@test.com</p>"
+                },
+                "tags": [],
+                "quickLinks": null,
+                "displayUrl": "http://9789ff62-a67d-42e1-95ba-c3106314196f",
+                "clickTrackingUrl": "/s/redirect?collection=qld-health-core-service-finder__meta&url=http%3A%2F%2F9789ff62-a67d-42e1-95ba-c3106314196f&auth=cIehe7VmDrUP1BYgu56F5Q&profile=_default&rank=2&query=%21padrenull",
+                "explain": null,
+                "indexUrl": "http://9789ff62-a67d-42e1-95ba-c3106314196f",
+                "gscopesSet": [],
+                "customData": {},
+                "relatedDocuments": {},
+                "documentVisibleToUser": true,
+                "promoted": false,
+                "diversified": false
+            },
+            {
+                "rank": 3,
+                "score": 1000,
+                "title": "Psychology - Toowoomba Hospital",
+                "collection": "qld-health-core-service-finder__service-locations",
+                "component": 1,
+                "collapsed": null,
+                "liveUrl": "http://8c5d21c1-841d-46cc-b9c0-02cef979acb4",
+                "summary": "A psychologist assists people who develop emotional, behavioural and/or thinking problems and helps with psychological wellbeing and adjustment to illness. ",
+                "allSummaryText": null,
+                "cacheUrl": "/s/cache?collection=qld-health-core-service-finder__service-locations&url=http%3A%2F%2F8c5d21c1-841d-46cc-b9c0-02cef979acb4&profile=_default",
+                "date": null,
+                "fileSize": 0,
+                "fileType": "txt",
+                "tier": 1,
+                "docNum": 2,
+                "exploreLink": null,
+                "kmFromOrigin": null,
+                "listMetadata": {
+                    "webpath": [
+                        "psychology-toowoomba-hospital"
+                    ],
+                    "c": [
+                        "<p>A psychologist assists people who develop emotional, behavioural and/or thinking problems and helps with psychological wellbeing and adjustment to illness.&nbsp;</p>",
+                        "<h2>Our services</h2> <p>Psychology can help with:</p> <ul> <li>your mood, for"
+                    ],
+                    "facilityId": [
+                        "9588b5b1-85f3-47f4-8311-80a17572b4d8"
+                    ],
+                    "physicalAddressStreet": [
+                        "Pechey Street"
+                    ],
+                    "latitude": [
+                        "-27.566668"
+                    ],
+                    "rsdServiceId": [
+                        "109546"
+                    ],
+                    "physicalAddressSuburb": [
+                        "Toowoomba"
+                    ],
+                    "building": [
+                        "Level 2 Services Block, Toowoomba Hospital,"
+                    ],
+                    "phoneNumber": [
+                        "<p>+61 7 4616 6692</p>"
+                    ],
+                    "t": [
+                        "Psychology - Toowoomba Hospital"
+                    ],
+                    "fbid": [
+                        "8c5d21c1-841d-46cc-b9c0-02cef979acb4"
+                    ],
+                    "physicalAddressPostcode": [
+                        "4350"
+                    ],
+                    "servicewebpath": [
+                        "psychology/psychology-toowoomba-hospital"
+                    ],
+                    "serviceId": [
+                        "2dae8a7a-d61e-4d5a-ac09-d884acb49ad1"
+                    ],
+                    "longitude": [
+                        "151.949997"
+                    ],
+                    "status": [
+                        "active"
+                    ]
+                },
+                "metaData": {
+                    "facilityId": "9588b5b1-85f3-47f4-8311-80a17572b4d8",
+                    "building": "Level 2 Services Block, Toowoomba Hospital,",
+                    "longitude": "151.949997",
+                    "rsdServiceId": "109546",
+                    "servicewebpath": "psychology/psychology-toowoomba-hospital",
+                    "physicalAddressSuburb": "Toowoomba",
+                    "physicalAddressStreet": "Pechey Street",
+                    "webpath": "psychology-toowoomba-hospital",
+                    "latitude": "-27.566668",
+                    "fbid": "8c5d21c1-841d-46cc-b9c0-02cef979acb4",
+                    "serviceId": "2dae8a7a-d61e-4d5a-ac09-d884acb49ad1",
+                    "status": "active",
+                    "t": "Psychology - Toowoomba Hospital",
+                    "physicalAddressPostcode": "4350",
+                    "phoneNumber": "<p>+61 7 4616 6692</p>",
+                    "c": "<p>A psychologist assists people who develop emotional, behavioural and/or thinking problems and helps with psychological wellbeing and adjustment to illness.&nbsp;</p>|<h2>Our services</h2> <p>Psychology can help with:</p> <ul> <li>your mood, for"
+                },
+                "tags": [],
+                "quickLinks": null,
+                "displayUrl": "http://8c5d21c1-841d-46cc-b9c0-02cef979acb4",
+                "clickTrackingUrl": "/s/redirect?collection=qld-health-core-service-finder__meta&url=http%3A%2F%2F8c5d21c1-841d-46cc-b9c0-02cef979acb4&auth=putwCYlZyhAliAHDV4szWw&profile=_default&rank=3&query=%21padrenull",
+                "explain": null,
+                "indexUrl": "http://8c5d21c1-841d-46cc-b9c0-02cef979acb4",
+                "gscopesSet": [],
+                "customData": {},
+                "relatedDocuments": {},
+                "documentVisibleToUser": true,
+                "promoted": false,
+                "diversified": false
+            },
+            {
+                "rank": 4,
+                "score": 1000,
+                "title": "Physiotherapy - Toowoomba Hospital",
+                "collection": "qld-health-core-service-finder__service-locations",
+                "component": 1,
+                "collapsed": null,
+                "liveUrl": "http://51e2e843-a569-4910-8801-35569a439f81",
+                "summary": "Physiotherapy uses movement and exercise to help you recover from injury, illness or surgery, increase mobility and strength, reduce pain and prevent further injury.",
+                "allSummaryText": null,
+                "cacheUrl": "/s/cache?collection=qld-health-core-service-finder__service-locations&url=http%3A%2F%2F51e2e843-a569-4910-8801-35569a439f81&profile=_default",
+                "date": null,
+                "fileSize": 0,
+                "fileType": "txt",
+                "tier": 1,
+                "docNum": 3,
+                "exploreLink": null,
+                "kmFromOrigin": null,
+                "listMetadata": {
+                    "webpath": [
+                        "physiotherapy-toowoomba-hospital"
+                    ],
+                    "c": [
+                        "<p>Physiotherapy uses movement and exercise to help you recover from injury, illness or surgery, increase mobility and strength, reduce pain and prevent further injury.</p>",
+                        "<h2>Our services</h2> <p>Physiotherapy treatment includes:</p> <ul>"
+                    ],
+                    "facilityId": [
+                        "9588b5b1-85f3-47f4-8311-80a17572b4d8"
+                    ],
+                    "physicalAddressStreet": [
+                        "Pechey Street"
+                    ],
+                    "latitude": [
+                        "-27.566668"
+                    ],
+                    "rsdServiceId": [
+                        "109542"
+                    ],
+                    "physicalAddressSuburb": [
+                        "Toowoomba"
+                    ],
+                    "building": [
+                        "Toowoomba Hospital"
+                    ],
+                    "t": [
+                        "Physiotherapy - Toowoomba Hospital"
+                    ],
+                    "fbid": [
+                        "51e2e843-a569-4910-8801-35569a439f81"
+                    ],
+                    "physicalAddressPostcode": [
+                        "4350"
+                    ],
+                    "servicewebpath": [
+                        "physiotherapy/physiotherapy-toowoomba-hospital"
+                    ],
+                    "serviceId": [
+                        "5f496b71-6d27-4999-b36b-8ab0c05a0921"
+                    ],
+                    "longitude": [
+                        "151.949997"
+                    ],
+                    "status": [
+                        "active"
+                    ]
+                },
+                "metaData": {
+                    "facilityId": "9588b5b1-85f3-47f4-8311-80a17572b4d8",
+                    "longitude": "151.949997",
+                    "fbid": "51e2e843-a569-4910-8801-35569a439f81",
+                    "webpath": "physiotherapy-toowoomba-hospital",
+                    "physicalAddressSuburb": "Toowoomba",
+                    "physicalAddressStreet": "Pechey Street",
+                    "rsdServiceId": "109542",
+                    "building": "Toowoomba Hospital",
+                    "latitude": "-27.566668",
+                    "servicewebpath": "physiotherapy/physiotherapy-toowoomba-hospital",
+                    "status": "active",
+                    "c": "<p>Physiotherapy uses movement and exercise to help you recover from injury, illness or surgery, increase mobility and strength, reduce pain and prevent further injury.</p>|<h2>Our services</h2> <p>Physiotherapy treatment includes:</p> <ul>",
+                    "physicalAddressPostcode": "4350",
+                    "serviceId": "5f496b71-6d27-4999-b36b-8ab0c05a0921",
+                    "t": "Physiotherapy - Toowoomba Hospital"
+                },
+                "tags": [],
+                "quickLinks": null,
+                "displayUrl": "http://51e2e843-a569-4910-8801-35569a439f81",
+                "clickTrackingUrl": "/s/redirect?collection=qld-health-core-service-finder__meta&url=http%3A%2F%2F51e2e843-a569-4910-8801-35569a439f81&auth=ixfChGW1%2B7UmgxotgeQalw&profile=_default&rank=4&query=%21padrenull",
+                "explain": null,
+                "indexUrl": "http://51e2e843-a569-4910-8801-35569a439f81",
+                "gscopesSet": [],
+                "customData": {},
+                "relatedDocuments": {},
+                "documentVisibleToUser": true,
+                "promoted": false,
+                "diversified": false
+            },
+            {
+                "rank": 5,
+                "score": 1000,
+                "title": "Occupational therapy - Toowoomba Hospital",
+                "collection": "qld-health-core-service-finder__service-locations",
+                "component": 1,
+                "collapsed": null,
+                "liveUrl": "http://1b0b3b39-61a6-4845-add5-8aef7fb63467",
+                "summary": "Occupational therapists or OTs help people get back to everyday life after an injury or illness.",
+                "allSummaryText": null,
+                "cacheUrl": "/s/cache?collection=qld-health-core-service-finder__service-locations&url=http%3A%2F%2F1b0b3b39-61a6-4845-add5-8aef7fb63467&profile=_default",
+                "date": null,
+                "fileSize": 0,
+                "fileType": "txt",
+                "tier": 1,
+                "docNum": 4,
+                "exploreLink": null,
+                "kmFromOrigin": null,
+                "listMetadata": {
+                    "webpath": [
+                        "occupational-therapy-toowoomba-hospital"
+                    ],
+                    "c": [
+                        "<p>Occupational therapists or OTs help people get back to everyday life after an injury or illness.</p>",
+                        "<h2>Our services</h2> <p>An occupational therapist can help by:</p> <ul> <li>changing the way people do their usual activities</li>"
+                    ],
+                    "facilityId": [
+                        "9588b5b1-85f3-47f4-8311-80a17572b4d8"
+                    ],
+                    "physicalAddressStreet": [
+                        "Pechey St"
+                    ],
+                    "latitude": [
+                        "-27.566668"
+                    ],
+                    "rsdServiceId": [
+                        "109538"
+                    ],
+                    "physicalAddressSuburb": [
+                        "Toowoomba"
+                    ],
+                    "t": [
+                        "Occupational therapy - Toowoomba Hospital"
+                    ],
+                    "fbid": [
+                        "1b0b3b39-61a6-4845-add5-8aef7fb63467"
+                    ],
+                    "physicalAddressPostcode": [
+                        "4350"
+                    ],
+                    "servicewebpath": [
+                        "occupational-therapy/occupational-therapy-toowoomba-hospital"
+                    ],
+                    "facilityLevel": [
+                        "major"
+                    ],
+                    "serviceId": [
+                        "cf1461a5-9f61-4dd6-a1ec-39d13fd63f66"
+                    ],
+                    "longitude": [
+                        "151.949997"
+                    ],
+                    "status": [
+                        "active"
+                    ]
+                },
+                "metaData": {
+                    "facilityId": "9588b5b1-85f3-47f4-8311-80a17572b4d8",
+                    "longitude": "151.949997",
+                    "physicalAddressSuburb": "Toowoomba",
+                    "c": "<p>Occupational therapists or OTs help people get back to everyday life after an injury or illness.</p>|<h2>Our services</h2> <p>An occupational therapist can help by:</p> <ul> <li>changing the way people do their usual activities</li>",
+                    "facilityLevel": "major",
+                    "webpath": "occupational-therapy-toowoomba-hospital",
+                    "latitude": "-27.566668",
+                    "serviceId": "cf1461a5-9f61-4dd6-a1ec-39d13fd63f66",
+                    "t": "Occupational therapy - Toowoomba Hospital",
+                    "fbid": "1b0b3b39-61a6-4845-add5-8aef7fb63467",
+                    "rsdServiceId": "109538",
+                    "status": "active",
+                    "physicalAddressStreet": "Pechey St",
+                    "physicalAddressPostcode": "4350",
+                    "servicewebpath": "occupational-therapy/occupational-therapy-toowoomba-hospital"
+                },
+                "tags": [],
+                "quickLinks": null,
+                "displayUrl": "http://1b0b3b39-61a6-4845-add5-8aef7fb63467",
+                "clickTrackingUrl": "/s/redirect?collection=qld-health-core-service-finder__meta&url=http%3A%2F%2F1b0b3b39-61a6-4845-add5-8aef7fb63467&auth=v0KKr7kTWiIFy4wIrmt%2BlA&profile=_default&rank=5&query=%21padrenull",
+                "explain": null,
+                "indexUrl": "http://1b0b3b39-61a6-4845-add5-8aef7fb63467",
+                "gscopesSet": [],
+                "customData": {},
+                "relatedDocuments": {},
+                "documentVisibleToUser": true,
+                "promoted": false,
+                "diversified": false
+            },
+            {
+                "rank": 6,
+                "score": 1000,
+                "title": "Older people's mental health - Toowoomba Hospital",
+                "collection": "qld-health-core-service-finder__service-locations",
+                "component": 1,
+                "collapsed": null,
+                "liveUrl": "http://e25cc1df-c889-4de4-af7a-97f31d4b7866",
+                "summary": "Free, confidential, and respectful mental health for people over 65.",
+                "allSummaryText": null,
+                "cacheUrl": "/s/cache?collection=qld-health-core-service-finder__service-locations&url=http%3A%2F%2Fe25cc1df-c889-4de4-af7a-97f31d4b7866&profile=_default",
+                "date": null,
+                "fileSize": 0,
+                "fileType": "txt",
+                "tier": 1,
+                "docNum": 5,
+                "exploreLink": null,
+                "kmFromOrigin": null,
+                "listMetadata": {
+                    "webpath": [
+                        "older-peoples-mental-health-toowoomba-hospital"
+                    ],
+                    "c": [
+                        "<p>Free, confidential, and respectful mental health for people over 65.</p>",
+                        "<h2>Our services</h2> <p>We offer a free and confidential mental health care service for people who are:</p> <ul> <li>aged 65 and over</li> <li>experiencing age-related"
+                    ],
+                    "facilityId": [
+                        "9588b5b1-85f3-47f4-8311-80a17572b4d8"
+                    ],
+                    "physicalAddressStreet": [
+                        "Pechey St"
+                    ],
+                    "latitude": [
+                        "-27.570299"
+                    ],
+                    "physicalAddressSuburb": [
+                        "Toowoomba"
+                    ],
+                    "building": [
+                        "Unara Health Village"
+                    ],
+                    "phoneNumber": [
+                        "<p>07 4616 6843</p>"
+                    ],
+                    "t": [
+                        "Older people's mental health - Toowoomba Hospital"
+                    ],
+                    "fbid": [
+                        "e25cc1df-c889-4de4-af7a-97f31d4b7866"
+                    ],
+                    "physicalAddressPostcode": [
+                        "4350"
+                    ],
+                    "faxNumber": [
+                        "<p>07 4616 5399</p>"
+                    ],
+                    "openingHours": [
+                        "<p>Monday to Friday, 8:00 am to 4:00 pm</p>"
+                    ],
+                    "servicewebpath": [
+                        "older-peoples-mental-health/older-peoples-mental-health-toowoomba-hospital"
+                    ],
+                    "facilityLevel": [
+                        "major"
+                    ],
+                    "serviceId": [
+                        "a158a01f-1320-4bc5-b4d6-1817fe265440"
+                    ],
+                    "longitude": [
+                        "151.946075"
+                    ],
+                    "status": [
+                        "active"
+                    ]
+                },
+                "metaData": {
+                    "facilityId": "9588b5b1-85f3-47f4-8311-80a17572b4d8",
+                    "t": "Older people's mental health - Toowoomba Hospital",
+                    "serviceId": "a158a01f-1320-4bc5-b4d6-1817fe265440",
+                    "longitude": "151.946075",
+                    "webpath": "older-peoples-mental-health-toowoomba-hospital",
+                    "physicalAddressSuburb": "Toowoomba",
+                    "servicewebpath": "older-peoples-mental-health/older-peoples-mental-health-toowoomba-hospital",
+                    "building": "Unara Health Village",
+                    "facilityLevel": "major",
+                    "fbid": "e25cc1df-c889-4de4-af7a-97f31d4b7866",
+                    "latitude": "-27.570299",
+                    "faxNumber": "<p>07 4616 5399</p>",
+                    "status": "active",
+                    "physicalAddressStreet": "Pechey St",
+                    "c": "<p>Free, confidential, and respectful mental health for people over 65.</p>|<h2>Our services</h2> <p>We offer a free and confidential mental health care service for people who are:</p> <ul> <li>aged 65 and over</li> <li>experiencing age-related",
+                    "phoneNumber": "<p>07 4616 6843</p>",
+                    "physicalAddressPostcode": "4350",
+                    "openingHours": "<p>Monday to Friday, 8:00 am to 4:00 pm</p>"
+                },
+                "tags": [],
+                "quickLinks": null,
+                "displayUrl": "http://e25cc1df-c889-4de4-af7a-97f31d4b7866",
+                "clickTrackingUrl": "/s/redirect?collection=qld-health-core-service-finder__meta&url=http%3A%2F%2Fe25cc1df-c889-4de4-af7a-97f31d4b7866&auth=FMhLpdALIQlww72W22FiPA&profile=_default&rank=6&query=%21padrenull",
+                "explain": null,
+                "indexUrl": "http://e25cc1df-c889-4de4-af7a-97f31d4b7866",
+                "gscopesSet": [],
+                "customData": {},
+                "relatedDocuments": {},
+                "documentVisibleToUser": true,
+                "promoted": false,
+                "diversified": false
+            },
+            {
+                "rank": 7,
+                "score": 1000,
+                "title": "Nutrition and dietetics - Toowoomba Hospital",
+                "collection": "qld-health-core-service-finder__service-locations",
+                "component": 1,
+                "collapsed": null,
+                "liveUrl": "http://8d37eb77-7b5d-4c2a-98e7-e57919376ca4",
+                "summary": "A dietitian provides expert nutrition advice to help you make the best dietary choices for your health conditions.",
+                "allSummaryText": null,
+                "cacheUrl": "/s/cache?collection=qld-health-core-service-finder__service-locations&url=http%3A%2F%2F8d37eb77-7b5d-4c2a-98e7-e57919376ca4&profile=_default",
+                "date": null,
+                "fileSize": 0,
+                "fileType": "txt",
+                "tier": 1,
+                "docNum": 6,
+                "exploreLink": null,
+                "kmFromOrigin": null,
+                "listMetadata": {
+                    "webpath": [
+                        "nutrition-and-dietetics-toowoomba-hospital"
+                    ],
+                    "contactLabel": [
+                        "Office hours"
+                    ],
+                    "c": [
+                        "<p>A dietitian provides expert nutrition advice to help you make the best dietary choices for your health conditions.</p>",
+                        "<p>A dietitian can help with:</p> <ul> <li>providing expert nutrition and diet advice for people of all ages with different"
+                    ],
+                    "facilityId": [
+                        "9588b5b1-85f3-47f4-8311-80a17572b4d8"
+                    ],
+                    "physicalAddressStreet": [
+                        "Pechey St"
+                    ],
+                    "latitude": [
+                        "-27.566668"
+                    ],
+                    "rsdServiceId": [
+                        "109512"
+                    ],
+                    "physicalAddressSuburb": [
+                        "Toowoomba"
+                    ],
+                    "building": [
+                        "Toowoomba Hospital"
+                    ],
+                    "t": [
+                        "Nutrition and dietetics - Toowoomba Hospital"
+                    ],
+                    "fbid": [
+                        "8d37eb77-7b5d-4c2a-98e7-e57919376ca4"
+                    ],
+                    "physicalAddressPostcode": [
+                        "4350"
+                    ],
+                    "openingHours": [
+                        "<p>Monday to Friday 8 am to 4 pm</p>"
+                    ],
+                    "servicewebpath": [
+                        "nutrition-and-dietetics/nutrition-and-dietetics-toowoomba-hospital"
+                    ],
+                    "facilityLevel": [
+                        "major"
+                    ],
+                    "serviceId": [
+                        "90d6dda2-0aad-4054-a347-46866686a9c9"
+                    ],
+                    "longitude": [
+                        "151.949997"
+                    ],
+                    "status": [
+                        "active"
+                    ]
+                },
+                "metaData": {
+                    "servicewebpath": "nutrition-and-dietetics/nutrition-and-dietetics-toowoomba-hospital",
+                    "c": "<p>A dietitian provides expert nutrition advice to help you make the best dietary choices for your health conditions.</p>|<p>A dietitian can help with:</p> <ul> <li>providing expert nutrition and diet advice for people of all ages with different",
+                    "facilityId": "9588b5b1-85f3-47f4-8311-80a17572b4d8",
+                    "t": "Nutrition and dietetics - Toowoomba Hospital",
+                    "longitude": "151.949997",
+                    "rsdServiceId": "109512",
+                    "physicalAddressSuburb": "Toowoomba",
+                    "building": "Toowoomba Hospital",
+                    "facilityLevel": "major",
+                    "contactLabel": "Office hours",
+                    "latitude": "-27.566668",
+                    "fbid": "8d37eb77-7b5d-4c2a-98e7-e57919376ca4",
+                    "status": "active",
+                    "webpath": "nutrition-and-dietetics-toowoomba-hospital",
+                    "physicalAddressStreet": "Pechey St",
+                    "physicalAddressPostcode": "4350",
+                    "openingHours": "<p>Monday to Friday 8 am to 4 pm</p>",
+                    "serviceId": "90d6dda2-0aad-4054-a347-46866686a9c9"
+                },
+                "tags": [],
+                "quickLinks": null,
+                "displayUrl": "http://8d37eb77-7b5d-4c2a-98e7-e57919376ca4",
+                "clickTrackingUrl": "/s/redirect?collection=qld-health-core-service-finder__meta&url=http%3A%2F%2F8d37eb77-7b5d-4c2a-98e7-e57919376ca4&auth=d8qUCjNyNhbpSK6Is9koQA&profile=_default&rank=7&query=%21padrenull",
+                "explain": null,
+                "indexUrl": "http://8d37eb77-7b5d-4c2a-98e7-e57919376ca4",
+                "gscopesSet": [],
+                "customData": {},
+                "relatedDocuments": {},
+                "documentVisibleToUser": true,
+                "promoted": false,
+                "diversified": false
+            },
+            {
+                "rank": 8,
+                "score": 1000,
+                "title": "Nutrition and dietetics - Cherbourg Hospital",
+                "collection": "qld-health-core-service-finder__service-locations",
+                "component": 1,
+                "collapsed": null,
+                "liveUrl": "http://7a12a141-571e-4380-bc13-6b99b1b4845d",
+                "summary": "Our services A dietitian can help with:  providing expert nutrition and diet advice for people of all ages with different health conditions giving you nutrition advice to help you recover from injury, illness, or surgery.",
+                "allSummaryText": null,
+                "cacheUrl": "/s/cache?collection=qld-health-core-service-finder__service-locations&url=http%3A%2F%2F7a12a141-571e-4380-bc13-6b99b1b4845d&profile=_default",
+                "date": null,
+                "fileSize": 0,
+                "fileType": "txt",
+                "tier": 1,
+                "docNum": 7,
+                "exploreLink": null,
+                "kmFromOrigin": null,
+                "listMetadata": {
+                    "webpath": [
+                        "nutrition-and-dietetics-cherbourg-hospital"
+                    ],
+                    "c": [
+                        "<h2>Our services</h2> <p>A dietitian can help with:</p> <ul> <li>providing expert nutrition and diet advice for people of all ages with different health conditions</li> <li>giving you nutrition advice to help you recover from injury, illness, or"
+                    ],
+                    "facilityId": [
+                        "4dcd154f-8cf0-4ed6-8520-071ac08bff9c"
+                    ],
+                    "physicalAddressStreet": [
+                        "Fisher St"
+                    ],
+                    "latitude": [
+                        "-26.292628"
+                    ],
+                    "physicalAddressSuburb": [
+                        "Cherbourg"
+                    ],
+                    "building": [
+                        "Outpatient clinic, Cherbourg Hospital"
+                    ],
+                    "phoneNumber": [
+                        "<p>To make or change an appointment phone <a href=\"tel:0741620400\">07&nbsp;4162&nbsp;0400</a>.</p>"
+                    ],
+                    "t": [
+                        "Nutrition and dietetics - Cherbourg Hospital"
+                    ],
+                    "fbid": [
+                        "7a12a141-571e-4380-bc13-6b99b1b4845d"
+                    ],
+                    "physicalAddressPostcode": [
+                        "4605"
+                    ],
+                    "openingHours": [
+                        "<p>Monday to Friday 8 am to 4 pm</p>"
+                    ],
+                    "servicewebpath": [
+                        "nutrition-and-dietetics/nutrition-and-dietetics-cherbourg-hospital"
+                    ],
+                    "facilityLevel": [
+                        "limited"
+                    ],
+                    "serviceId": [
+                        "90d6dda2-0aad-4054-a347-46866686a9c9"
+                    ],
+                    "longitude": [
+                        "151.9532579"
+                    ],
+                    "status": [
+                        "active"
+                    ]
+                },
+                "metaData": {
+                    "physicalAddressStreet": "Fisher St",
+                    "t": "Nutrition and dietetics - Cherbourg Hospital",
+                    "longitude": "151.9532579",
+                    "building": "Outpatient clinic, Cherbourg Hospital",
+                    "servicewebpath": "nutrition-and-dietetics/nutrition-and-dietetics-cherbourg-hospital",
+                    "physicalAddressPostcode": "4605",
+                    "webpath": "nutrition-and-dietetics-cherbourg-hospital",
+                    "c": "<h2>Our services</h2> <p>A dietitian can help with:</p> <ul> <li>providing expert nutrition and diet advice for people of all ages with different health conditions</li> <li>giving you nutrition advice to help you recover from injury, illness, or",
+                    "fbid": "7a12a141-571e-4380-bc13-6b99b1b4845d",
+                    "facilityId": "4dcd154f-8cf0-4ed6-8520-071ac08bff9c",
+                    "status": "active",
+                    "latitude": "-26.292628",
+                    "phoneNumber": "<p>To make or change an appointment phone <a href=\"tel:0741620400\">07&nbsp;4162&nbsp;0400</a>.</p>",
+                    "openingHours": "<p>Monday to Friday 8 am to 4 pm</p>",
+                    "facilityLevel": "limited",
+                    "serviceId": "90d6dda2-0aad-4054-a347-46866686a9c9",
+                    "physicalAddressSuburb": "Cherbourg"
+                },
+                "tags": [],
+                "quickLinks": null,
+                "displayUrl": "http://7a12a141-571e-4380-bc13-6b99b1b4845d",
+                "clickTrackingUrl": "/s/redirect?collection=qld-health-core-service-finder__meta&url=http%3A%2F%2F7a12a141-571e-4380-bc13-6b99b1b4845d&auth=cd6V0zBuvH0nGPQrcY8WIA&profile=_default&rank=8&query=%21padrenull",
+                "explain": null,
+                "indexUrl": "http://7a12a141-571e-4380-bc13-6b99b1b4845d",
+                "gscopesSet": [],
+                "customData": {},
+                "relatedDocuments": {},
+                "documentVisibleToUser": true,
+                "promoted": false,
+                "diversified": false
+            },
+            {
+                "rank": 9,
+                "score": 1000,
+                "title": "Nutrition and dietetics - Chinchilla Hospital",
+                "collection": "qld-health-core-service-finder__service-locations",
+                "component": 1,
+                "collapsed": null,
+                "liveUrl": "http://c3bf3ef4-8592-4a2d-8794-65213a3ef7b8",
+                "summary": "A dietitian provides expert nutrition advice to help you make the best dietary choices for your health conditions.",
+                "allSummaryText": null,
+                "cacheUrl": "/s/cache?collection=qld-health-core-service-finder__service-locations&url=http%3A%2F%2Fc3bf3ef4-8592-4a2d-8794-65213a3ef7b8&profile=_default",
+                "date": null,
+                "fileSize": 0,
+                "fileType": "txt",
+                "tier": 1,
+                "docNum": 8,
+                "exploreLink": null,
+                "kmFromOrigin": null,
+                "listMetadata": {
+                    "webpath": [
+                        "nutrition-and-dietetics-chinchilla-hospital"
+                    ],
+                    "contactLabel": [
+                        "Office hours"
+                    ],
+                    "c": [
+                        "<p>A dietitian provides expert nutrition advice to help you make the best dietary choices for your health conditions.</p>",
+                        "<p>A dietitian can help with:</p> <ul> <li>providing expert nutrition and diet advice for people of all ages with different"
+                    ],
+                    "facilityId": [
+                        "5ce43c38-f6e1-43f3-ac5b-aeea345ad0e4"
+                    ],
+                    "physicalAddressStreet": [
+                        "Slessar St"
+                    ],
+                    "latitude": [
+                        "-26.7448219"
+                    ],
+                    "rsdServiceId": [
+                        "109635"
+                    ],
+                    "physicalAddressSuburb": [
+                        "Chinchilla"
+                    ],
+                    "building": [
+                        "Allied Health Department, Chinchilla Hospital"
+                    ],
+                    "phoneNumber": [
+                        "<p>07 4669 0512</p>"
+                    ],
+                    "t": [
+                        "Nutrition and dietetics - Chinchilla Hospital"
+                    ],
+                    "fbid": [
+                        "c3bf3ef4-8592-4a2d-8794-65213a3ef7b8"
+                    ],
+                    "physicalAddressPostcode": [
+                        "4413"
+                    ],
+                    "openingHours": [
+                        "<p>Monday to Friday 8 am to 4 pm</p>"
+                    ],
+                    "servicewebpath": [
+                        "nutrition-and-dietetics/nutrition-and-dietetics-chinchilla-hospital"
+                    ],
+                    "facilityLevel": [
+                        "limited"
+                    ],
+                    "serviceId": [
+                        "90d6dda2-0aad-4054-a347-46866686a9c9"
+                    ],
+                    "longitude": [
+                        "150.6374112"
+                    ],
+                    "status": [
+                        "active"
+                    ]
+                },
+                "metaData": {
+                    "physicalAddressSuburb": "Chinchilla",
+                    "facilityId": "5ce43c38-f6e1-43f3-ac5b-aeea345ad0e4",
+                    "latitude": "-26.7448219",
+                    "physicalAddressPostcode": "4413",
+                    "c": "<p>A dietitian provides expert nutrition advice to help you make the best dietary choices for your health conditions.</p>|<p>A dietitian can help with:</p> <ul> <li>providing expert nutrition and diet advice for people of all ages with different",
+                    "webpath": "nutrition-and-dietetics-chinchilla-hospital",
+                    "fbid": "c3bf3ef4-8592-4a2d-8794-65213a3ef7b8",
+                    "rsdServiceId": "109635",
+                    "servicewebpath": "nutrition-and-dietetics/nutrition-and-dietetics-chinchilla-hospital",
+                    "t": "Nutrition and dietetics - Chinchilla Hospital",
+                    "contactLabel": "Office hours",
+                    "building": "Allied Health Department, Chinchilla Hospital",
+                    "phoneNumber": "<p>07 4669 0512</p>",
+                    "longitude": "150.6374112",
+                    "status": "active",
+                    "physicalAddressStreet": "Slessar St",
+                    "openingHours": "<p>Monday to Friday 8 am to 4 pm</p>",
+                    "facilityLevel": "limited",
+                    "serviceId": "90d6dda2-0aad-4054-a347-46866686a9c9"
+                },
+                "tags": [],
+                "quickLinks": null,
+                "displayUrl": "http://c3bf3ef4-8592-4a2d-8794-65213a3ef7b8",
+                "clickTrackingUrl": "/s/redirect?collection=qld-health-core-service-finder__meta&url=http%3A%2F%2Fc3bf3ef4-8592-4a2d-8794-65213a3ef7b8&auth=%2FUp%2BBvsYVi0U5UChMNIowQ&profile=_default&rank=9&query=%21padrenull",
+                "explain": null,
+                "indexUrl": "http://c3bf3ef4-8592-4a2d-8794-65213a3ef7b8",
+                "gscopesSet": [],
+                "customData": {},
+                "relatedDocuments": {},
+                "documentVisibleToUser": true,
+                "promoted": false,
+                "diversified": false
+            },
+            {
+                "rank": 10,
+                "score": 1000,
+                "title": "Nutrition and dietetics - Dalby Hospital",
+                "collection": "qld-health-core-service-finder__service-locations",
+                "component": 1,
+                "collapsed": null,
+                "liveUrl": "http://37b55638-cd16-461d-92fa-404180882108",
+                "summary": "A dietitian provides expert nutrition advice to help you make the best dietary choices for your health conditions.",
+                "allSummaryText": null,
+                "cacheUrl": "/s/cache?collection=qld-health-core-service-finder__service-locations&url=http%3A%2F%2F37b55638-cd16-461d-92fa-404180882108&profile=_default",
+                "date": null,
+                "fileSize": 0,
+                "fileType": "txt",
+                "tier": 1,
+                "docNum": 9,
+                "exploreLink": null,
+                "kmFromOrigin": null,
+                "listMetadata": {
+                    "webpath": [
+                        "nutrition-and-dietetics-dalby-hospital"
+                    ],
+                    "contactLabel": [
+                        "Office hours"
+                    ],
+                    "c": [
+                        "<p>A dietitian provides expert nutrition advice to help you make the best dietary choices for your health conditions.</p>",
+                        "<p>A dietitian can help with:</p> <ul> <li>providing expert nutrition and diet advice for people of all ages with different"
+                    ],
+                    "facilityId": [
+                        "3387df44-d5c0-40f2-bcb1-51a488f4eb7c"
+                    ],
+                    "physicalAddressStreet": [
+                        "Hospital Rd"
+                    ],
+                    "latitude": [
+                        "-27.166538"
+                    ],
+                    "rsdServiceId": [
+                        "109631"
+                    ],
+                    "physicalAddressSuburb": [
+                        "Dalby"
+                    ],
+                    "building": [
+                        "Allied Health Building, Dalby Hospital"
+                    ],
+                    "phoneNumber": [
+                        "<p>07 4669 0512</p>"
+                    ],
+                    "t": [
+                        "Nutrition and dietetics - Dalby Hospital"
+                    ],
+                    "fbid": [
+                        "37b55638-cd16-461d-92fa-404180882108"
+                    ],
+                    "physicalAddressPostcode": [
+                        "4405"
+                    ],
+                    "openingHours": [
+                        "<p>Monday to Friday 8 am to 4 pm</p>"
+                    ],
+                    "servicewebpath": [
+                        "nutrition-and-dietetics/nutrition-and-dietetics-dalby-hospital"
+                    ],
+                    "facilityLevel": [
+                        "major"
+                    ],
+                    "serviceId": [
+                        "90d6dda2-0aad-4054-a347-46866686a9c9"
+                    ],
+                    "longitude": [
+                        "151.2785355"
+                    ],
+                    "status": [
+                        "active"
+                    ]
+                },
+                "metaData": {
+                    "c": "<p>A dietitian provides expert nutrition advice to help you make the best dietary choices for your health conditions.</p>|<p>A dietitian can help with:</p> <ul> <li>providing expert nutrition and diet advice for people of all ages with different",
+                    "physicalAddressSuburb": "Dalby",
+                    "physicalAddressPostcode": "4405",
+                    "longitude": "151.2785355",
+                    "webpath": "nutrition-and-dietetics-dalby-hospital",
+                    "physicalAddressStreet": "Hospital Rd",
+                    "rsdServiceId": "109631",
+                    "t": "Nutrition and dietetics - Dalby Hospital",
+                    "fbid": "37b55638-cd16-461d-92fa-404180882108",
+                    "facilityLevel": "major",
+                    "contactLabel": "Office hours",
+                    "phoneNumber": "<p>07 4669 0512</p>",
+                    "status": "active",
+                    "latitude": "-27.166538",
+                    "facilityId": "3387df44-d5c0-40f2-bcb1-51a488f4eb7c",
+                    "building": "Allied Health Building, Dalby Hospital",
+                    "servicewebpath": "nutrition-and-dietetics/nutrition-and-dietetics-dalby-hospital",
+                    "openingHours": "<p>Monday to Friday 8 am to 4 pm</p>",
+                    "serviceId": "90d6dda2-0aad-4054-a347-46866686a9c9"
+                },
+                "tags": [],
+                "quickLinks": null,
+                "displayUrl": "http://37b55638-cd16-461d-92fa-404180882108",
+                "clickTrackingUrl": "/s/redirect?collection=qld-health-core-service-finder__meta&url=http%3A%2F%2F37b55638-cd16-461d-92fa-404180882108&auth=ok%2Fj9fIVk0kYPoutilp0mQ&profile=_default&rank=10&query=%21padrenull",
+                "explain": null,
+                "indexUrl": "http://37b55638-cd16-461d-92fa-404180882108",
+                "gscopesSet": [],
+                "customData": {},
+                "relatedDocuments": {},
+                "documentVisibleToUser": true,
+                "promoted": false,
+                "diversified": false
+            }
+        ],
+        "tierBars": [
+            {
+                "matched": 1,
+                "outOf": 1,
+                "firstRank": 0,
+                "lastRank": 10,
+                "eventDate": null
+            }
+        ],
+        "error": null,
+        "padreElapsedTime": 7,
+        "phlusterElapsedTime": 0,
+        "queryProcessorCodes": "S2x",
+        "contextualNavigation": null,
+        "rmcs": {
+            "categories:37831237-11b6-442e-8280-2a1d7be8ae36": 7,
+            "topInHhs:hhs-2": 6,
+            "topInHhs:darling-downs": 3,
+            "-categories:": 90,
+            "categories:ff50ab0f-9fbf-41ea-946a-5945c251f849": 11,
+            "categories:5c00d4cf-dd93-47da-8af7-d8711ac2b70f": 9,
+            "-topInHhs:": 96,
+            "categories:06bdcc9f-08eb-4b57-bef2-646820b51768": 5,
+            "categories:7d5f466f-7b75-4268-a566-856f21dda7b5": 12,
+            "topInHhs:hhs-3": 4
+        },
+        "rmcItemResults": {},
+        "metadataRanges": {},
+        "boundingBoxes": {},
+        "urlCounts": {},
+        "dateCounts": {},
+        "queryHighlightRegex": "(?i)\\bpadrenull\\b",
+        "origin": [],
+        "entityList": {},
+        "includeScopes": [],
+        "excludeScopes": [],
+        "coolerWeights": {},
+        "explainTypes": {},
+        "stopWords": [],
+        "stemmedEquivs": {},
+        "coolerNames": {},
+        "svgs": {},
+        "uniqueCountsByGroups": [],
+        "sumByGroups": [],
+        "indexedTermCounts": [],
+        "documentsPerCollection": {},
+        "metadataSums": {},
+        "gscopeCounts": {},
+        "resultsWithTierBars": [
+            {
+                "matched": 1,
+                "outOf": 1,
+                "firstRank": 0,
+                "lastRank": 10,
+                "eventDate": null
+            },
+            {
+                "rank": 1,
+                "score": 1000,
+                "title": "Darling Downs",
+                "collection": "qld-health-core-service-finder__hhs",
+                "component": 1,
+                "collapsed": null,
+                "liveUrl": "https://au-a14fc409.datastore.squiz.cloud/hhs",
+                "summary": "",
+                "allSummaryText": null,
+                "cacheUrl": "/s/cache?collection=qld-health-core-service-finder__hhs&url=https%3A%2F%2Fau-a14fc409.datastore.squiz.cloud%2Fhhs&profile=_default",
+                "date": null,
+                "fileSize": 1016,
+                "fileType": "xml",
+                "tier": 1,
+                "docNum": 0,
+                "exploreLink": null,
+                "kmFromOrigin": null,
+                "listMetadata": {
+                    "FunResponseTime": [
+                        "761"
+                    ],
+                    "updatedBy": [
+                        "Matthew Dobie (Squiz)"
+                    ],
+                    "d": [
+                        "1642463159319"
+                    ],
+                    "t": [
+                        "Darling Downs"
+                    ],
+                    "rsdOrgId": [
+                        "123"
+                    ],
+                    "FunResponseTimeBand": [
+                        "501-1000"
+                    ],
+                    "topServices": [
+                        "fa3b7e29-2236-4024-8b8e-56d1a2df5e25",
+                        "d615d7c7-b863-4ef6-b2de-dabda1374550",
+                        "ad7e4128-b236-47a5-9cbf-25cd1ed1cc6b"
+                    ],
+                    "id": [
+                        "darling-downs"
+                    ],
+                    "abbrev": [
+                        "HHS1"
+                    ],
+                    "status": [
+                        "active"
+                    ]
+                },
+                "metaData": {
+                    "d": "1642463159319",
+                    "id": "darling-downs",
+                    "FunResponseTime": "761",
+                    "abbrev": "HHS1",
+                    "status": "active",
+                    "updatedBy": "Matthew Dobie (Squiz)",
+                    "t": "Darling Downs",
+                    "rsdOrgId": "123",
+                    "FunResponseTimeBand": "501-1000",
+                    "topServices": "fa3b7e29-2236-4024-8b8e-56d1a2df5e25|d615d7c7-b863-4ef6-b2de-dabda1374550|ad7e4128-b236-47a5-9cbf-25cd1ed1cc6b"
+                },
+                "tags": [],
+                "quickLinks": null,
+                "displayUrl": "https://au-a14fc409.datastore.squiz.cloud/hhs",
+                "clickTrackingUrl": "/s/redirect?collection=qld-health-core-service-finder__meta&url=https%3A%2F%2Fau-a14fc409.datastore.squiz.cloud%2Fhhs&auth=qKTEyaPjIlouYsMJVbxZHQ&profile=_default&rank=1&query=%21padrenull",
+                "explain": null,
+                "indexUrl": "https://au-a14fc409.datastore.squiz.cloud/hhs",
+                "gscopesSet": [],
+                "customData": {},
+                "relatedDocuments": {},
+                "documentVisibleToUser": true,
+                "promoted": false,
+                "diversified": false
+            },
+            {
+                "rank": 2,
+                "score": 764,
+                "title": "NService 14 - Brisbane",
+                "collection": "qld-health-core-service-finder__service-locations",
+                "component": 3,
+                "collapsed": null,
+                "liveUrl": "file://dummy-url/try-mapping-a-url/e.g-in-xml-config/opt/funnelback/data/qld-health-core-service-finder__service-locations/offline/data/funnelback-web-crawl.warc/doc007",
+                "summary": "This is the description of the service location",
+                "allSummaryText": null,
+                "cacheUrl": "/s/cache?collection=qld-health-core-service-finder__service-locations&url=file%3A%2F%2Fdummy-url%2Ftry-mapping-a-url%2Fe.g-in-xml-config%2Fopt%2Ffunnelback%2Fdata%2Fqld-health-core-service-finder__service-locations%2Foffline%2Fdata%2Ffunnelback-web-crawl.warc%2Fdoc007&profile=_default",
+                "date": null,
+                "fileSize": 0,
+                "fileType": "txt",
+                "tier": 1,
+                "docNum": 7,
+                "exploreLink": null,
+                "kmFromOrigin": null,
+                "listMetadata": {
+                    "webpath": [
+                        "service-14-facility-1"
+                    ],
+                    "contactLabel": [
+                        "Contact us"
+                    ],
+                    "c": [
+                        "This is the description of the service location",
+                        "This is the content for the service location"
+                    ],
+                    "facilityId": [
+                        "e98b36d4-6e45-462e-b466-e0e5b6926f1a"
+                    ],
+                    "physicalAddressStreet": [
+                        "Pechey Street"
+                    ],
+                    "latitude": [
+                        "-27.470125"
+                    ],
+                    "rsdServiceId": [
+                        "123"
+                    ],
+                    "physicalAddressSuburb": [
+                        "Toowoomba City"
+                    ],
+                    "emailAddress": [
+                        "DDHHS@health.qld.gov.au"
+                    ],
+                    "phoneNumber": [
+                        "+61 7 4616 6000"
+                    ],
+                    "t": [
+                        "NService 14 - Brisbane"
+                    ],
+                    "physicalAddressPostcode": [
+                        "4350"
+                    ],
+                    "locationDetails": [
+                        "Extra details about the location"
+                    ],
+                    "faxNumber": [
+                        "+61 7 4616 6170"
+                    ],
+                    "openingHours": [
+                        "<p>0800 - 1630</p>"
+                    ],
+                    "id": [
+                        "939cefbf-6e1d-48a7-aa5b-4d381b9dcb0d"
+                    ],
+                    "facilityLevel": [
+                        "limited"
+                    ],
+                    "serviceId": [
+                        "0d36f55d-7b26-4fc2-a7fe-30cd25d14cb1"
+                    ],
+                    "longitude": [
+                        "153.021072"
+                    ],
+                    "status": [
+                        "active"
+                    ]
+                },
+                "metaData": {
+                    "openingHours": "<p>0800 - 1630</p>",
+                    "id": "939cefbf-6e1d-48a7-aa5b-4d381b9dcb0d",
+                    "faxNumber": "+61 7 4616 6170",
+                    "c": "This is the description of the service location|This is the content for the service location",
+                    "emailAddress": "DDHHS@health.qld.gov.au",
+                    "physicalAddressStreet": "Pechey Street",
+                    "locationDetails": "Extra details about the location",
+                    "longitude": "153.021072",
+                    "serviceId": "0d36f55d-7b26-4fc2-a7fe-30cd25d14cb1",
+                    "webpath": "service-14-facility-1",
+                    "t": "NService 14 - Brisbane",
+                    "phoneNumber": "+61 7 4616 6000",
+                    "status": "active",
+                    "physicalAddressSuburb": "Toowoomba City",
+                    "facilityId": "e98b36d4-6e45-462e-b466-e0e5b6926f1a",
+                    "rsdServiceId": "123",
+                    "physicalAddressPostcode": "4350",
+                    "contactLabel": "Contact us",
+                    "latitude": "-27.470125",
+                    "facilityLevel": "limited"
+                },
+                "tags": [],
+                "quickLinks": null,
+                "displayUrl": "file://dummy-url/try-mapping-a-url/e.g-in-xml-config/opt/funnelback/data/qld-health-core-service-finder__service-locations/offline/data/funnelback-web-crawl.warc/doc007",
+                "clickTrackingUrl": "/s/redirect?collection=qld-health-core-service-finder__meta&url=file%3A%2F%2Fdummy-url%2Ftry-mapping-a-url%2Fe.g-in-xml-config%2Fopt%2Ffunnelback%2Fdata%2Fqld-health-core-service-finder__service-locations%2Foffline%2Fdata%2Ffunnelback-web-crawl.warc%2Fdoc007&auth=uXASWBYli6Ky9sde69TZ7w&profile=_default&rank=2&query=%21padrenull",
+                "explain": null,
+                "indexUrl": "file://dummy-url/try-mapping-a-url/e.g-in-xml-config/opt/funnelback/data/qld-health-core-service-finder__service-locations/offline/data/funnelback-web-crawl.warc/doc007",
+                "gscopesSet": [],
+                "customData": {},
+                "relatedDocuments": {},
+                "documentVisibleToUser": true,
+                "promoted": false,
+                "diversified": false
+            },
+            {
+                "rank": 3,
+                "score": 700,
+                "title": "GService 1",
+                "collection": "qld-health-core-service-finder__services",
+                "component": 4,
+                "collapsed": null,
+                "liveUrl": "https://au-a14fc409.datastore.squiz.cloud/services",
+                "summary": "The description of this service",
+                "allSummaryText": null,
+                "cacheUrl": "/s/cache?collection=qld-health-core-service-finder__services&url=https%3A%2F%2Fau-a14fc409.datastore.squiz.cloud%2Fservices&profile=_default",
+                "date": null,
+                "fileSize": 8235,
+                "fileType": "xml",
+                "tier": 1,
+                "docNum": 0,
+                "exploreLink": null,
+                "kmFromOrigin": null,
+                "listMetadata": {
+                    "FunResponseTime": [
+                        "741"
+                    ],
+                    "FunResponseTimeBand": [
+                        "501-1000"
+                    ]
+                },
+                "metaData": {
+                    "FunResponseTime": "741",
+                    "FunResponseTimeBand": "501-1000"
+                },
+                "tags": [],
+                "quickLinks": null,
+                "displayUrl": "https://au-a14fc409.datastore.squiz.cloud/services",
+                "clickTrackingUrl": "/s/redirect?collection=qld-health-core-service-finder__meta&url=https%3A%2F%2Fau-a14fc409.datastore.squiz.cloud%2Fservices&auth=JOaUlnc0cUx%2Ff%2BzhNkbqTg&profile=_default&rank=3&query=%21padrenull",
+                "explain": null,
+                "indexUrl": "https://au-a14fc409.datastore.squiz.cloud/services",
+                "gscopesSet": [],
+                "customData": {},
+                "relatedDocuments": {},
+                "documentVisibleToUser": true,
+                "promoted": false,
+                "diversified": true
+            },
+            {
+                "rank": 4,
+                "score": 563,
+                "title": "WService 15 - Brisbane",
+                "collection": "qld-health-core-service-finder__service-locations",
+                "component": 3,
+                "collapsed": null,
+                "liveUrl": "https://au-a14fc409.datastore.squiz.cloud/service-locations",
+                "summary": "This is the description of the service location",
+                "allSummaryText": null,
+                "cacheUrl": "/s/cache?collection=qld-health-core-service-finder__service-locations&url=https%3A%2F%2Fau-a14fc409.datastore.squiz.cloud%2Fservice-locations&profile=_default",
+                "date": null,
+                "fileSize": 62148,
+                "fileType": "xml",
+                "tier": 1,
+                "docNum": 0,
+                "exploreLink": null,
+                "kmFromOrigin": null,
+                "listMetadata": {
+                    "webpath": [
+                        "service-15-facility-1"
+                    ],
+                    "contactLabel": [
+                        "Contact us"
+                    ],
+                    "c": [
+                        "This is the description of the service location",
+                        "This is the content for the service location"
+                    ],
+                    "facilityId": [
+                        "e98b36d4-6e45-462e-b466-e0e5b6926f1a"
+                    ],
+                    "physicalAddressStreet": [
+                        "Pechey Street"
+                    ],
+                    "latitude": [
+                        "-27.470125"
+                    ],
+                    "FunResponseTimeBand": [
+                        "1000-2000"
+                    ],
+                    "rsdServiceId": [
+                        "123"
+                    ],
+                    "physicalAddressSuburb": [
+                        "Toowoomba City"
+                    ],
+                    "FunResponseTime": [
+                        "1183"
+                    ],
+                    "emailAddress": [
+                        "DDHHS@health.qld.gov.au"
+                    ],
+                    "phoneNumber": [
+                        "+61 7 4616 6000"
+                    ],
+                    "t": [
+                        "WService 15 - Brisbane"
+                    ],
+                    "physicalAddressPostcode": [
+                        "4350"
+                    ],
+                    "locationDetails": [
+                        "Extra details about the location"
+                    ],
+                    "faxNumber": [
+                        "+61 7 4616 6170"
+                    ],
+                    "openingHours": [
+                        "<p>0800 - 1630</p>"
+                    ],
+                    "id": [
+                        "958476ba-f658-4a40-a945-4a3e0a9524e7"
+                    ],
+                    "facilityLevel": [
+                        "major"
+                    ],
+                    "serviceId": [
+                        "309c154a-822a-4908-a1bc-2c8d147a7c4e"
+                    ],
+                    "longitude": [
+                        "153.021072"
+                    ],
+                    "status": [
+                        "active"
+                    ]
+                },
+                "metaData": {
+                    "openingHours": "<p>0800 - 1630</p>",
+                    "id": "958476ba-f658-4a40-a945-4a3e0a9524e7",
+                    "webpath": "service-15-facility-1",
+                    "t": "WService 15 - Brisbane",
+                    "faxNumber": "+61 7 4616 6170",
+                    "c": "This is the description of the service location|This is the content for the service location",
+                    "emailAddress": "DDHHS@health.qld.gov.au",
+                    "physicalAddressStreet": "Pechey Street",
+                    "facilityLevel": "major",
+                    "FunResponseTimeBand": "1000-2000",
+                    "locationDetails": "Extra details about the location",
+                    "longitude": "153.021072",
+                    "phoneNumber": "+61 7 4616 6000",
+                    "status": "active",
+                    "physicalAddressSuburb": "Toowoomba City",
+                    "facilityId": "e98b36d4-6e45-462e-b466-e0e5b6926f1a",
+                    "rsdServiceId": "123",
+                    "physicalAddressPostcode": "4350",
+                    "contactLabel": "Contact us",
+                    "latitude": "-27.470125",
+                    "serviceId": "309c154a-822a-4908-a1bc-2c8d147a7c4e",
+                    "FunResponseTime": "1183"
+                },
+                "tags": [],
+                "quickLinks": null,
+                "displayUrl": "https://au-a14fc409.datastore.squiz.cloud/service-locations",
+                "clickTrackingUrl": "/s/redirect?collection=qld-health-core-service-finder__meta&url=https%3A%2F%2Fau-a14fc409.datastore.squiz.cloud%2Fservice-locations&auth=Ardw5zha0m9t7HBxnZGOug&profile=_default&rank=4&query=%21padrenull",
+                "explain": null,
+                "indexUrl": "https://au-a14fc409.datastore.squiz.cloud/service-locations",
+                "gscopesSet": [],
+                "customData": {},
+                "relatedDocuments": {},
+                "documentVisibleToUser": true,
+                "promoted": false,
+                "diversified": true
+            },
+            {
+                "rank": 5,
+                "score": 540,
+                "title": "UService 8 - Redland City",
+                "collection": "qld-health-core-service-finder__service-locations",
+                "component": 3,
+                "collapsed": null,
+                "liveUrl": "file://dummy-url/try-mapping-a-url/e.g-in-xml-config/opt/funnelback/data/qld-health-core-service-finder__service-locations/offline/data/funnelback-web-crawl.warc/doc010",
+                "summary": "This is the description of the service location",
+                "allSummaryText": null,
+                "cacheUrl": "/s/cache?collection=qld-health-core-service-finder__service-locations&url=file%3A%2F%2Fdummy-url%2Ftry-mapping-a-url%2Fe.g-in-xml-config%2Fopt%2Ffunnelback%2Fdata%2Fqld-health-core-service-finder__service-locations%2Foffline%2Fdata%2Ffunnelback-web-crawl.warc%2Fdoc010&profile=_default",
+                "date": null,
+                "fileSize": 0,
+                "fileType": "txt",
+                "tier": 1,
+                "docNum": 10,
+                "exploreLink": null,
+                "kmFromOrigin": null,
+                "listMetadata": {
+                    "webpath": [
+                        "service-8-facility-2"
+                    ],
+                    "contactLabel": [
+                        "Contact us"
+                    ],
+                    "c": [
+                        "This is the description of the service location",
+                        "This is the content for the service location"
+                    ],
+                    "facilityId": [
+                        "0b7f6bbc-2f22-4fdc-9f0c-a9741ba248ba"
+                    ],
+                    "physicalAddressStreet": [
+                        "Pechey Street"
+                    ],
+                    "latitude": [
+                        "-27.593294"
+                    ],
+                    "rsdServiceId": [
+                        "123"
+                    ],
+                    "physicalAddressSuburb": [
+                        "Toowoomba City"
+                    ],
+                    "emailAddress": [
+                        "DDHHS@health.qld.gov.au"
+                    ],
+                    "phoneNumber": [
+                        "+61 7 4616 6000"
+                    ],
+                    "t": [
+                        "UService 8 - Redland City"
+                    ],
+                    "physicalAddressPostcode": [
+                        "4350"
+                    ],
+                    "locationDetails": [
+                        "Extra details about the location"
+                    ],
+                    "faxNumber": [
+                        "+61 7 4616 6170"
+                    ],
+                    "openingHours": [
+                        "<p>0800 - 1630</p>"
+                    ],
+                    "id": [
+                        "7489f3df-097a-499c-aa2c-c4a4ff76ce02"
+                    ],
+                    "facilityLevel": [
+                        "major"
+                    ],
+                    "serviceId": [
+                        "8125aa8b-c083-4eb1-89f7-fbb13e0b8f25"
+                    ],
+                    "longitude": [
+                        "153.266418"
+                    ],
+                    "status": [
+                        "active"
+                    ]
+                },
+                "metaData": {
+                    "serviceId": "8125aa8b-c083-4eb1-89f7-fbb13e0b8f25",
+                    "facilityId": "0b7f6bbc-2f22-4fdc-9f0c-a9741ba248ba",
+                    "openingHours": "<p>0800 - 1630</p>",
+                    "faxNumber": "+61 7 4616 6170",
+                    "webpath": "service-8-facility-2",
+                    "c": "This is the description of the service location|This is the content for the service location",
+                    "emailAddress": "DDHHS@health.qld.gov.au",
+                    "latitude": "-27.593294",
+                    "id": "7489f3df-097a-499c-aa2c-c4a4ff76ce02",
+                    "physicalAddressStreet": "Pechey Street",
+                    "facilityLevel": "major",
+                    "longitude": "153.266418",
+                    "locationDetails": "Extra details about the location",
+                    "phoneNumber": "+61 7 4616 6000",
+                    "status": "active",
+                    "physicalAddressSuburb": "Toowoomba City",
+                    "rsdServiceId": "123",
+                    "physicalAddressPostcode": "4350",
+                    "contactLabel": "Contact us",
+                    "t": "UService 8 - Redland City"
+                },
+                "tags": [],
+                "quickLinks": null,
+                "displayUrl": "file://dummy-url/try-mapping-a-url/e.g-in-xml-config/opt/funnelback/data/qld-health-core-service-finder__service-locations/offline/data/funnelback-web-crawl.warc/doc010",
+                "clickTrackingUrl": "/s/redirect?collection=qld-health-core-service-finder__meta&url=file%3A%2F%2Fdummy-url%2Ftry-mapping-a-url%2Fe.g-in-xml-config%2Fopt%2Ffunnelback%2Fdata%2Fqld-health-core-service-finder__service-locations%2Foffline%2Fdata%2Ffunnelback-web-crawl.warc%2Fdoc010&auth=Iwyr2Qge5ISmi%2BhIlcbdqA&profile=_default&rank=5&query=%21padrenull",
+                "explain": null,
+                "indexUrl": "file://dummy-url/try-mapping-a-url/e.g-in-xml-config/opt/funnelback/data/qld-health-core-service-finder__service-locations/offline/data/funnelback-web-crawl.warc/doc010",
+                "gscopesSet": [],
+                "customData": {},
+                "relatedDocuments": {},
+                "documentVisibleToUser": true,
+                "promoted": false,
+                "diversified": true
+            },
+            {
+                "rank": 6,
+                "score": 473,
+                "title": "Brisbane",
+                "collection": "qld-health-core-service-finder__facilities",
+                "component": 0,
+                "collapsed": null,
+                "liveUrl": "https://au-a14fc409.datastore.squiz.cloud/facilities",
+                "summary": "This is the description of the facility",
+                "allSummaryText": null,
+                "cacheUrl": "/s/cache?collection=qld-health-core-service-finder__facilities&url=https%3A%2F%2Fau-a14fc409.datastore.squiz.cloud%2Ffacilities&profile=_default",
+                "date": -10337364000000,
+                "fileSize": 9831,
+                "fileType": "xml",
+                "tier": 1,
+                "docNum": 0,
+                "exploreLink": null,
+                "kmFromOrigin": null,
+                "listMetadata": {
+                    "FunResponseTime": [
+                        "872"
+                    ],
+                    "FunResponseTimeBand": [
+                        "501-1000"
+                    ]
+                },
+                "metaData": {
+                    "FunResponseTime": "872",
+                    "FunResponseTimeBand": "501-1000"
+                },
+                "tags": [],
+                "quickLinks": null,
+                "displayUrl": "https://au-a14fc409.datastore.squiz.cloud/facilities",
+                "clickTrackingUrl": "/s/redirect?collection=qld-health-core-service-finder__meta&url=https%3A%2F%2Fau-a14fc409.datastore.squiz.cloud%2Ffacilities&auth=LlnagO00PUUW%2FocdNys2AQ&profile=_default&rank=6&query=%21padrenull",
+                "explain": null,
+                "indexUrl": "https://au-a14fc409.datastore.squiz.cloud/facilities",
+                "gscopesSet": [],
+                "customData": {},
+                "relatedDocuments": {},
+                "documentVisibleToUser": true,
+                "promoted": false,
+                "diversified": true
+            },
+            {
+                "rank": 7,
+                "score": 441,
+                "title": "UService 8 - Logan City",
+                "collection": "qld-health-core-service-finder__service-locations",
+                "component": 3,
+                "collapsed": null,
+                "liveUrl": "file://dummy-url/try-mapping-a-url/e.g-in-xml-config/opt/funnelback/data/qld-health-core-service-finder__service-locations/offline/data/funnelback-web-crawl.warc/doc017",
+                "summary": "This is the description of the service location",
+                "allSummaryText": null,
+                "cacheUrl": "/s/cache?collection=qld-health-core-service-finder__service-locations&url=file%3A%2F%2Fdummy-url%2Ftry-mapping-a-url%2Fe.g-in-xml-config%2Fopt%2Ffunnelback%2Fdata%2Fqld-health-core-service-finder__service-locations%2Foffline%2Fdata%2Ffunnelback-web-crawl.warc%2Fdoc017&profile=_default",
+                "date": null,
+                "fileSize": 0,
+                "fileType": "txt",
+                "tier": 1,
+                "docNum": 17,
+                "exploreLink": null,
+                "kmFromOrigin": null,
+                "listMetadata": {
+                    "webpath": [
+                        "service-8-facility-3"
+                    ],
+                    "contactLabel": [
+                        "Contact us"
+                    ],
+                    "c": [
+                        "This is the description of the service location",
+                        "This is the content for the service location"
+                    ],
+                    "facilityId": [
+                        "ac972de2-35c0-4fba-9f5e-a6d4cd24e9b2"
+                    ],
+                    "physicalAddressStreet": [
+                        "Pechey Street"
+                    ],
+                    "latitude": [
+                        "-27.639168"
+                    ],
+                    "rsdServiceId": [
+                        "123"
+                    ],
+                    "physicalAddressSuburb": [
+                        "Toowoomba City"
+                    ],
+                    "emailAddress": [
+                        "DDHHS@health.qld.gov.au"
+                    ],
+                    "phoneNumber": [
+                        "+61 7 4616 6000"
+                    ],
+                    "t": [
+                        "UService 8 - Logan City"
+                    ],
+                    "physicalAddressPostcode": [
+                        "4350"
+                    ],
+                    "locationDetails": [
+                        "Extra details about the location"
+                    ],
+                    "faxNumber": [
+                        "+61 7 4616 6170"
+                    ],
+                    "openingHours": [
+                        "<p>0800 - 1630</p>"
+                    ],
+                    "id": [
+                        "c10a9ca2-e0eb-4be8-8f0b-fb7f6d0da158"
+                    ],
+                    "facilityLevel": [
+                        "limited"
+                    ],
+                    "serviceId": [
+                        "8125aa8b-c083-4eb1-89f7-fbb13e0b8f25"
+                    ],
+                    "longitude": [
+                        "153.109451"
+                    ],
+                    "status": [
+                        "active"
+                    ]
+                },
+                "metaData": {
+                    "latitude": "-27.639168",
+                    "serviceId": "8125aa8b-c083-4eb1-89f7-fbb13e0b8f25",
+                    "t": "UService 8 - Logan City",
+                    "openingHours": "<p>0800 - 1630</p>",
+                    "webpath": "service-8-facility-3",
+                    "faxNumber": "+61 7 4616 6170",
+                    "c": "This is the description of the service location|This is the content for the service location",
+                    "emailAddress": "DDHHS@health.qld.gov.au",
+                    "id": "c10a9ca2-e0eb-4be8-8f0b-fb7f6d0da158",
+                    "physicalAddressStreet": "Pechey Street",
+                    "locationDetails": "Extra details about the location",
+                    "phoneNumber": "+61 7 4616 6000",
+                    "status": "active",
+                    "physicalAddressSuburb": "Toowoomba City",
+                    "rsdServiceId": "123",
+                    "facilityId": "ac972de2-35c0-4fba-9f5e-a6d4cd24e9b2",
+                    "physicalAddressPostcode": "4350",
+                    "longitude": "153.109451",
+                    "contactLabel": "Contact us",
+                    "facilityLevel": "limited"
+                },
+                "tags": [],
+                "quickLinks": null,
+                "displayUrl": "file://dummy-url/try-mapping-a-url/e.g-in-xml-config/opt/funnelback/data/qld-health-core-service-finder__service-locations/offline/data/funnelback-web-crawl.warc/doc017",
+                "clickTrackingUrl": "/s/redirect?collection=qld-health-core-service-finder__meta&url=file%3A%2F%2Fdummy-url%2Ftry-mapping-a-url%2Fe.g-in-xml-config%2Fopt%2Ffunnelback%2Fdata%2Fqld-health-core-service-finder__service-locations%2Foffline%2Fdata%2Ffunnelback-web-crawl.warc%2Fdoc017&auth=KWv7sIQHvfLGDzwmRyUVNA&profile=_default&rank=7&query=%21padrenull",
+                "explain": null,
+                "indexUrl": "file://dummy-url/try-mapping-a-url/e.g-in-xml-config/opt/funnelback/data/qld-health-core-service-finder__service-locations/offline/data/funnelback-web-crawl.warc/doc017",
+                "gscopesSet": [],
+                "customData": {},
+                "relatedDocuments": {},
+                "documentVisibleToUser": true,
+                "promoted": false,
+                "diversified": true
+            },
+            {
+                "rank": 8,
+                "score": 416,
+                "title": "Category 1",
+                "collection": "qld-health-core-service-finder__service-categories",
+                "component": 2,
+                "collapsed": null,
+                "liveUrl": "https://au-a14fc409.datastore.squiz.cloud/service-categories",
+                "summary": "",
+                "allSummaryText": null,
+                "cacheUrl": "/s/cache?collection=qld-health-core-service-finder__service-categories&url=https%3A%2F%2Fau-a14fc409.datastore.squiz.cloud%2Fservice-categories&profile=_default",
+                "date": -10337364000000,
+                "fileSize": 741,
+                "fileType": "xml",
+                "tier": 1,
+                "docNum": 0,
+                "exploreLink": null,
+                "kmFromOrigin": null,
+                "listMetadata": {
+                    "FunResponseTime": [
+                        "757"
+                    ],
+                    "updatedBy": [
+                        "Matthew Dobie (Squiz)"
+                    ],
+                    "d": [
+                        "1642053579754"
+                    ],
+                    "t": [
+                        "Category 1"
+                    ],
+                    "FunResponseTimeBand": [
+                        "501-1000"
+                    ],
+                    "id": [
+                        "06bdcc9f-08eb-4b57-bef2-646820b51768"
+                    ],
+                    "status": [
+                        "active"
+                    ]
+                },
+                "metaData": {
+                    "t": "Category 1",
+                    "d": "1642053579754",
+                    "status": "active",
+                    "updatedBy": "Matthew Dobie (Squiz)",
+                    "FunResponseTime": "757",
+                    "FunResponseTimeBand": "501-1000",
+                    "id": "06bdcc9f-08eb-4b57-bef2-646820b51768"
+                },
+                "tags": [],
+                "quickLinks": null,
+                "displayUrl": "https://au-a14fc409.datastore.squiz.cloud/service-categories",
+                "clickTrackingUrl": "/s/redirect?collection=qld-health-core-service-finder__meta&url=https%3A%2F%2Fau-a14fc409.datastore.squiz.cloud%2Fservice-categories&auth=AUvyfs8GZUm97EKVcyNAig&profile=_default&rank=8&query=%21padrenull",
+                "explain": null,
+                "indexUrl": "https://au-a14fc409.datastore.squiz.cloud/service-categories",
+                "gscopesSet": [],
+                "customData": {},
+                "relatedDocuments": {},
+                "documentVisibleToUser": true,
+                "promoted": false,
+                "diversified": true
+            },
+            {
+                "rank": 9,
+                "score": 382,
+                "title": "BService 10 - Logan City",
+                "collection": "qld-health-core-service-finder__service-locations",
+                "component": 3,
+                "collapsed": null,
+                "liveUrl": "file://dummy-url/try-mapping-a-url/e.g-in-xml-config/opt/funnelback/data/qld-health-core-service-finder__service-locations/offline/data/funnelback-web-crawl.warc/doc022",
+                "summary": "This is the description of the service location",
+                "allSummaryText": null,
+                "cacheUrl": "/s/cache?collection=qld-health-core-service-finder__service-locations&url=file%3A%2F%2Fdummy-url%2Ftry-mapping-a-url%2Fe.g-in-xml-config%2Fopt%2Ffunnelback%2Fdata%2Fqld-health-core-service-finder__service-locations%2Foffline%2Fdata%2Ffunnelback-web-crawl.warc%2Fdoc022&profile=_default",
+                "date": null,
+                "fileSize": 0,
+                "fileType": "txt",
+                "tier": 1,
+                "docNum": 22,
+                "exploreLink": null,
+                "kmFromOrigin": null,
+                "listMetadata": {
+                    "webpath": [
+                        "service-10-facility-3"
+                    ],
+                    "contactLabel": [
+                        "Contact us"
+                    ],
+                    "c": [
+                        "This is the description of the service location",
+                        "This is the content for the service location"
+                    ],
+                    "facilityId": [
+                        "ac972de2-35c0-4fba-9f5e-a6d4cd24e9b2"
+                    ],
+                    "physicalAddressStreet": [
+                        "Pechey Street"
+                    ],
+                    "latitude": [
+                        "-27.639168"
+                    ],
+                    "rsdServiceId": [
+                        "123"
+                    ],
+                    "physicalAddressSuburb": [
+                        "Toowoomba City"
+                    ],
+                    "emailAddress": [
+                        "DDHHS@health.qld.gov.au"
+                    ],
+                    "phoneNumber": [
+                        "+61 7 4616 6000"
+                    ],
+                    "t": [
+                        "BService 10 - Logan City"
+                    ],
+                    "physicalAddressPostcode": [
+                        "4350"
+                    ],
+                    "locationDetails": [
+                        "Extra details about the location"
+                    ],
+                    "faxNumber": [
+                        "+61 7 4616 6170"
+                    ],
+                    "openingHours": [
+                        "<p>0800 - 1630</p>"
+                    ],
+                    "id": [
+                        "ffc47858-143a-4210-8bf0-46d2a00c25a6"
+                    ],
+                    "facilityLevel": [
+                        "major"
+                    ],
+                    "serviceId": [
+                        "c4b82f00-65d8-411f-a6b0-b507d082c060"
+                    ],
+                    "longitude": [
+                        "153.109451"
+                    ],
+                    "status": [
+                        "active"
+                    ]
+                },
+                "metaData": {
+                    "latitude": "-27.639168",
+                    "openingHours": "<p>0800 - 1630</p>",
+                    "serviceId": "c4b82f00-65d8-411f-a6b0-b507d082c060",
+                    "faxNumber": "+61 7 4616 6170",
+                    "c": "This is the description of the service location|This is the content for the service location",
+                    "emailAddress": "DDHHS@health.qld.gov.au",
+                    "physicalAddressStreet": "Pechey Street",
+                    "facilityLevel": "major",
+                    "locationDetails": "Extra details about the location",
+                    "phoneNumber": "+61 7 4616 6000",
+                    "status": "active",
+                    "physicalAddressSuburb": "Toowoomba City",
+                    "rsdServiceId": "123",
+                    "facilityId": "ac972de2-35c0-4fba-9f5e-a6d4cd24e9b2",
+                    "physicalAddressPostcode": "4350",
+                    "longitude": "153.109451",
+                    "contactLabel": "Contact us",
+                    "t": "BService 10 - Logan City",
+                    "id": "ffc47858-143a-4210-8bf0-46d2a00c25a6",
+                    "webpath": "service-10-facility-3"
+                },
+                "tags": [],
+                "quickLinks": null,
+                "displayUrl": "file://dummy-url/try-mapping-a-url/e.g-in-xml-config/opt/funnelback/data/qld-health-core-service-finder__service-locations/offline/data/funnelback-web-crawl.warc/doc022",
+                "clickTrackingUrl": "/s/redirect?collection=qld-health-core-service-finder__meta&url=file%3A%2F%2Fdummy-url%2Ftry-mapping-a-url%2Fe.g-in-xml-config%2Fopt%2Ffunnelback%2Fdata%2Fqld-health-core-service-finder__service-locations%2Foffline%2Fdata%2Ffunnelback-web-crawl.warc%2Fdoc022&auth=xDiqSNFY8ke72jKZWY3vDQ&profile=_default&rank=9&query=%21padrenull",
+                "explain": null,
+                "indexUrl": "file://dummy-url/try-mapping-a-url/e.g-in-xml-config/opt/funnelback/data/qld-health-core-service-finder__service-locations/offline/data/funnelback-web-crawl.warc/doc022",
+                "gscopesSet": [],
+                "customData": {},
+                "relatedDocuments": {},
+                "documentVisibleToUser": true,
+                "promoted": false,
+                "diversified": true
+            },
+            {
+                "rank": 10,
+                "score": 341,
+                "title": "LService 5 - Toowoomba",
+                "collection": "qld-health-core-service-finder__service-locations",
+                "component": 3,
+                "collapsed": null,
+                "liveUrl": "file://dummy-url/try-mapping-a-url/e.g-in-xml-config/opt/funnelback/data/qld-health-core-service-finder__service-locations/offline/data/funnelback-web-crawl.warc/doc025",
+                "summary": "This is the description of the service location",
+                "allSummaryText": null,
+                "cacheUrl": "/s/cache?collection=qld-health-core-service-finder__service-locations&url=file%3A%2F%2Fdummy-url%2Ftry-mapping-a-url%2Fe.g-in-xml-config%2Fopt%2Ffunnelback%2Fdata%2Fqld-health-core-service-finder__service-locations%2Foffline%2Fdata%2Ffunnelback-web-crawl.warc%2Fdoc025&profile=_default",
+                "date": null,
+                "fileSize": 0,
+                "fileType": "txt",
+                "tier": 1,
+                "docNum": 25,
+                "exploreLink": null,
+                "kmFromOrigin": null,
+                "listMetadata": {
+                    "webpath": [
+                        "service-5-facility-4"
+                    ],
+                    "contactLabel": [
+                        "Contact us"
+                    ],
+                    "c": [
+                        "This is the description of the service location",
+                        "This is the content for the service location"
+                    ],
+                    "facilityId": [
+                        "9588b5b1-85f3-47f4-8311-80a17572b4d8"
+                    ],
+                    "physicalAddressStreet": [
+                        "Pechey Street"
+                    ],
+                    "latitude": [
+                        "-27.566668"
+                    ],
+                    "rsdServiceId": [
+                        "123"
+                    ],
+                    "physicalAddressSuburb": [
+                        "Toowoomba City"
+                    ],
+                    "emailAddress": [
+                        "DDHHS@health.qld.gov.au"
+                    ],
+                    "phoneNumber": [
+                        "+61 7 4616 6000"
+                    ],
+                    "t": [
+                        "LService 5 - Toowoomba"
+                    ],
+                    "physicalAddressPostcode": [
+                        "4350"
+                    ],
+                    "locationDetails": [
+                        "Extra details about the location"
+                    ],
+                    "faxNumber": [
+                        "+61 7 4616 6170"
+                    ],
+                    "openingHours": [
+                        "<p>0800 - 1630</p>"
+                    ],
+                    "id": [
+                        "d83abf7f-b51e-4f2b-9330-c091cfbacd5d"
+                    ],
+                    "facilityLevel": [
+                        "limited"
+                    ],
+                    "serviceId": [
+                        "197a700a-04e9-44fe-ab40-776278dc0420"
+                    ],
+                    "longitude": [
+                        "151.949997"
+                    ],
+                    "status": [
+                        "active"
+                    ]
+                },
+                "metaData": {
+                    "serviceId": "197a700a-04e9-44fe-ab40-776278dc0420",
+                    "openingHours": "<p>0800 - 1630</p>",
+                    "t": "LService 5 - Toowoomba",
+                    "facilityId": "9588b5b1-85f3-47f4-8311-80a17572b4d8",
+                    "faxNumber": "+61 7 4616 6170",
+                    "webpath": "service-5-facility-4",
+                    "c": "This is the description of the service location|This is the content for the service location",
+                    "emailAddress": "DDHHS@health.qld.gov.au",
+                    "longitude": "151.949997",
+                    "physicalAddressStreet": "Pechey Street",
+                    "locationDetails": "Extra details about the location",
+                    "latitude": "-27.566668",
+                    "phoneNumber": "+61 7 4616 6000",
+                    "status": "active",
+                    "physicalAddressSuburb": "Toowoomba City",
+                    "rsdServiceId": "123",
+                    "physicalAddressPostcode": "4350",
+                    "id": "d83abf7f-b51e-4f2b-9330-c091cfbacd5d",
+                    "contactLabel": "Contact us",
+                    "facilityLevel": "limited"
+                },
+                "tags": [],
+                "quickLinks": null,
+                "displayUrl": "file://dummy-url/try-mapping-a-url/e.g-in-xml-config/opt/funnelback/data/qld-health-core-service-finder__service-locations/offline/data/funnelback-web-crawl.warc/doc025",
+                "clickTrackingUrl": "/s/redirect?collection=qld-health-core-service-finder__meta&url=file%3A%2F%2Fdummy-url%2Ftry-mapping-a-url%2Fe.g-in-xml-config%2Fopt%2Ffunnelback%2Fdata%2Fqld-health-core-service-finder__service-locations%2Foffline%2Fdata%2Ffunnelback-web-crawl.warc%2Fdoc025&auth=hICA%2B%2FxcbiRHWwuKn%2BVu0g&profile=_default&rank=10&query=%21padrenull",
+                "explain": null,
+                "indexUrl": "file://dummy-url/try-mapping-a-url/e.g-in-xml-config/opt/funnelback/data/qld-health-core-service-finder__service-locations/offline/data/funnelback-web-crawl.warc/doc025",
+                "gscopesSet": [],
+                "customData": {},
+                "relatedDocuments": {},
+                "documentVisibleToUser": true,
+                "promoted": false,
+                "diversified": true
+            }
+        ],
+        "qsups": []
+    },
+    "returnCode": 0,
+    "untruncatedPadreOutputSize": 22362,
+    "facets": [
+        {
+            "name": "Categories",
+            "unselectAllUrl": "?query=%21padrenull&profile=_default&collection=qld-health-core-service-finder__meta",
+            "categories": [
+                {
+                    "label": null,
+                    "queryStringParamName": "f.Categories|categories",
+                    "values": [
+                        {
+                            "data": "06bdcc9f-08eb-4b57-bef2-646820b51768",
+                            "label": "06bdcc9f-08eb-4b57-bef2-646820b51768",
+                            "count": 5,
+                            "queryStringParam": "f.Categories%7Ccategories=06bdcc9f-08eb-4b57-bef2-646820b51768",
+                            "constraint": "categories",
+                            "selected": false,
+                            "queryStringParamName": "f.Categories|categories",
+                            "queryStringParamValue": "06bdcc9f-08eb-4b57-bef2-646820b51768",
+                            "toggleUrl": "?query=%21padrenull&profile=_default&collection=qld-health-core-service-finder__meta&f.Categories%7Ccategories=06bdcc9f-08eb-4b57-bef2-646820b51768"
+                        },
+                        {
+                            "data": "37831237-11b6-442e-8280-2a1d7be8ae36",
+                            "label": "37831237-11b6-442e-8280-2a1d7be8ae36",
+                            "count": 7,
+                            "queryStringParam": "f.Categories%7Ccategories=37831237-11b6-442e-8280-2a1d7be8ae36",
+                            "constraint": "categories",
+                            "selected": false,
+                            "queryStringParamName": "f.Categories|categories",
+                            "queryStringParamValue": "37831237-11b6-442e-8280-2a1d7be8ae36",
+                            "toggleUrl": "?query=%21padrenull&profile=_default&collection=qld-health-core-service-finder__meta&f.Categories%7Ccategories=37831237-11b6-442e-8280-2a1d7be8ae36"
+                        },
+                        {
+                            "data": "5c00d4cf-dd93-47da-8af7-d8711ac2b70f",
+                            "label": "5c00d4cf-dd93-47da-8af7-d8711ac2b70f",
+                            "count": 9,
+                            "queryStringParam": "f.Categories%7Ccategories=5c00d4cf-dd93-47da-8af7-d8711ac2b70f",
+                            "constraint": "categories",
+                            "selected": false,
+                            "queryStringParamName": "f.Categories|categories",
+                            "queryStringParamValue": "5c00d4cf-dd93-47da-8af7-d8711ac2b70f",
+                            "toggleUrl": "?query=%21padrenull&profile=_default&collection=qld-health-core-service-finder__meta&f.Categories%7Ccategories=5c00d4cf-dd93-47da-8af7-d8711ac2b70f"
+                        },
+                        {
+                            "data": "7d5f466f-7b75-4268-a566-856f21dda7b5",
+                            "label": "7d5f466f-7b75-4268-a566-856f21dda7b5",
+                            "count": 12,
+                            "queryStringParam": "f.Categories%7Ccategories=7d5f466f-7b75-4268-a566-856f21dda7b5",
+                            "constraint": "categories",
+                            "selected": false,
+                            "queryStringParamName": "f.Categories|categories",
+                            "queryStringParamValue": "7d5f466f-7b75-4268-a566-856f21dda7b5",
+                            "toggleUrl": "?query=%21padrenull&profile=_default&collection=qld-health-core-service-finder__meta&f.Categories%7Ccategories=7d5f466f-7b75-4268-a566-856f21dda7b5"
+                        },
+                        {
+                            "data": "ff50ab0f-9fbf-41ea-946a-5945c251f849",
+                            "label": "ff50ab0f-9fbf-41ea-946a-5945c251f849",
+                            "count": 11,
+                            "queryStringParam": "f.Categories%7Ccategories=ff50ab0f-9fbf-41ea-946a-5945c251f849",
+                            "constraint": "categories",
+                            "selected": false,
+                            "queryStringParamName": "f.Categories|categories",
+                            "queryStringParamValue": "ff50ab0f-9fbf-41ea-946a-5945c251f849",
+                            "toggleUrl": "?query=%21padrenull&profile=_default&collection=qld-health-core-service-finder__meta&f.Categories%7Ccategories=ff50ab0f-9fbf-41ea-946a-5945c251f849"
+                        }
+                    ],
+                    "categories": []
+                }
+            ],
+            "customData": {},
+            "selectionType": "MULTIPLE",
+            "constraintJoin": "OR",
+            "order": [
+                "CATEGORY_DEFINITION_ORDER",
+                "LABEL_ASCENDING"
+            ],
+            "facetValues": "FROM_UNSCOPED_ALL_QUERY",
+            "guessedDisplayType": "CHECKBOX",
+            "selectedValues": [],
+            "allValues": [
+                {
+                    "data": "06bdcc9f-08eb-4b57-bef2-646820b51768",
+                    "label": "06bdcc9f-08eb-4b57-bef2-646820b51768",
+                    "count": 5,
+                    "queryStringParam": "f.Categories%7Ccategories=06bdcc9f-08eb-4b57-bef2-646820b51768",
+                    "constraint": "categories",
+                    "selected": false,
+                    "queryStringParamName": "f.Categories|categories",
+                    "queryStringParamValue": "06bdcc9f-08eb-4b57-bef2-646820b51768",
+                    "toggleUrl": "?query=%21padrenull&profile=_default&collection=qld-health-core-service-finder__meta&f.Categories%7Ccategories=06bdcc9f-08eb-4b57-bef2-646820b51768"
+                },
+                {
+                    "data": "37831237-11b6-442e-8280-2a1d7be8ae36",
+                    "label": "37831237-11b6-442e-8280-2a1d7be8ae36",
+                    "count": 7,
+                    "queryStringParam": "f.Categories%7Ccategories=37831237-11b6-442e-8280-2a1d7be8ae36",
+                    "constraint": "categories",
+                    "selected": false,
+                    "queryStringParamName": "f.Categories|categories",
+                    "queryStringParamValue": "37831237-11b6-442e-8280-2a1d7be8ae36",
+                    "toggleUrl": "?query=%21padrenull&profile=_default&collection=qld-health-core-service-finder__meta&f.Categories%7Ccategories=37831237-11b6-442e-8280-2a1d7be8ae36"
+                },
+                {
+                    "data": "5c00d4cf-dd93-47da-8af7-d8711ac2b70f",
+                    "label": "5c00d4cf-dd93-47da-8af7-d8711ac2b70f",
+                    "count": 9,
+                    "queryStringParam": "f.Categories%7Ccategories=5c00d4cf-dd93-47da-8af7-d8711ac2b70f",
+                    "constraint": "categories",
+                    "selected": false,
+                    "queryStringParamName": "f.Categories|categories",
+                    "queryStringParamValue": "5c00d4cf-dd93-47da-8af7-d8711ac2b70f",
+                    "toggleUrl": "?query=%21padrenull&profile=_default&collection=qld-health-core-service-finder__meta&f.Categories%7Ccategories=5c00d4cf-dd93-47da-8af7-d8711ac2b70f"
+                },
+                {
+                    "data": "7d5f466f-7b75-4268-a566-856f21dda7b5",
+                    "label": "7d5f466f-7b75-4268-a566-856f21dda7b5",
+                    "count": 12,
+                    "queryStringParam": "f.Categories%7Ccategories=7d5f466f-7b75-4268-a566-856f21dda7b5",
+                    "constraint": "categories",
+                    "selected": false,
+                    "queryStringParamName": "f.Categories|categories",
+                    "queryStringParamValue": "7d5f466f-7b75-4268-a566-856f21dda7b5",
+                    "toggleUrl": "?query=%21padrenull&profile=_default&collection=qld-health-core-service-finder__meta&f.Categories%7Ccategories=7d5f466f-7b75-4268-a566-856f21dda7b5"
+                },
+                {
+                    "data": "ff50ab0f-9fbf-41ea-946a-5945c251f849",
+                    "label": "ff50ab0f-9fbf-41ea-946a-5945c251f849",
+                    "count": 11,
+                    "queryStringParam": "f.Categories%7Ccategories=ff50ab0f-9fbf-41ea-946a-5945c251f849",
+                    "constraint": "categories",
+                    "selected": false,
+                    "queryStringParamName": "f.Categories|categories",
+                    "queryStringParamValue": "ff50ab0f-9fbf-41ea-946a-5945c251f849",
+                    "toggleUrl": "?query=%21padrenull&profile=_default&collection=qld-health-core-service-finder__meta&f.Categories%7Ccategories=ff50ab0f-9fbf-41ea-946a-5945c251f849"
+                }
+            ],
+            "selected": false
+        },
+        {
+            "name": "Top in HHS",
+            "unselectAllUrl": "?query=%21padrenull&profile=_default&collection=qld-health-core-service-finder__meta",
+            "categories": [
+                {
+                    "label": null,
+                    "queryStringParamName": "f.Top in HHS|topInHhs",
+                    "values": [
+                        {
+                            "data": "darling-downs",
+                            "label": "darling-downs",
+                            "count": 3,
+                            "queryStringParam": "f.Top+in+HHS%7CtopInHhs=darling-downs",
+                            "constraint": "topInHhs",
+                            "selected": false,
+                            "queryStringParamName": "f.Top in HHS|topInHhs",
+                            "queryStringParamValue": "darling-downs",
+                            "toggleUrl": "?f.Top+in+HHS%7CtopInHhs=darling-downs&query=%21padrenull&profile=_default&collection=qld-health-core-service-finder__meta"
+                        },
+                        {
+                            "data": "hhs-2",
+                            "label": "hhs-2",
+                            "count": 6,
+                            "queryStringParam": "f.Top+in+HHS%7CtopInHhs=hhs-2",
+                            "constraint": "topInHhs",
+                            "selected": false,
+                            "queryStringParamName": "f.Top in HHS|topInHhs",
+                            "queryStringParamValue": "hhs-2",
+                            "toggleUrl": "?f.Top+in+HHS%7CtopInHhs=hhs-2&query=%21padrenull&profile=_default&collection=qld-health-core-service-finder__meta"
+                        },
+                        {
+                            "data": "hhs-3",
+                            "label": "hhs-3",
+                            "count": 4,
+                            "queryStringParam": "f.Top+in+HHS%7CtopInHhs=hhs-3",
+                            "constraint": "topInHhs",
+                            "selected": false,
+                            "queryStringParamName": "f.Top in HHS|topInHhs",
+                            "queryStringParamValue": "hhs-3",
+                            "toggleUrl": "?f.Top+in+HHS%7CtopInHhs=hhs-3&query=%21padrenull&profile=_default&collection=qld-health-core-service-finder__meta"
+                        }
+                    ],
+                    "categories": []
+                }
+            ],
+            "customData": {},
+            "selectionType": "MULTIPLE",
+            "constraintJoin": "OR",
+            "order": [
+                "CATEGORY_DEFINITION_ORDER",
+                "LABEL_ASCENDING"
+            ],
+            "facetValues": "FROM_UNSCOPED_ALL_QUERY",
+            "guessedDisplayType": "CHECKBOX",
+            "selectedValues": [],
+            "allValues": [
+                {
+                    "data": "darling-downs",
+                    "label": "darling-downs",
+                    "count": 3,
+                    "queryStringParam": "f.Top+in+HHS%7CtopInHhs=darling-downs",
+                    "constraint": "topInHhs",
+                    "selected": false,
+                    "queryStringParamName": "f.Top in HHS|topInHhs",
+                    "queryStringParamValue": "darling-downs",
+                    "toggleUrl": "?f.Top+in+HHS%7CtopInHhs=darling-downs&query=%21padrenull&profile=_default&collection=qld-health-core-service-finder__meta"
+                },
+                {
+                    "data": "hhs-2",
+                    "label": "hhs-2",
+                    "count": 6,
+                    "queryStringParam": "f.Top+in+HHS%7CtopInHhs=hhs-2",
+                    "constraint": "topInHhs",
+                    "selected": false,
+                    "queryStringParamName": "f.Top in HHS|topInHhs",
+                    "queryStringParamValue": "hhs-2",
+                    "toggleUrl": "?f.Top+in+HHS%7CtopInHhs=hhs-2&query=%21padrenull&profile=_default&collection=qld-health-core-service-finder__meta"
+                },
+                {
+                    "data": "hhs-3",
+                    "label": "hhs-3",
+                    "count": 4,
+                    "queryStringParam": "f.Top+in+HHS%7CtopInHhs=hhs-3",
+                    "constraint": "topInHhs",
+                    "selected": false,
+                    "queryStringParamName": "f.Top in HHS|topInHhs",
+                    "queryStringParamValue": "hhs-3",
+                    "toggleUrl": "?f.Top+in+HHS%7CtopInHhs=hhs-3&query=%21padrenull&profile=_default&collection=qld-health-core-service-finder__meta"
+                }
+            ],
+            "selected": false
+        }
+    ],
+    "facetExtras": {
+        "unselectAllFacetsUrl": "?query=%21padrenull&profile=_default&collection=qld-health-core-service-finder__meta",
+        "hasSelectedNonTabFacets": false,
+        "hasNonTabFacets": true
+    },
+    "customData": {},
+    "optimiserModel": null,
+    "curator": {
+        "exhibits": []
+    },
+	"pagination": [{
+		"label": 1,
+		"isCurrent": true,
+		"linkType": "num",
+		"url": "?&start_rank=1"
+	}, {
+		"label": 2,
+		"isCurrent": false,
+		"linkType": "num",
+		"url": "?&start_rank=4"
+	}, {
+		"label": 3,
+		"isCurrent": false,
+		"linkType": "num",
+		"url": "?&start_rank=7"
+	}, {
+		"label": 4,
+		"isCurrent": false,
+		"linkType": "num",
+		"url": "?&start_rank=10"
+	}, {
+		"label": 5,
+		"isCurrent": false,
+		"linkType": "num",
+		"url": "?&start_rank=13"
+	}, {
+		"label": 8,
+		"linkType": "last",
+		"url": "?&start_rank=22"
+	}, {
+		"linkType": "next",
+		"url": "?&start_rank=4"
+	}]
+}

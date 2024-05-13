@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +7,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="/wp-content/themes/csds-generic/src/assets/js/search.js"></script>
-
-
+    <link href="wp-content/themes/csds-generic/style.css" rel="stylesheet">
     <?php wp_head();
     include 'colours.php';
         ?>
 </head>
 <body class="qld__grid">
-
     <header class="qld__header" role="banner">
         <nav class="qld__skip-link" aria-label="skip links" tabindex="-1">
             <a class="qld__skip-link__link" href="#content">Skip to main content</a>

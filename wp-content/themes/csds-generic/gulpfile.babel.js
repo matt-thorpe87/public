@@ -25,11 +25,11 @@ const paths = {
     dest: 'dist/assets/css'
   },
   images: {
-    src: ['src/assets/images/**/*.{jpg,jpeg,png,svg,gif}'],
+    src: ['src/assets/images/**/*.{jpg,jpeg,png,svg,gif}', 'src/mysource_files/**/*.{jpg,jpeg,png,svg,gif}'],
     dest: 'dist/assets/images'
   },
   scripts: {
-    src: 'src/assets/js/bundle.js',
+    src:  'src/assets/js/search.js',
     dest: 'dist/assets/js'
   },
   other: {
@@ -65,26 +65,26 @@ export const watch = () => {
 
 export const scripts = () => {
   return gulp.src(paths.scripts.src)
-  .pipe(webpack({
-    mode: "production",
-    module: {
-      rules: [
-        {
-          test: /\.js$/,
-          use: {
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/preset-env']
-            }
-          }
-        }
-      ]
+  // .pipe(webpack({
+  //   mode: "production",
+  //   module: {
+  //     rules: [
+  //       {
+  //         test: /\.js$/,
+  //         use: {
+  //           loader: 'babel-loader',
+  //           options: {
+  //             presets: ['@babel/preset-env']
+  //           }
+  //         }
+  //       }
+  //     ]
 
-      },
-      output: {
-        filename: 'bundle.js'
-    }
-  }))
+  //     },
+  //     output: {
+  //       filename: 'bundle.js'
+  //   }
+  // }))
   .pipe(uglify())
   .pipe(gulp.dest(paths.scripts.dest));
 }

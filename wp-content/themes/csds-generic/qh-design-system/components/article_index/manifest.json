@@ -1,0 +1,3261 @@
+{
+	"component": {
+		"name": "Article Index",
+		"description": "",
+		"version": "1.0",
+		"status": "In Development",
+		"data": {},
+		"tags": {
+			"aboriginal_and_torres_strait_islander_health": "Aboriginal and Torres Strait Islander Health",
+			"aging": "Aging",
+			"alcohol": "Alcohol",
+			"alcohol_and_drugs": "Alcohol and drugs",
+			"asthma": "Asthma",
+			"babies": "Babies",
+			"blood_donation": "Blood donation",
+			"bone_health": "Bone health",
+			"bowel_cancer_screening": "Bowel cancer screening",
+			"breast_cancer_screening": "Breast cancer screening",
+			"cancer": "Cancer",
+			"cancer_screening": "Cancer screening",
+			"care_at_the_end_of_life": "Care at the end of life",
+			"careers": "Careers",
+			"cervical_cancer_screening": "Cervical cancer screening",
+			"children's_health": "Children's health",
+			"child_safety_and_health": "Child safety and health",
+			"chronic_disease": "Chronic disease",
+			"concussion": "Concussion",
+			"covid-19": "COVID-19",
+			"dangerous_creatures": "Dangerous creatures",
+			"dental_health": "Dental health",
+			"diabetes": "Diabetes",
+			"disaster_preparedness": "Disaster preparedness",
+			"disasters_and_emergency": "Disasters and emergency",
+			"eds_for_emergencies": "EDs for emergencies",
+			"events": "Events",
+			"exercise": "Exercise",
+			"facilities": "Facilities",
+			"first_aid": "First aid",
+			"food_safety": "Food safety",
+			"general_health": "General health",
+			"health-topic": "health-topic",
+			"hearing_health": "Hearing health",
+			"hep_c": "Hep C",
+			"hydration": "Hydration",
+			"immunisation": "Immunisation",
+			"influenza": "Influenza",
+			"interview": "Interview",
+			"maternal_health": "Maternal health",
+			"maternity": "Maternity",
+			"medicinal_cannabis": "Medicinal Cannabis",
+			"men's_health": "Men's health",
+			"mental_health": "Mental health",
+			"mosquitoes": "Mosquitoes",
+			"nutrition": "Nutrition",
+			"obesity": "Obesity",
+			"one_punch": "One punch",
+			"ovarian_cancer": "Ovarian cancer",
+			"patient_safety": "Patient safety",
+			"prostate_cancer_screening": "Prostate cancer screening",
+			"queensland_health": "Queensland Health",
+			"research": "Research",
+			"seasonal_health": "Seasonal health",
+			"senior_health": "Senior health",
+			"seniors'_health": "Seniors' Health",
+			"sepsis": "Sepsis",
+			"sexual_health": "Sexual health",
+			"sleep_health": "Sleep health",
+			"smoking": "Smoking",
+			"staff": "Staff",
+			"sun_safety": "Sun safety",
+			"system_literacy": "System literacy",
+			"teen_health": "Teen health",
+			"telehealth": "Telehealth",
+			"tobacco": "Tobacco",
+			"vaccinations": "Vaccinations",
+			"weather": "Weather",
+			"women's_health": "Women's Health",
+			"workplace_health": "Workplace health"
+		},
+		"assets": [
+			{
+				"assetid": "12918",
+				"type_code": "page_standard",
+				"version": "0.0.28",
+				"name": "My COVID-19 Experience - Cairns patient's virus journey",
+				"short_name": "My COVID-19 Experience - Cairns patient's virus journey",
+				"status": "16",
+				"languages": "en",
+				"charset": "utf-8",
+				"created": "2021-05-10 13:44:45",
+				"created_userid": "11980",
+				"updated": "2021-11-16 13:31:59",
+				"updated_userid": "765",
+				"published": "2021-06-10 08:40:55",
+				"published_userid": "54",
+				"status_changed": "2021-06-10 08:40:55",
+				"status_changed_userid": "54",
+				"thumbnail": "12862",
+				"attributes": {
+					"name": {
+						"attrid": "631",
+						"type": "text",
+						"value": "My COVID-19 Experience - Cairns patient's virus journey",
+						"is_contextable": true,
+						"use_default": true
+					},
+					"short_name": {
+						"attrid": "632",
+						"type": "text",
+						"value": "My COVID-19 Experience - Cairns patient's virus journey",
+						"is_contextable": true,
+						"use_default": true
+					},
+					"available_conditions": {
+						"attrid": "633",
+						"type": "serialise",
+						"value": [],
+						"is_contextable": false,
+						"use_default": true
+					},
+					"conditions": {
+						"attrid": "634",
+						"type": "serialise",
+						"value": [],
+						"is_contextable": true,
+						"use_default": true
+					}
+				},
+				"metadata": {
+					"topic": {
+						"value": "",
+						"fieldid": "16716",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"location": {
+						"value": "",
+						"fieldid": "16850",
+						"type": "metadata_field_thesaurus",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"author": {
+						"value": "",
+						"fieldid": "16762",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"dateCreated": {
+						"value": "2021-05-10 13:44:45",
+						"fieldid": "16767",
+						"type": "metadata_field_date",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"datePublished": {
+						"value": "2021-06-10 08:40:55",
+						"fieldid": "16763",
+						"type": "metadata_field_date",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"dateUpdated": {
+						"value": "2021-11-16 13:31:59",
+						"fieldid": "16764",
+						"type": "metadata_field_date",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"thumbnailCaption": {
+						"value": "",
+						"fieldid": "17696",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"thumbnailAlt": {
+						"value": "Person wearing mask",
+						"fieldid": "17697",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"description": {
+						"value": "“This is something you do not want to go through\": Cairns patient's COVID-19 infection journey.",
+						"fieldid": "7737",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": false,
+						"use_default": true
+					},
+					"shortDescription": {
+						"value": "My COVID-19 Experience - Cairns patient's virus journey.",
+						"fieldid": "7738",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": false,
+						"use_default": true
+					},
+					"robots": {
+						"value": "all",
+						"fieldid": "18733",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"googlebot": {
+						"value": "all",
+						"fieldid": "18734",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"pageType": {
+						"value": "news_detail",
+						"fieldid": "7740",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": false,
+						"use_default": true
+					},
+					"displayBreadcrumbs": {
+						"value": "true",
+						"fieldid": "7741",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": false,
+						"use_default": true
+					},
+					"displayBanner": {
+						"value": "no",
+						"fieldid": "7742",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": false,
+						"use_default": true
+					},
+					"displayQuickExit": {
+						"value": "",
+						"fieldid": "7744",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": false,
+						"use_default": true
+					},
+					"displayLastUpdated": {
+						"value": "yes",
+						"fieldid": "17958",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"dataSource": {
+						"value": "",
+						"fieldid": "17110",
+						"type": "metadata_field_related_asset",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"detailsPage": {
+						"value": "",
+						"fieldid": "17111",
+						"type": "metadata_field_related_asset",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"mapMarker": {
+						"value": "",
+						"fieldid": "17112",
+						"type": "metadata_field_related_asset",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"bookOnlineUrl": {
+						"value": "",
+						"fieldid": "17113",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardIcon": {
+						"value": "",
+						"fieldid": "16449",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardDisplayHeader": {
+						"value": "false",
+						"fieldid": "16450",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardDisplayHeadingAsLink": {
+						"value": "true",
+						"fieldid": "16451",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardCta1TileIcon": {
+						"value": "",
+						"fieldid": "16452",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardCta1TileText": {
+						"value": "",
+						"fieldid": "16453",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardCta1TileURL": {
+						"value": "",
+						"fieldid": "16454",
+						"type": "metadata_field_related_asset",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardCta1TileBackground": {
+						"value": "",
+						"fieldid": "16455",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardCta2TileIcon": {
+						"value": "",
+						"fieldid": "16457",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardCta2TileText": {
+						"value": "",
+						"fieldid": "16458",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardCta2TileURL": {
+						"value": "",
+						"fieldid": "16459",
+						"type": "metadata_field_related_asset",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardCta2TileBackground": {
+						"value": "",
+						"fieldid": "16460",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardDisplayFooter": {
+						"value": "false",
+						"fieldid": "16462",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardNewWindow": {
+						"value": "false",
+						"fieldid": "16563",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"showInMegaNav": {
+						"value": "false",
+						"fieldid": "46834",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					}
+				}
+			},
+			{
+				"assetid": "12945",
+				"type_code": "page_standard",
+				"version": "0.0.15",
+				"name": "My 14 days in a Cairns quarantine hotel",
+				"short_name": "My 14 days in a Cairns quarantine hotel",
+				"status": "16",
+				"languages": "en",
+				"charset": "utf-8",
+				"created": "2021-05-10 15:21:19",
+				"created_userid": "11980",
+				"updated": "2021-11-16 13:31:59",
+				"updated_userid": "765",
+				"published": "2021-06-10 08:41:05",
+				"published_userid": "54",
+				"status_changed": "2021-06-10 08:41:05",
+				"status_changed_userid": "54",
+				"thumbnail": "12864",
+				"attributes": {
+					"name": {
+						"attrid": "631",
+						"type": "text",
+						"value": "My 14 days in a Cairns quarantine hotel",
+						"is_contextable": true,
+						"use_default": true
+					},
+					"short_name": {
+						"attrid": "632",
+						"type": "text",
+						"value": "My 14 days in a Cairns quarantine hotel",
+						"is_contextable": true,
+						"use_default": true
+					},
+					"available_conditions": {
+						"attrid": "633",
+						"type": "serialise",
+						"value": [],
+						"is_contextable": false,
+						"use_default": true
+					},
+					"conditions": {
+						"attrid": "634",
+						"type": "serialise",
+						"value": [],
+						"is_contextable": true,
+						"use_default": true
+					}
+				},
+				"metadata": {
+					"topic": {
+						"value": "",
+						"fieldid": "16716",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"location": {
+						"value": "",
+						"fieldid": "16850",
+						"type": "metadata_field_thesaurus",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"author": {
+						"value": "",
+						"fieldid": "16762",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"dateCreated": {
+						"value": "2021-05-10 15:21:19",
+						"fieldid": "16767",
+						"type": "metadata_field_date",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"datePublished": {
+						"value": "2021-06-10 08:41:05",
+						"fieldid": "16763",
+						"type": "metadata_field_date",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"dateUpdated": {
+						"value": "2021-11-16 13:31:59",
+						"fieldid": "16764",
+						"type": "metadata_field_date",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"thumbnailCaption": {
+						"value": "",
+						"fieldid": "17696",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"thumbnailAlt": {
+						"value": "Person pulling bag into hotel room",
+						"fieldid": "17697",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"description": {
+						"value": "My 14 days in a Cairns quarantine hotel.",
+						"fieldid": "7737",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": false,
+						"use_default": true
+					},
+					"shortDescription": {
+						"value": "My 14 days in a Cairns quarantine hotel.",
+						"fieldid": "7738",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": false,
+						"use_default": true
+					},
+					"robots": {
+						"value": "all",
+						"fieldid": "18733",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"googlebot": {
+						"value": "all",
+						"fieldid": "18734",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"pageType": {
+						"value": "news_detail",
+						"fieldid": "7740",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": false,
+						"use_default": true
+					},
+					"displayBreadcrumbs": {
+						"value": "true",
+						"fieldid": "7741",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": false,
+						"use_default": true
+					},
+					"displayBanner": {
+						"value": "no",
+						"fieldid": "7742",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": false,
+						"use_default": true
+					},
+					"displayQuickExit": {
+						"value": "",
+						"fieldid": "7744",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": false,
+						"use_default": true
+					},
+					"displayLastUpdated": {
+						"value": "yes",
+						"fieldid": "17958",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"dataSource": {
+						"value": "",
+						"fieldid": "17110",
+						"type": "metadata_field_related_asset",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"detailsPage": {
+						"value": "",
+						"fieldid": "17111",
+						"type": "metadata_field_related_asset",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"mapMarker": {
+						"value": "",
+						"fieldid": "17112",
+						"type": "metadata_field_related_asset",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"bookOnlineUrl": {
+						"value": "",
+						"fieldid": "17113",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardIcon": {
+						"value": "",
+						"fieldid": "16449",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardDisplayHeader": {
+						"value": "false",
+						"fieldid": "16450",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardDisplayHeadingAsLink": {
+						"value": "true",
+						"fieldid": "16451",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardCta1TileIcon": {
+						"value": "",
+						"fieldid": "16452",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardCta1TileText": {
+						"value": "",
+						"fieldid": "16453",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardCta1TileURL": {
+						"value": "",
+						"fieldid": "16454",
+						"type": "metadata_field_related_asset",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardCta1TileBackground": {
+						"value": "",
+						"fieldid": "16455",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardCta2TileIcon": {
+						"value": "",
+						"fieldid": "16457",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardCta2TileText": {
+						"value": "",
+						"fieldid": "16458",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardCta2TileURL": {
+						"value": "",
+						"fieldid": "16459",
+						"type": "metadata_field_related_asset",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardCta2TileBackground": {
+						"value": "",
+						"fieldid": "16460",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardDisplayFooter": {
+						"value": "false",
+						"fieldid": "16462",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"cardNewWindow": {
+						"value": "false",
+						"fieldid": "16563",
+						"type": "metadata_field_text",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					},
+					"showInMegaNav": {
+						"value": "false",
+						"fieldid": "46834",
+						"type": "metadata_field_select",
+						"is_contextable": true,
+						"default_value": true,
+						"use_default": true
+					}
+				}
+			}
+		],
+		"results": {
+			"details": {
+				"padreVersion": "FUNNELBACK_PADRE_15.22.0.0 MDPLFS (Web/Ent) [64 bit]",
+				"collectionSize": "/opt/funnelback/data/qld-health-cairns-news/live/idx/index: 0.1 MB, 167 docs",
+				"collectionUpdated": 1638429226000
+			},
+			"query": "!padrenull",
+			"queryAsProcessed": "!padrenull",
+			"queryRaw": "!padrenull",
+			"querySystemRaw": null,
+			"queryCleaned": "!padrenull",
+			"collection": "qld-health-cairns-news",
+			"resultsSummary": {
+				"fullyMatching": 40,
+				"collapsed": 0,
+				"partiallyMatching": 0,
+				"totalMatching": 40,
+				"estimatedCounts": false,
+				"carriedOverFtd": null,
+				"totalDistinctMatchingUrls": null,
+				"numRanks": 15,
+				"currStart": 1,
+				"currEnd": 15,
+				"prevStart": null,
+				"nextStart": 16,
+				"totalSecurityObscuredUrls": null,
+				"anyUrlsPromoted": false,
+				"resultDiversificationApplied": false
+			},
+			"spell": null,
+			"bestBets": [],
+			"results": [
+				{
+					"rank": 1,
+					"score": 1000,
+					"title": "Atherton Hospital redevelopment reaches new heights",
+					"collection": "qld-health-cairns-news",
+					"component": 12,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=48754",
+					"summary": " The Atherton Hospital redevelopment has marked a major milestone with completion of the roof on the new four-storey Clinical Services Building, bringing the $74.8 million project a step closer to completion.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D48754&profile=_default",
+					"date": null,
+					"fileSize": 193,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 0,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-12-02 17:13:44"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0026/48752/Card-Atherton-Hospital-redevelopment-reaches-new-heights.jpg"
+						],
+						"dateCreated": [
+							"2021-12-02 17:02:29"
+						],
+						"c": [
+							"The Atherton Hospital redevelopment has marked a major milestone with completion of the roof on the new four-storey Clinical Services Building, bringing the $74.8 million project a step closer to completion."
+						],
+						"t": [
+							"Atherton Hospital redevelopment reaches new heights"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/atherton-hospital-redevelopment-reaches-new-heights"
+						],
+						"shortDescription": [
+							"The Atherton Hospital redevelopment has marked a major milestone with completion of the roof on the new four-storey Clinical Services Building, bringing the $74.8 million project a step closer to completion."
+						],
+						"dateUpdated": [
+							"2021-12-02 17:13:45"
+						]
+					},
+					"metaData": {
+						"c": "The Atherton Hospital redevelopment has marked a major milestone with completion of the roof on the new four-storey Clinical Services Building, bringing the $74.8 million project a step closer to completion.",
+						"dateCreated": "2021-12-02 17:02:29",
+						"dateUpdated": "2021-12-02 17:13:45",
+						"topic": "cardiology",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/atherton-hospital-redevelopment-reaches-new-heights",
+						"t": "Atherton Hospital redevelopment reaches new heights",
+						"datePublished": "2021-12-02 17:13:44",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0026/48752/Card-Atherton-Hospital-redevelopment-reaches-new-heights.jpg",
+						"shortDescription": "The Atherton Hospital redevelopment has marked a major milestone with completion of the roof on the new four-storey Clinical Services Building, bringing the $74.8 million project a step closer to completion.",
+						"tags": "women's_health; covid-19"
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=48754",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D48754&auth=RBiO5BPLrBwQUbuzlMQzyg&profile=_default&rank=1&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=48754",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 2,
+					"score": 1000,
+					"title": "My Living Nightmare",
+					"collection": "qld-health-cairns-news",
+					"component": 11,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=48224",
+					"summary": " A Far North Queenslander diagnosed with a rare illness has given clinicians incredible insight into what a patient experiences when their body is fully paralysed, but their mind still conscious.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D48224&profile=_default",
+					"date": null,
+					"fileSize": 129,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 0,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-11-29 15:45:12"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0018/48222/Card-My-Living-Nightmare.jpg"
+						],
+						"dateCreated": [
+							"2021-11-29 14:40:35"
+						],
+						"c": [
+							"A Far North Queenslander diagnosed with a rare illness has given clinicians incredible insight into what a patient experiences when their body is fully paralysed, but their mind still conscious."
+						],
+						"t": [
+							"My Living Nightmare"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/my-living-nightmare"
+						],
+						"shortDescription": [
+							"A Far North Queenslander diagnosed with a rare illness has given clinicians incredible insight into what a patient experiences when their body is fully paralysed, but their mind still conscious."
+						],
+						"dateUpdated": [
+							"2021-12-01 09:39:37"
+						],
+						"tags": [
+							"cardiology; research; exercise_and_physical_activity; healthy_eating"
+						]
+					},
+					"metaData": {
+						"shortDescription": "A Far North Queenslander diagnosed with a rare illness has given clinicians incredible insight into what a patient experiences when their body is fully paralysed, but their mind still conscious.",
+						"datePublished": "2021-11-29 15:45:12",
+						"t": "My Living Nightmare",
+						"c": "A Far North Queenslander diagnosed with a rare illness has given clinicians incredible insight into what a patient experiences when their body is fully paralysed, but their mind still conscious.",
+						"dateUpdated": "2021-12-01 09:39:37",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0018/48222/Card-My-Living-Nightmare.jpg",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/my-living-nightmare",
+						"dateCreated": "2021-11-29 14:40:35",
+						"tags": "women's_health; covid-19"
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=48224",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D48224&auth=xc%2BgBSnTlG6NsG42UCOORQ&profile=_default&rank=2&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=48224",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 3,
+					"score": 1000,
+					"title": "Stroke excellence",
+					"collection": "qld-health-cairns-news",
+					"component": 8,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=47254",
+					"summary": " Cairns Hospital has won a national excellence award for its work in managing patients with stroke.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D47254&profile=_default",
+					"date": null,
+					"fileSize": 125,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 10,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-11-23 15:42:54"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0021/47253/Card-Stroke-excellence.jpg"
+						],
+						"dateCreated": [
+							"2021-11-23 15:04:31"
+						],
+						"c": [
+							"Cairns Hospital has won a national excellence award for its work in managing patients with stroke."
+						],
+						"t": [
+							"Stroke excellence"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/stroke-excellence"
+						],
+						"shortDescription": [
+							"Cairns Hospital has won a national excellence award for its work in managing patients with stroke."
+						],
+						"dateUpdated": [
+							"2021-11-23 16:09:19"
+						]
+					},
+					"metaData": {
+						"dateCreated": "2021-11-23 15:04:31",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/stroke-excellence",
+						"t": "Stroke excellence",
+						"dateUpdated": "2021-11-23 16:09:19",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0021/47253/Card-Stroke-excellence.jpg",
+						"shortDescription": "Cairns Hospital has won a national excellence award for its work in managing patients with stroke.",
+						"c": "Cairns Hospital has won a national excellence award for its work in managing patients with stroke.",
+						"datePublished": "2021-11-23 15:42:54"
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=47254",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D47254&auth=nRK%2FCys5WLRdoyzAO76MUA&profile=_default&rank=3&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=47254",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 4,
+					"score": 1000,
+					"title": "Dizzy no more",
+					"collection": "qld-health-cairns-news",
+					"component": 8,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=47116",
+					"summary": " Ongoing dizziness and vertigo make simple life activities incredibly challenging. 84-year-old Mei is no longer dizzy thanks to some specialised goggles and physiotherapy treatment called vestibular therapy.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D47116&profile=_default",
+					"date": null,
+					"fileSize": 117,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 8,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-11-18 09:44:28"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0018/47115/Card-Dizzy-no-more.jpg"
+						],
+						"dateCreated": [
+							"2021-11-18 09:12:22"
+						],
+						"c": [
+							"Ongoing dizziness and vertigo make simple life activities incredibly challenging. 84-year-old Mei is no longer dizzy thanks to some specialised goggles and physiotherapy treatment called vestibular therapy."
+						],
+						"t": [
+							"Dizzy no more"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/dizzy-no-more"
+						],
+						"shortDescription": [
+							"Ongoing dizziness and vertigo make simple life activities incredibly challenging. 84-year-old Mei is no longer dizzy thanks to some specialised goggles and physiotherapy treatment called vestibular therapy."
+						],
+						"dateUpdated": [
+							"2021-11-23 16:07:38"
+						]
+					},
+					"metaData": {
+						"dateUpdated": "2021-11-23 16:07:38",
+						"dateCreated": "2021-11-18 09:12:22",
+						"datePublished": "2021-11-18 09:44:28",
+						"c": "Ongoing dizziness and vertigo make simple life activities incredibly challenging. 84-year-old Mei is no longer dizzy thanks to some specialised goggles and physiotherapy treatment called vestibular therapy.",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/dizzy-no-more",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0018/47115/Card-Dizzy-no-more.jpg",
+						"t": "Dizzy no more",
+						"shortDescription": "Ongoing dizziness and vertigo make simple life activities incredibly challenging. 84-year-old Mei is no longer dizzy thanks to some specialised goggles and physiotherapy treatment called vestibular therapy."
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=47116",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D47116&auth=FrjuGRQdSWVX8WJEEfE47Q&profile=_default&rank=4&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=47116",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 5,
+					"score": 1000,
+					"title": "World Prematurity Day",
+					"collection": "qld-health-cairns-news",
+					"component": 8,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=47099",
+					"summary": " We mark World Prematurity Day by re-visiting baby Millie who is the smallest baby to have born in North Queensland at just 430 grams.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D47099&profile=_default",
+					"date": null,
+					"fileSize": 133,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 7,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-11-17 11:31:08"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0027/47097/Card-World-Prematurity-Day.jpg"
+						],
+						"dateCreated": [
+							"2021-11-17 11:18:33"
+						],
+						"c": [
+							"We mark World Prematurity Day by re-visiting baby Millie who is the smallest baby to have born in North Queensland at just 430 grams."
+						],
+						"t": [
+							"World Prematurity Day"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/world-prematurity-day"
+						],
+						"shortDescription": [
+							"We mark World Prematurity Day by re-visiting baby Millie who is the smallest baby to have born in North Queensland at just 430 grams."
+						],
+						"dateUpdated": [
+							"2021-11-23 16:05:18"
+						]
+					},
+					"metaData": {
+						"t": "World Prematurity Day",
+						"datePublished": "2021-11-17 11:31:08",
+						"shortDescription": "We mark World Prematurity Day by re-visiting baby Millie who is the smallest baby to have born in North Queensland at just 430 grams.",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0027/47097/Card-World-Prematurity-Day.jpg",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/world-prematurity-day",
+						"c": "We mark World Prematurity Day by re-visiting baby Millie who is the smallest baby to have born in North Queensland at just 430 grams.",
+						"dateUpdated": "2021-11-23 16:05:18",
+						"dateCreated": "2021-11-17 11:18:33"
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=47099",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D47099&auth=ObLBL3wRWChEa82BOQ41og&profile=_default&rank=5&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=47099",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 6,
+					"score": 1000,
+					"title": "New state-of-the-art pathology testing machines for FNQ",
+					"collection": "qld-health-cairns-news",
+					"component": 8,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=46787",
+					"summary": " Cairns Hospital’s Pathology Queensland laboratory staff are thrilled with their new state-of-the-art biochemical analysers that test patients’ blood in half the time.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D46787&profile=_default",
+					"date": null,
+					"fileSize": 201,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 6,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-11-15 10:27:35"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0030/46785/Card-New-state-of-the-art-pathology-testing-machines-for-FNQ.jpg"
+						],
+						"dateCreated": [
+							"2021-11-15 10:13:35"
+						],
+						"c": [
+							"Cairns Hospital’s Pathology Queensland laboratory staff are thrilled with their new state-of-the-art biochemical analysers that test patients’ blood in half the time."
+						],
+						"t": [
+							"New state-of-the-art pathology testing machines for FNQ"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/new-state-of-the-art-pathology-testing-machines-for-fnq"
+						],
+						"shortDescription": [
+							"Cairns Hospital’s Pathology Queensland laboratory staff are thrilled with their new state-of-the-art biochemical analysers that test patients’ blood in half the time."
+						],
+						"dateUpdated": [
+							"2021-11-23 16:03:50"
+						]
+					},
+					"metaData": {
+						"dateCreated": "2021-11-15 10:13:35",
+						"c": "Cairns Hospital’s Pathology Queensland laboratory staff are thrilled with their new state-of-the-art biochemical analysers that test patients’ blood in half the time.",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/new-state-of-the-art-pathology-testing-machines-for-fnq",
+						"datePublished": "2021-11-15 10:27:35",
+						"t": "New state-of-the-art pathology testing machines for FNQ",
+						"dateUpdated": "2021-11-23 16:03:50",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0030/46785/Card-New-state-of-the-art-pathology-testing-machines-for-FNQ.jpg",
+						"shortDescription": "Cairns Hospital’s Pathology Queensland laboratory staff are thrilled with their new state-of-the-art biochemical analysers that test patients’ blood in half the time."
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=46787",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D46787&auth=U4eIr8njXFkwnW4nKBa1IQ&profile=_default&rank=6&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=46787",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 7,
+					"score": 1000,
+					"title": "Urban expansion linked to dangerous disease",
+					"collection": "qld-health-cairns-news",
+					"component": 8,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=46732",
+					"summary": " Urban expansion may have contributed to a rise in cases of a dangerous soil-borne disease in Far North Queensland, a new study has found.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D46732&profile=_default",
+					"date": null,
+					"fileSize": 177,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 5,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-11-11 12:37:54"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0030/46686/Card-Urban-expansion-linked-to-dangerous-disease.jpg"
+						],
+						"dateCreated": [
+							"2021-11-11 12:13:04"
+						],
+						"c": [
+							"Urban expansion may have contributed to a rise in cases of a dangerous soil-borne disease in Far North Queensland, a new study has found."
+						],
+						"t": [
+							"Urban expansion linked to dangerous disease"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/urban-expansion-linked-to-dangerous-disease"
+						],
+						"shortDescription": [
+							"Urban expansion may have contributed to a rise in cases of a dangerous soil-borne disease in Far North Queensland, a new study has found."
+						],
+						"dateUpdated": [
+							"2021-11-23 16:03:10"
+						]
+					},
+					"metaData": {
+						"dateCreated": "2021-11-11 12:13:04",
+						"shortDescription": "Urban expansion may have contributed to a rise in cases of a dangerous soil-borne disease in Far North Queensland, a new study has found.",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0030/46686/Card-Urban-expansion-linked-to-dangerous-disease.jpg",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/urban-expansion-linked-to-dangerous-disease",
+						"dateUpdated": "2021-11-23 16:03:10",
+						"datePublished": "2021-11-11 12:37:54",
+						"t": "Urban expansion linked to dangerous disease",
+						"c": "Urban expansion may have contributed to a rise in cases of a dangerous soil-borne disease in Far North Queensland, a new study has found."
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=46732",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D46732&auth=YYqvKdZdi2LZkFH4SzD4pw&profile=_default&rank=7&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=46732",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 8,
+					"score": 1000,
+					"title": "A champion of the Innisfail community",
+					"collection": "qld-health-cairns-news",
+					"component": 8,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=46689",
+					"summary": " Innisfail Hospital director of nursing and facility manager Lesley Harris has been recognised for 40 years of service with Queensland Health.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D46689&profile=_default",
+					"date": null,
+					"fileSize": 165,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 4,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-11-11 12:02:45"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0031/46687/Card-A-champion-of-the-Innisfail-community.jpg"
+						],
+						"dateCreated": [
+							"2021-11-11 11:18:49"
+						],
+						"c": [
+							"Innisfail Hospital director of nursing and facility manager Lesley Harris has been recognised for 40 years of service with Queensland Health."
+						],
+						"t": [
+							"A champion of the Innisfail community"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/a-champion-of-the-innisfail-community"
+						],
+						"shortDescription": [
+							"Innisfail Hospital director of nursing and facility manager Lesley Harris has been recognised for 40 years of service with Queensland Health."
+						],
+						"dateUpdated": [
+							"2021-11-23 16:02:13"
+						]
+					},
+					"metaData": {
+						"c": "Innisfail Hospital director of nursing and facility manager Lesley Harris has been recognised for 40 years of service with Queensland Health.",
+						"dateCreated": "2021-11-11 11:18:49",
+						"datePublished": "2021-11-11 12:02:45",
+						"t": "A champion of the Innisfail community",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/a-champion-of-the-innisfail-community",
+						"shortDescription": "Innisfail Hospital director of nursing and facility manager Lesley Harris has been recognised for 40 years of service with Queensland Health.",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0031/46687/Card-A-champion-of-the-Innisfail-community.jpg",
+						"dateUpdated": "2021-11-23 16:02:13"
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=46689",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D46689&auth=wD0bR4t6N1KbJX8%2B9bx0nQ&profile=_default&rank=8&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=46689",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 9,
+					"score": 1000,
+					"title": "Shining lights for Breast Cancer Awareness",
+					"collection": "qld-health-cairns-news",
+					"component": 8,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=46432",
+					"summary": " October is Breast Cancer Awareness month, so it is fitting that this week’s unsung heroes are the team at BreastScreen Queensland (BSQ) Cairns Service.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D46432&profile=_default",
+					"date": null,
+					"fileSize": 175,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 3,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-11-01 10:53:30"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0018/46431/Card-Shining-lights-for-Breast-Cancer-Awareness.jpg"
+						],
+						"dateCreated": [
+							"2021-11-01 10:31:52"
+						],
+						"c": [
+							"October is Breast Cancer Awareness month, so it is fitting that this week’s unsung heroes are the team at BreastScreen Queensland (BSQ) Cairns Service."
+						],
+						"t": [
+							"Shining lights for Breast Cancer Awareness"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/shining-lights-for-breast-cancer-awareness"
+						],
+						"shortDescription": [
+							"October is Breast Cancer Awareness month, so it is fitting that this week’s unsung heroes are the team at BreastScreen Queensland (BSQ) Cairns Service."
+						],
+						"dateUpdated": [
+							"2021-11-23 16:01:23"
+						]
+					},
+					"metaData": {
+						"shortDescription": "October is Breast Cancer Awareness month, so it is fitting that this week’s unsung heroes are the team at BreastScreen Queensland (BSQ) Cairns Service.",
+						"t": "Shining lights for Breast Cancer Awareness",
+						"c": "October is Breast Cancer Awareness month, so it is fitting that this week’s unsung heroes are the team at BreastScreen Queensland (BSQ) Cairns Service.",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0018/46431/Card-Shining-lights-for-Breast-Cancer-Awareness.jpg",
+						"datePublished": "2021-11-01 10:53:30",
+						"dateCreated": "2021-11-01 10:31:52",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/shining-lights-for-breast-cancer-awareness",
+						"dateUpdated": "2021-11-23 16:01:23"
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=46432",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D46432&auth=kzfUHeBsadbKJxgP3HN%2B8g&profile=_default&rank=9&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=46432",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 10,
+					"score": 1000,
+					"title": "Occupational Therapy Week",
+					"collection": "qld-health-cairns-news",
+					"component": 8,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=46387",
+					"summary": " Occupational Therapy Week is an opportunity to celebrate OT and promote the many ways occupational therapists help people to reach their potential.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D46387&profile=_default",
+					"date": null,
+					"fileSize": 141,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 2,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-10-28 09:10:35"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0027/46386/Card-OT-week.jpg"
+						],
+						"dateCreated": [
+							"2021-10-27 15:40:05"
+						],
+						"c": [
+							"Occupational Therapy Week is an opportunity to celebrate OT and promote the many ways occupational therapists help people to reach their potential."
+						],
+						"t": [
+							"Occupational Therapy Week"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/occupational-therapy-week"
+						],
+						"shortDescription": [
+							"Occupational Therapy Week is an opportunity to celebrate OT and promote the many ways occupational therapists help people to reach their potential."
+						],
+						"dateUpdated": [
+							"2021-11-23 16:00:43"
+						]
+					},
+					"metaData": {
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0027/46386/Card-OT-week.jpg",
+						"dateCreated": "2021-10-27 15:40:05",
+						"shortDescription": "Occupational Therapy Week is an opportunity to celebrate OT and promote the many ways occupational therapists help people to reach their potential.",
+						"t": "Occupational Therapy Week",
+						"datePublished": "2021-10-28 09:10:35",
+						"c": "Occupational Therapy Week is an opportunity to celebrate OT and promote the many ways occupational therapists help people to reach their potential.",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/occupational-therapy-week",
+						"dateUpdated": "2021-11-23 16:00:43"
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=46387",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D46387&auth=X4L8kZeFfRc6xDJgFVsE3g&profile=_default&rank=10&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=46387",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 11,
+					"score": 1000,
+					"title": "Mental health consumers answer hard-hitting questions",
+					"collection": "qld-health-cairns-news",
+					"component": 8,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=44275",
+					"summary": " Do you want to know what it is really like living with a mental health condition? Would you know if you were unwell?",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D44275&profile=_default",
+					"date": null,
+					"fileSize": 197,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 1,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-10-14 15:19:04"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0020/44273/Card-Mental-health-consumers-answer-hard-hitting-questions.jpg"
+						],
+						"dateCreated": [
+							"2021-10-14 15:04:47"
+						],
+						"c": [
+							"Do you want to know what it is really like living with a mental health condition? Would you know if you were unwell?"
+						],
+						"t": [
+							"Mental health consumers answer hard-hitting questions"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/mental-health-consumers-answer-hard-hitting-questions"
+						],
+						"shortDescription": [
+							"Do you want to know what it is really like living with a mental health condition? Would you know if you were unwell?"
+						],
+						"dateUpdated": [
+							"2021-11-23 15:59:44"
+						]
+					},
+					"metaData": {
+						"dateCreated": "2021-10-14 15:04:47",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/mental-health-consumers-answer-hard-hitting-questions",
+						"t": "Mental health consumers answer hard-hitting questions",
+						"shortDescription": "Do you want to know what it is really like living with a mental health condition? Would you know if you were unwell?",
+						"dateUpdated": "2021-11-23 15:59:44",
+						"datePublished": "2021-10-14 15:19:04",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0020/44273/Card-Mental-health-consumers-answer-hard-hitting-questions.jpg",
+						"c": "Do you want to know what it is really like living with a mental health condition? Would you know if you were unwell?"
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=44275",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D44275&auth=RaD3%2BK1esfTc%2F6ZSPmSavg&profile=_default&rank=11&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=44275",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 12,
+					"score": 1000,
+					"title": "Greater vax access for First Nations people",
+					"collection": "qld-health-cairns-news",
+					"component": 8,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=44023",
+					"summary": " First Nations people are being given more opportunities to receive their COVID-19 jab as part of a series of new initiatives to boost the vaccination rate in Far North Queensland.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D44023&profile=_default",
+					"date": null,
+					"fileSize": 177,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 0,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-10-08 14:49:41"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0012/44022/Card-Greater-vax-access-for-First-Nations-people.jpg"
+						],
+						"dateCreated": [
+							"2021-10-08 14:45:17"
+						],
+						"c": [
+							"First Nations people are being given more opportunities to receive their COVID-19 jab as part of a series of new initiatives to boost the vaccination rate in Far North Queensland."
+						],
+						"t": [
+							"Greater vax access for First Nations people"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/greater-vax-access-for-first-nations-people"
+						],
+						"shortDescription": [
+							"First Nations people are being given more opportunities to receive their COVID-19 jab as part of a series of new initiatives to boost the vaccination rate in Far North Queensland"
+						],
+						"dateUpdated": [
+							"2021-11-23 15:58:58"
+						]
+					},
+					"metaData": {
+						"dateUpdated": "2021-11-23 15:58:58",
+						"dateCreated": "2021-10-08 14:45:17",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/greater-vax-access-for-first-nations-people",
+						"t": "Greater vax access for First Nations people",
+						"c": "First Nations people are being given more opportunities to receive their COVID-19 jab as part of a series of new initiatives to boost the vaccination rate in Far North Queensland.",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0012/44022/Card-Greater-vax-access-for-First-Nations-people.jpg",
+						"datePublished": "2021-10-08 14:49:41",
+						"shortDescription": "First Nations people are being given more opportunities to receive their COVID-19 jab as part of a series of new initiatives to boost the vaccination rate in Far North Queensland"
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=44023",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D44023&auth=p1mPHkjYlEFSwz0sD7hakA&profile=_default&rank=12&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=44023",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 13,
+					"score": 1000,
+					"title": "Medical students boost COVID-19 vaccine team ranks",
+					"collection": "qld-health-cairns-news",
+					"component": 7,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=34719",
+					"summary": " James Cook University medical students have been recruited to Cairns and Hinterland Hospital and Health Service’s COVID-19 vaccination team to help prevent the spread of the virus in Far North Queensland.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D34719&profile=_default",
+					"date": null,
+					"fileSize": 191,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 17,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-08-20 08:29:09"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0022/34717/Medical-students-boost-vaccine-team-tile.jpg"
+						],
+						"dateCreated": [
+							"2021-08-19 15:54:18"
+						],
+						"c": [
+							"James Cook University medical students have been recruited to Cairns and Hinterland Hospital and Health Service’s COVID-19 vaccination team to help prevent the spread of the virus in Far North Queensland."
+						],
+						"t": [
+							"Medical students boost COVID-19 vaccine team ranks"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/medical-students-boost-covid-19-vaccine-team-ranks"
+						],
+						"shortDescription": [
+							"James Cook University medical students have been recruited to Cairns and Hinterland Hospital and Health Service’s COVID-19 vaccination team to help prevent the spread of the virus in Far North Queensland."
+						],
+						"dateUpdated": [
+							"2021-11-23 15:53:21"
+						]
+					},
+					"metaData": {
+						"dateUpdated": "2021-11-23 15:53:21",
+						"shortDescription": "James Cook University medical students have been recruited to Cairns and Hinterland Hospital and Health Service’s COVID-19 vaccination team to help prevent the spread of the virus in Far North Queensland.",
+						"t": "Medical students boost COVID-19 vaccine team ranks",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0022/34717/Medical-students-boost-vaccine-team-tile.jpg",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/medical-students-boost-covid-19-vaccine-team-ranks",
+						"c": "James Cook University medical students have been recruited to Cairns and Hinterland Hospital and Health Service’s COVID-19 vaccination team to help prevent the spread of the virus in Far North Queensland.",
+						"datePublished": "2021-08-20 08:29:09",
+						"dateCreated": "2021-08-19 15:54:18"
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=34719",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D34719&auth=LXkdZxJU%2FSpEZDo3xmtOjQ&profile=_default&rank=13&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=34719",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 14,
+					"score": 1000,
+					"title": "Second COVID detection in Cairns wastewater",
+					"collection": "qld-health-cairns-news",
+					"component": 7,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=12959",
+					"summary": " Traces of COVID-19 have been detected in sewage at the Cairns North Wastewater Treatment Plant. Here&#39;s what you need to know.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D12959&profile=_default",
+					"date": null,
+					"fileSize": 177,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 8,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-06-10 08:41:04"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0024/12867/Richard-tile.jpg"
+						],
+						"dateCreated": [
+							"2021-05-10 15:29:56"
+						],
+						"c": [
+							"Traces of COVID-19 have been detected in sewage at the Cairns North Wastewater Treatment Plant. Here's what you need to know."
+						],
+						"t": [
+							"Second COVID detection in Cairns wastewater"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/second-covid-detection-in-cairns-wastewater"
+						],
+						"shortDescription": [
+							"Traces of COVID-19 have been detected in sewage at the Cairns North Wastewater Treatment Plant. Here's what you need to know."
+						],
+						"dateUpdated": [
+							"2021-11-16 13:32:03"
+						]
+					},
+					"metaData": {
+						"datePublished": "2021-06-10 08:41:04",
+						"c": "Traces of COVID-19 have been detected in sewage at the Cairns North Wastewater Treatment Plant. Here's what you need to know.",
+						"dateCreated": "2021-05-10 15:29:56",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0024/12867/Richard-tile.jpg",
+						"t": "Second COVID detection in Cairns wastewater",
+						"shortDescription": "Traces of COVID-19 have been detected in sewage at the Cairns North Wastewater Treatment Plant. Here's what you need to know.",
+						"dateUpdated": "2021-11-16 13:32:03",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/second-covid-detection-in-cairns-wastewater"
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=12959",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D12959&auth=fAj3%2F5IT2G9CrpMB%2FXgJGw&profile=_default&rank=14&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=12959",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 15,
+					"score": 1000,
+					"title": "Holidaymakers urged to #MakeFNQCOVID19Free",
+					"collection": "qld-health-cairns-news",
+					"component": 7,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=12965",
+					"summary": " With interstate borders re-opened, Far North Queensland is welcoming tourists back to the region. Here&#39;s how you can be COVID-19 safe while visiting our special part of the world.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D12965&profile=_default",
+					"date": null,
+					"fileSize": 175,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 6,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-06-10 08:41:02"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0025/12868/COVID-19-postcards-tile.JPG"
+						],
+						"dateCreated": [
+							"2021-05-10 15:33:58"
+						],
+						"c": [
+							"With interstate borders re-opened, Far North Queensland is welcoming tourists back to the region. Here's how you can be COVID-19 safe while visiting our special part of the world."
+						],
+						"t": [
+							"Holidaymakers urged to #MakeFNQCOVID19Free"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/holidaymakers-urged-to-makefnqcovid19free"
+						],
+						"shortDescription": [
+							"How you can be COVID-19 safe while visiting Far North Queensland."
+						],
+						"dateUpdated": [
+							"2021-11-16 13:32:02"
+						]
+					},
+					"metaData": {
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0025/12868/COVID-19-postcards-tile.JPG",
+						"t": "Holidaymakers urged to #MakeFNQCOVID19Free",
+						"dateCreated": "2021-05-10 15:33:58",
+						"dateUpdated": "2021-11-16 13:32:02",
+						"c": "With interstate borders re-opened, Far North Queensland is welcoming tourists back to the region. Here's how you can be COVID-19 safe while visiting our special part of the world.",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/holidaymakers-urged-to-makefnqcovid19free",
+						"datePublished": "2021-06-10 08:41:02",
+						"shortDescription": "How you can be COVID-19 safe while visiting Far North Queensland."
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=12965",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D12965&auth=JRUgf1OEMKsBGey92NDXJQ&profile=_default&rank=15&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=12965",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				}
+			],
+			"tierBars": [
+				{
+					"matched": 1,
+					"outOf": 1,
+					"firstRank": 0,
+					"lastRank": 15,
+					"eventDate": null
+				}
+			],
+			"error": null,
+			"padreElapsedTime": 12,
+			"phlusterElapsedTime": 0,
+			"queryProcessorCodes": "S2dx",
+			"contextualNavigation": null,
+			"rmcs": {
+				"-topic:": 37,
+				"-location:": 38,
+				"topic:cardiology; research": 1,
+				"location:cairns and hinterland": 2,
+				"topic:cardiology": 2
+			},
+			"rmcItemResults": {},
+			"metadataRanges": {},
+			"boundingBoxes": {},
+			"urlCounts": {},
+			"dateCounts": {},
+			"queryHighlightRegex": "(?i)\\bpadrenull\\b",
+			"origin": [],
+			"entityList": {},
+			"includeScopes": [],
+			"excludeScopes": [],
+			"coolerWeights": {},
+			"explainTypes": {},
+			"stopWords": [],
+			"stemmedEquivs": {},
+			"coolerNames": {},
+			"svgs": {},
+			"uniqueCountsByGroups": [],
+			"sumByGroups": [],
+			"indexedTermCounts": [],
+			"documentsPerCollection": {},
+			"metadataSums": {},
+			"gscopeCounts": {},
+			"resultsWithTierBars": [
+				{
+					"matched": 1,
+					"outOf": 1,
+					"firstRank": 0,
+					"lastRank": 15,
+					"eventDate": null
+				},
+				{
+					"rank": 1,
+					"score": 1000,
+					"title": "Atherton Hospital redevelopment reaches new heights",
+					"collection": "qld-health-cairns-news",
+					"component": 12,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=48754",
+					"summary": " The Atherton Hospital redevelopment has marked a major milestone with completion of the roof on the new four-storey Clinical Services Building, bringing the $74.8 million project a step closer to completion.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D48754&profile=_default",
+					"date": null,
+					"fileSize": 193,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 0,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-12-02 17:13:44"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0026/48752/Card-Atherton-Hospital-redevelopment-reaches-new-heights.jpg"
+						],
+						"dateCreated": [
+							"2021-12-02 17:02:29"
+						],
+						"c": [
+							"The Atherton Hospital redevelopment has marked a major milestone with completion of the roof on the new four-storey Clinical Services Building, bringing the $74.8 million project a step closer to completion."
+						],
+						"t": [
+							"Atherton Hospital redevelopment reaches new heights"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/atherton-hospital-redevelopment-reaches-new-heights"
+						],
+						"shortDescription": [
+							"The Atherton Hospital redevelopment has marked a major milestone with completion of the roof on the new four-storey Clinical Services Building, bringing the $74.8 million project a step closer to completion."
+						],
+						"dateUpdated": [
+							"2021-12-02 17:13:45"
+						]
+					},
+					"metaData": {
+						"c": "The Atherton Hospital redevelopment has marked a major milestone with completion of the roof on the new four-storey Clinical Services Building, bringing the $74.8 million project a step closer to completion.",
+						"dateCreated": "2021-12-02 17:02:29",
+						"dateUpdated": "2021-12-02 17:13:45",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/atherton-hospital-redevelopment-reaches-new-heights",
+						"t": "Atherton Hospital redevelopment reaches new heights",
+						"datePublished": "2021-12-02 17:13:44",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0026/48752/Card-Atherton-Hospital-redevelopment-reaches-new-heights.jpg",
+						"shortDescription": "The Atherton Hospital redevelopment has marked a major milestone with completion of the roof on the new four-storey Clinical Services Building, bringing the $74.8 million project a step closer to completion."
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=48754",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D48754&auth=RBiO5BPLrBwQUbuzlMQzyg&profile=_default&rank=1&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=48754",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 2,
+					"score": 1000,
+					"title": "My Living Nightmare",
+					"collection": "qld-health-cairns-news",
+					"component": 11,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=48224",
+					"summary": " A Far North Queenslander diagnosed with a rare illness has given clinicians incredible insight into what a patient experiences when their body is fully paralysed, but their mind still conscious.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D48224&profile=_default",
+					"date": null,
+					"fileSize": 129,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 0,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-11-29 15:45:12"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0018/48222/Card-My-Living-Nightmare.jpg"
+						],
+						"dateCreated": [
+							"2021-11-29 14:40:35"
+						],
+						"c": [
+							"A Far North Queenslander diagnosed with a rare illness has given clinicians incredible insight into what a patient experiences when their body is fully paralysed, but their mind still conscious."
+						],
+						"t": [
+							"My Living Nightmare"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/my-living-nightmare"
+						],
+						"shortDescription": [
+							"A Far North Queenslander diagnosed with a rare illness has given clinicians incredible insight into what a patient experiences when their body is fully paralysed, but their mind still conscious."
+						],
+						"dateUpdated": [
+							"2021-12-01 09:39:37"
+						]
+					},
+					"metaData": {
+						"shortDescription": "A Far North Queenslander diagnosed with a rare illness has given clinicians incredible insight into what a patient experiences when their body is fully paralysed, but their mind still conscious.",
+						"datePublished": "2021-11-29 15:45:12",
+						"t": "My Living Nightmare",
+						"c": "A Far North Queenslander diagnosed with a rare illness has given clinicians incredible insight into what a patient experiences when their body is fully paralysed, but their mind still conscious.",
+						"dateUpdated": "2021-12-01 09:39:37",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0018/48222/Card-My-Living-Nightmare.jpg",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/my-living-nightmare",
+						"dateCreated": "2021-11-29 14:40:35"
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=48224",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D48224&auth=xc%2BgBSnTlG6NsG42UCOORQ&profile=_default&rank=2&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=48224",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 3,
+					"score": 1000,
+					"title": "Stroke excellence",
+					"collection": "qld-health-cairns-news",
+					"component": 8,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=47254",
+					"summary": " Cairns Hospital has won a national excellence award for its work in managing patients with stroke.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D47254&profile=_default",
+					"date": null,
+					"fileSize": 125,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 10,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-11-23 15:42:54"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0021/47253/Card-Stroke-excellence.jpg"
+						],
+						"dateCreated": [
+							"2021-11-23 15:04:31"
+						],
+						"c": [
+							"Cairns Hospital has won a national excellence award for its work in managing patients with stroke."
+						],
+						"t": [
+							"Stroke excellence"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/stroke-excellence"
+						],
+						"shortDescription": [
+							"Cairns Hospital has won a national excellence award for its work in managing patients with stroke."
+						],
+						"dateUpdated": [
+							"2021-11-23 16:09:19"
+						]
+					},
+					"metaData": {
+						"dateCreated": "2021-11-23 15:04:31",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/stroke-excellence",
+						"t": "Stroke excellence",
+						"dateUpdated": "2021-11-23 16:09:19",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0021/47253/Card-Stroke-excellence.jpg",
+						"shortDescription": "Cairns Hospital has won a national excellence award for its work in managing patients with stroke.",
+						"c": "Cairns Hospital has won a national excellence award for its work in managing patients with stroke.",
+						"datePublished": "2021-11-23 15:42:54"
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=47254",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D47254&auth=nRK%2FCys5WLRdoyzAO76MUA&profile=_default&rank=3&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=47254",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 4,
+					"score": 1000,
+					"title": "Dizzy no more",
+					"collection": "qld-health-cairns-news",
+					"component": 8,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=47116",
+					"summary": " Ongoing dizziness and vertigo make simple life activities incredibly challenging. 84-year-old Mei is no longer dizzy thanks to some specialised goggles and physiotherapy treatment called vestibular therapy.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D47116&profile=_default",
+					"date": null,
+					"fileSize": 117,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 8,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-11-18 09:44:28"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0018/47115/Card-Dizzy-no-more.jpg"
+						],
+						"dateCreated": [
+							"2021-11-18 09:12:22"
+						],
+						"c": [
+							"Ongoing dizziness and vertigo make simple life activities incredibly challenging. 84-year-old Mei is no longer dizzy thanks to some specialised goggles and physiotherapy treatment called vestibular therapy."
+						],
+						"t": [
+							"Dizzy no more"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/dizzy-no-more"
+						],
+						"shortDescription": [
+							"Ongoing dizziness and vertigo make simple life activities incredibly challenging. 84-year-old Mei is no longer dizzy thanks to some specialised goggles and physiotherapy treatment called vestibular therapy."
+						],
+						"dateUpdated": [
+							"2021-11-23 16:07:38"
+						]
+					},
+					"metaData": {
+						"dateUpdated": "2021-11-23 16:07:38",
+						"dateCreated": "2021-11-18 09:12:22",
+						"datePublished": "2021-11-18 09:44:28",
+						"c": "Ongoing dizziness and vertigo make simple life activities incredibly challenging. 84-year-old Mei is no longer dizzy thanks to some specialised goggles and physiotherapy treatment called vestibular therapy.",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/dizzy-no-more",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0018/47115/Card-Dizzy-no-more.jpg",
+						"t": "Dizzy no more",
+						"shortDescription": "Ongoing dizziness and vertigo make simple life activities incredibly challenging. 84-year-old Mei is no longer dizzy thanks to some specialised goggles and physiotherapy treatment called vestibular therapy."
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=47116",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D47116&auth=FrjuGRQdSWVX8WJEEfE47Q&profile=_default&rank=4&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=47116",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 5,
+					"score": 1000,
+					"title": "World Prematurity Day",
+					"collection": "qld-health-cairns-news",
+					"component": 8,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=47099",
+					"summary": " We mark World Prematurity Day by re-visiting baby Millie who is the smallest baby to have born in North Queensland at just 430 grams.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D47099&profile=_default",
+					"date": null,
+					"fileSize": 133,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 7,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-11-17 11:31:08"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0027/47097/Card-World-Prematurity-Day.jpg"
+						],
+						"dateCreated": [
+							"2021-11-17 11:18:33"
+						],
+						"c": [
+							"We mark World Prematurity Day by re-visiting baby Millie who is the smallest baby to have born in North Queensland at just 430 grams."
+						],
+						"t": [
+							"World Prematurity Day"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/world-prematurity-day"
+						],
+						"shortDescription": [
+							"We mark World Prematurity Day by re-visiting baby Millie who is the smallest baby to have born in North Queensland at just 430 grams."
+						],
+						"dateUpdated": [
+							"2021-11-23 16:05:18"
+						]
+					},
+					"metaData": {
+						"t": "World Prematurity Day",
+						"datePublished": "2021-11-17 11:31:08",
+						"shortDescription": "We mark World Prematurity Day by re-visiting baby Millie who is the smallest baby to have born in North Queensland at just 430 grams.",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0027/47097/Card-World-Prematurity-Day.jpg",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/world-prematurity-day",
+						"c": "We mark World Prematurity Day by re-visiting baby Millie who is the smallest baby to have born in North Queensland at just 430 grams.",
+						"dateUpdated": "2021-11-23 16:05:18",
+						"dateCreated": "2021-11-17 11:18:33"
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=47099",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D47099&auth=ObLBL3wRWChEa82BOQ41og&profile=_default&rank=5&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=47099",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 6,
+					"score": 1000,
+					"title": "New state-of-the-art pathology testing machines for FNQ",
+					"collection": "qld-health-cairns-news",
+					"component": 8,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=46787",
+					"summary": " Cairns Hospital’s Pathology Queensland laboratory staff are thrilled with their new state-of-the-art biochemical analysers that test patients’ blood in half the time.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D46787&profile=_default",
+					"date": null,
+					"fileSize": 201,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 6,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-11-15 10:27:35"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0030/46785/Card-New-state-of-the-art-pathology-testing-machines-for-FNQ.jpg"
+						],
+						"dateCreated": [
+							"2021-11-15 10:13:35"
+						],
+						"c": [
+							"Cairns Hospital’s Pathology Queensland laboratory staff are thrilled with their new state-of-the-art biochemical analysers that test patients’ blood in half the time."
+						],
+						"t": [
+							"New state-of-the-art pathology testing machines for FNQ"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/new-state-of-the-art-pathology-testing-machines-for-fnq"
+						],
+						"shortDescription": [
+							"Cairns Hospital’s Pathology Queensland laboratory staff are thrilled with their new state-of-the-art biochemical analysers that test patients’ blood in half the time."
+						],
+						"dateUpdated": [
+							"2021-11-23 16:03:50"
+						]
+					},
+					"metaData": {
+						"dateCreated": "2021-11-15 10:13:35",
+						"c": "Cairns Hospital’s Pathology Queensland laboratory staff are thrilled with their new state-of-the-art biochemical analysers that test patients’ blood in half the time.",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/new-state-of-the-art-pathology-testing-machines-for-fnq",
+						"datePublished": "2021-11-15 10:27:35",
+						"t": "New state-of-the-art pathology testing machines for FNQ",
+						"dateUpdated": "2021-11-23 16:03:50",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0030/46785/Card-New-state-of-the-art-pathology-testing-machines-for-FNQ.jpg",
+						"shortDescription": "Cairns Hospital’s Pathology Queensland laboratory staff are thrilled with their new state-of-the-art biochemical analysers that test patients’ blood in half the time."
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=46787",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D46787&auth=U4eIr8njXFkwnW4nKBa1IQ&profile=_default&rank=6&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=46787",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 7,
+					"score": 1000,
+					"title": "Urban expansion linked to dangerous disease",
+					"collection": "qld-health-cairns-news",
+					"component": 8,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=46732",
+					"summary": " Urban expansion may have contributed to a rise in cases of a dangerous soil-borne disease in Far North Queensland, a new study has found.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D46732&profile=_default",
+					"date": null,
+					"fileSize": 177,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 5,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-11-11 12:37:54"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0030/46686/Card-Urban-expansion-linked-to-dangerous-disease.jpg"
+						],
+						"dateCreated": [
+							"2021-11-11 12:13:04"
+						],
+						"c": [
+							"Urban expansion may have contributed to a rise in cases of a dangerous soil-borne disease in Far North Queensland, a new study has found."
+						],
+						"t": [
+							"Urban expansion linked to dangerous disease"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/urban-expansion-linked-to-dangerous-disease"
+						],
+						"shortDescription": [
+							"Urban expansion may have contributed to a rise in cases of a dangerous soil-borne disease in Far North Queensland, a new study has found."
+						],
+						"dateUpdated": [
+							"2021-11-23 16:03:10"
+						]
+					},
+					"metaData": {
+						"dateCreated": "2021-11-11 12:13:04",
+						"shortDescription": "Urban expansion may have contributed to a rise in cases of a dangerous soil-borne disease in Far North Queensland, a new study has found.",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0030/46686/Card-Urban-expansion-linked-to-dangerous-disease.jpg",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/urban-expansion-linked-to-dangerous-disease",
+						"dateUpdated": "2021-11-23 16:03:10",
+						"datePublished": "2021-11-11 12:37:54",
+						"t": "Urban expansion linked to dangerous disease",
+						"c": "Urban expansion may have contributed to a rise in cases of a dangerous soil-borne disease in Far North Queensland, a new study has found."
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=46732",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D46732&auth=YYqvKdZdi2LZkFH4SzD4pw&profile=_default&rank=7&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=46732",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 8,
+					"score": 1000,
+					"title": "A champion of the Innisfail community",
+					"collection": "qld-health-cairns-news",
+					"component": 8,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=46689",
+					"summary": " Innisfail Hospital director of nursing and facility manager Lesley Harris has been recognised for 40 years of service with Queensland Health.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D46689&profile=_default",
+					"date": null,
+					"fileSize": 165,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 4,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-11-11 12:02:45"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0031/46687/Card-A-champion-of-the-Innisfail-community.jpg"
+						],
+						"dateCreated": [
+							"2021-11-11 11:18:49"
+						],
+						"c": [
+							"Innisfail Hospital director of nursing and facility manager Lesley Harris has been recognised for 40 years of service with Queensland Health."
+						],
+						"t": [
+							"A champion of the Innisfail community"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/a-champion-of-the-innisfail-community"
+						],
+						"shortDescription": [
+							"Innisfail Hospital director of nursing and facility manager Lesley Harris has been recognised for 40 years of service with Queensland Health."
+						],
+						"dateUpdated": [
+							"2021-11-23 16:02:13"
+						]
+					},
+					"metaData": {
+						"c": "Innisfail Hospital director of nursing and facility manager Lesley Harris has been recognised for 40 years of service with Queensland Health.",
+						"dateCreated": "2021-11-11 11:18:49",
+						"datePublished": "2021-11-11 12:02:45",
+						"t": "A champion of the Innisfail community",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/a-champion-of-the-innisfail-community",
+						"shortDescription": "Innisfail Hospital director of nursing and facility manager Lesley Harris has been recognised for 40 years of service with Queensland Health.",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0031/46687/Card-A-champion-of-the-Innisfail-community.jpg",
+						"dateUpdated": "2021-11-23 16:02:13"
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=46689",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D46689&auth=wD0bR4t6N1KbJX8%2B9bx0nQ&profile=_default&rank=8&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=46689",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 9,
+					"score": 1000,
+					"title": "Shining lights for Breast Cancer Awareness",
+					"collection": "qld-health-cairns-news",
+					"component": 8,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=46432",
+					"summary": " October is Breast Cancer Awareness month, so it is fitting that this week’s unsung heroes are the team at BreastScreen Queensland (BSQ) Cairns Service.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D46432&profile=_default",
+					"date": null,
+					"fileSize": 175,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 3,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-11-01 10:53:30"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0018/46431/Card-Shining-lights-for-Breast-Cancer-Awareness.jpg"
+						],
+						"dateCreated": [
+							"2021-11-01 10:31:52"
+						],
+						"c": [
+							"October is Breast Cancer Awareness month, so it is fitting that this week’s unsung heroes are the team at BreastScreen Queensland (BSQ) Cairns Service."
+						],
+						"t": [
+							"Shining lights for Breast Cancer Awareness"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/shining-lights-for-breast-cancer-awareness"
+						],
+						"shortDescription": [
+							"October is Breast Cancer Awareness month, so it is fitting that this week’s unsung heroes are the team at BreastScreen Queensland (BSQ) Cairns Service."
+						],
+						"dateUpdated": [
+							"2021-11-23 16:01:23"
+						]
+					},
+					"metaData": {
+						"shortDescription": "October is Breast Cancer Awareness month, so it is fitting that this week’s unsung heroes are the team at BreastScreen Queensland (BSQ) Cairns Service.",
+						"t": "Shining lights for Breast Cancer Awareness",
+						"c": "October is Breast Cancer Awareness month, so it is fitting that this week’s unsung heroes are the team at BreastScreen Queensland (BSQ) Cairns Service.",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0018/46431/Card-Shining-lights-for-Breast-Cancer-Awareness.jpg",
+						"datePublished": "2021-11-01 10:53:30",
+						"dateCreated": "2021-11-01 10:31:52",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/shining-lights-for-breast-cancer-awareness",
+						"dateUpdated": "2021-11-23 16:01:23"
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=46432",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D46432&auth=kzfUHeBsadbKJxgP3HN%2B8g&profile=_default&rank=9&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=46432",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 10,
+					"score": 1000,
+					"title": "Occupational Therapy Week",
+					"collection": "qld-health-cairns-news",
+					"component": 8,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=46387",
+					"summary": " Occupational Therapy Week is an opportunity to celebrate OT and promote the many ways occupational therapists help people to reach their potential.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D46387&profile=_default",
+					"date": null,
+					"fileSize": 141,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 2,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-10-28 09:10:35"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0027/46386/Card-OT-week.jpg"
+						],
+						"dateCreated": [
+							"2021-10-27 15:40:05"
+						],
+						"c": [
+							"Occupational Therapy Week is an opportunity to celebrate OT and promote the many ways occupational therapists help people to reach their potential."
+						],
+						"t": [
+							"Occupational Therapy Week"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/occupational-therapy-week"
+						],
+						"shortDescription": [
+							"Occupational Therapy Week is an opportunity to celebrate OT and promote the many ways occupational therapists help people to reach their potential."
+						],
+						"dateUpdated": [
+							"2021-11-23 16:00:43"
+						]
+					},
+					"metaData": {
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0027/46386/Card-OT-week.jpg",
+						"dateCreated": "2021-10-27 15:40:05",
+						"shortDescription": "Occupational Therapy Week is an opportunity to celebrate OT and promote the many ways occupational therapists help people to reach their potential.",
+						"t": "Occupational Therapy Week",
+						"datePublished": "2021-10-28 09:10:35",
+						"c": "Occupational Therapy Week is an opportunity to celebrate OT and promote the many ways occupational therapists help people to reach their potential.",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/occupational-therapy-week",
+						"dateUpdated": "2021-11-23 16:00:43"
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=46387",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D46387&auth=X4L8kZeFfRc6xDJgFVsE3g&profile=_default&rank=10&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=46387",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 11,
+					"score": 1000,
+					"title": "Mental health consumers answer hard-hitting questions",
+					"collection": "qld-health-cairns-news",
+					"component": 8,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=44275",
+					"summary": " Do you want to know what it is really like living with a mental health condition? Would you know if you were unwell?",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D44275&profile=_default",
+					"date": null,
+					"fileSize": 197,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 1,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-10-14 15:19:04"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0020/44273/Card-Mental-health-consumers-answer-hard-hitting-questions.jpg"
+						],
+						"dateCreated": [
+							"2021-10-14 15:04:47"
+						],
+						"c": [
+							"Do you want to know what it is really like living with a mental health condition? Would you know if you were unwell?"
+						],
+						"t": [
+							"Mental health consumers answer hard-hitting questions"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/mental-health-consumers-answer-hard-hitting-questions"
+						],
+						"shortDescription": [
+							"Do you want to know what it is really like living with a mental health condition? Would you know if you were unwell?"
+						],
+						"dateUpdated": [
+							"2021-11-23 15:59:44"
+						]
+					},
+					"metaData": {
+						"dateCreated": "2021-10-14 15:04:47",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/mental-health-consumers-answer-hard-hitting-questions",
+						"t": "Mental health consumers answer hard-hitting questions",
+						"shortDescription": "Do you want to know what it is really like living with a mental health condition? Would you know if you were unwell?",
+						"dateUpdated": "2021-11-23 15:59:44",
+						"datePublished": "2021-10-14 15:19:04",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0020/44273/Card-Mental-health-consumers-answer-hard-hitting-questions.jpg",
+						"c": "Do you want to know what it is really like living with a mental health condition? Would you know if you were unwell?"
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=44275",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D44275&auth=RaD3%2BK1esfTc%2F6ZSPmSavg&profile=_default&rank=11&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=44275",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 12,
+					"score": 1000,
+					"title": "Greater vax access for First Nations people",
+					"collection": "qld-health-cairns-news",
+					"component": 8,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=44023",
+					"summary": " First Nations people are being given more opportunities to receive their COVID-19 jab as part of a series of new initiatives to boost the vaccination rate in Far North Queensland.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D44023&profile=_default",
+					"date": null,
+					"fileSize": 177,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 0,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-10-08 14:49:41"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0012/44022/Card-Greater-vax-access-for-First-Nations-people.jpg"
+						],
+						"dateCreated": [
+							"2021-10-08 14:45:17"
+						],
+						"c": [
+							"First Nations people are being given more opportunities to receive their COVID-19 jab as part of a series of new initiatives to boost the vaccination rate in Far North Queensland."
+						],
+						"t": [
+							"Greater vax access for First Nations people"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/greater-vax-access-for-first-nations-people"
+						],
+						"shortDescription": [
+							"First Nations people are being given more opportunities to receive their COVID-19 jab as part of a series of new initiatives to boost the vaccination rate in Far North Queensland"
+						],
+						"dateUpdated": [
+							"2021-11-23 15:58:58"
+						]
+					},
+					"metaData": {
+						"dateUpdated": "2021-11-23 15:58:58",
+						"dateCreated": "2021-10-08 14:45:17",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/greater-vax-access-for-first-nations-people",
+						"t": "Greater vax access for First Nations people",
+						"c": "First Nations people are being given more opportunities to receive their COVID-19 jab as part of a series of new initiatives to boost the vaccination rate in Far North Queensland.",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0012/44022/Card-Greater-vax-access-for-First-Nations-people.jpg",
+						"datePublished": "2021-10-08 14:49:41",
+						"shortDescription": "First Nations people are being given more opportunities to receive their COVID-19 jab as part of a series of new initiatives to boost the vaccination rate in Far North Queensland"
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=44023",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D44023&auth=p1mPHkjYlEFSwz0sD7hakA&profile=_default&rank=12&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=44023",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 13,
+					"score": 1000,
+					"title": "Medical students boost COVID-19 vaccine team ranks",
+					"collection": "qld-health-cairns-news",
+					"component": 7,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=34719",
+					"summary": " James Cook University medical students have been recruited to Cairns and Hinterland Hospital and Health Service’s COVID-19 vaccination team to help prevent the spread of the virus in Far North Queensland.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D34719&profile=_default",
+					"date": null,
+					"fileSize": 191,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 17,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-08-20 08:29:09"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0022/34717/Medical-students-boost-vaccine-team-tile.jpg"
+						],
+						"dateCreated": [
+							"2021-08-19 15:54:18"
+						],
+						"c": [
+							"James Cook University medical students have been recruited to Cairns and Hinterland Hospital and Health Service’s COVID-19 vaccination team to help prevent the spread of the virus in Far North Queensland."
+						],
+						"t": [
+							"Medical students boost COVID-19 vaccine team ranks"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/medical-students-boost-covid-19-vaccine-team-ranks"
+						],
+						"shortDescription": [
+							"James Cook University medical students have been recruited to Cairns and Hinterland Hospital and Health Service’s COVID-19 vaccination team to help prevent the spread of the virus in Far North Queensland."
+						],
+						"dateUpdated": [
+							"2021-11-23 15:53:21"
+						]
+					},
+					"metaData": {
+						"dateUpdated": "2021-11-23 15:53:21",
+						"shortDescription": "James Cook University medical students have been recruited to Cairns and Hinterland Hospital and Health Service’s COVID-19 vaccination team to help prevent the spread of the virus in Far North Queensland.",
+						"t": "Medical students boost COVID-19 vaccine team ranks",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0022/34717/Medical-students-boost-vaccine-team-tile.jpg",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/medical-students-boost-covid-19-vaccine-team-ranks",
+						"c": "James Cook University medical students have been recruited to Cairns and Hinterland Hospital and Health Service’s COVID-19 vaccination team to help prevent the spread of the virus in Far North Queensland.",
+						"datePublished": "2021-08-20 08:29:09",
+						"dateCreated": "2021-08-19 15:54:18"
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=34719",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D34719&auth=LXkdZxJU%2FSpEZDo3xmtOjQ&profile=_default&rank=13&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=34719",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 14,
+					"score": 1000,
+					"title": "Second COVID detection in Cairns wastewater",
+					"collection": "qld-health-cairns-news",
+					"component": 7,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=12959",
+					"summary": " Traces of COVID-19 have been detected in sewage at the Cairns North Wastewater Treatment Plant. Here&#39;s what you need to know.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D12959&profile=_default",
+					"date": null,
+					"fileSize": 177,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 8,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-06-10 08:41:04"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0024/12867/Richard-tile.jpg"
+						],
+						"dateCreated": [
+							"2021-05-10 15:29:56"
+						],
+						"c": [
+							"Traces of COVID-19 have been detected in sewage at the Cairns North Wastewater Treatment Plant. Here's what you need to know."
+						],
+						"t": [
+							"Second COVID detection in Cairns wastewater"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/second-covid-detection-in-cairns-wastewater"
+						],
+						"shortDescription": [
+							"Traces of COVID-19 have been detected in sewage at the Cairns North Wastewater Treatment Plant. Here's what you need to know."
+						],
+						"dateUpdated": [
+							"2021-11-16 13:32:03"
+						]
+					},
+					"metaData": {
+						"datePublished": "2021-06-10 08:41:04",
+						"c": "Traces of COVID-19 have been detected in sewage at the Cairns North Wastewater Treatment Plant. Here's what you need to know.",
+						"dateCreated": "2021-05-10 15:29:56",
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0024/12867/Richard-tile.jpg",
+						"t": "Second COVID detection in Cairns wastewater",
+						"shortDescription": "Traces of COVID-19 have been detected in sewage at the Cairns North Wastewater Treatment Plant. Here's what you need to know.",
+						"dateUpdated": "2021-11-16 13:32:03",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/second-covid-detection-in-cairns-wastewater"
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=12959",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D12959&auth=fAj3%2F5IT2G9CrpMB%2FXgJGw&profile=_default&rank=14&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=12959",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				},
+				{
+					"rank": 15,
+					"score": 1000,
+					"title": "Holidaymakers urged to #MakeFNQCOVID19Free",
+					"collection": "qld-health-cairns-news",
+					"component": 7,
+					"collapsed": null,
+					"liveUrl": "http://qhscb.squiz.cloud/?a=12965",
+					"summary": " With interstate borders re-opened, Far North Queensland is welcoming tourists back to the region. Here&#39;s how you can be COVID-19 safe while visiting our special part of the world.",
+					"allSummaryText": null,
+					"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D12965&profile=_default",
+					"date": null,
+					"fileSize": 175,
+					"fileType": "html",
+					"tier": 1,
+					"docNum": 6,
+					"exploreLink": null,
+					"kmFromOrigin": null,
+					"listMetadata": {
+						"datePublished": [
+							"2021-06-10 08:41:02"
+						],
+						"image": [
+							"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0025/12868/COVID-19-postcards-tile.JPG"
+						],
+						"dateCreated": [
+							"2021-05-10 15:33:58"
+						],
+						"c": [
+							"With interstate borders re-opened, Far North Queensland is welcoming tourists back to the region. Here's how you can be COVID-19 safe while visiting our special part of the world."
+						],
+						"t": [
+							"Holidaymakers urged to #MakeFNQCOVID19Free"
+						],
+						"canonicalURL": [
+							"https://cairns-hinterland.health.qld.gov.au/about-us/news/holidaymakers-urged-to-makefnqcovid19free"
+						],
+						"shortDescription": [
+							"How you can be COVID-19 safe while visiting Far North Queensland."
+						],
+						"dateUpdated": [
+							"2021-11-16 13:32:02"
+						]
+					},
+					"metaData": {
+						"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0025/12868/COVID-19-postcards-tile.JPG",
+						"t": "Holidaymakers urged to #MakeFNQCOVID19Free",
+						"dateCreated": "2021-05-10 15:33:58",
+						"dateUpdated": "2021-11-16 13:32:02",
+						"c": "With interstate borders re-opened, Far North Queensland is welcoming tourists back to the region. Here's how you can be COVID-19 safe while visiting our special part of the world.",
+						"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/holidaymakers-urged-to-makefnqcovid19free",
+						"datePublished": "2021-06-10 08:41:02",
+						"shortDescription": "How you can be COVID-19 safe while visiting Far North Queensland."
+					},
+					"tags": [],
+					"quickLinks": null,
+					"displayUrl": "http://qhscb.squiz.cloud/?a=12965",
+					"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D12965&auth=JRUgf1OEMKsBGey92NDXJQ&profile=_default&rank=15&query=%21padrenull",
+					"explain": null,
+					"indexUrl": "http://qhscb.squiz.cloud/?a=12965",
+					"gscopesSet": [],
+					"customData": {},
+					"relatedDocuments": {},
+					"documentVisibleToUser": true,
+					"promoted": false,
+					"diversified": false
+				}
+			],
+			"qsups": []
+		},
+		"additional_results": [
+			{
+				"rank": 1,
+				"score": 1000,
+				"title": "Mareeba stroke averted",
+				"collection": "qld-health-cairns-news",
+				"component": 1,
+				"collapsed": null,
+				"liveUrl": "http://qhscb.squiz.cloud/?a=16435",
+				"summary": " Four days after hearing about the signs of stroke at a talk at Mareeba Men’s Shed, Kent Duffield recognised those very signs in his wife and acted quickly.",
+				"allSummaryText": null,
+				"cacheUrl": "/s/cache?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D16435&profile=_default",
+				"date": 1645452000000,
+				"fileSize": 135,
+				"fileType": "html",
+				"tier": 1,
+				"docNum": 3,
+				"exploreLink": null,
+				"kmFromOrigin": null,
+				"listMetadata": {
+					"datePublished": [
+						"2021-06-10 08:40:46"
+					],
+					"image": [
+						"https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0015/16440/Card-Mareeba-stroke-first-aid.jpg"
+					],
+					"featured": [
+						"1"
+					],
+					"dateCreated": [
+						"2021-05-28 13:36:17"
+					],
+					"c": [
+						"Four days after hearing about the signs of stroke at a talk at Mareeba Men’s Shed, Kent Duffield recognised those very signs in his wife and acted quickly."
+					],
+					"t": [
+						"Mareeba stroke averted"
+					],
+					"canonicalURL": [
+						"https://cairns-hinterland.health.qld.gov.au/about-us/news/mareeba-stroke-first-aid"
+					],
+					"author": [
+						"Kylie Huyser"
+					],
+					"location": [
+						"Cairns and Hinterland"
+					],
+					"shortDescription": [
+						"Four days after hearing about the signs of stroke at a talk at Mareeba Men’s Shed, Kent Duffield recognised those very signs in his wife and acted quickly."
+					],
+					"dateUpdated": [
+						"2021-12-13 12:39:58"
+					],
+					"tags":["women's_health; covid-19"]
+				},
+				"metaData": {
+					"shortDescription": "Four days after hearing about the signs of stroke at a talk at Mareeba Men’s Shed, Kent Duffield recognised those very signs in his wife and acted quickly.",
+					"datePublished": "2021-06-10 08:40:46",
+					"t": "Mareeba stroke averted",
+					"featured": "1",
+					"canonicalURL": "https://cairns-hinterland.health.qld.gov.au/about-us/news/mareeba-stroke-first-aid",
+					"location": "Cairns and Hinterland",
+					"dateUpdated": "2021-12-13 12:39:58",
+					"c": "Four days after hearing about the signs of stroke at a talk at Mareeba Men’s Shed, Kent Duffield recognised those very signs in his wife and acted quickly.",
+					"author": "Kylie Huyser",
+					"image": "https://cairns-hinterland.health.qld.gov.au/__data/assets/image/0015/16440/Card-Mareeba-stroke-first-aid.jpg",
+					"dateCreated": "2021-05-28 13:36:17",
+					"tags": "women's_health; covid-19"
+				},
+				"tags": [],
+				"quickLinks": null,
+				"displayUrl": "http://qhscb.squiz.cloud/?a=16435",
+				"clickTrackingUrl": "/s/redirect?collection=qld-health-cairns-news&url=http%3A%2F%2Fqhscb.squiz.cloud%2F%3Fa%3D16435&auth=yfW8JbquFirCxM2ka4vfEQ&profile=_default&rank=1&query=%21padrenull",
+				"explain": null,
+				"indexUrl": "http://qhscb.squiz.cloud/?a=16435",
+				"gscopesSet": [],
+				"customData": {},
+				"relatedDocuments": {},
+				"documentVisibleToUser": true,
+				"promoted": false,
+				"diversified": false
+			}
+		],
+		"pagination": [
+			{
+				"label": 1,
+				"isCurrent": true,
+				"linkType": "num",
+				"url": "?&start_rank=1"
+			},
+			{
+				"label": 2,
+				"isCurrent": false,
+				"linkType": "num",
+				"url": "?&start_rank=4"
+			},
+			{
+				"label": 3,
+				"isCurrent": false,
+				"linkType": "num",
+				"url": "?&start_rank=7"
+			},
+			{
+				"label": 4,
+				"isCurrent": false,
+				"linkType": "num",
+				"url": "?&start_rank=10"
+			},
+			{
+				"label": 5,
+				"isCurrent": false,
+				"linkType": "num",
+				"url": "?&start_rank=13"
+			},
+			{
+				"label": 8,
+				"linkType": "last",
+				"url": "?&start_rank=22"
+			},
+			{
+				"linkType": "next",
+				"url": "?&start_rank=4"
+			}
+		]
+	},
+	"current": {
+		"data": {
+            "assetid": "55930",
+            "type_code": "page_standard",
+            "version": "0.0.4",
+            "name": "Feature Articles",
+            "short_name": "Feature Articles",
+            "status": "2",
+            "languages": "en",
+            "charset": "utf-8",
+            "created": "2022-02-18 17:19:48",
+            "created_userid": "54790",
+            "updated": "2022-02-22 12:15:56",
+            "updated_userid": "54790",
+            "published": "Never",
+            "published_userid": "",
+            "status_changed": "2022-02-18 17:19:48",
+            "status_changed_userid": "54790",
+            "thumbnail": "",
+            "attributes": {
+                "name": {
+                    "attrid": "631",
+                    "type": "text",
+                    "value": "Feature Articles",
+                    "is_contextable": true,
+                    "use_default": true
+                },
+                "short_name": {
+                    "attrid": "632",
+                    "type": "text",
+                    "value": "Feature Articles",
+                    "is_contextable": true,
+                    "use_default": true
+                },
+                "available_conditions": {
+                    "attrid": "633",
+                    "type": "serialise",
+                    "value": [],
+                    "is_contextable": false,
+                    "use_default": true
+                },
+                "conditions": {
+                    "attrid": "634",
+                    "type": "serialise",
+                    "value": [],
+                    "is_contextable": true,
+                    "use_default": true
+                }
+            },
+            "metadata": {
+                "description": {
+                    "value": "",
+                    "fieldid": "19709",
+                    "type": "metadata_field_text",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "shortDescription": {
+                    "value": "",
+                    "fieldid": "19710",
+                    "type": "metadata_field_text",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "pageType": {
+                    "value": "landing",
+                    "fieldid": "19712",
+                    "type": "metadata_field_select",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "displayBreadcrumbs": {
+                    "value": "true",
+                    "fieldid": "19713",
+                    "type": "metadata_field_select",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "displayBanner": {
+                    "value": "no",
+                    "fieldid": "19736",
+                    "type": "metadata_field_select",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "displayQuickExit": {
+                    "value": "",
+                    "fieldid": "19714",
+                    "type": "metadata_field_select",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "displayLastUpdated": {
+                    "value": "yes",
+                    "fieldid": "19715",
+                    "type": "metadata_field_select",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "dataSource": {
+                    "value": "",
+                    "fieldid": "19717",
+                    "type": "metadata_field_related_asset",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "detailsPage": {
+                    "value": "",
+                    "fieldid": "19718",
+                    "type": "metadata_field_related_asset",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "mapMarker": {
+                    "value": "",
+                    "fieldid": "19719",
+                    "type": "metadata_field_related_asset",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "mapMarkerUrl": {
+                    "value": "",
+                    "fieldid": "55421",
+                    "type": "metadata_field_text",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "bookOnlineUrl": {
+                    "value": "",
+                    "fieldid": "19720",
+                    "type": "metadata_field_text",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "cardIcon": {
+                    "value": "",
+                    "fieldid": "19722",
+                    "type": "metadata_field_text",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "cardDisplayHeader": {
+                    "value": "false",
+                    "fieldid": "19723",
+                    "type": "metadata_field_select",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "cardDisplayHeadingAsLink": {
+                    "value": "true",
+                    "fieldid": "19724",
+                    "type": "metadata_field_select",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "cardCta1TileIcon": {
+                    "value": "",
+                    "fieldid": "19725",
+                    "type": "metadata_field_text",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "cardCta1TileText": {
+                    "value": "",
+                    "fieldid": "19726",
+                    "type": "metadata_field_text",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "cardCta1TileBackground": {
+                    "value": "",
+                    "fieldid": "19727",
+                    "type": "metadata_field_select",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "cardCta1TileURL": {
+                    "value": "",
+                    "fieldid": "19728",
+                    "type": "metadata_field_related_asset",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "cardCta2TileIcon": {
+                    "value": "",
+                    "fieldid": "19729",
+                    "type": "metadata_field_text",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "cardCta2TileText": {
+                    "value": "",
+                    "fieldid": "19730",
+                    "type": "metadata_field_text",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "cardCta2TileBackground": {
+                    "value": "",
+                    "fieldid": "19731",
+                    "type": "metadata_field_select",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "cardCta2TileURL": {
+                    "value": "",
+                    "fieldid": "19732",
+                    "type": "metadata_field_related_asset",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "cardDisplayFooter": {
+                    "value": "false",
+                    "fieldid": "19733",
+                    "type": "metadata_field_select",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                },
+                "cardNewWindow": {
+                    "value": "false",
+                    "fieldid": "19734",
+                    "type": "metadata_field_text",
+                    "is_contextable": true,
+                    "default_value": true,
+                    "use_default": true
+                },
+                "showInMegaNav": {
+                    "value": "false",
+                    "fieldid": "40546",
+                    "type": "metadata_field_select",
+                    "is_contextable": true,
+                    "default_value": false,
+                    "use_default": true
+                }
+            }
+        },
+        "home": 0,
+        "children": [],
+        "lineage": [
+            {
+                "asset_assetid": "19754",
+                "asset_name": "Darling Downs HHS",
+                "asset_short_name": "Darling Downs HHS",
+                "asset_url": "https://qhscb.squiz.cloud/darling-downs"
+            },
+            {
+                "asset_assetid": "55926",
+                "asset_name": "Our stories",
+                "asset_short_name": "Our stories",
+                "asset_url": "https://qhscb.squiz.cloud/darling-downs/our-stories"
+            },
+            {
+                "asset_assetid": "55930",
+                "asset_name": "Feature Articles",
+                "asset_short_name": "Feature Articles",
+                "asset_url": "https://qhscb.squiz.cloud/darling-downs/our-stories/feature-articles"
+            }
+        ],
+        "top": {
+            "asset_assetid": "55926",
+            "asset_name": "Our stories",
+            "asset_short_name": "Our stories",
+            "asset_url": "https://qhscb.squiz.cloud/darling-downs/our-stories"
+        }
+	}
+}

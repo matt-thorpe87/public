@@ -8,8 +8,7 @@
             <h1><?php single_cat_title(); ?></h1>
             <div class="qld__abstract"><?php echo category_description(); ?></div>
         
-            <?php
-            
+            <?php            
             if (have_posts()) : ?>
                 <ul class="qld__card-list qld__card-list--matchheight">
                     <?php while (have_posts()): the_post(); 

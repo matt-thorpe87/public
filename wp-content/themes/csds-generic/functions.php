@@ -5,20 +5,20 @@ function themeFiles()
 
     wp_enqueue_style('lato-font', '//fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900');
     wp_enqueue_script('fontawesome', '//kit.fontawesome.com/fb2f2d4cd6.js');
-    wp_enqueue_script('qh_base_script_handlebars', content_url('/qh-design-system/externals/handlebars.min-v4.7.6.js'));
-    wp_enqueue_script('qh_base_script_componentPreview', content_url('/qh-design-system/externals/componentPreview.js'));
-    wp_enqueue_script('qh_base_script_dsComponentLoader', content_url('/qh-design-system/externals/dsComponentLoader.js'));
-    wp_enqueue_script('qh_base_script_helper', content_url('/qh-design-system/js/helpers.js'));
+    wp_enqueue_script('qh_base_script_handlebars', content_url('/themes/csds-generic/qh-design-system/externals/handlebars.min-v4.7.6.js'));
+    wp_enqueue_script('qh_base_script_componentPreview', content_url('/themes/csds-generic/qh-design-system/externals/componentPreview.js'));
+    wp_enqueue_script('qh_base_script_dsComponentLoader', content_url('/themes/csds-generic/qh-design-system/externals/dsComponentLoader.js'));
+    wp_enqueue_script('qh_base_script_helper', content_url('/themes/csds-generic/qh-design-system/js/helpers.js'));
     wp_enqueue_style('leaflet_styles', '//unpkg.com/leaflet@1.7.1/dist/leaflet.css');
     wp_enqueue_script('leaflet_script', '//unpkg.com/leaflet@1.7.1/dist/leaflet.js');
     wp_enqueue_script('leaflet_esri_script', '//unpkg.com/esri-leaflet@3.0.1/dist/esri-leaflet.js');
     wp_enqueue_script('leaflet_esri_vector', '//unpkg.com/esri-leaflet-vector@3.0.0/dist/esri-leaflet-vector.js');
-    wp_enqueue_script('qh_base_script_runtime', content_url('/qh-design-system/js/runtime.js'));
-    wp_enqueue_script('qh_base_main_core_script', content_url('/qh-design-system/externals/main-core.js'));
-    wp_enqueue_style('qh_base_main_core_style', content_url('/qh-design-system/externals/main-core.css'));
-    wp_enqueue_script('qh_base_script_main', content_url('/qh-design-system/js/main.js'));
-    wp_enqueue_style('qh_base_style', content_url('/qh-design-system/main.css'));
-    wp_enqueue_style('qh_base_styles', content_url('/qh-design-system/qh-theme.css'));
+    wp_enqueue_script('qh_base_script_runtime', content_url('/themes/csds-generic/qh-design-system/js/runtime.js'));
+    wp_enqueue_script('qh_base_main_core_script', content_url('/themes/csds-generic/qh-design-system/externals/main-core.js'));
+    wp_enqueue_style('qh_base_main_core_style', content_url('/themes/csds-generic/qh-design-system/externals/main-core.css'));
+    wp_enqueue_script('qh_base_script_main', content_url('/themes/csds-generic/qh-design-system/js/main.js'));
+    wp_enqueue_style('qh_base_style', content_url('/themes/csds-generic/qh-design-system/main.css'));
+    wp_enqueue_style('qh_base_styles', content_url('/themes/csds-generic/qh-design-system/qh-theme.css'));
 
     wp_enqueue_style('custom_theme_style', get_theme_file_uri('/styles/customThemeStyles.css'));
 }

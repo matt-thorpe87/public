@@ -1,0 +1,37 @@
+{
+	"component": {
+		"name": "sf_admin_service_locations",
+		"description": "",
+		"version": "1.0",
+		"status": "In Development",
+		"type": "datastore",
+		"ds_queries": [
+			{
+				"name": "service_locations",
+				"collection": "service-locations",
+				"filters": [
+					{
+						"val1": "service_id",
+						"val2": "<document>",
+						"operator": "==="
+					}
+				]
+			},
+			{
+				"name": "services",
+				"collection": "services"
+			},
+			{
+				"name": "hhs",
+				"collection": "hhs"
+			},
+			{
+				"name": "facilities",
+				"collection": "facilities"
+			}
+		],
+		"data": {
+			"metadata": {}
+		}
+	}
+}
