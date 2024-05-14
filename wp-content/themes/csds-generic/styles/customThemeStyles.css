@@ -324,3 +324,14 @@
 .qld__card__title.qld__search__results__title{
   margin-top:2rem;
 }
+@media screen and (max-width:1400px){
+  .row.qld__search-results__container{
+    margin: 0rem 1.5rem;
+  }
+}
+.qld__btn--search{
+  border-radius: 0px 4px 4px 0px;
+}
+.qld__search__inner .qld__text-input{
+  border-radius: 4px 0px 0px 4px;
+}

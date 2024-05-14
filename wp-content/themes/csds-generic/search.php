@@ -13,6 +13,7 @@ $args = array(
 <!-- // The Query -->
 <div class="qld__body">
     <div class="container-fluid">
+        <div class="row qld__search-results__container">
         <?php
         $the_query = new WP_Query($args);
         if ($the_query->have_posts()) {
@@ -73,13 +74,14 @@ $args = array(
             </section>
 
         <?php } ?>
-        
+        </div>
     </div>
     <?php
     $search = get_field('multi_search', 'option'); 
     if ($search != 'no') : 
     ?>
     <div class="container-fluid">
+        <div class="row qld__search-results__container">
         <?php
         $the_query = new WP_Query($args);
         if ($the_query->have_posts()) {
@@ -143,7 +145,7 @@ $args = array(
             </section>
 
         <?php } ?>
-        
+        </div>
     </div> 
     <?php endif ?>
     <div class="container-fluid" style="padding:2rem;">

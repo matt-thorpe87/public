@@ -152,3 +152,18 @@ function example_block_category($categories, $post)
 }
 add_filter('block_categories_all', 'example_block_category', 10, 2);
 
+//For example, you can paste this into your theme functions.php file
+ 
+// function meks_which_template_is_loaded() {
+// 	if ( is_super_admin() ) {
+// 		global $template;
+// 		print_r( $template );
+// 	}
+// }
+ 
+// add_action( 'wp_footer', 'meks_which_template_is_loaded' );
+
+// function mytheme_add_woocommerce_support() {
+// 	add_theme_support( 'woocommerce' );
+// }
+// add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
