@@ -30,7 +30,7 @@
 
                     <img class="qld__header__pre-header-brand-image" alt="Queensland Government" <?php
                     $mobile_logo = get_field('mobile_logo', 'option');
-                    $svg_path =  content_url('/themes/csds-generic/src/mysource_files/img/header-logo-qgov--light.svg');
+                    $svg_path =  content_url('/themes/csds-generic/dist/assets/images/img/header-logo-qgov--light.svg');
 
                     if (!empty($mobile_logo)) { ?>
                             src="<?php echo esc_attr($mobile_logo) ?>" />
@@ -59,9 +59,9 @@
                         class="qld__header__toggle-main-nav qld__main-nav__toggle-search qld__main-nav__toggle-search--open"
                         aria-expanded="false" onclick=search()>
                         <?php
-                        $search = content_url('/themes/csds-generic/src/mysource_files/img/svg-icons.svg#qld__icon__search');
-                        $close = content_url('/themes/csds-generic/src/mysource_files/img/svg-icons.svg#qld__icon__close');
-                        $hamburger = content_url('/themes/csds-generic/src/mysource_files/img/svg-icons.svg#qld__icon__mobile-menu')
+                        $search = content_url('/themes/csds-generic/dist/assets/images/img/svg-icons.svg#qld__icon__search');
+                        $close = content_url('/themes/csds-generic/dist/assets/images/img/svg-icons.svg#qld__icon__close');
+                        $hamburger = content_url('/themes/csds-generic/dist/assets/images/img/svg-icons.svg#qld__icon__mobile-menu')
                         ?>
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                             class="qld__icon qld__icon--lg qld__main-nav__toggle-search-icon">
@@ -103,12 +103,11 @@
                         <div class="qld__header__brand-image">
                             <img class="qld__header__header-brand-image" alt="Queensland Government" <?php
                             $logo = get_field('site_logo', 'option');
-                            $svg_logo_path =  content_url('/themes/csds-generic/src/mysource_files/img/header-logo-qgov--dark.svg');
+                            $svg_logo_path =  content_url('/themes/csds-generic/dist/assets/images/img/header-logo-qgov--dark.svg');
 
                             if (!empty($logo)) { ?>
                                     src="<?php echo esc_attr($logo) ?>" />
                             <?php } else { ?>
-
                                 src="<?php echo $svg_logo_path ?>"
                                 />
                             <?php } ?>

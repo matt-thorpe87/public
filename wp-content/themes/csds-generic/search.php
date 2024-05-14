@@ -9,16 +9,14 @@ $args = array(
     'orderby' => 'desc',
     'paged' => $paged
 ); ?>
+
 <!-- // The Query -->
 <div class="qld__body">
-    <div class="container-fluid" style="padding:2rem;">
+    <div class="container-fluid">
         <?php
         $the_query = new WP_Query($args);
         if ($the_query->have_posts()) {
-            // $blogs = get_last_updated();
-            echo "<h2 class='qld__card__title'>Search Results in " .  get_bloginfo('name') ." for: " . get_query_var('s') . "</h2>";
-            // foreach ($blogs as $blog) {
-                // switch_to_blog($blog_id);
+            echo "<h2 class='qld__card__title qld__search__results__title'>Search Results in " .  get_bloginfo('name') ." for: " . get_query_var('s') . "</h2>";
                 $lastposts = get_posts($args);
                 foreach ($lastposts as $post):
                     setup_postdata($post);
@@ -67,7 +65,7 @@ $args = array(
                 style="padding-top:2rem;padding-bottom:2rem;">
                 <div class="container-fluid">
                     <div class="qld__page-alerts qld__page-alerts--info">
-                        <div class="qld__page-alerts--heading qld__display-lg">Nothing Found</div>
+                        <div class="qld__page-alerts--heading qld__display-lg">Nothing Found in <?php echo get_bloginfo( 'name' ); ?></div>
                         <div>Sorry, but nothing matched your search criteria. Please try again with some different keywords.
                         </div>
                     </div>
@@ -77,12 +75,16 @@ $args = array(
         <?php } ?>
         
     </div>
-    <div class="container-fluid" style="padding:2rem;">
+    <?php
+    $search = get_field('multi_search', 'option'); 
+    if ($search != 'no') : 
+    ?>
+    <div class="container-fluid">
         <?php
         $the_query = new WP_Query($args);
         if ($the_query->have_posts()) {
             $blogs = get_last_updated();
-            echo "<h2 class='qld__card__title'>Search Results across network for: " . get_query_var('s') . "</h2>";
+            echo "<h2 class='qld__card__title qld__search__results__title'>Search Results across network for: " . get_query_var('s') . "</h2>";
             foreach ($blogs as $blog) {
                 switch_to_blog($blog['blog_id']);
                 $lastposts = get_posts($args);
@@ -133,7 +135,7 @@ $args = array(
                 style="padding-top:2rem;padding-bottom:2rem;">
                 <div class="container-fluid">
                     <div class="qld__page-alerts qld__page-alerts--info">
-                        <div class="qld__page-alerts--heading qld__display-lg">Nothing Found</div>
+                        <div class="qld__page-alerts--heading qld__display-lg">Nothing Found across the website network</div>
                         <div>Sorry, but nothing matched your search criteria. Please try again with some different keywords.
                         </div>
                     </div>
@@ -142,7 +144,8 @@ $args = array(
 
         <?php } ?>
         
-    </div>
+    </div> 
+    <?php endif ?>
     <div class="container-fluid" style="padding:2rem;">
         <div class="qld__pagination__row">
             <nav class="pagination qld__all_posts__link">

@@ -53,7 +53,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "default"
+                "value": "page.php"
             },
             {
                 "param": "page_type",
@@ -71,5 +71,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1715125336
+    "modified": 1715564309
 }

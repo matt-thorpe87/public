@@ -54,8 +54,13 @@
   .qld__header__pre-header{
     z-index:2;
   }
+  @media screen and (min-width:1025px) and (max-width:1400px ){
+    .qld__header__pre-header, .qld__header__main{
+      padding: 0 1rem;
+    }
+  }
   @media screen and (max-width: 1024px) {
-    .qld__header .qld__header__main.qld__header__main--dark, .qld__header__pre-header.qld__header__pre-header--dark-alt, .qld__main-nav.qld__main-nav--dark .qld__link-list, .qld__banner__content
+    .qld__header .qld__header__main.qld__header__main--dark, .qld__header__pre-header, .qld__main-nav.qld__main-nav--dark .qld__link-list, .qld__banner__content
     {
       padding: 0 1.5rem;
     }
@@ -88,34 +93,27 @@
   }
   
   
-  @media screen and (max-width: 768px) {
-  
+  @media screen and (max-width: 991px) {
   .container-fluid.logo_navcontrol_wrapper {
     height: 72px;
   }
-  
   .qld__header .qld__header__pre-header-brand-image{
     height: auto;
     padding: 15px 0;
   }
-  
   }
   
   @media screen and (max-width: 600px) {
-  
   .qld__banner .qld__banner__image{
     display: none;
   }
-  
   .container-fluid.logo_navcontrol_wrapper {
     height: 51px;
   }
-  
   .qld__header .qld__header__pre-header-brand-image {
     height: auto;
     padding: 7px 0;
   }
-  
   .qld__footer__navigation ul.qld__link-list>li{
     width: 100%;
     flex-basis: 100%;
@@ -314,4 +312,15 @@
 }
 .qld__not__found__heading{
   margin-bottom:2rem;
+}
+@media (min-width:699px) {
+  #banner-123 {
+      background-image: url();
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: ;
+  }
+}
+.qld__card__title.qld__search__results__title{
+  margin-top:2rem;
 }

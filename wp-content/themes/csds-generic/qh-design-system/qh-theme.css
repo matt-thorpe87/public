@@ -2430,6 +2430,9 @@ a.qld__code-header-link:hover:visited {
     .qld__main-nav__menu-sub-inner .qld__link-columns.qld__link-list a {
         color: var(--QLD-color-light-link);
     }
+    .qld__header__pre-header {
+        overflow:overlay;
+    }
 }
 
 .qld__header__pre-header a {

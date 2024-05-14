@@ -220,7 +220,7 @@
                 $term_list = wp_list_pluck( $terms, 'slug' );
                 $related_args = array(
                     'post_type' => 'post',
-                    'posts_per_page' => 10,
+                    'posts_per_page' => 3,
                     'post_status' => 'publish',
                     'post__not_in' => array( get_the_ID() ),
                     'order' => 'DESC',

@@ -7,22 +7,13 @@ get_header(); ?>
 
 <!-- Banner Basic  -->
   <section id="banner-123" class="qld__banner qld__banner__basic qld__banner--has-hero qld__banner--dark-alt qld__banner--breadcrumbs">
-      <style>
-          @media (min-width:699px) {
-              #banner-123 {
-                  background-image: url();
-                  background-size: cover;
-                  background-repeat: no-repeat;
-                  background-position-x: ;
-              }
-          }
-      </style>
+
       <!--@@ Breadcrumbs - Mobile @@-->
       <nav class="qld__breadcrumbs qld__breadcrumbs--dark-alt qld__banner__breadcrumbs qld__banner__breadcrumbs--mobile" aria-label="breadcrumb">
           <ul class="qld__link-list qld__link-list--inline">
                   <li>
                       <a href="/">
-                              Design
+                              Home
                       </a>
                   </li>
           </ul>
