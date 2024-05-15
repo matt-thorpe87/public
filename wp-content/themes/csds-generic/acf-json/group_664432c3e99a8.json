@@ -1,0 +1,173 @@
+{
+    "key": "group_664432c3e99a8",
+    "title": "Posts Card",
+    "fields": [
+        {
+            "key": "field_664432c456255",
+            "label": "Posts Card Header",
+            "name": "posts_card_header",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_664432de1f29c",
+            "label": "Posts Card Subheading",
+            "name": "posts_card_subheading",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_664432e81f29d",
+            "label": "Card Colour",
+            "name": "card_colour",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "light": "Light",
+                "alt": "Alternate",
+                "dark": "Dark",
+                "dark-alt": "Dark Alternate"
+            },
+            "default_value": "light",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_664434fa19de5",
+            "label": "Number of Posts",
+            "name": "number_of_posts",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": 1,
+            "max": 6,
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66444e0e65949",
+            "label": "Post Type",
+            "name": "post_type_for_posts_card",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "post": "post",
+                "page": "page",
+                "attachment": "attachment",
+                "revision": "revision",
+                "nav_menu_item": "nav_menu_item",
+                "custom_css": "custom_css",
+                "customize_changeset": "customize_changeset",
+                "oembed_cache": "oembed_cache",
+                "user_request": "user_request",
+                "wp_block": "wp_block",
+                "wp_template": "wp_template",
+                "wp_template_part": "wp_template_part",
+                "wp_global_styles": "wp_global_styles",
+                "wp_navigation": "wp_navigation",
+                "wp_font_family": "wp_font_family",
+                "wp_font_face": "wp_font_face",
+                "acf-taxonomy": "acf-taxonomy",
+                "acf-post-type": "acf-post-type",
+                "acf-ui-options-page": "acf-ui-options-page",
+                "acf-field-group": "acf-field-group",
+                "acf-field": "acf-field",
+                "product": "product",
+                "product_variation": "product_variation",
+                "shop_order": "shop_order",
+                "shop_order_refund": "shop_order_refund",
+                "shop_coupon": "shop_coupon",
+                "shop_order_placehold": "shop_order_placehold",
+                "topics": "topics",
+                "resources": "resources",
+                "hero_banner": "hero_banner",
+                "podcast": "podcast",
+                "wpforms": "wpforms",
+                "wpforms-template": "wpforms-template",
+                "patterns_ai_data": "patterns_ai_data"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/posts-card"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1715752902
+}

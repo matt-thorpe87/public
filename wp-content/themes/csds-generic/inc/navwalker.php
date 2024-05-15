@@ -34,7 +34,7 @@ class walker_mega_nav extends Walker_Nav_menu{
             $output .= "\n$indent<div class=\"qld__main-nav__sub-head\">
             <a class=\"qld__main-nav__sub-heading\" href=\"$menuUrl\">
                 <span class=\"qld__main-nav__sub-item-text qld__display-lg\">$menuTitle</span>
-                <svg class=\"qld__icon qld__icon--lg\"><use href=\"/mysource_files/img/svg-icons.svg#qld__icon__arrow-right\"></use></svg>
+                <svg class=\"qld__icon qld__icon--lg\"><use href=\"/wp-content/themes/csds-generic/dist/assets/images/img/svg-icons.svg#qld__icon__arrow-right\"></use></svg>
             </a>
             <p class=\"qld__main-nav__item-desc\">$menuDesc</p>
             </div><hr class=\"qld__horizontal-rule qld__horizontal-rule--lg\">\n";
@@ -84,7 +84,7 @@ class walker_mega_nav extends Walker_Nav_menu{
             <span class="qld__main-nav__item-toggle-text" data-name="'. $item->title . '">' . $item->title . '</span>
                 <svg class="qld__icon qld__icon--md">
                 <use href=""></use>
-                <use href="/wp-content//themes/csds-generic/src/mysource_files/img/svg-icons.svg#qld__icon__chevron-up"></use>
+                <use href="/wp-content/themes/csds-generic/dist/assets/images/img/svg-icons.svg#qld__icon__chevron-up"></use>
                 </svg>
             </button><a/></div>' : '<a class="qld__main-nav__item-link" ' . $attributes . '>' . $item->title . '</a></div> ';
             $item_output .= $args->after;

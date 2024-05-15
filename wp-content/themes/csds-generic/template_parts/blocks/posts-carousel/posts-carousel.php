@@ -10,6 +10,7 @@ $heading = get_field('posts_carousel_heading');
 $subheading = get_field('posts_carousel_subheading');
 $color_settings = get_field('colour_settings');
 $number_posts = get_field('number_of_posts');
+$post_type = get_field('post_type_for_posts_carousel');
 
 // Support custom "anchor" values.
 $anchor = '';
@@ -29,7 +30,7 @@ if (!empty($color_settings)) {
 // get posts //
 $news_slider = new wp_query(
     array(
-        'post_type' => 'post',
+        'post_type' => $post_type,
         'post_status' => 'publish',
         'posts_per_page' => $number_posts,
         'orderby' => 'date',

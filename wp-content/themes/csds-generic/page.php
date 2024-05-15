@@ -76,7 +76,7 @@ get_header(); ?>
     <section class="qld__body ">
         <div class="container-fluid">
             <div class="row">
-                <div >
+                <div class="col-xs-12 col-lg-12">
                     <?php
                     while (have_posts()) {
                         the_post(); ?>

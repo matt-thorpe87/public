@@ -174,13 +174,6 @@
                 "operator": "==",
                 "value": "hero_banner"
             }
-        ],
-        [
-            {
-                "param": "post_template",
-                "operator": "==",
-                "value": "index.php"
-            }
         ]
     ],
     "menu_order": 0,
@@ -192,5 +185,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1712723910
+    "modified": 1715736414
 }

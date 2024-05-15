@@ -128,6 +128,8 @@ function register_acf_blocks()
     register_block_type(__DIR__ . '/template_parts/blocks/posts-carousel');
     register_block_type(__DIR__ . '/template_parts/blocks/carousel');
     register_block_type(__DIR__ . '/template_parts/blocks/contact-form');
+    register_block_type(__DIR__ . '/template_parts/blocks/posts-card');
+
 
 
 }
@@ -152,18 +154,31 @@ function example_block_category($categories, $post)
 }
 add_filter('block_categories_all', 'example_block_category', 10, 2);
 
-//For example, you can paste this into your theme functions.php file
+// For example, you can paste this into your theme functions.php file
  
-// function meks_which_template_is_loaded() {
-// 	if ( is_super_admin() ) {
-// 		global $template;
-// 		print_r( $template );
-// 	}
-// }
+function meks_which_template_is_loaded() {
+	if ( is_super_admin() ) {
+		global $template;
+		print_r( $template );
+	}
+}
  
-// add_action( 'wp_footer', 'meks_which_template_is_loaded' );
+add_action( 'wp_footer', 'meks_which_template_is_loaded' );
 
 // function mytheme_add_woocommerce_support() {
 // 	add_theme_support( 'woocommerce' );
 // }
 // add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+
+function acf_load_field_choices( $field ) {
+    
+    // Reset choices
+    $field['choices'] = get_post_types();
+    
+    
+    // Return the field
+    return $field;
+    
+}
+add_filter('acf/load_field/name=post_type_for_posts_card', 'acf_load_field_choices');
+add_filter('acf/load_field/name=post_type_for_posts_carousel', 'acf_load_field_choices');

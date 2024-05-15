@@ -318,7 +318,6 @@
       background-image: url();
       background-size: cover;
       background-repeat: no-repeat;
-      background-position-x: ;
   }
 }
 .qld__card__title.qld__search__results__title{
@@ -334,4 +333,9 @@
 }
 .qld__search__inner .qld__text-input{
   border-radius: 4px 0px 0px 4px;
+}
+@media (min-width:992px){
+  .qld__main-nav .qld__main-nav__menu .qld__main-nav__item.active .qld__main-nav__item-link{
+    margin-bottom: 0px;
+  }
 }

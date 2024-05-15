@@ -2,9 +2,6 @@
 /*
 Template name: hero_banner
 */
-?>
-
-<?php
 
 $hero_banner = new wp_query([
     'posts_per_page' => '3',

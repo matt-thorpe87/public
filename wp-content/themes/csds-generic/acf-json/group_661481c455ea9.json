@@ -90,6 +90,29 @@
             "step": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_66445d2df12f3",
+            "label": "Post Type",
+            "name": "post_type_for_posts_carousel",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": [],
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
         }
     ],
     "location": [
@@ -110,5 +133,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1712723976
+    "modified": 1715756355
 }

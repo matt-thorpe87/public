@@ -1,0 +1,17 @@
+{
+    "name": "posts-card",
+    "title": "Posts Card",
+    "description": "A custom block with a card with posts.",
+    "icon": "id",
+    "style": [ "file:./posts-card.scss"],
+    "category": "qh-design",
+    "keywords": ["card", "posts"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "posts-card.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": [ "left", "right", "center" ]
+    }
+}
