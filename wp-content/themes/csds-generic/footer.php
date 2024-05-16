@@ -150,7 +150,7 @@ $className = ' qld__footer--' . $footer_colour;
                         echo $acknowledgement; ?>
                     </p>
 
-                    <p>
+                    <p class="qld__footer__copyright">
                         <?php $copyright = get_field('copyright', 'option');
                         echo $copyright;
                         ?>

@@ -47,9 +47,6 @@ function theme_post_types() {
 
 add_action('init', 'theme_post_types');
 
-
-
-
 function enable_categories_theme_post_types() {
     register_taxonomy_for_object_type('category', 'topics');
     register_taxonomy_for_object_type('category', 'resources');

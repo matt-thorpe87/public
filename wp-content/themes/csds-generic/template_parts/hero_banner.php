@@ -1,6 +1,6 @@
 <?php
 /*
-Template name: hero_banner
+Template part name: hero_banner
 */
 
 $hero_banner = new wp_query([

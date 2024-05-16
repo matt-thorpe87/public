@@ -1,37 +1,31 @@
 <?php get_header(); 
 
-$topics = New wp_query([
-    'post_type' => 'topics'
-]);
-
-
+// $topics = New wp_query([
+//     'post_type' => 'topics'
+// ]);
 
 ?>
 <main class="main" role="main">
+<?php 
+$display = get_field('display_page_banner');
+$banner_colour = get_field('banner_background_colour');
+$className = ' qld__banner--' . $banner_colour;
+$bread = ' qld__breadcrumbs--' . $banner_colour;
 
+if($display == 'yes') :
 
-
-
+    ?>
 <!-- Banner Basic  -->
-  <section id="banner-123" class="qld__banner qld__banner__basic qld__banner--has-hero qld__banner--dark-alt qld__banner--breadcrumbs">
-      <style>
-          @media (min-width:699px) {
-              #banner-123 {
-                  background-image: url();
-                  background-size: cover;
-                  background-repeat: no-repeat;
-                  background-position-x: ;
-              }
-          }
-      </style>
+  <section id="banner-123" class="qld__banner qld__banner__basic qld__banner--has-hero qld__banner--breadcrumbs <?php echo esc_attr($className); ?>">
+
       <!--@@ Breadcrumbs - Mobile @@-->
-      <nav class="qld__breadcrumbs qld__breadcrumbs--dark-alt qld__banner__breadcrumbs qld__banner__breadcrumbs--mobile" aria-label="breadcrumb">
+      <nav class="qld__breadcrumbs qld__banner__breadcrumbs qld__banner__breadcrumbs--mobile <?php echo esc_attr($bread); ?>" aria-label="breadcrumb">
           <ul class="qld__link-list qld__link-list--inline">
-                  <li>
-                      <a href="/">
-                              Design
-                      </a>
-                  </li>
+                <li>
+                    <a href="/">
+                            Home
+                    </a>
+                </li>
           </ul>
       </nav>
       <div class="container-fluid">
@@ -62,7 +56,7 @@ $topics = New wp_query([
                   <div class="qld__banner__content col-xs-12 col-md-6 col-lg-7">
 
                       <!--@@ Breadcrumbs - Desktop @@-->
-                          <nav class="qld__breadcrumbs qld__breadcrumbs--dark qld__banner__breadcrumbs qld__banner__breadcrumbs--desktop" aria-label="breadcrumb">
+                          <nav class="qld__breadcrumbs qld__banner__breadcrumbs qld__banner__breadcrumbs--desktop <?php echo esc_attr($bread); ?>" aria-label="breadcrumb">
                             <?php custom_breadcrumbs(); ?>
                           </nav>
 
@@ -79,34 +73,52 @@ $topics = New wp_query([
           </div>
       </div>
   </section>
+  <?php endif ?>
+
 <!-- Banner Basic End -->
 
 
-<section class="qld__body  qld__body--full-width" id="body-123">
+<section class="qld__body ">
     <div class="container-fluid">
-      <?php
-      while(have_posts()){
-          the_post(); ?>
-      <h2><?php the_title(); ?></h2>
-      <p><?php the_content();?></p>
+        <div class="row">
+            <!-- start side navigation -->
+            <div class="col-xs-12 col-lg-3">
+                <div class="qld__side-nav qld__accordion">
+                    <button class="qld__side-nav__toggle qld__accordion__title qld__accordion--closed" aria-controls="nav-default" aria-expanded="false" aria-selected="false" >
+                    In Design
+                    </button>
+                    <nav aria-label="side navigation" id="nav-default" class="qld__side-nav__content qld__accordion--closed qld__accordion__body">
+                        <h2 class="qld__sidenav__title">
+                            <a class="qld__sidenav__link" href=""><?php echo get_the_title( $post->post_parent); ?></a>
+                        </h2>
 
-      <h3>Resources</h3>
-      <section class="qld__callout--wrapper qld__body" id="callout-123">
-        <div class="container-fluid">
-            <div class="qld__callout    ">  
-                <h3 class="qld__callout__heading ">
-                    <a href="<?php the_field('link-to-resources');?>" target="_blank"><?php the_field('resource-title'); ?></a>
-                </h3>
-                <p><?php the_field('resource-description'); ?></p>
+                        <?php wp_nav_menu(array(
+                                'theme_location' => 'side_menu',
+                                'container' => 'false',
+                                'menu_class' => 'qld__link-list',
+                                'walker' => new Walker_Sidebar_Menu()
+                                
+                            ));?>           
 
+                    </nav>
+                </div>
+            </div>
+                <!-- end side navigation -->
+
+            <div class="col-xs-12 col-lg-9" id="body-123">
+                <div class="container-fluid">
+                <?php
+                while(have_posts()){
+                    the_post(); ?>
+                <h2><?php the_title(); ?></h2>
+                <p><?php the_content();?></p>
+                <?php } ?>
+
+                </div>
             </div>
         </div>
-      </section>
-
-
-      <?php } ?>
-
     </div>
+
 </section>
 
 

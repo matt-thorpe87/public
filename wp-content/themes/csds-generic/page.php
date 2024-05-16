@@ -1,15 +1,24 @@
 <?php
-/* Template Name: Deafult template */
+/* Template Name: Default */
 get_header(); ?>
 <main class="main" role="main">
+<?php 
+$display = get_field('display_page_banner');
+$banner_colour = get_field('banner_background_colour');
+$className = ' qld__banner--' . $banner_colour;
+$bread = ' qld__breadcrumbs--' . $banner_colour;
 
+
+if($display == 'yes') :
+
+    ?>
 
     <!-- Banner Basic  -->
     <section id="banner-123"
-        class="qld__banner qld__banner__basic qld__banner--has-hero qld__banner--dark-alt qld__banner--breadcrumbs">
+        class="qld__banner qld__banner__basic qld__banner--has-hero qld__banner--breadcrumbs<?php echo esc_attr($className); ?>">
 
         <!--@@ Breadcrumbs - Mobile @@-->
-        <nav class="qld__breadcrumbs qld__breadcrumbs--dark-alt qld__banner__breadcrumbs qld__banner__breadcrumbs--mobile"
+        <nav class="qld__breadcrumbs qld__banner__breadcrumbs qld__banner__breadcrumbs--mobile<?php echo esc_attr($bread); ?>"
             aria-label="breadcrumb">
             <ul class="qld__link-list qld__link-list--inline">
                 <li>
@@ -26,8 +35,7 @@ get_header(); ?>
 
                     <!--@@ Hero image @@-->
                     <div class="qld__banner__hero col-xs-12 col-md-6 col-lg-5">
-                        <!-- <div class="qld__banner__image " style="background-image: url('https://via.placeholder.com/782x520');">
-                    </div> -->
+
                         <?php if (!empty(get_field('page_banner_image'))): ?>
                             <div class="qld__banner__image ">
 
@@ -48,7 +56,7 @@ get_header(); ?>
                     <div class="qld__banner__content col-xs-12 col-md-6 col-lg-7">
 
                         <!--@@ Breadcrumbs - Desktop @@-->
-                        <nav class="qld__breadcrumbs qld__breadcrumbs--dark qld__banner__breadcrumbs qld__banner__breadcrumbs--desktop"
+                        <nav class="qld__breadcrumbs qld__banner__breadcrumbs qld__banner__breadcrumbs--desktop<?php echo esc_attr($bread); ?>"
                             aria-label="breadcrumb">
 
                             <?php custom_breadcrumbs(); ?>
@@ -71,6 +79,8 @@ get_header(); ?>
             </div>
         </div>
     </section>
+    <?php endif ?>
+
     <!-- Banner Basic End -->
 
     <section class="qld__body ">
@@ -91,7 +101,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        </div>
+        
     </section>
 
 
