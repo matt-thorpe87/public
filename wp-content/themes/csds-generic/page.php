@@ -1,5 +1,5 @@
 <?php
-/* Template Name: Default */
+/* Template Name: Default Page */
 get_header(); ?>
 <main class="main" role="main">
 <?php 

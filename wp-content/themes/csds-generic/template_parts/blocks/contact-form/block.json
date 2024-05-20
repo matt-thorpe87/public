@@ -7,7 +7,7 @@
     "category": "qh-design",
     "keywords": ["contact", "form", "contact-form"],
     "acf": {
-        "mode": "preview",
+        "mode": "edit",
         "renderTemplate": "contact-form.php"
     },
     "supports": {

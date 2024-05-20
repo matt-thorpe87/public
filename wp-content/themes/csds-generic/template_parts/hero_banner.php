@@ -10,7 +10,6 @@ $hero_banner = new wp_query([
 ?>
 
 <div class="posts-carousel px-5">
-
     <?php
     if ($hero_banner->have_posts()):
         while ($hero_banner->have_posts()):
@@ -60,7 +59,6 @@ $hero_banner = new wp_query([
                                     <p>
                                         <?php the_field('sub-tagline'); ?>
                                     </p>
-                                    <!-- <span><p class="temp-text-matt">hey hey hey</p></span> -->
                                 </div>
 
                                 <!--@@ CTA Buttons @@-->

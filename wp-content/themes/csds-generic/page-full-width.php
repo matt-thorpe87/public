@@ -11,11 +11,11 @@ get_header(); ?>
       <!--@@ Breadcrumbs - Mobile @@-->
       <nav class="qld__breadcrumbs qld__breadcrumbs--dark-alt qld__banner__breadcrumbs qld__banner__breadcrumbs--mobile" aria-label="breadcrumb">
           <ul class="qld__link-list qld__link-list--inline">
-                  <li>
-                      <a href="/">
-                              Home
-                      </a>
-                  </li>
+                <li>
+                    <a href="/">
+                            Home
+                    </a>
+                </li>
           </ul>
       </nav>
       <div class="container-fluid">
@@ -25,8 +25,7 @@ get_header(); ?>
 
                   <!--@@ Hero image @@-->
                   <div class="qld__banner__hero col-xs-12 col-md-6 col-lg-5">
-                      <!-- <div class="qld__banner__image " style="background-image: url('https://via.placeholder.com/782x520');">
-                    </div> -->
+
                     <?php if(!empty(get_field('page_banner_image'))) : ?>
 
                     <div class="qld__banner__image ">

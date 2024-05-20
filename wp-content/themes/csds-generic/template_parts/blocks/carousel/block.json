@@ -7,7 +7,7 @@
     "category": "qh-design",
     "keywords": ["carousel"],
     "acf": {
-        "mode": "preview",
+        "mode": "edit",
         "renderTemplate": "carousel.php"
     },
     "supports": {

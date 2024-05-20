@@ -7,7 +7,7 @@
     "category": "qh-design",
     "keywords": ["page-alert", "alert"],
     "acf": {
-        "mode": "preview",
+        "mode": "edit",
         "renderTemplate": "page-alert.php"
     },
     "supports": {

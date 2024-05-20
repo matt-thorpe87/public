@@ -6,7 +6,6 @@ Template name: Podcast Collection
 get_header(); ?>
 <main class="main" role="main">
 
-
 <!-- Banner Basic  -->
   <section id="banner-123" class="qld__banner qld__banner__basic qld__banner--has-hero qld__banner--dark-alt qld__banner--breadcrumbs">
       <style>
@@ -86,20 +85,32 @@ get_header(); ?>
             <!-- side navigation -->
             <div class="qld__side-nav qld__accordion">
     <button class="qld__side-nav__toggle qld__accordion__title qld__accordion--closed" aria-controls="nav-default" aria-expanded="false" aria-selected="false" >
-    In Design
+    <?php 
+        $post = get_queried_object();
+        $postType = get_post_type_object(get_post_type($post));
+        if ($postType) {
+            echo esc_html($postType->labels->menu_name);
+        } else {
+            echo get_the_title();
+        }
+        ?>
     </button>
     <nav aria-label="side navigation" id="nav-default" class="qld__side-nav__content qld__accordion--closed qld__accordion__body">
         <h2 class="qld__sidenav__title">
-            <a class="qld__sidenav__link" href="/">Design</a>
+            <a class="qld__sidenav__link" href="/"><?php echo get_the_title( $post->post_parent); ?></a>
         </h2>
 
-        <?php wp_nav_menu(array(
-                'theme_location' => 'side_menu',
-                'container' => 'false',
-                'menu_class' => 'qld__link-list',
-                'walker' => new Walker_Sidebar_Menu()
-                
-             ));?>           
+        <?php 
+            if(has_nav_menu('side_menu')) : 
+            wp_nav_menu(array(
+                    'theme_location' => 'side_menu',
+                    'container' => 'false',
+                    'menu_class' => 'qld__link-list',
+                    'walker' => new Walker_Sidebar_Menu()
+                    
+                ));?>   
+                <?php
+                endif; ?>           
  
     </nav>
 </div>

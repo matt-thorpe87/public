@@ -7,7 +7,7 @@
     "category": "qh-design",
     "keywords": ["card", "text", "content"],
     "acf": {
-        "mode": "preview",
+        "mode": "edit",
         "renderTemplate": "card.php"
     },
     "supports": {

@@ -21,6 +21,7 @@ get_header(); ?>
                         'post',
                         'topics',
                         'resources',
+                        'podcast',
                     ),
                     'paged' => $paged,
                     'post_status' => 'publish',

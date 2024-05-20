@@ -7,7 +7,7 @@
     "category": "qh-design",
     "keywords": ["body", "text", "content"],
     "acf": {
-        "mode": "preview",
+        "mode": "edit",
         "renderTemplate": "body.php"
     },
     "supports": {

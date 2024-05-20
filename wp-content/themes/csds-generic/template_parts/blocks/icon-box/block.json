@@ -7,7 +7,7 @@
     "category": "qh-design",
     "keywords": ["icon-box", "icons", "icon"],
     "acf": {
-        "mode": "preview",
+        "mode": "edit",
         "renderTemplate": "icon-box.php"
     },
     "supports": {

@@ -1,0 +1,16 @@
+{
+    "name": "download",
+    "title": "Download",
+    "description": "A custom block with a download callout.",
+    "icon": "download",
+    "style": [ "file:./download-block.scss"],
+    "category": "qh-design",
+    "keywords": ["downloads", "resource", "file"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "download-block.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

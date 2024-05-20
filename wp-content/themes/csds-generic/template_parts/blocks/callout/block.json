@@ -7,7 +7,7 @@
     "category": "qh-design",
     "keywords": ["callout"],
     "acf": {
-        "mode": "preview",
+        "mode": "edit",
         "renderTemplate": "callout.php"
     },
     "supports": {

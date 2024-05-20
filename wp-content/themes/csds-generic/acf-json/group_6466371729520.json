@@ -17,7 +17,8 @@
                 "id": ""
             },
             "post_type": [
-                "topics"
+                "topics",
+                "resources"
             ],
             "post_status": "",
             "taxonomy": "",
@@ -28,6 +29,7 @@
             "min": "",
             "max": "",
             "elements": "",
+            "bidirectional": 0,
             "bidirectional_target": []
         }
     ],
@@ -49,5 +51,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1712723982
+    "modified": 1716172901
 }

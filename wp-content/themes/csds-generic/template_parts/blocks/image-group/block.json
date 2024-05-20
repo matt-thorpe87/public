@@ -7,7 +7,7 @@
     "category": "qh-design",
     "keywords": ["image-group", "image", "images"],
     "acf": {
-        "mode": "preview",
+        "mode": "edit",
         "renderTemplate": "image-group.php"
     },
     "supports": {

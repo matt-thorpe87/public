@@ -7,7 +7,7 @@
     "category": "qh-design",
     "keywords": ["video", "video card", "card"],
     "acf": {
-        "mode": "preview",
+        "mode": "edit",
         "renderTemplate": "video-cards.php"
     },
     "supports": {

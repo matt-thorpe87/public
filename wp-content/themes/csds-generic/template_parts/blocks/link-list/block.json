@@ -7,7 +7,7 @@
     "category": "qh-design",
     "keywords": ["link list", "list", "link"],
     "acf": {
-        "mode": "preview",
+        "mode": "edit",
         "renderTemplate": "link-list.php"
     },
     "supports": {

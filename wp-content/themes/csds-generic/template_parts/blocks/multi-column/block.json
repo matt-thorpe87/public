@@ -7,7 +7,7 @@
     "category": "qh-design",
     "keywords": ["multi-column", "content", "text", "column", "multi"],
     "acf": {
-        "mode": "preview",
+        "mode": "edit",
         "renderTemplate": "multi-column.php"
     },
     "supports": {

@@ -7,7 +7,7 @@
     "category": "qh-design",
     "keywords": ["video"],
     "acf": {
-        "mode": "preview",
+        "mode": "edit",
         "renderTemplate": "video.php"
     },
     "supports": {

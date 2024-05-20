@@ -102,7 +102,9 @@
     padding: 15px 0;
   }
   }
-  
+  .slick-track > .qld__banner {
+    margin-bottom: 0px;
+  }
   @media screen and (max-width: 600px) {
   .qld__banner .qld__banner__image{
     display: none;

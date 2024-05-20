@@ -7,7 +7,7 @@
     "category": "qh-design",
     "keywords": ["banner", "basic intermediate", "cta", "hero"],
     "acf": {
-        "mode": "preview",
+        "mode": "edit",
         "renderTemplate": "banner-intermediate.php"
     },
     "supports": {

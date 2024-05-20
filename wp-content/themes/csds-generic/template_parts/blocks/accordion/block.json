@@ -7,7 +7,7 @@
     "category": "qh-design",
     "keywords": ["accordion", "text", "content"],
     "acf": {
-        "mode": "preview",
+        "mode": "edit",
         "renderTemplate": "accordion.php"
     },
     "supports": {
