@@ -46,7 +46,7 @@ if($display == 'yes') :
                             $img_title = $pgBannerImg['title'];
                             ?>
                             <div class="bannerImgWrapper">
-                                <img src="<?php echo $displayPgBannerImg ?>" alt="<?php echo esc_attr(get_the_title());?>" title="<?echo $img_title ?>">
+                                <img src="<?php echo $displayPgBannerImg ?>" alt="<?php echo esc_attr(get_the_title());?>" title="<?php echo $img_title ?>">
                             </div>
     <?php
                         }  

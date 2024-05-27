@@ -60,14 +60,12 @@ $className = ' qld__footer--' . $footer_colour;
             <?php if (has_nav_menu('footer_column_one')) { ?>
                 <div class="col-xs-12 col-lg-2 qld__footer__column">
                     <nav class="qld__footer__navigation" aria-label="footer">
-                        <h4 class="qld__footer__heading">
                             <?php
+                            
                             $col_one = get_field('col_one_header', 'option');
                             if (!empty($col_one)) {
-                                echo $col_one;
-                            }
-                            ?>
-                        </h4>
+                                ?> <h4 class="qld__footer__heading"> <?php echo $col_one; ?> </h4> <?php
+                            } ?>
                         <?php
 
                         wp_nav_menu(
@@ -87,14 +85,12 @@ $className = ' qld__footer--' . $footer_colour;
                 ?>
                 <div class="col-xs-12 col-lg-2 qld__footer__column">
                     <nav class="qld__footer__navigation" aria-label="footer">
-                        <h4 class="qld__footer__heading">
                             <?php
                             $col_two = get_field('col_two_header', 'option');
                             if (!empty($col_two)) {
-                                echo $col_two;
+                                ?> <h4 class="qld__footer__heading"> <?php echo $col_two; ?> </h4> <?php
                             }
                             ?>
-                        </h4>
 
                         <?php wp_nav_menu(
                             array(

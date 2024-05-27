@@ -39,7 +39,7 @@ function theme_post_types() {
       'all_items' => 'All Resource',
       'singular_name' => 'Resource'
     ),
-    'menu_icon' => 'dashicons-awards'
+    'menu_icon' => 'dashicons-open-folder'
   ));
 
 

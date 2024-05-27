@@ -32,7 +32,7 @@ if ($color == 'secondary') {
     $className .= ' qld__btn__primary';
 }
 ?>
-<div class="qld__body">
+<div class="qld__button__container">
     <div class="container-fluid button__container <?php if (!empty($containerClassName)) {
         echo $containerClassName;
     }
@@ -43,10 +43,10 @@ if ($color == 'secondary') {
             $link_target = $link['target'] ? $link['target'] : '_self'; ?>
             <a href="<?php echo esc_attr($link_url) ?>" target="<?php echo esc_attr($link_target) ?>"
                 class="qld__btn <?php echo esc_attr($className) ?>">
-                <?php if ($link_title) {
-                    echo esc_attr($link_title);
-                } else {
+                <?php if ($text) {
                     echo esc_attr($text);
+                } else {
+                    echo esc_attr($link_title);
                 } ?>
             </a>
         <?php endif ?>

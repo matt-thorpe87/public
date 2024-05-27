@@ -41,11 +41,14 @@ if ($color_settings == 'dark') {
 <section class="qld__link-list__section">
     <div class="container-fluid">
 
-        <h2>
-            <?php echo $heading ?>
-        </h2>
+        <?php if ( !empty($heading) ){
+            ?> <h2> <?php  echo $heading;  ?> </h2>
+            <?php       
+        }?>
 
-        <?php echo $content ?>
+        <?php if (!empty($content)){
+            ?> <p> <?php echo $content; ?> </p> <?php
+         } ?>
         <div class="<?php echo esc_attr($className); ?>">
             <ul class=" qld__accordion-list">
                 <?php // Check rows exists.

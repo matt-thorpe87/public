@@ -105,9 +105,11 @@
                 </div>
                 <hr />
                 <div class="qld__news-article__body">
+                  <?php 
+                  $image_id = get_post_thumbnail_id();
+                  if (!empty($image_id)){ ?>
                   <div class="qld__news-article__hero">
                     <?php    
-                      $image_id = get_post_thumbnail_id();
                       $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
                       $image_title = get_the_title($image_id);
                       $size = 'my-size'; // Defaults to 'thumbnail' if omitted.
@@ -127,6 +129,7 @@
                     } ?>
                    
                   </div>
+                  <?php } ?>
                   <div class="qld__news-article__content">
                   <p><?php the_content();?></p>
                   </div>

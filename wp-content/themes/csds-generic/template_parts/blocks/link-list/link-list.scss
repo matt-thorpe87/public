@@ -42,3 +42,15 @@ li+li .qld__list__body-wrapper a {
 .qld__link-list__section{
     padding: 1.5rem 0;
 }
+.qld-link-list {
+    &.qld__accordion-group{
+        max-width: none;
+    }
+    .qld__accordion-list{
+        .qld__list__body-wrapper{
+            a{
+                max-width: none;
+            }
+        }
+    }
+}
