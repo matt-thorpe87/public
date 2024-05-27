@@ -40,7 +40,7 @@ if ($layout == 'two') {
     $layoutInner = 'qld__contact-details__row ';
 }
 ?>
-<section class="qld__body qld__contact" <?php echo esc_attr($anchor); ?>>
+<section class="qld__contact" <?php echo esc_attr($anchor); ?>>
     <div class="container-fluid <?php echo esc_attr($layoutClass); ?>">
         <div class="<?php echo esc_attr($className); ?>" id="contact-details-">
             <div class="<?php echo esc_attr($layoutInner); ?> ">

@@ -3,3 +3,22 @@
     color:var(--QLD-color-dark-heading);
   }
 }
+.qld__callout{
+  .qld__callout__content{
+    h3, p{
+      padding-left:1.5rem;
+    }
+    p{
+      margin-top:0rem !important;
+    }
+  }
+}
+@media (max-width: 991px){
+  .qld__callout{
+    .qld__callout__content{
+      h3, p{
+        padding-left: 0rem;
+      }
+    }
+  }
+}

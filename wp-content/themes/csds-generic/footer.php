@@ -23,18 +23,20 @@ $className = ' qld__footer--' . $footer_colour;
                 <div class="container-fluid">
                     <div class="row ">
                         <div class="col-xs-6 col-lg-12">
-                            <h4 class="qld__footer__heading">
-                                <?php
-                                $contact_header = get_field('contact_header', 'option');
-                                echo $contact_header;
-                                ?>
-                            </h4>
-                            <p class="qld__footer__cta-content">
-                                <?php
-                                $contact_sub = get_field('contact_header_sub', 'option');
-                                echo $contact_sub;
-                                ?>
-                            </p>
+                            
+                            <?php
+                            $contact_header = get_field('contact_header', 'option');
+                            if (!empty($contact_header)){
+                            ?> <h4 class="qld__footer__heading"> <?php
+                            echo $contact_header; ?> </h4> <?php }
+                            ?>
+                        
+                            <?php
+                            $contact_sub = get_field('contact_header_sub', 'option'); 
+                            if (!empty($contact_sub)){
+                            ?> <p class="qld__footer__cta-content"> <?php
+                            echo $contact_sub; ?> </p> <?php }
+                            ?>
 
                         </div>
                         <div class="col-xs-6 col-lg-12 ">
@@ -60,12 +62,12 @@ $className = ' qld__footer--' . $footer_colour;
             <?php if (has_nav_menu('footer_column_one')) { ?>
                 <div class="col-xs-12 col-lg-2 qld__footer__column">
                     <nav class="qld__footer__navigation" aria-label="footer">
-                            <?php
-                            
-                            $col_one = get_field('col_one_header', 'option');
-                            if (!empty($col_one)) {
-                                ?> <h4 class="qld__footer__heading"> <?php echo $col_one; ?> </h4> <?php
-                            } ?>
+                        <?php
+                        
+                        $col_one = get_field('col_one_header', 'option');
+                        if (!empty($col_one)) {
+                            ?> <h4 class="qld__footer__heading"> <?php echo $col_one; ?> </h4> <?php
+                        } ?>
                         <?php
 
                         wp_nav_menu(
@@ -85,12 +87,12 @@ $className = ' qld__footer--' . $footer_colour;
                 ?>
                 <div class="col-xs-12 col-lg-2 qld__footer__column">
                     <nav class="qld__footer__navigation" aria-label="footer">
-                            <?php
-                            $col_two = get_field('col_two_header', 'option');
-                            if (!empty($col_two)) {
-                                ?> <h4 class="qld__footer__heading"> <?php echo $col_two; ?> </h4> <?php
-                            }
-                            ?>
+                        <?php
+                        $col_two = get_field('col_two_header', 'option');
+                        if (!empty($col_two)) {
+                            ?> <h4 class="qld__footer__heading"> <?php echo $col_two; ?> </h4> <?php
+                        }
+                        ?>
 
                         <?php wp_nav_menu(
                             array(
@@ -110,14 +112,12 @@ $className = ' qld__footer--' . $footer_colour;
                 ?>
                 <div class="col-xs-12 col-lg-2 qld__footer__column">
                     <nav class="qld__footer__social qld__footer__navigation" aria-label="social media links">
+                        <?php
+                        $social_header = get_field('social_header', 'option');
+                        if (!empty($social_header)) { ?>
                         <h4 class="qld__footer__heading">
-                            <?php
-                            $social_header = get_field('social_header', 'option');
-                            if (!empty($social_header)) {
-                                echo $social_header;
-                            }
-                            ?>
-                        </h4>
+                        <?php echo $social_header; ?> </h4> <?php }
+                        ?>
                         <?php if (have_rows('social_media_links', 'option')): ?>
                             <ul class="qld__link-list" id="menu-social-media">
                                 <?php
@@ -140,19 +140,18 @@ $className = ' qld__footer--' . $footer_colour;
             <div class="col-xs-12 qld__footer__column">
                 <div class="">
 
-                    <p class="qld__footer__acknowledgements">
-                        <?php
-                        $acknowledgement = get_field('acknowledgement', 'option');
-                        echo $acknowledgement; ?>
-                    </p>
+                    <?php
+                    $acknowledgement = get_field('acknowledgement', 'option');
+                    if (!empty ($acknowledgement)) { ?>
+                        <p class="qld__footer__acknowledgements">
+                        <?php echo $acknowledgement; ?> </p> <?php 
+                    } ?>
 
-                    <p class="qld__footer__copyright">
-                        <?php $copyright = get_field('copyright', 'option');
-                        echo $copyright;
-                        ?>
-                    </p>
-
-
+                    <?php $copyright = get_field('copyright', 'option');
+                    if(!empty($copyright)){ ?>
+                    <p class="qld__footer__copyright"> 
+                    <?php echo $copyright; ?> </p> <?php } ?>
+                  
                 </div>
             </div>
         </div>
@@ -162,5 +161,4 @@ $className = ' qld__footer--' . $footer_colour;
 <?php wp_footer(); ?>
 
 </body>
-
 </html>

@@ -37,18 +37,20 @@ if ($color_settings == 'dark') {
 
 ?>
 
-<section <?php echo esc_attr($anchor); ?> class="qld__callout--wrapper qld__body <?php echo esc_attr($className); ?>"
+<section <?php echo esc_attr($anchor); ?> class="qld__callout--wrapper <?php echo esc_attr($className); ?>"
     id="callout-123">
     <div class="container-fluid">
         <div class="qld__callout row <?php echo esc_attr($style); ?>">
-            <div class="col-xs-6 col-lg-3  ">
+            <div class="col-xs-6 col-lg-3">
                 <img class="callout-image" src="<?php echo $image; ?>">
             </div>
-            <div class="col-xs-12 col-lg-9  ">
-                <h3 class="qld__callout__heading ">
-                    <?php echo $heading; ?>
-                </h3>
-                <?php echo $content; ?>
+            <div class="col-xs-12 col-lg-9 qld__callout__content">
+                <?php 
+                if( !empty($heading)){ ?>
+                    <h3 class="qld__callout__heading "><?php echo $heading; ?> </h3>
+                <?php } ?>
+                <?php if( !empty($content) ){ ?>
+                    <p><?php echo $content; ?></p> <?php } ?>
             </div>
         </div>
     </div>

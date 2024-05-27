@@ -10,5 +10,15 @@
     }
 }
 .qld__image__group__section{
-    padding:1.5rem 0;
+    margin:1.5rem 0;
+}
+.qld__image__group__section{
+    .container-fluid{
+        .row{
+            &.icon-group-row{
+                margin-left: -1rem;
+                margin-right: -1rem;
+            }
+        }
+    }
 }

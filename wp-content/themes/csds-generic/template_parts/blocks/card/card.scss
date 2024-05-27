@@ -28,3 +28,15 @@
 .qld__card--wrapper{
     margin-bottom: 1rem;
 }
+.qld__card--wrapper{
+    .container-fluid{
+        .row{
+            margin-left: -1rem;
+            margin-right: -1rem;
+        }
+        div[class^="col-"]{
+            margin:0rem;
+            padding: 0rem;
+        }
+    }
+}

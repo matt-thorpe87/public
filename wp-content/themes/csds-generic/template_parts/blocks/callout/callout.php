@@ -34,7 +34,7 @@ if ($color_settings == 'dark') {
 
 ?>
 
-<section <?php echo esc_attr($anchor); ?> class="qld__callout--wrapper qld__body <?php echo esc_attr($className) ?>"
+<section <?php echo esc_attr($anchor); ?> class="qld__callout--wrapper <?php echo esc_attr($className) ?>"
     id="callout-123">
     <div class="container-fluid">
         <div class="qld__callout row <?php echo esc_attr($style); ?>">

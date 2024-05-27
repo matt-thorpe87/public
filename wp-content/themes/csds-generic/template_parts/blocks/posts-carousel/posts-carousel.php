@@ -47,29 +47,23 @@ if (!$news_slider->have_posts()) {
     <div class="container-fluid">
 
         <!-- heading and subheading -->
-        <div class="body__text">
-            <div class="row">
+        <div class="row">
+            <div class="col-xs-12">
 
-                <div class="col-xs-12">
-
-                    <h2>
-                        <?php if (!empty($heading)) {
-                            echo esc_attr($heading);
-                        } ?>
-                    </h2>
-
-                    <?php if (!empty($subheading)) {
-                        echo esc_attr($subheading);
+                <h2>
+                    <?php if (!empty($heading)) {
+                        echo esc_attr($heading);
                     } ?>
-                </div>
+                </h2>
 
+                <?php if (!empty($subheading)) {
+                    echo esc_attr($subheading);
+                } ?>
             </div>
         </div>
-
         <div class="posts-slick px-5">
 
             <!-- News/Posts Slider   -->
-
             <?php
             while ($news_slider->have_posts()) {
                 $news_slider->the_post();
