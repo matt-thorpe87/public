@@ -39,10 +39,8 @@ if ($color_settings == 'dark') {
     <div class="container-fluid">
         <div class="qld__callout row <?php echo esc_attr($style); ?>">
             <div class="col-xs-12">
-                <h3 class="qld__callout__heading ">
-                    <?php echo $heading; ?>
-                </h3>
-                <?php echo $content; ?>
+                <?php if( !empty($heading)){ ?><h3 class="qld__callout__heading "><?php echo $heading; ?></h3> <?php } ?>
+                <?php if( !empty($content) ){ ?><p><?php echo $content; ?></p> <?php } ?>
             </div>
         </div>
     </div>
