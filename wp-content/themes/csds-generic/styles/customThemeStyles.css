@@ -91,7 +91,7 @@
     /* .qld__grid main>.qld__body>.container-fluid>.row{
       margin-left: 0; /* QH DS orig is -1 */
       /* margin-right: 0; QH DS orig is -1 */
-    /* } */ */
+    /* } */ 
   
     .qld__body--full-width {
       padding: 0 1.5rem;
@@ -353,4 +353,7 @@
   .qld__main-nav .qld__main-nav__menu .qld__main-nav__item.active .qld__main-nav__item-link{
     margin-bottom: 0px;
   }
+}
+.qld__side-nav__content{
+  margin-right:2rem;
 }
