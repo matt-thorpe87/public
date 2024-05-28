@@ -138,7 +138,7 @@ $className = ' qld__footer--' . $footer_colour;
             <?php } ?>
             <!-- Acknowledgement of country, copyright -->
             <div class="col-xs-12 qld__footer__column">
-                <div class="">
+                <div class="qld__footer__last">
 
                     <?php
                     $acknowledgement = get_field('acknowledgement', 'option');

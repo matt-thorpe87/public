@@ -17,8 +17,8 @@ function theme_post_types() {
     'labels' => array(
       'name' => 'Topics',
       'add_new_item' => 'Add New Topic',
-      'edit_item' => 'Edit topic',
-      'all_items' => 'All topics',
+      'edit_item' => 'Edit Topic',
+      'all_items' => 'All Topics',
       'singular_name' => 'topic',
       'plural_name' => 'topics'
     ),
@@ -28,7 +28,7 @@ function theme_post_types() {
   //Resources Post Type
   register_post_type('resources', array(
     'supports'=> array('title', 'editor', 'page-attributes', 'category'),
-    'rewrite' => array('slug' => 'programs'),
+    'rewrite' => array('slug' => 'resources'),
     'has_archive' => true,
     'public' => true,
     'show_in_rest' => true,
@@ -36,7 +36,7 @@ function theme_post_types() {
       'name' => 'Resources',
       'add_new_item' => 'Add New Resource',
       'edit_item' => 'Edit Resource',
-      'all_items' => 'All Resource',
+      'all_items' => 'All Resources',
       'singular_name' => 'Resource'
     ),
     'menu_icon' => 'dashicons-open-folder'

@@ -15,10 +15,10 @@ get_header(); ?>
     </section>
 
 <!-- Start Our Stories Section -->
-    <section class="qld__body qld__body--alt qld__card--wrapper">
+    <section class="qld__card--wrapper qld__body qld__body--alt">
         <div class="container-fluid">
             <div class="row">
-                <div class="qld__card-intro col-xs-12 qld__card-intro--sm">
+                <div class="col-xs-12 qld__card-intro qld__card-intro--sm">
                     <h1 class="capitalised" data-action="tag-paramater">
                         <?php 
                         $posts_id = get_option( 'page_for_posts' );
@@ -33,7 +33,7 @@ get_header(); ?>
                 </div>
             </div>
             <div class="row">
-            <?php 
+                <?php 
                 $posts_args = array(
                     'post_type' => 'post',
                     'posts_per_page' => 2,

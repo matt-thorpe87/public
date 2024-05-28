@@ -1,15 +1,29 @@
 <?php get_header(); ?>
 <main class="main" role="main">
-    <section class="qld__body  qld__body--full-width">
+    <section class="qld__body qld__body--breadcrumb">
         <div class="container-fluid">
-            <nav class="qld__breadcrumbs" aria-label="breadcrumb">
-                <?php custom_breadcrumbs(); ?>
+            <nav class="qld__breadcrumbs row" aria-label="breadcrumb">
+            <?php custom_breadcrumbs(); ?>
             </nav>
-            <h1><?php single_cat_title(); ?></h1>
-            <div class="qld__abstract"><?php echo category_description(); ?></div>
-        
+        </div>
+    </section>
+    <section class="qld__card--wrapper qld__body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 qld__card-intro qld__card-intro--sm">
+                    <h1><?php single_cat_title(); ?></h1>
+                    <?php
+                    $cat_desc = category_description();
+                    if(!empty($cat_desc)){ ?>
+                        <div class="qld__abstract"><?php
+                        echo $cat_desc; ?></div>
+                        <?php } ?>
+                </div>
+            </div>
+            
             <?php            
             if (have_posts()) : ?>
+            <div class="row">
                 <ul class="qld__card-list qld__card-list--matchheight">
                     <?php while (have_posts()): the_post(); 
                         $image_id_latest = get_post_thumbnail_id();
@@ -61,9 +75,10 @@
                 else: ?>    
                 <p>Sorry, no posts matched your criteria.</p>
                 <?php
-            endif;
-            wp_reset_postdata();
-            ?>
+                endif;
+                wp_reset_postdata();
+                ?>
+            </div>
         </div>
     </section>
 </main>
