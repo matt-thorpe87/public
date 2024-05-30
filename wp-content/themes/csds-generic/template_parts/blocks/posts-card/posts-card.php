@@ -29,6 +29,9 @@ if (!empty($image)) {
 if (!empty($color_settings)) {
     $className .= ' qld__body--' . $color_settings;
 }
+if (!empty($block['align'])) {
+    $containerClassName = ' qld__card--' . $block['align'];
+}
 
 
 // get posts //
@@ -46,21 +49,17 @@ $posts = new wp_query(
 <!-- posts card -->
 <section class="qld__card--wrapper qld__card--wrapper-bg-colour" <?php echo esc_attr($anchor); ?>>
     <div class="container-fluid">
+        
+        <?php if (!empty($heading)) { ?>
         <div class="col-xs-12 qld__posts_card_header">
-            <h2>
-                <?php if (!empty($heading)) {
-                    echo esc_attr($heading);
-                } ?>
-            </h2>
-            <p>
-            <?php if (!empty($subheading)) {
-                echo esc_attr($subheading);
+            <h2> <?php echo esc_attr($heading); ?> </h2> <?php
             } ?>
-
-            </p>    
-        </div>
+            <?php if (!empty($subheading)) { ?>
+            <p> <?php   echo esc_attr($subheading); ?> </p> </div><?php 
+            } ?>
+        
         <div class="row">
-            <ul class="qld__card-list qld__card-list--matchheight">
+            <ul class="qld__card-list qld__card-list--matchheight  <?php if(!empty($containerClassName)) : echo esc_attr($containerClassName); endif ?>">
                 <?php if ($posts->have_posts()) :
                  while($posts->have_posts()) : $posts->the_post();
                 ?>

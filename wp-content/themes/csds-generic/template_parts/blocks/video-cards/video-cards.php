@@ -15,13 +15,16 @@ if (!empty($block['anchor'])) {
     $anchor = 'id="' . esc_attr($block['anchor']) . '" ';
 }
 
-// Create class attribute allowing for custom "className" and image values.
+// Create class attribute allowing for custom "className", image and align values.
 $className = 'qld__card';
 if (!empty($block['className'])) {
     $className .= ' ' . $block['className'];
 }
 if (!empty($color_settings)) {
     $className .= ' qld__body--' . $color_settings;
+}
+if (!empty($block['align'])) {
+    $containerClassName = ' qld__card--' . $block['align'];
 }
 
 ?>
@@ -30,7 +33,7 @@ if (!empty($color_settings)) {
 
     <div class="container-fluid">
         <div class="row">
-            <ul class="qld__card-list qld__card-list--matchheight">
+            <ul class="qld__card-list qld__card-list--matchheight  <?php if(!empty($containerClassName)) : echo esc_attr($containerClassName); endif ?>">
                 <?php if (have_rows('video_card')):
                     while (have_rows('video_card')):
                         the_row();

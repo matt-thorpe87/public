@@ -21,8 +21,16 @@
                 </div>
             </div>
             
-            <?php            
-            if (have_posts()) : ?>
+            <?php 
+            $posts = new wp_query(
+                array(
+                    'post_type' => 'any',
+                    'post_status' => 'publish'
+                    'orderby' => 'date',
+                    'order' => 'desc'
+                )
+            )           
+            if ($posts->have_posts()) : ?>
             <div class="row">
                 <ul class="qld__card-list qld__card-list--matchheight">
                     <?php while (have_posts()): the_post(); 

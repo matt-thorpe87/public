@@ -11,6 +11,8 @@
         "renderTemplate": "video-cards.php"
     },
     "supports": {
-        "anchor": true
+        "anchor": true,
+        "align": [ "left", "right", "center" ]
+    
     }
 }

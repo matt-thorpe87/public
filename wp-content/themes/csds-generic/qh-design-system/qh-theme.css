@@ -14323,7 +14323,8 @@ body {
     }
     .qld__card.qld__card__action:hover {
         -webkit-box-shadow: 7px 6px 13px rgba(0, 0, 0, .02), 0px 2px 5px rgba(0, 0, 0, .1), 0px 13px 20px rgba(0, 0, 0, .1);
-        box-shadow: 7px 6px 13px rgba(0, 0, 0, .02), 0px 2px 5px rgba(0, 0, 0, .1), 0px 13px 20px rgba(0, 0, 0, .1)
+        box-shadow: 7px 6px 13px rgba(0, 0, 0, .02), 0px 2px 5px rgba(0, 0, 0, .1), 0px 13px 20px rgba(0, 0, 0, .1);
+        transition: all .5s ease;
     }
 }
 
@@ -15354,6 +15355,14 @@ main .qld__body #content .qld__code .qld__code-preview-body.qld__body.qld__body-
 .qld__footer.qld__footer--dark a,
 .qld__footer.qld__footer--dark-alt a {
     color: var(--QLD-color-dark-link)
+}
+.qld__footer.qld__footer--dark .qld__footer__copyright a,
+.qld__footer.qld__footer--dark-alt .qld__footer__copyright a {
+    color: var(--QLD-color-dark-link) !important;
+}
+.qld__footer.qld__footer--dark .qld__footer__copyright a:visited,
+.qld__footer.qld__footer--dark-alt .qld__footer__copyright a:visited {
+    color: var(--QLD-color-dark-link__visited) !important;
 }
 
 .qld__footer.qld__footer--dark .qld__footer__heading,

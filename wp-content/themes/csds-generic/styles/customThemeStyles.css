@@ -175,9 +175,9 @@
     }
   
   }
-.qld__banner__content .slick-slide-title, .qld__banner__content--cta, .qld__banner__content h1{
+/* .qld__banner__content .slick-slide-title, .qld__banner__content--cta, .qld__banner__content h1{
   padding-left: 1rem;
-}
+} */
 :root,
 ::after,
 ::before{

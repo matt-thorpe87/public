@@ -1,10 +1,13 @@
-.qld__banner__content--body, .qld__banner__content--title{
-    padding-left:1rem;
-}
+// .qld__banner__content--body, .qld__banner__content--title{
+//     padding-left:1rem;
+// }
+// .qld__banner__content{
+//     .qld__banner__breadcrumbs{
+//         padding-left:1rem;
+//     }
+// }
 .qld__banner__content{
-    .qld__banner__breadcrumbs{
-        padding-left:1rem;
-    }
+    padding-left:0rem !important;
 }
 .qld__banner:not(.qld__banner--has-hero){
         .qld__banner__content{
