@@ -8,14 +8,14 @@ function custom_breadcrumbs() {
         echo '<li><a href="';
         echo get_option('home');
         echo '">Home</a></li>';
-        if (is_category() || is_single()) {
+        if (is_category() ) {
             echo '<li>';
-            the_category(' </li><li> ');
-            if (is_single()) {
-                echo '</li><li>';
-                the_title();
-                echo '</li>';
-            }
+            the_category(' </li> ');
+            // if (is_single()) {
+            //     echo '</li><li>';
+            //     the_title();
+            //     echo '</li>';
+            // }
         } elseif (is_page()) {
             if ($post->post_parent) {
                 $anc = get_post_ancestors($post->ID);

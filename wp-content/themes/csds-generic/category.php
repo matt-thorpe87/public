@@ -22,18 +22,17 @@
             </div>
             
             <?php 
-            $posts = new wp_query(
+            $postscat = new wp_query(
                 array(
-                    'post_type' => 'any',
-                    'post_status' => 'publish'
-                    'orderby' => 'date',
-                    'order' => 'desc'
+                    'post_type' => array('posts', 'resources', 'topics', 'podcasts'),
+                    'post_status' => 'publish',
+                    'posts_per_page' => -1
                 )
-            )           
-            if ($posts->have_posts()) : ?>
+                );           
+            if ($postscat->have_posts()) : ?>
             <div class="row">
                 <ul class="qld__card-list qld__card-list--matchheight">
-                    <?php while (have_posts()): the_post(); 
+                    <?php while ($postscat->have_posts()): $postscat->the_post(); 
                         $image_id_latest = get_post_thumbnail_id();
                         $image_alt_latest = get_post_meta($image_id_latest, '_wp_attachment_image_alt', TRUE); 
                         ?>

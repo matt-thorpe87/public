@@ -57,8 +57,9 @@ if (!empty($block['align'])) {
                             <div class="<?php echo esc_attr($className); ?>">
 
                                 <?php if (!empty($image)) { ?>
+                                    <a href="<?php echo esc_url($link['url']); ?>">
                                     <div class="qld__responsive-media-img--bg"
-                                        style="background-image: url('<?php echo $image ?>');"></div>
+                                        style="background-image: url('<?php echo $image ?>');"></div></a>
                                 <?php } ?>
 
                                 <div class="qld__card__inner">

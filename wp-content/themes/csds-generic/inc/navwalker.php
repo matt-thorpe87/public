@@ -126,6 +126,8 @@ class Walker_Sidebar_Menu extends Walker_Nav_Menu {
 
         $classes = empty( $item->classes ) ? array() : (array) $item->classes;
         $classes[] = 'menu-item-' . $item->ID;
+        $classes[] = ($item->current || $item->current_item_anchestor) ? 'active' : '';
+
 
         $output .= $indent . '<li class="' . implode( ' ', $classes ) . '">';
 
