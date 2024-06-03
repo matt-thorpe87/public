@@ -334,6 +334,7 @@
 }
 #banner-123{
   margin-top: 0rem;
+  padding:1rem;
 }
 @media (min-width:699px) {
   #banner-123 {

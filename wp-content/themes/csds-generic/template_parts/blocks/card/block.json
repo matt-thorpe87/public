@@ -13,5 +13,10 @@
     "supports": {
         "anchor": true,
         "align": [ "left", "right", "center" ]
+    },
+    "example": {
+        "attributes": {
+            "message": "This is a notice!"
+        }
     }
 }

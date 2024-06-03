@@ -1,0 +1,34 @@
+{
+    "name": "card-single",
+
+    "title": "Card Single Action",
+
+    "description": "An example of a custom built single action card block.",
+
+    "icon": "id",
+
+    "style": [ "file:./card-single.scss"],
+
+    "category": "qh-design",
+
+    "keywords": ["card", "content", "text"],
+
+    "acf": {
+
+        "mode": "edit",
+
+        "renderTemplate": "card-single.php"
+
+    },
+
+    "supports": {
+
+        "anchor": true,
+
+        "align": ["left", "right", "center"]
+
+    }
+
+}
+
+ 

@@ -117,6 +117,7 @@ function register_acf_blocks()
     register_block_type(__DIR__ . '/template_parts/blocks/button');
     register_block_type(__DIR__ . '/template_parts/blocks/body');
     register_block_type(__DIR__ . '/template_parts/blocks/card');
+    register_block_type(__DIR__ . '/template_parts/blocks/card-single-action');
     register_block_type(__DIR__ . '/template_parts/blocks/link-list');
     register_block_type(__DIR__ . '/template_parts/blocks/multi-column');
     register_block_type(__DIR__ . '/template_parts/blocks/global-alert');
@@ -130,8 +131,6 @@ function register_acf_blocks()
     register_block_type(__DIR__ . '/template_parts/blocks/contact-form');
     register_block_type(__DIR__ . '/template_parts/blocks/posts-card');
     register_block_type(__DIR__ . '/template_parts/blocks/download-block');
-
-
 }
 
 if (function_exists('register_acf_blocks')) {
