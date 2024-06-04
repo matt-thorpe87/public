@@ -39,13 +39,13 @@ if ($color_settings == 'dark') {
 
 ?>
 <section class="qld__accordion__section">
-    <div class="container-fluid">
-        <h2>
-            <?php echo $heading; ?>
-        </h2>
-        <p>
-            <?php echo $content; ?>
-        </p>
+    <div class="container-fluid">  
+        <?php if (!empty($heading)){
+            ?> <h2> <?php echo $heading; ?> </h2> <?php
+        } ?>
+        <?php if ($content) { ?>
+            <p> <?php echo $content; ?> </p> <?php
+        } ?>
         <div <?php echo esc_attr($anchor); ?> class="<?php echo esc_attr($className); ?>" id="accordion-123">
             <div class="qld__accordion__toggle">
                 <button class="qld__accordion__toggle-btn qld__accordion__toggle-btn--closed">Open all</button>
@@ -62,13 +62,13 @@ if ($color_settings == 'dark') {
                                 <button class="qld__accordion__title js-qld__accordion qld__accordion--closed"
                                     aria-controls="accordion-group-123-content_<?php echo get_row_index(); ?>"
                                     aria-expanded="false">
-                                    <?php echo esc_attr($item_heading) ?>
+                                    <?php echo $item_heading ?>
                                 </button>
 
                                 <div class="qld__accordion__body qld__accordion--closed"
                                     id="accordion-group-123-content_<?php echo get_row_index(); ?>">
                                     <div class="qld__accordion__body-wrapper">
-                                        <?php echo esc_attr($item_content); ?>
+                                        <?php echo $item_content;  ?>
                                     </div>
                                 </div>
                             </section>

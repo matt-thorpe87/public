@@ -1,3 +1,23 @@
 .qld__accordion__section{
     padding: 1.5rem 0;
 }
+button{
+    &.qld__accordion__title{
+        text-decoration: none;
+    }
+}
+.qld__accordion-group--dark{
+    button.qld__accordion__title{
+        text-decoration: none;
+    }
+}
+.qld__accordion-group--dark-alt{
+    button.qld__accordion__title{
+        text-decoration: none;
+    }
+}
+.container-fluid{
+    .qld__accordion-group{
+        max-width: none;
+    }
+}

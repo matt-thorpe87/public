@@ -279,6 +279,32 @@
             "placeholder": ""
         },
         {
+            "key": "field_665e8941e604a",
+            "label": "Display Metadada Results in Search",
+            "name": "metadata_search",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": "no",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_6642bf4e78fa5",
             "label": "Use Multisite Search",
             "name": "multi_search",
@@ -1293,5 +1319,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1715650474
+    "modified": 1717471593
 }

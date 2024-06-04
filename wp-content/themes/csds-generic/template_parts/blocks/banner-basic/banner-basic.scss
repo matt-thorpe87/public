@@ -7,12 +7,7 @@
 //     }
 // }
 .qld__banner__content{
-    padding-left:0rem !important;
-}
-.qld__banner:not(.qld__banner--has-hero){
-        .qld__banner__content{
-            padding-top: 1rem !important;
-        }
+    padding:2rem !important;
 }
 .qld__banner--alt .qld__banner__hero{
     background-color: var(--QLD-color-light-alt-background) !important;
