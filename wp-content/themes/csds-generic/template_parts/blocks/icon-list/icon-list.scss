@@ -1,0 +1,91 @@
+.qld___icon-list__body-wrapper{
+    display:flex;
+    align-items: center;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    span{
+        background-color: inherit;
+        color: inherit !important;
+    }
+    .qld__icon__list__content{
+        padding: 1rem;
+    }
+}
+.qld-icon-list {
+    .qld__accordion-list{
+        li:first-of-type {
+            border-top: 1px solid;
+        }
+    }
+}
+.qld-icon-list {
+    &.qld__accordion-group{
+        max-width: none;
+    }
+}
+.qld__accordion-group--dark .qld__accordion-list{
+    border-color:var(--QLD-color-dark-border);
+}
+.qld__accordion-group--dark {
+    &.qld-icon-list{
+        .qld__accordion-list{
+            li:first-of-type{
+                border-color: var(--QLD-color-dark-border);
+            }
+        }
+    }
+    .qld___icon-list__body-wrapper{
+        background-color:var(--QLD-color-dark-background);
+        color:var(--QLD-color-dark-link);
+        border-color: var(--QLD-color-dark-border);
+        h1, h2, h3, h4, h5, h6, p{
+            color:var(--QLD-color-dark-text);
+        }
+    }
+}
+.qld__accordion-group--dark-alt {
+    &.qld-icon-list{
+        .qld__accordion-list{
+            li:first-of-type{
+                border-color: var(--QLD-color-dark-alt-border);
+            }
+        }
+    }
+    .qld___icon-list__body-wrapper{
+        background-color: var(--QLD-color-dark-alt-background);
+        color:var(--QLD-color-dark-link);
+        border-color: var(--QLD-color-dark-alt-border);
+        h1, h2, h3, h4, h5, h6, p{
+            color:var(--QLD-color-dark-text) ;
+        }
+    }
+}
+.qld__accordion-group--alt{
+        &.qld-icon-list{
+        .qld__accordion-list{
+            li:first-of-type{
+                border-color: var(--QLD-color-light-border);
+            }
+        }
+    }
+    .qld___icon-list__body-wrapper{
+        background-color: var(--QLD-color-light-background__shade);
+        border-color: var(--QLD-color-light-border);
+    }
+}
+.qld__accordion-group--light{
+    &.qld-icon-list{
+        .qld__accordion-list{
+            li:first-of-type{
+                border:none;
+            }
+        }
+    }
+    .qld___icon-list__body-wrapper{
+        border-left: none;
+        border-right:none;
+        border-bottom-color: var(--QLD-color-light-border);
+
+    }
+}

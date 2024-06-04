@@ -1,0 +1,17 @@
+{
+    "name": "icon-list",
+    "title": "Icon List",
+    "description": "A custom block with a list including icons.",
+    "icon": "editor-ul",
+    "style": [  "file:./icon-list.scss"],
+    "category": "qh-design",
+    "keywords": ["icon list", "icon", "list"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "icon-list.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": true
+    }
+}

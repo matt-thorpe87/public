@@ -118,6 +118,7 @@ function register_acf_blocks()
     register_block_type(__DIR__ . '/template_parts/blocks/body');
     register_block_type(__DIR__ . '/template_parts/blocks/card');
     register_block_type(__DIR__ . '/template_parts/blocks/card-single-action');
+    register_block_type(__DIR__ . '/template_parts/blocks/icon-list');
     register_block_type(__DIR__ . '/template_parts/blocks/link-list');
     register_block_type(__DIR__ . '/template_parts/blocks/multi-column');
     register_block_type(__DIR__ . '/template_parts/blocks/global-alert');
@@ -181,3 +182,4 @@ function acf_load_field_choices( $field ) {
 }
 add_filter('acf/load_field/name=post_type_for_posts_card', 'acf_load_field_choices');
 add_filter('acf/load_field/name=post_type_for_posts_carousel', 'acf_load_field_choices');
+

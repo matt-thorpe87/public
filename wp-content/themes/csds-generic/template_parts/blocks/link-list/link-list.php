@@ -26,15 +26,9 @@ if (!empty($block['align'])) {
 }
 
 // build style attributes for background and text colours using QH theme design
-if ($color_settings == 'dark') {
-    $className .= ' qld__accordion-group--dark';
-} else if ($color_settings == 'alternate') {
-    $className .= ' qld__accordion-group--alt';
-} else if ($color_settings == 'altdark') {
-    $className .= ' qld__accordion-group--dark-alt';
-} else {
-    $className .= ' qld__accordion-group--light';
-}
+if (!empty($color_settings)) {
+    $className .=  ' qld__accordion-group--' . $color_settings;
+} 
 
 ?>
 
@@ -64,9 +58,9 @@ if ($color_settings == 'dark') {
                         ?>
                         <li>
                             <div class="qld__list__body-wrapper">
-                                <a href="<?php echo esc_attr($url); ?>">
+                                <a href="<?php echo esc_url($url['url']); ?>" target="<?php echo esc_attr($url['target']); ?>">
                                     <span class="qld__link__list__title">
-                                        <?php echo esc_attr($title); ?>
+                                        <?php echo $title; ?>
                                     </span>
                                     <span class="material-icons qld-material-icons md-dark md-24">east</span>
                                 </a>

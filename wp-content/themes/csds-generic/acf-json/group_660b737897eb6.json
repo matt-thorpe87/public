@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_660b800b7ad6c",
-            "label": "Alert Heading",
+            "label": "Global Alert Heading",
             "name": "alert_heading",
             "aria-label": "",
             "type": "text",
@@ -24,7 +24,7 @@
         },
         {
             "key": "field_660b73792fd3b",
-            "label": "Alert Content",
+            "label": "Global Alert Content",
             "name": "alert_content",
             "aria-label": "",
             "type": "text",
@@ -44,7 +44,7 @@
         },
         {
             "key": "field_660b740e2fd3c",
-            "label": "Colour Settings",
+            "label": "Global Alert Colour Settings",
             "name": "colour_settings",
             "aria-label": "",
             "type": "select",
@@ -74,7 +74,7 @@
         },
         {
             "key": "field_660b74a29918f",
-            "label": "Alert Link",
+            "label": "Global Alert Link",
             "name": "alert_link",
             "aria-label": "",
             "type": "link",
@@ -87,6 +87,26 @@
                 "id": ""
             },
             "return_format": "array"
+        },
+        {
+            "key": "field_665d58d661fc8",
+            "label": "Global Alert Material Icon",
+            "name": "material_icon",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Enter icon name from <a href=\"https:\/\/fonts.google.com\/icons\" target=\"_blank\">Material Icons<\/a>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -107,5 +127,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1712723902
+    "modified": 1717458098
 }

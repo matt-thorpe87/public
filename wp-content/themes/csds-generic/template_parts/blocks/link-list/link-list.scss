@@ -3,8 +3,13 @@
 }
 .qld__accordion-group--dark .qld__link__list__title{
     background-color:var(--QLD-color-dark-background__shade);
-    color:var(--QLD-color-dark-link);
-}
+    color:var(--QLD-color-dark-link) ;
+    
+        h1, h2, h3, h4, h5, h6{
+            color:var(--QLD-color-dark-link) ;
+        }
+    }
+
 .qld__accordion-group--dark .qld__link__list__title::after{
     background-color:var(--QLD-color-dark-alt-button);
 }
@@ -22,7 +27,10 @@
 }
 .qld__accordion-group--dark-alt .qld__link__list__title{
     background-color:var(--QLD-color-dark-alt-background__shade);
-    color:var(--QLD-color-dark-link);
+    color:var(--QLD-color-dark-link) ;
+    h1, h2, h3, h4, h5, h6{
+        color:var(--QLD-color-dark-link) ;
+    }
 }
 .qld__accordion-group--dark-alt .qld__link__list__title::after{
     background-color:var(--QLD-color-dark-alt-button);

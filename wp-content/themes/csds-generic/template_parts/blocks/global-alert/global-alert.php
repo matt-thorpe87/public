@@ -10,6 +10,7 @@ $heading = get_field('alert_heading');
 $content = get_field('alert_content');
 $link = get_field('alert_link');
 $color_settings = get_field('colour_settings');
+$icon = get_field('material_icon');
 
 // Support custom "anchor" values.
 $anchor = '';
@@ -44,7 +45,9 @@ echo esc_attr($bgColor) ?>" <?php echo esc_attr($anchor); ?>>
     <div class="container-fluid">
         <div class="qld__global_alert__main">
             <span class="material-icons qld-material-icons md-40 md-dark <?php echo esc_attr($bgColor) ?>">
-                error
+            <?php if ( $icon ) {
+                echo $icon;
+            } else echo 'error'; ?>
             </span>
             <div class="qld__global_alert__content">
                 <div class="qld__global_alert__message">
@@ -81,9 +84,9 @@ echo esc_attr($bgColor) ?>" <?php echo esc_attr($anchor); ?>>
 
 
     <script>function closeAlert() {
-            document.querySelector('#alert').classList.add('close-alert');
+            document.querySelector('.alert').classList.add('close-alert');
             setTimeout(function () {
-                document.querySelector('#alert').classList.add('close-alert-height');
+                document.querySelector('.alert').classList.add('close-alert-height');
             }, 500);
         }
     </script>
