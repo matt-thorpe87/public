@@ -105,7 +105,42 @@
                 "class": "",
                 "id": ""
             },
-            "choices": [],
+            "choices": {
+                "post": "post",
+                "page": "page",
+                "attachment": "attachment",
+                "revision": "revision",
+                "nav_menu_item": "nav_menu_item",
+                "custom_css": "custom_css",
+                "customize_changeset": "customize_changeset",
+                "oembed_cache": "oembed_cache",
+                "user_request": "user_request",
+                "wp_block": "wp_block",
+                "wp_template": "wp_template",
+                "wp_template_part": "wp_template_part",
+                "wp_global_styles": "wp_global_styles",
+                "wp_navigation": "wp_navigation",
+                "wp_font_family": "wp_font_family",
+                "wp_font_face": "wp_font_face",
+                "acf-taxonomy": "acf-taxonomy",
+                "acf-post-type": "acf-post-type",
+                "acf-ui-options-page": "acf-ui-options-page",
+                "acf-field-group": "acf-field-group",
+                "acf-field": "acf-field",
+                "product": "product",
+                "product_variation": "product_variation",
+                "shop_order": "shop_order",
+                "shop_order_refund": "shop_order_refund",
+                "shop_coupon": "shop_coupon",
+                "shop_order_placehold": "shop_order_placehold",
+                "topics": "topics",
+                "resources": "resources",
+                "hero_banner": "hero_banner",
+                "podcast": "podcast",
+                "wpforms": "wpforms",
+                "wpforms-template": "wpforms-template",
+                "patterns_ai_data": "patterns_ai_data"
+            },
             "default_value": false,
             "return_format": "value",
             "multiple": 0,
@@ -113,6 +148,58 @@
             "ui": 0,
             "ajax": 0,
             "placeholder": ""
+        },
+        {
+            "key": "field_6662613f8c0a1",
+            "label": "Posts Order",
+            "name": "posts_order",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "date": "Date",
+                "name": "Name",
+                "rand": "Random"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_666261678c0a2",
+            "label": "Posts Category",
+            "name": "posts_category",
+            "aria-label": "",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "field_type": "checkbox",
+            "bidirectional": 0,
+            "multiple": 0,
+            "allow_null": 0,
+            "bidirectional_target": []
         }
     ],
     "location": [
@@ -133,5 +220,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1715756355
+    "modified": 1717723513
 }

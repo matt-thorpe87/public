@@ -32,14 +32,19 @@ if($display == 'yes') :
                     <div class="qld__banner__image ">
                         <?php 
                         $pgBannerImg = get_field('page_banner_image');  
-                        if($pgBannerImg) :
+                        if($pgBannerImg) {
                         $displayPgBannerImg = $pgBannerImg['sizes']['pgBannerImgSize'];
                         $img_alt = $pgBannerImg['alt'];
                         $img_title = $pgBannerImg['title'];
                         ?>
                         <div class="bannerImgWrapper">
                             <img src="<?php echo $displayPgBannerImg ?>" alt="<?php echo esc_attr(get_the_title());?>" title="<?php echo $img_title ?>">
-                        </div> <?php endif ?>
+                        </div> <?php } elseif (function_exists('z_taxonomy_image_url')){ 
+                            foreach (get_the_category() as $cat) :?>
+                            <div class="bannerImgWrapper">
+                                <img src="<?php echo z_taxonomy_image_url($cat->term_id); ?>" /> </div> <?php endforeach?>
+                        <?php 
+                        }  ?>
                     </div>
                   </div>
 
@@ -85,7 +90,7 @@ if($display == 'yes') :
                     </button>
                     <nav aria-label="side navigation" id="nav-default" class="qld__side-nav__content qld__accordion--closed qld__accordion__body">
                         <h2 class="qld__sidenav__title">
-                            <a class="qld__sidenav__link" href=""><?php echo get_the_title( $post->post_parent); ?></a>
+                        <a class="qld__sidenav__link" href="/"><?php echo get_bloginfo(); ?></a>
                         </h2>
                     <?php 
                     if(has_nav_menu('side_menu')) : 

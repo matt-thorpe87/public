@@ -12,6 +12,8 @@ $subheading = get_field('posts_card_subheading');
 $color_settings = get_field('card_colour');
 $number_posts = get_field('number_of_posts');
 $post_type = get_field('post_type_for_posts_card');
+$order = get_field('posts_card_order');
+$cat = get_field('posts_category');
 // Support custom "anchor" values.
 $anchor = '';
 if (!empty($block['anchor'])) {
@@ -40,8 +42,9 @@ $posts = new wp_query(
         'post_type' => $post_type,
         'post_status' => 'publish',
         'posts_per_page' => $number_posts,
-        'orderby' => 'date',
-        'order' => 'desc'
+        'orderby' => $order,
+        'order' => 'desc',
+        'cat' => $cat
     )
 );
 ?>

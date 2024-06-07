@@ -22,11 +22,14 @@
             </div>
             
             <?php 
+            $category = get_queried_object();
+
             $postscat = new wp_query(
                 array(
-                    'post_type' => array('posts', 'resources', 'topics', 'podcasts'),
+                    'post_type' => array('post', 'resources', 'topics', 'podcasts'),
                     'post_status' => 'publish',
-                    'posts_per_page' => -1
+                    'posts_per_page' => -1,
+                    'category_name' => $category->slug,
                 )
                 );           
             if ($postscat->have_posts()) : ?>

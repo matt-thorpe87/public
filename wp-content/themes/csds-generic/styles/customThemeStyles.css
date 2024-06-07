@@ -50,7 +50,9 @@
     flex-direction: column;
     justify-content: center;
   }
-  
+  #banner-123 .qld__banner__content{
+    padding-left: 0rem !important;
+  }
   /* .qld__card__image-link .qld__responsive-media-img--bg{
     padding-bottom: 0px;
   } */
