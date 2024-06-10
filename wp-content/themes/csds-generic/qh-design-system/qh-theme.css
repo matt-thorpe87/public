@@ -3255,21 +3255,6 @@ a.qld__code-header-link:hover:visited {
     color: var(--QLD-color-light-link);
     text-decoration-thickness: var(--QLD-underline__thickness-thick)
 }
-
-.qld__side-nav.qld__accordion button:hover,
-.qld__side-nav.qld__accordion a:hover,
-.qld__list button:hover,
-.qld__list a:hover,
-.qld__main-nav button:hover,
-.qld__main-nav a:hover {
-    color: var(--QLD-color-light-link);
-    text-decoration: underline;
-    text-underline-offset: var(--QLD-underline__offset);
-    text-decoration-thickness: var(--QLD-underline__thickness-thick) !important;
-    -webkit-text-decoration-color: var(--QLD-color-light-hover-underline);
-    text-decoration-color: var(--QLD-color-light-hover-underline)
-}
-
 .qld__header__pre-header a:hover {
     text-decoration: underline;
     -webkit-text-decoration-line: solid;
@@ -3311,36 +3296,6 @@ a.qld__code-header-link:hover:visited {
 .qld__btn.qld__btn--tertiary:focus {
     text-decoration: underline;
     text-decoration-thickness: var(--QLD-underline__thickness-thick)
-}
-
-.qld__code-toggle-button:hover,
-.qld__code-toggle-button:focus {
-    text-decoration: underline;
-    -webkit-text-decoration-color: currentColor;
-    text-decoration-color: currentColor;
-    text-underline-offset: var(--QLD-underline__offset);
-    text-decoration-thickness: var(--QLD-underline__thickness-thick)
-}
-
-.qld__code-toggle-button:active {
-    text-decoration: none
-}
-
-.qld__code-copy--button {
-    text-decoration: none
-}
-
-.qld__code-copy--button:hover .qld__code-copy--button-text,
-.qld__code-copy--button:focus .qld__code-copy--button-text {
-    text-decoration: underline;
-    -webkit-text-decoration-color: currentColor;
-    text-decoration-color: currentColor;
-    text-underline-offset: var(--QLD-underline__offset);
-    text-decoration-thickness: var(--QLD-underline__thickness-thick)
-}
-
-.qld__code-copy--button:active {
-    text-decoration: none
 }
 
 .qld__body.qld__body--alt hr,
@@ -3574,50 +3529,6 @@ a.qld__code-header-link:hover:visited {
     -webkit-text-decoration-color: var(--QLD-color-light-visited-underline);
     text-decoration-color: var(--QLD-color-light-visited-underline);
     color: var(--QLD-color-light-link__visited) !important
-}
-
-.qld__side-nav.qld__accordion button:hover,
-.qld__side-nav.qld__accordion a:hover,
-.qld__list button:hover,
-.qld__list a:hover,
-.qld__main-nav button:hover,
-.qld__main-nav a:hover {
-    color: var(--QLD-color-light-link);
-    text-decoration: underline;
-    text-underline-offset: var(--QLD-underline__offset);
-    text-decoration-thickness: var(--QLD-underline__thickness-thick) !important;
-    -webkit-text-decoration-color: var(--QLD-color-light-hover-underline);
-    text-decoration-color: var(--QLD-color-light-hover-underline)
-}
-
-.qld__code-toggle-button:hover,
-.qld__code-toggle-button:focus {
-    text-decoration: underline;
-    -webkit-text-decoration-color: currentColor;
-    text-decoration-color: currentColor;
-    text-underline-offset: var(--QLD-underline__offset);
-    text-decoration-thickness: var(--QLD-underline__thickness-thick)
-}
-
-.qld__code-toggle-button:active {
-    text-decoration: none
-}
-
-.qld__code-copy--button {
-    text-decoration: none
-}
-
-.qld__code-copy--button:hover .qld__code-copy--button-text,
-.qld__code-copy--button:focus .qld__code-copy--button-text {
-    text-decoration: underline;
-    -webkit-text-decoration-color: currentColor;
-    text-decoration-color: currentColor;
-    text-underline-offset: var(--QLD-underline__offset);
-    text-decoration-thickness: var(--QLD-underline__thickness-thick)
-}
-
-.qld__code-copy--button:active {
-    text-decoration: none
 }
 
 .qld__body.qld__body--dark a:hover,
@@ -3872,10 +3783,6 @@ a.qld__code-header-link:hover:visited {
     text-decoration-color: var(--QLD-color-light-hover-underline);
     color: var(--QLD-color-light-link);
     text-decoration-thickness: var(--QLD-underline__thickness-thick)
-}
-
-.qld__code-copy--button:active {
-    text-decoration: none
 }
 
 .qld__body.qld__body--dark-alt a:hover,
@@ -9719,7 +9626,7 @@ textarea:hover {
     font-weight: bold;
     margin: 0;
     color: var(--QLD-color-light-heading);
-    max-width: 46rem
+    max-width: none;
 }
 
 .qld__body.qld__body--dark h1,

@@ -2,7 +2,6 @@
 /*
 Template part name: hero_banner
 */
-
 $hero_banner = new wp_query([
     'posts_per_page' => '3',
     'post_type' => 'hero_banner',
@@ -16,11 +15,12 @@ $hero_banner = new wp_query([
             $hero_banner->the_post();
 
             // <!-- Intermediate Banner -->
-    
+            $style = get_field('hero_banner_style');
+            $banner_style = ' qld__banner--' . $style;
             $bgImage = get_field('hero_background_image');
             ?>
             <section id="banner-intermediate-123"
-                class="qld__banner qld__banner__intermediate qld__banner--dark qld__banner--breadcrumbs qld__banner--has-hero card"
+                class="qld__banner qld__banner__intermediate <?php echo esc_attr($banner_style); ?> qld__banner--breadcrumbs qld__banner--has-hero card"
                 <? if (!empty($bgImage)) {
                     $bgimg_alt = $bgImage['alt'];
                     $bgimg_title = $bgImage['title']; ?>
@@ -55,11 +55,13 @@ $hero_banner = new wp_query([
                                     <?php the_field('main_tagline'); ?>
                                 </h1>
                                 <!--@@ Abstract @@-->
-                                <div class="qld__banner__content--body qld__abstract">
-                                    <p>
-                                        <?php the_field('sub-tagline'); ?>
-                                    </p>
-                                </div>
+                                <?php if ( the_field('sub-tagline')) { ?>
+                                    <div class="qld__banner__content--body qld__abstract">
+                                        <p>
+                                            <?php the_field('sub-tagline'); ?>
+                                        </p>
+                                    </div>
+                                <?php } ?>
 
                                 <!--@@ CTA Buttons @@-->
                                 <ul class="qld__banner__content--cta qld__link-list">
@@ -123,6 +125,5 @@ $hero_banner = new wp_query([
 
 
 </script>
-
 
 <!-- Intermediate Banner End-->

@@ -183,3 +183,32 @@ function acf_load_field_choices( $field ) {
 add_filter('acf/load_field/name=post_type_for_posts_card', 'acf_load_field_choices');
 add_filter('acf/load_field/name=post_type_for_posts_carousel', 'acf_load_field_choices');
 
+function ip_search_filter_item_class($passed_string = false) {
+	$category = (isset($_GET['cat']) ? $_GET['cat'] : false);
+
+	if($passed_string == $category) {
+		echo 'current';
+	}
+}
+
+function ip_search_filter($args) {
+	// Check we're not in admin area
+	if(!is_admin()) {
+		// Check if this is the main search query
+		if( $args->is_search()) {
+			// Check if $_GET['post_type'] is set
+			if(isset($_GET['cat']) && $_GET['cat'] != '') {
+				// Filter it just to be safe
+				$category = sanitize_text_field($_GET['cat']);
+
+				// Set the post type
+				$args->set( 'cat' , $category );
+			}
+		}
+	}
+
+	// Return query
+	return $args;
+}
+
+add_filter('pre_get_posts', 'ip_search_filter');
