@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_665cf570bc10a",
-            "label": "Card Background Colour",
+            "label": "Single Action Card Background Colour",
             "name": "background_colour",
             "aria-label": "",
             "type": "select",
@@ -32,7 +32,7 @@
         },
         {
             "key": "field_665cf5dd221df",
-            "label": "Card",
+            "label": "Single Action Card",
             "name": "card",
             "aria-label": "",
             "type": "repeater",
@@ -153,5 +153,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1717376747
+    "modified": 1717975243
 }

@@ -66,6 +66,9 @@
   .qld__header__pre-header{
     z-index:2;
   }
+  .qld__header .qld__header__pre-header--alt{
+    background-color: var(--QLD-color-light-alt-background);
+  }
   @media screen and (min-width:1025px) and (max-width:1400px ){
     .qld__header__pre-header, .qld__header__main{
       padding: 0 1rem;
@@ -245,6 +248,9 @@
 }
 .qld__main-nav--light li.active a.qld__main-nav__item-link:hover{
   background-color: transparent;
+}
+ .qld__main-nav--light, .qld__main-nav--light .qld__main-nav__menu, .qld__main-nav--light .qld__link-list, .qld__main-nav--light .qld__main-nav__item-toggle:hover, .qld__main-nav--light .qld__main-nav__item-link:hover{
+  background-color: var(--QLD-color-light-background) !important;
 }
 .container-fluid{
   padding-left: 1rem;
