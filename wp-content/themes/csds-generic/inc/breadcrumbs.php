@@ -10,12 +10,17 @@ function custom_breadcrumbs() {
         echo '">Home</a></li>';
         if (is_category() ) {
             echo '<li>';
-            the_category(' </li> ');
-            // if (is_single()) {
-            //     echo '</li><li>';
-            //     the_title();
-            //     echo '</li>';
-            // }
+            single_cat_title();
+            echo '</li>';
+        } elseif(is_single()) {
+            echo '<li>';
+            $cat = get_the_category();
+            echo '<a href=" ' . esc_url(get_category_link( $cat[0]->term_id)) . '">';
+            echo $cat[0]->name;
+            echo '</a></li>';
+            echo '<li>';
+            the_title();
+            echo '</li>';
         } elseif (is_page()) {
             if ($post->post_parent) {
                 $anc = get_post_ancestors($post->ID);

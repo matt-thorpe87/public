@@ -19,6 +19,8 @@
               <div class="qld__news-article__main col-md-8 col-xs-12">
                 <div class="qld__news-article__header">
                   <h1><?php the_title()  ?></h1>
+                  <?php $meta = get_field('show_post_meta'); ?>
+                  <?php if ($meta == 'yes') : ?>
                   <p class="qld__news-article__published-date">
                     <strong>Published: </strong><?php echo get_the_date() ?>
                   </p>
@@ -102,6 +104,7 @@
                     </div>
               
                   </div>
+                  <?php endif; ?>
                 </div>
                 <hr />
                 <div class="qld__news-article__body">
@@ -135,10 +138,15 @@
                   </div>
                 </div>
                 <?php 
+                $show_form = get_field('show_subscription_form');
                 $blog_sub = 'template_parts/blog_form';
+                if ( $show_form == 'yes') :
                 get_template_part( $blog_sub );
+                endif;
                 ?>
-                <hr />
+                <?php if ($meta == 'yes') : ?>
+                  <hr />
+
                 <div class="qld__news-article__footer">
                   <div class="qld__news-article__footer__tags">
                     <h2 class="qld__display-sm">
@@ -176,7 +184,6 @@
                       <li>
                         <a
                           href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>&text=<?php the_title(); ?>" alt="Facebook"
-"
                           target="_blank"
                           ><span class="sr-only">Share via Facebook</span
                           ><i class="fab fa-facebook-f"></i
@@ -212,6 +219,7 @@
                     </ul>
                   </div>
                 </div>
+                <?php endif; ?>
               </div>
 
               <!-- related sidebar -->

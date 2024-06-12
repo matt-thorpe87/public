@@ -79,12 +79,20 @@ if (!$news_slider->have_posts()) {
                 ?>
 
                 <div>
-
+                <?php if (!empty($post_featured_image)) { 
+                    $feature_img = get_the_post_thumbnail_url();
+                    } 
+                    elseif (!empty(z_taxonomy_image_url())){
+                    $feature_img = z_taxonomy_image_url();
+                    }
+                    else {
+                        $feature_img = '/wp-content/themes/csds-generic/dist/assets/images/img/header-logo-qgov--dark.svg';
+                    } ?>
                     <div class="qld__card qld__card--image qld__card--multi-click <?php echo esc_attr($color) ?>">
                         <a href="<?php echo $post_link ?>" class="qld__card__image-link">
                             <div class="qld__responsive-media-img--bg slider-card-bg-img"
-                                style="background-image: url('<?php echo the_post_thumbnail_url() ?>')"
-                                alt="<?php echo $alt_text_image; ?>">
+                                style="background-image: url('<?php echo $feature_img; ?>')"
+                                >
                             </div>
                         </a>
                         <div class="qld__card__inner">

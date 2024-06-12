@@ -50,19 +50,18 @@ if($display == 'yes') :
                   <div class="qld__banner__content col-xs-12 col-md-6 col-lg-7">
 
                       <!--@@ Breadcrumbs - Desktop @@-->
-                          <nav class="qld__breadcrumbs<?php echo esc_attr($bread); ?> qld__banner__breadcrumbs qld__banner__breadcrumbs--desktop" aria-label="breadcrumb">
-                          <?php custom_breadcrumbs(); ?>
-                          </nav>
+                        <nav class="qld__breadcrumbs<?php echo esc_attr($bread); ?> qld__banner__breadcrumbs qld__banner__breadcrumbs--desktop" aria-label="breadcrumb">
+                        <?php custom_breadcrumbs(); ?>
+                        </nav>
 
-                      <!--@@ Heading(s) @@-->
-                      <h1><?php the_title(); ?></h1>
-                      
-                      <!--@@ Abstract @@-->
-                          
-                          <div class="qld__banner__content--body qld__abstract">
-                            <?php the_field('page_banner_subtitle'); ?>
+                        <h1><?php the_title(); ?></h1>
+
+                        <?php $subtitle = get_field('page_banner_subtitle');
+                        if (!empty($subtitle)){ ?>
+                        <div class="qld__banner__content--body qld__abstract">
+                            <?php echo $subtitle; ?>
                         </div>
-
+                        <?php } ?>
                   </div>
               </div>
           </div>
@@ -80,7 +79,7 @@ if($display == 'yes') :
             <!-- side navigation -->
             <div class="qld__side-nav qld__accordion">
                 <button class="qld__side-nav__toggle qld__accordion__title qld__accordion--closed" aria-controls="nav-default" aria-expanded="false" aria-selected="false" >
-                In <?php  echo get_the_title(); ?>
+                Links
                 </button>
                 <nav aria-label="side navigation" id="nav-default" class="qld__side-nav__content qld__accordion--closed qld__accordion__body">
                     <h2 class="qld__sidenav__title">

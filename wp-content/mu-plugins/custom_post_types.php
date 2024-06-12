@@ -16,28 +16,38 @@ function theme_post_types() {
     'show_in_rest' => true,
     'labels' => array(
       'name' => 'Topics',
+	  'add_new' => 'Add New Topic',
       'add_new_item' => 'Add New Topic',
       'edit_item' => 'Edit Topic',
+	  'view_item' => 'View Topic',
+	  'view_items' => 'View Topics',
       'all_items' => 'All Topics',
-      'singular_name' => 'topic',
-      'plural_name' => 'topics'
+      'singular_name' => 'Topic',
+      'plural_name' => 'Topics',
+	  'attributes' => 'Topic Attributes'
     ),
     'menu_icon' => 'dashicons-lightbulb'
   ));
 
   //Resources Post Type
   register_post_type('resources', array(
-    'supports'=> array('title', 'editor', 'page-attributes', 'category'),
+    'supports'=> array('title', 'editor', 'page-attributes', 'category', 'thumbnail', 'excerpt'),
     'rewrite' => array('slug' => 'resources'),
     'has_archive' => true,
     'public' => true,
     'show_in_rest' => true,
     'labels' => array(
       'name' => 'Resources',
+	  'add_new' => 'Add New Resource',
       'add_new_item' => 'Add New Resource',
       'edit_item' => 'Edit Resource',
       'all_items' => 'All Resources',
-      'singular_name' => 'Resource'
+	  'view_item' => 'View Resource',
+	  'view_items' => 'View Resources',
+      'singular_name' => 'Resource',
+	  'plural_name' => 'Resources',
+	  'attributes' => 'Resource Attributes'
+
     ),
     'menu_icon' => 'dashicons-open-folder'
   ));
@@ -113,7 +123,7 @@ function cptui_register_my_cpts_hero_banner() {
 
 	$labels = [
 		"name" => esc_html__( "Hero Banners", "custom-post-type-ui" ),
-		"singular_name" => esc_html__( "hero banner", "custom-post-type-ui" ),
+		"singular_name" => esc_html__( "Hero Banner", "custom-post-type-ui" ),
 		"edit_item" => esc_html__( "Edit Hero Banner", "custom-post-type-ui" ),
 		"new_item" => esc_html__( "New Hero Banner", "custom-post-type-ui" ),
 		"view_item" => esc_html__( "View Hero Banner", "custom-post-type-ui" ),

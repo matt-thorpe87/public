@@ -2,7 +2,6 @@
 
 function themeFiles()
 {
-
     wp_enqueue_style('lato-font', '//fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900');
     wp_enqueue_script('fontawesome', '//kit.fontawesome.com/fb2f2d4cd6.js');
     wp_enqueue_script('qh_base_script_handlebars', content_url('/themes/csds-generic/qh-design-system/externals/handlebars.min-v4.7.6.js'));
@@ -19,14 +18,12 @@ function themeFiles()
     wp_enqueue_script('qh_base_script_main', content_url('/themes/csds-generic/qh-design-system/js/main.js'));
     wp_enqueue_style('qh_base_style', content_url('/themes/csds-generic/qh-design-system/main.css'));
     wp_enqueue_style('qh_base_styles', content_url('/themes/csds-generic/qh-design-system/qh-theme.css'));
-
     wp_enqueue_style('custom_theme_style', get_theme_file_uri('/styles/customThemeStyles.css'));
 }
-
 add_action('wp_enqueue_scripts', 'themeFiles');
 
 
-/* register menu locations */
+/* Register menu locations */
 if (!function_exists('register_theme_nav')) {
 
     function register_theme_nav()
@@ -46,10 +43,10 @@ if (!function_exists('register_theme_nav')) {
     }
     add_action('init', 'register_theme_nav');
 }
+// end register menu locations
 
 
 /* to add a QH class on the nav menu's anchor tag */
-
 function add_additional_class_on_a($classes, $item, $args)
 {
     if (isset($args->add_a_class)) {
@@ -57,7 +54,6 @@ function add_additional_class_on_a($classes, $item, $args)
     }
     return $classes;
 }
-
 add_filter('nav_menu_link_attributes', 'add_additional_class_on_a', 1, 3);
 
 
@@ -106,7 +102,7 @@ function theme_assets()
 
 add_action('wp_enqueue_scripts', 'theme_assets');
 
-
+// Register Advanced Custom Field blocks
 function register_acf_blocks()
 {
     register_block_type(__DIR__ . '/template_parts/blocks/callout_with_image');
@@ -137,7 +133,10 @@ function register_acf_blocks()
 if (function_exists('register_acf_blocks')) {
     add_action('init', 'register_acf_blocks');
 }
+// end function Advanced Custom Fields blocks
 
+
+// Start function add QH Theme category to block category
 function example_block_category($categories, $post)
 {
     $qh_category = array(
@@ -153,9 +152,10 @@ function example_block_category($categories, $post)
     return $categories_sorted;
 }
 add_filter('block_categories_all', 'example_block_category', 10, 2);
+// end function add QH Theme category to block category
 
-// For example, you can paste this into your theme functions.php file
- 
+
+// Function to show which template page is loaded  - delete before pushing live
 function meks_which_template_is_loaded() {
 	if ( is_super_admin() ) {
 		global $template;
@@ -164,18 +164,13 @@ function meks_which_template_is_loaded() {
 }
  
 add_action( 'wp_footer', 'meks_which_template_is_loaded' );
+// end function template page loaded
 
-// function mytheme_add_woocommerce_support() {
-// 	add_theme_support( 'woocommerce' );
-// }
-// add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 
 function acf_load_field_choices( $field ) {
     
     // Reset choices
     $field['choices'] = get_post_types();
-    
-    
     // Return the field
     return $field;
     
@@ -183,6 +178,8 @@ function acf_load_field_choices( $field ) {
 add_filter('acf/load_field/name=post_type_for_posts_card', 'acf_load_field_choices');
 add_filter('acf/load_field/name=post_type_for_posts_carousel', 'acf_load_field_choices');
 
+
+// Search Filter function
 function ip_search_filter_item_class($passed_string = false) {
 	$category = (isset($_GET['cat']) ? $_GET['cat'] : false);
 
@@ -206,9 +203,9 @@ function ip_search_filter($args) {
 			}
 		}
 	}
-
 	// Return query
 	return $args;
 }
-
 add_filter('pre_get_posts', 'ip_search_filter');
+// end search filter function
+

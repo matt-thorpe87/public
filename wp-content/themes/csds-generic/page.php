@@ -47,7 +47,7 @@ if($display == 'yes') :
                                 ?>
                                 <div class="bannerImgWrapper">
                                     <img style="height:100%" ; src="<?php echo $displayPgBannerImg ?>"
-                                        alt="<?php echo esc_attr(get_the_title()); ?>" title="<? echo $img_title ?>">
+                                        alt="<?php echo $img_alt; ?>" title="<?php echo $img_title; ?>">
                                 </div>
                             </div>
                         <?php endif ?>
@@ -62,18 +62,15 @@ if($display == 'yes') :
                             <?php custom_breadcrumbs(); ?>
 
                         </nav>
-
-                        <!--@@ Heading(s) @@-->
                         <h1>
                             <?php the_title(); ?>
                         </h1>
-
-                        <!--@@ Abstract @@-->
-
+                        <?php $subtitle = get_field('page_banner_subtitle');
+                        if (!empty($subtitle)){ ?>
                         <div class="qld__banner__content--body qld__abstract">
-                            <?php the_field('page_banner_subtitle'); ?>
+                            <?php echo $subtitle; ?>
                         </div>
-
+                        <?php } ?>
                     </div>
                 </div>
             </div>

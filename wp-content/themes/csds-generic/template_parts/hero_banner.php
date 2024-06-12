@@ -21,10 +21,10 @@ $hero_banner = new wp_query([
             ?>
             <section id="banner-intermediate-123"
                 class="qld__banner qld__banner__intermediate <?php echo esc_attr($banner_style); ?> qld__banner--breadcrumbs qld__banner--has-hero card"
-                <? if (!empty($bgImage)) {
+                <?php if (!empty($bgImage)) {
                     $bgimg_alt = $bgImage['alt'];
                     $bgimg_title = $bgImage['title']; ?>
-                    style="background-image: url('<?php echo $bgImage['url']; ?>')" title=" <? echo $bgimg_title ?>"
+                    style="background-image: url('<?php echo $bgImage['url']; ?>')" title=" <?php echo $bgimg_title ?>"
                     alt="<?php echo $bgimg_alt ?>" <?php } ?>>
 
                 <div class="container-fluid">
@@ -41,10 +41,10 @@ $hero_banner = new wp_query([
                                     $img_title = $pgBannerImg['title']; ?>
                                     <div class="qld__banner__image qld__banner__image--mobile-hide" style="background-image: url('<?php
                                     echo $displayPgBannerImg ?>')" alt=" <?php echo esc_attr(get_the_title()); ?>"
-                                        title="<? echo $img_title ?>"></div>
+                                        title="<?php echo $img_title ?>"></div>
                                     <div class="qld__banner__image qld__banner__image--background qld__banner__image--desktop-hide"
                                         style="background-image: url('<?php echo $displayPgBannerImg ?>')"
-                                        alt="<?php echo esc_attr(get_the_title()); ?>" title="<? echo $img_title ?>"></div>
+                                        alt="<?php echo esc_attr(get_the_title()); ?>" title="<?php echo $img_title ?>"></div>
                                 <?php }
                                 ?>
                             </div>

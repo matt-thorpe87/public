@@ -26,7 +26,7 @@
 
             $postscat = new wp_query(
                 array(
-                    'post_type' => array('post', 'resources', 'topics', 'podcasts'),
+                    'post_type' => 'any',
                     'post_status' => 'publish',
                     'posts_per_page' => -1,
                     'category_name' => $category->slug,
@@ -38,11 +38,20 @@
                     <?php while ($postscat->have_posts()): $postscat->the_post(); 
                         $image_id_latest = get_post_thumbnail_id();
                         $image_alt_latest = get_post_meta($image_id_latest, '_wp_attachment_image_alt', TRUE); 
+                        if ( !empty(get_the_post_thumbnail_url())) {
+                            $feature_img = get_the_post_thumbnail_url();
+                        } 
+                        elseif (!empty(z_taxonomy_image_url())){
+                            $feature_img = z_taxonomy_image_url();
+                        }
+                        else {
+                            $feature_img = '/wp-content/themes/csds-generic/dist/assets/images/img/header-logo-qgov--dark.svg';
+                        }
                         ?>
                         <li class="col-xs-12 col-md-6 col-lg-4">
                             <div class="qld__card qld__card__multi-action qld__card--image">
                                 <a class="qld__card__image-link" href="<?php echo the_permalink(); ?>">
-                                    <div class="qld__responsive-media-img--bg" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')" alt="<?php echo $image_alt_latest ?>"></div>
+                                    <div class="qld__responsive-media-img--bg" style="background-image: url('<?php echo $feature_img; ?>')" alt="<?php echo $image_alt_latest ?>"></div>
                                 </a>
                                 <div class="qld__card__inner">
                                     <div class="qld__card__content">

@@ -79,11 +79,20 @@ $posts = new wp_query(
 
                         <div class="<?php echo esc_attr($className); ?>">
 
-                                <?php if (!empty($post_featured_image)) { ?>
+                                <?php if (!empty($post_featured_image)) { 
+                                    $feature_img = get_the_post_thumbnail_url();
+                                 } 
+                                 elseif (!empty(z_taxonomy_image_url())){
+                                    $feature_img = z_taxonomy_image_url();
+                                }
+                                else {
+                                    $feature_img = '/wp-content/themes/csds-generic/dist/assets/images/img/header-logo-qgov--dark.svg';
+                                } ?>
                                     <a href="<?php echo esc_url($post_link) ?>">
-                                    <div class="qld__responsive-media-img--bg"
-                                        style="background-image: url(<?php echo the_post_thumbnail_url()  ?>"></div></a>
-                                <?php } ?>
+                                        <div class="qld__responsive-media-img--bg"
+                                            style="background-image: url(<?php echo $feature_img;  ?>">
+                                        </div>
+                                    </a>
 
                             <div class="qld__card__inner">
                                 <div class="qld__card__content">

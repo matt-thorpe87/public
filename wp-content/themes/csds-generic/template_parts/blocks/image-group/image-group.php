@@ -22,27 +22,35 @@ if (!empty($block['className'])) {
     $className .= ' ' . $block['className'];
 }
 if (!empty($block['align'])) {
-    $className .= ' qld__align--' . $block['align'];
+    $align = ' qld__align--' . $block['align'];
 }
 
 ?>
 <section class="qld__image__group__section <?php echo esc_attr($className) ?>" <?php echo esc_attr($anchor); ?>>
 
     <div class="container-fluid">
-        <div class="col icon-group-title-col">
-            <h3 class=" qld_callout_heading">
+        <div class="col icon-group-title-col <?php echo esc_attr($align); ?>">
+            <?php if ($heading){ ?>
+            <h3 class="qld_callout_heading">
                 <?php echo $heading ?>
             </h3>
+            <?php } ?>
+            <?php if ($sub) { ?>
             <p>
                 <?php echo $sub ?>
             </p>
+            <?php } ?>
         </div>
 
-        <div class="row icon-group-row">
+        <div class="row icon-group-row <?php echo esc_attr($align); ?>">
             <?php
             if ($images): ?>
                 <?php foreach ($images as $image): ?>
-                    <img src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="<?php echo esc_attr($image['alt']); ?>"
+                    <?php 
+                    $url = $image['url'];
+                    $alt = $image['alt'];
+                    ?>
+                    <img src="<?php echo esc_url($url); ?>" alt="<?php echo esc_attr($alt); ?>"
                         class="col-xs-6 col-s-4 col-lg-3 col-xl-2" />
                 <?php endforeach; ?>
 

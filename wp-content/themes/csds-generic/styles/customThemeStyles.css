@@ -372,6 +372,9 @@
 .qld__btn--search{
   border-radius: 0px 4px 4px 0px;
 }
+.qld__search__inner{
+  margin-top: 0rem;
+}
 .qld__search__inner .qld__text-input{
   border-radius: 4px 0px 0px 4px;
 }
@@ -435,4 +438,10 @@
 }
 .qld__search__results .qld__display-lg{
   margin-top:3rem;
+}
+.qld__link-columns li::after{
+  margin-top: 5px;
+}
+.qld__link-columns li:hover::after{
+  margin-top: 5px;
 }

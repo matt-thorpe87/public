@@ -4,6 +4,15 @@
     }
 }
 .icon-group-row{
+    &.qld__align--left{
+        justify-content: start;
+    }
+    &.qld__align--right{
+        justify-content: end;
+    }
+    &.qld__align--center{
+        justify-content: center;
+    }
     img{
         padding-bottom:1rem;
         padding-top: 1rem;
