@@ -39,7 +39,8 @@
             "choices": {
                 "light": "Light",
                 "dark": "Dark",
-                "alternate": "Alternate"
+                "alternate": "Alternate",
+                "darkalt": "Dark Alternate"
             },
             "default_value": "light",
             "return_format": "value",
@@ -94,5 +95,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1716772763
+    "modified": 1718250839
 }

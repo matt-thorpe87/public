@@ -33,18 +33,18 @@ if (!empty($color_settings)) {
         <!-- heading and subheading -->
         <div class="body__text">
             <div class="row">
-
                 <div class="col-xs-12">
+                     <?php if (!empty($heading)) { ?>
+                        <h2 class="qld__carousel__heading">
+                        <?php echo $heading; ?>
+                        </h2>
+                    <?php } ?>
 
-                    <h2 class="qld__carousel__heading">
-                        <?php if (!empty($heading)) {
-                            echo esc_attr($heading);
-                        } ?>
-                    </h2>
-
-                    <?php if (!empty($subheading)) {
-                        echo esc_attr($subheading);
-                    } ?>
+                    <?php if (!empty($subheading)) { ?>
+                        <p>
+                        <?php echo $subheading; ?>
+                        </p>
+                    <?php } ?>
                 </div>
 
             </div>
@@ -65,7 +65,6 @@ if (!empty($color_settings)) {
                     $item_heading = get_sub_field('heading');
                     $item_content = get_sub_field('content');
                     $image = get_sub_field('image');
-                    // Do something, but make sure you escape the value if outputting directly...
                     ?>
                     <div class="qld__carousel__item">
                         <div class="qld__carousel__inner">

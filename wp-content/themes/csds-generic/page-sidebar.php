@@ -3,73 +3,24 @@
 get_header(); ?>
 <main class="main" role="main">
 <?php 
-$display = get_field('display_page_banner');
-$banner_colour = get_field('banner_background_colour');
-$className = ' qld__banner--' . $banner_colour;
-$bread = ' qld__breadcrumbs--' . $banner_colour;
 
+$type = get_field('banner_type');
 
-if($display == 'yes') :
+if ($type  == 'none'){
+    echo '<div class="error">hey there its a no</div>';
+}
+elseif( $type == 'basic') {
+include 'template_parts/blocks/banner-basic/banner-basic.php';
+} 
+elseif ( $type == 'int') {
+include 'template_parts/blocks/banner-intermediate/banner-intermediate.php';
+}
+elseif ( $type == 'ad') {
+include 'template_parts/blocks/banner-advanced/banner-advanced.php';
+} 
 
-    ?>
-
-<!-- Banner Basic  -->
-  <section id="banner-123" class="qld__banner qld__banner__basic qld__banner--has-hero <?php echo esc_attr($className); ?> qld__banner--breadcrumbs">
-      <!--@@ Breadcrumbs - Mobile @@-->
-      <nav class="qld__breadcrumbs <?php echo esc_attr($bread); ?> qld__banner__breadcrumbs qld__banner__breadcrumbs--mobile" aria-label="breadcrumb">
-          <ul class="qld__link-list qld__link-list--inline">
-                <li>
-                    <a href="/">
-                            Home
-                    </a>
-                </li>
-          </ul>
-      </nav>
-      <div class="container-fluid">
-          <div class="qld__banner__wrapper">
-              <div class="qld__banner__main row">
-
-                  <!--@@ Hero image @@-->
-                  <div class="qld__banner__hero col-xs-12 col-md-6 col-lg-5">
-                    <?php if(!empty(get_field('page_banner_image'))) : ?>
-                    <div class="qld__banner__image ">
-
-                        <?php 
-                        $pgBannerImg = get_field('page_banner_image');  
-                        $displayPgBannerImg = $pgBannerImg['sizes']['large'];
-                        $img_alt = $pgBannerImg['alt'];
-                        $img_title = $pgBannerImg['title'];
-                        ?>
-                        <div class="bannerImgWrapper">
-                            <img src="<?php echo $displayPgBannerImg ?>" alt="<?php echo $img_alt;?>" title="<?echo $img_title ?>">
-                        </div>
-                    </div>
-                    <?php endif ?>
-                  </div>
-
-                  <div class="qld__banner__content col-xs-12 col-md-6 col-lg-7">
-
-                      <!--@@ Breadcrumbs - Desktop @@-->
-                        <nav class="qld__breadcrumbs<?php echo esc_attr($bread); ?> qld__banner__breadcrumbs qld__banner__breadcrumbs--desktop" aria-label="breadcrumb">
-                        <?php custom_breadcrumbs(); ?>
-                        </nav>
-
-                        <h1><?php the_title(); ?></h1>
-
-                        <?php $subtitle = get_field('page_banner_subtitle');
-                        if (!empty($subtitle)){ ?>
-                        <div class="qld__banner__content--body qld__abstract">
-                            <?php echo $subtitle; ?>
-                        </div>
-                        <?php } ?>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-  <?php endif ?>
-
-<!-- Banner Basic End -->
+?>
+<!-- Banner End -->
 
 <section class="qld__body ">
     <div class="container-fluid">

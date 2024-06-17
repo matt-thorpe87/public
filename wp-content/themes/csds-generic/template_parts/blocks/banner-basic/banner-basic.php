@@ -11,6 +11,7 @@ $content = get_field('banner_content');
 $color_settings = get_field('background_colour_settings');
 $breadcrumbs = get_field('banner_breadcrumbs');
 $image = get_field('banner_image');
+$width = get_field('width');
 
 // Support custom "anchor" values.
 $anchor = '';
@@ -30,18 +31,15 @@ if (!empty($image)) {
     $className .= ' qld__banner--has-hero';
 }
 // build style attributes for background and text colours using QH theme design
-if ($color_settings == 'dark') {
-    $className .= ' qld__banner--dark';
-} else if ($color_settings == 'alternate') {
-    $className .= ' qld__banner--alt';
-} else if ($color_settings == 'altdark') {
-    $className .= ' qld__banner--dark-alt';
-} else {
-    $className .= '';
+if (!empty($color_settings)) {
+    $className .= ' qld__banner--' . $color_settings;
 }
 // add breadcrumbs 
-if (!empty($breadcrumbs && $breadcrumbs == 'yes')) {
+if (!empty($breadcrumbs) && $breadcrumbs == 'yes') {
     $className .= ' qld__banner--breadcrumbs';
+}
+if(!empty($width) && $width == 'full') {
+    $className .= ' qld__banner__fullwidth';
 }
 ?>
 

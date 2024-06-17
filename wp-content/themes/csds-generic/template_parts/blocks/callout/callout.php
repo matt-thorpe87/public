@@ -28,7 +28,10 @@ if (!empty($block['align'])) {
 // build style attributes for background and text colours using QH theme design
 if ($color_settings == 'dark') {
     $style = ' qld__callout--dark';
-} else {
+} elseif($color_settings == 'dark-alt') {
+    $style = ' qld__callout--dark-alt';
+}
+else {
     $style = ' qld__callout--light';
 }
 

@@ -99,21 +99,21 @@ if (!empty($breadcrumbs && $breadcrumbs == 'yes')) {
                                 $url = get_sub_field('button_url');
                                 $color = get_sub_field('button_colour_settings');
                                 if ($color == 'secondary') {
-                                    $colorClassName = ' qld__btn__secondary';
+                                    $colorClassName = ' qld__btn--secondary';
                                 } else {
-                                    $colorClassName = ' qld__btn__primary';
+                                    $colorClassName = ' qld__btn--primary';
                                 }
                                 $link_url = $url['url'];
                                 $link_title = $url['title'];
                                 $link_target = $url['target'] ? $url['target'] : '_self'; ?>
 
                                 <li class="qld__banner__buttons">
-                                    <a href="<?php echo esc_attr($link_url) ?>" target="<?php echo esc_attr($link_target) ?>"
+                                    <a href="<?php echo esc_url($link_url) ?>" target="<?php echo esc_attr($link_target) ?>"
                                         class=" qld__btn <?php echo esc_attr($colorClassName); ?>">
-                                        <?php if ($link_title) {
-                                            echo esc_attr($link_title);
-                                        } else {
+                                        <?php if ($text) {
                                             echo esc_attr($text);
+                                        } else {
+                                            echo esc_attr($link_title);
                                         } ?>
                                     </a>
                                 </li>

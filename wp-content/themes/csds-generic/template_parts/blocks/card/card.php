@@ -1,6 +1,6 @@
 <?php
 /**
- * Card Block template.
+ * Card Multi Action Block template.
  *
  * @param array $block The block settings and attributes.
  */
@@ -56,8 +56,10 @@ if (!empty($block['align'])) {
                         <li class="col-sm-12 col-md-6 col-lg-4">
                             <div class="<?php echo esc_attr($className); ?>">
 
-                                <?php if (!empty($image)) { ?>
-                                    <a href="<?php echo esc_url($link['url']); ?>">
+                                <?php if (!empty($image)) { 
+                                    if($link){
+                                    $link_url = $link['url']; ?>
+                                    <a href="<?php echo esc_url($link_url); ?> "><?php } ?>
                                     <div class="qld__responsive-media-img--bg"
                                         style="background-image: url('<?php echo $image ?>');"></div></a>
                                 <?php } ?>
@@ -68,20 +70,27 @@ if (!empty($block['align'])) {
                                             <h3 class="qld__card__title">
                                                 <?php if (!empty($link)) {
                                                     $link_url = $link['url'];
-                                                    $link_target = $link['target'] ? $link['target'] : '_self'; ?>
+                                                    $link_target = $link['target'] ? $link['target'] : '_self'; 
+                                                    $link_title = $link['title']; ?>
                                                     <a href="<?php echo esc_url($link_url) ?>"
                                                         target="<?php echo esc_attr($link_target); ?>" >
-                                                        <?php echo $heading ?>
+                                                        <?php if($heading) {
+                                                            echo $heading;
+                                                        } else {
+                                                            echo $link_title;
+                                                        } ?>
                                                     </a>
                                                 <?php } else {
                                                     echo $heading;
                                                 }
                                                 ?>
                                             </h3>
-
-                                            <p class="qld__card__description">
-                                                <?php echo $content; ?>
-                                            </p>
+                                            <?php if (!empty($content)){ ?>
+                                                <p class="qld__card__description">
+                                                    <?php echo $content; ?>
+                                                </p>
+                                            <?php } ?>
+                                            
                                         </div>
                                         <?php if (!empty($footer)) { ?>
                                             <div class="qld__card__footer">

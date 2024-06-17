@@ -11,6 +11,7 @@ $content = get_field('download_content');
 $color_settings = get_field('download_colour_settings');
 $download = get_field('downloadable_file');
 $btn_colour = get_field('button_type');
+$icon = get_field('show_icon');
 
 // Support custom "anchor" values.
 $anchor = '';
@@ -28,30 +29,28 @@ if (!empty($block['align'])) {
 }
 
 // build style attributes for background and text colours using QH theme design
-if ($color_settings == 'dark') {
-    $style = ' qld__callout--dark';
-} else {
-    $style = ' qld__callout--light';
-}
+if (!empty($color_settings)) {
+    $style = ' qld__callout--' .$color_settings;
+} 
 
 // button style
 if( !empty($btn_colour )){
-    $btn_style = ' qld__btn__' . $btn_colour;
+    $btn_style = ' qld__btn--' . $btn_colour;
 }
-
 ?>
-
-
 <section <?php echo esc_attr($anchor); ?> class="qld__callout--wrapper <?php echo esc_attr($className) ?>"
     id="callout-123">
     <div class="container-fluid">
         <div class="qld__callout row <?php echo esc_attr($style); ?>">
             <div class="col-xs-12">
-                <h3 class="qld__callout__heading">
+                <?php if(!empty($heading)) { ?>
+                    <h3 class="qld__callout__heading">
                     <?php echo $heading; ?>
-                </h3>
-                <?php echo $content; ?>
-                <?php if( $download ): 
+                    </h3>
+                <?php  } 
+               if(!empty($content)){
+                ?> <p> <?php echo $content; ?> </p><?php }
+                if( $download ): 
                     $link_url = $download['url'];
                     $link_title = $download['title'];
                     $link_target = $download['target'] ? $download['target'] : '_blank';
@@ -63,6 +62,10 @@ if( !empty($btn_colour )){
                     } else { 
                         echo 'Download';
                     } endif;?>
+                    <?php if($icon == 'yes') { ?>
+                    <i class="fa-solid fa-download" style="margin-left:.5rem;"></i>
+
+                    <?php } ?>
                     </a>   
                 </div>
             </div>

@@ -1,0 +1,16 @@
+{
+    "name": "banner-advanced",
+    "title": "Banner - Advanced",
+    "description": "A custom block with an advanced banner.",
+    "icon": "star-empty",
+    "style": [ "file:./banner-advanced.scss"],
+    "category": "qh-design",
+    "keywords": ["banner", "advanced banner", "cta", "hero"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "banner-advanced.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

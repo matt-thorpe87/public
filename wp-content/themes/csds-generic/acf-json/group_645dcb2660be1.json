@@ -3,95 +3,32 @@
     "title": "Page Banner",
     "fields": [
         {
-            "key": "field_66459bfeb87d2",
-            "label": "Display page banner",
-            "name": "display_page_banner",
+            "key": "field_666f7f5c83de7",
+            "label": "Banner Type",
+            "name": "banner_type",
             "aria-label": "",
             "type": "select",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66459bfeb87d2",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
             "choices": {
-                "yes": "Yes",
-                "no": "No"
-            },
-            "default_value": "yes",
-            "return_format": "value",
-            "multiple": 0,
-            "allow_null": 0,
-            "ui": 0,
-            "ajax": 0,
-            "placeholder": ""
-        },
-        {
-            "key": "field_645dcb27575d2",
-            "label": "Page banner subtitle",
-            "name": "page_banner_subtitle",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_645dcb79cff00",
-            "label": "Page banner image",
-            "name": "page_banner_image",
-            "aria-label": "",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "preview_size": "medium"
-        },
-        {
-            "key": "field_66459c2f7d7a4",
-            "label": "Banner Background Colour",
-            "name": "banner_background_colour",
-            "aria-label": "",
-            "type": "select",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "light": "Light",
-                "alt": "Alternate",
-                "dark": "Dark",
-                "dark-alt": "Dark Alternate"
+                "none": "None",
+                "basic": "Basic",
+                "int": "Intermediate",
+                "ad": "Advanced"
             },
             "default_value": false,
             "return_format": "value",
@@ -100,6 +37,96 @@
             "ui": 0,
             "ajax": 0,
             "placeholder": ""
+        },
+        {
+            "key": "field_666f7f9e83de8",
+            "label": "Basic Banner",
+            "name": "basic_banner",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_666f7f5c83de7",
+                        "operator": "==",
+                        "value": "basic"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_66023ab37adfb"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_666f7ff780916",
+            "label": "Banner Intermediate",
+            "name": "banner_intermediate",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_666f7f5c83de7",
+                        "operator": "==",
+                        "value": "int"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_6603577a074e7"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_666f805938841",
+            "label": "Banner Advanced",
+            "name": "banner_advanced",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_666f7f5c83de7",
+                        "operator": "==",
+                        "value": "ad"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_666a26682a8e0"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
         }
     ],
     "location": [
@@ -108,34 +135,6 @@
                 "param": "page_template",
                 "operator": "==",
                 "value": "page.php"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "post"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "resources"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "topics"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "podcast"
             }
         ],
         [
@@ -155,5 +154,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1715840149
+    "modified": 1718586350
 }

@@ -1,20 +1,19 @@
 <?php get_header(); ?>
 <main class="main" role="main">
-
 <?php 
 $display = get_field('display_page_banner');
 $banner_colour = get_field('banner_background_colour');
 $className = ' qld__banner--' . $banner_colour;
 $bread = ' qld__breadcrumbs--' . $banner_colour;
-
+$sub = get_field('page_banner_subtitle');
 
 if($display == 'yes') :
-
     ?>
-<!-- Banner Basic  -->
-  <section id="banner-123" class="qld__banner qld__banner__basic qld__banner--has-hero qld__banner--breadcrumbs<?php echo esc_attr($className); ?>">
+    <!-- Post Banner  -->
+  <section id="banner-123" class="qld__banner qld__banner__basic qld__banner--has-hero qld__banner--breadcrumbs <?php echo esc_attr($className); ?>">
+
       <!--@@ Breadcrumbs - Mobile @@-->
-      <nav class="qld__breadcrumbs qld__banner__breadcrumbs qld__banner__breadcrumbs--mobile<?php echo esc_attr($bread); ?>" aria-label="breadcrumb">
+      <nav class="qld__breadcrumbs qld__banner__breadcrumbs qld__banner__breadcrumbs--mobile <?php echo esc_attr($bread); ?>" aria-label="breadcrumb">
           <ul class="qld__link-list qld__link-list--inline">
                 <li>
                     <a href="/">
@@ -33,12 +32,12 @@ if($display == 'yes') :
                         <?php 
                         $pgBannerImg = get_field('page_banner_image');  
                         if($pgBannerImg) {
-                        $displayPgBannerImg = $pgBannerImg['sizes']['pgBannerImgSize'];
+                        $displayPgBannerImg = $pgBannerImg['url'];
                         $img_alt = $pgBannerImg['alt'];
                         $img_title = $pgBannerImg['title'];
                         ?>
                         <div class="bannerImgWrapper">
-                            <img src="<?php echo $displayPgBannerImg ?>" alt="<?php echo esc_attr(get_the_title());?>" title="<?php echo $img_title ?>">
+                            <img src="<?php echo $displayPgBannerImg ?>" alt="<?php echo esc_attr($img_alt);?>" title="<?php echo $img_title ?>">
                         </div> <?php } elseif (function_exists('z_taxonomy_image_url')){ 
                             foreach (get_the_category() as $cat) :?>
                             <div class="bannerImgWrapper">
@@ -51,24 +50,35 @@ if($display == 'yes') :
                   <div class="qld__banner__content col-xs-12 col-md-6 col-lg-7">
 
                       <!--@@ Breadcrumbs - Desktop @@-->
-                          <nav class="qld__breadcrumbs qld__banner__breadcrumbs qld__banner__breadcrumbs--desktop<?php echo esc_attr($bread); ?>" aria-label="breadcrumb">
+                          <nav class="qld__breadcrumbs qld__banner__breadcrumbs qld__banner__breadcrumbs--desktop <?php echo esc_attr($bread); ?>" aria-label="breadcrumb">
                             <?php custom_breadcrumbs(); ?>
                           </nav>
 
                       <!--@@ Heading(s) @@-->
                       <h1><?php the_title(); ?></h1>
-
-                      <!--@@ Abstract @@-->
+                      <!--@@ subtitle @@-->
+                        <?php if (!empty($sub)) : ?>
+                      
                         <div class="qld__banner__content--body qld__abstract">
                             <?php the_field('page_banner_subtitle'); ?>
                         </div>
+                        <?php endif; ?>
 
                   </div>
-              </div> 
+              </div>
           </div>
       </div>
   </section>
-  <?php endif ?>
+  <?php elseif ($display == 'no') : ?>
+    <!-- MAIN BODY -->
+      <section class="qld__body qld__body--breadcrumb">
+        <div class="container-fluid">
+          <nav class="qld__breadcrumbs" aria-label="breadcrumb">
+          <?php custom_breadcrumbs(); ?>
+          </nav>
+        </div>
+      </section>
+      <?php endif; ?>
 <!-- Banner Basic End -->
 
 <section class="qld__body ">
@@ -92,6 +102,8 @@ if($display == 'yes') :
                         <h2 class="qld__sidenav__title">
                         <a class="qld__sidenav__link" href="/"><?php echo get_bloginfo(); ?></a>
                         </h2>
+
+                      
                     <?php 
                     if(has_nav_menu('side_menu')) : 
                     wp_nav_menu(array(
@@ -102,8 +114,7 @@ if($display == 'yes') :
                             
                         ));?>   
                         <?php
-                     endif; ?>         
-
+                     endif; ?> 
                     </nav>
                 </div>
             </div>
@@ -114,7 +125,11 @@ if($display == 'yes') :
                 <?php
                 while(have_posts()){
                     the_post(); ?>
-                <h2><?php the_title(); ?></h2>
+                <?php if($display == 'yes') { ?>
+                <h2><?php the_title(); ?></h2> 
+                <?php } else {
+                    ?> <h1> <?php the_title(); ?> </h1> <?php
+                } ?>
                 <p><?php the_content();?></p>
                 <?php } ?>
 

@@ -45,11 +45,17 @@ if ($layout == 'two') {
         <div class="<?php echo esc_attr($className); ?>" id="contact-details-">
             <div class="<?php echo esc_attr($layoutInner); ?> ">
                 <div class="qld__contact-details__col qld__contact-details__first">
+                    <?php if(!empty($heading)){ ?>
                     <h2 id="contact-details" class="qld__contact-details__heading"><?php echo $heading; ?></h2>
+                    <?php } ?>
+                    <?php if (!empty($subheading)) { ?>
                     <p>
                         <strong><?php echo $subheading; ?></strong>
                     </p>
+                    <?php } ?>
+                    <?php if (!empty($hours)) { ?>
                     <p><?php echo $hours; ?></p>
+                    <?php } ?>
                 </div>
                 <div class="qld__contact-details__col qld__contact-details__col--no-wrap">
                     <p>
@@ -105,37 +111,37 @@ if ($layout == 'two') {
                         </p>
                     <?php } ?>
                 </div>
+                <?php if (!empty($street)) { ?>
                 <div class="qld__contact-details__col">
-                    <?php if (!empty($street)) { ?>
-                        <div class="qld__contact-details__col">
-                            <p>
-                                <strong>Street address</strong>
-                            </p>
-                            <p>
-                                <?php echo $street; ?>
-                            </p>
-                        </div>
-                    <?php } ?>
-
+                    
+                    <div class="qld__contact-details__col">
+                        <p>
+                            <strong>Street address</strong>
+                        </p>
+                        <p>
+                            <?php echo $street; ?>
+                        </p>
+                    </div>
                 </div>
+                <?php } ?>
+                <?php if (!empty($postal)) { ?>
                 <div class="qld__contact-details__col">
-
-                    <?php if (!empty($postal)) { ?>
-
-                        <div class="qld__contact-details__col">
-                            <p>
-                                <strong>Postal address</strong>
-                            </p>
-                            <p>
-                                <?php echo $postal; ?>
-                            </p>
-                        </div>
-                    <?php } ?>
+                    <div class="qld__contact-details__col">
+                        <p>
+                            <strong>Postal address</strong>
+                        </p>
+                        <p>
+                            <?php echo $postal; ?>
+                        </p>
+                    </div>
                 </div>
+                <?php } ?>
             </div>
         </div>
+        <?php if (!empty($form)) { ?>
         <div class="contact-form">
             <?php echo do_shortcode($form); ?>
         </div>
+        <?php } ?>
     </div>
 </section>

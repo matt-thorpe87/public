@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_65efe23590cc6",
-            "label": "Heading",
+            "label": "Callout with Image Heading",
             "name": "callout_with_image_heading",
             "aria-label": "",
             "type": "text",
@@ -24,10 +24,10 @@
         },
         {
             "key": "field_65efe2a97fec5",
-            "label": "Content",
+            "label": "Callout with Image Content",
             "name": "callout_with_image_content",
             "aria-label": "",
-            "type": "text",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -37,10 +37,10 @@
                 "id": ""
             },
             "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
             "key": "field_65efe2b87fec6",
@@ -112,5 +112,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1712723875
+    "modified": 1718251721
 }

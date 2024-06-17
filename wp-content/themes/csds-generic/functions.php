@@ -110,6 +110,7 @@ function register_acf_blocks()
     register_block_type(__DIR__ . '/template_parts/blocks/accordion');
     register_block_type(__DIR__ . '/template_parts/blocks/banner-basic');
     register_block_type(__DIR__ . '/template_parts/blocks/banner-intermediate');
+    register_block_type(__DIR__ . '/template_parts/blocks/banner-advanced');
     register_block_type(__DIR__ . '/template_parts/blocks/button');
     register_block_type(__DIR__ . '/template_parts/blocks/body');
     register_block_type(__DIR__ . '/template_parts/blocks/card');

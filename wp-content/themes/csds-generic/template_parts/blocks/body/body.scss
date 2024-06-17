@@ -17,3 +17,18 @@ section.qld__body__text__section{
         }
     }
 }
+.qld__align--center{
+    .qld__body__text{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.qld__align--right{
+    .qld__body__text{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        
+    }
+}

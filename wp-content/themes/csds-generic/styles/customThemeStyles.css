@@ -35,8 +35,10 @@
     text-align: right;
   }
   .bannerImgWrapper img{
-    height: 100%;
-  }
+  object-fit: contain;  
+  overflow: hidden;
+  height: 100%;
+} 
   
   .qld__main-nav__menu-sub-inner .qld__link-columns.qld__link-list a{
     color: #ffffff;
@@ -445,3 +447,11 @@
 .qld__link-columns li:hover::after{
   margin-top: 5px;
 }
+img {
+  width: 100%;
+  height: auto;
+  }
+  /* .qld__body__text__section{
+    display:flex;
+    flex-wrap: wrap;
+  } */

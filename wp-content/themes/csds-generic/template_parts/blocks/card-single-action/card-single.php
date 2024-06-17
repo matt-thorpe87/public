@@ -56,20 +56,27 @@ if (!empty($block['align'])) {
                                             <h3 class="qld__card__title">
                                                 <?php if (!empty($link)) {
                                                     $link_url = $link['url'];
-                                                    $link_target = $link['target'] ? $link['target'] : '_self'; ?>
+                                                    $link_target = $link['target'] ? $link['target'] : '_self'; 
+                                                    $link_title = $link['title']; ?>
                                                     <a href="<?php echo esc_url($link_url) ?>"
                                                         target="<?php echo esc_attr($link_target); ?>" class="qld__card--clickable__link">
-                                                        <?php echo $heading ?>
+                                                        <?php if ($heading) {
+                                                            echo $heading;
+                                                         } else {
+                                                            echo $link_title;
+                                                         } ?>
                                                     </a>
-                                                <?php } else {
-                                                    echo $heading;
-                                                }
-                                                ?>
+                                                    <?php } else {
+                                                        echo $heading;
+                                                    }
+                                                    ?>
                                             </h3>
-
-                                            <p class="qld__card__description">
+                                            <?php if (!empty($content)) { ?>
+                                                <p class="qld__card__description">
                                                 <?php echo $content; ?>
-                                            </p>
+                                                </p>
+                                            <?php } ?>
+                                            
                                         </div>
                                         <?php if (!empty($footer)) { ?>
                                             <div class="qld__card__footer">

@@ -74,7 +74,8 @@
             },
             "choices": {
                 "light": "Light",
-                "dark": "Dark"
+                "dark": "Dark",
+                "dark-alt": "Dark Alternate"
             },
             "default_value": "light",
             "return_format": "value",
@@ -109,6 +110,32 @@
             "ui": 0,
             "ajax": 0,
             "placeholder": ""
+        },
+        {
+            "key": "field_666a8cb7bc97e",
+            "label": "Show Download Icon",
+            "name": "show_icon",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
         }
     ],
     "location": [
@@ -129,5 +156,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1716167768
+    "modified": 1718259522
 }

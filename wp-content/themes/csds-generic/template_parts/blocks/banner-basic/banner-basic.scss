@@ -20,4 +20,9 @@
 }
 .qld__banner{
     margin: 1.5rem 0rem;
+    &.qld__banner__fullwidth{
+        left: 0px;
+        right: 0px;
+        min-width: 100%;
+    }
 }

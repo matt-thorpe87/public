@@ -1,0 +1,20 @@
+.qld__banner{
+    &.qld__banner__advanced{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        @media screen and (max-width: 699px){
+            background-image: none !important;
+        }
+        .qld__banner__content{
+            .qld__banner__heading--opaque{
+                display:table;
+            }
+        }
+    }
+    &.qld__banner--light{
+        a.qld__btn{
+            color: var(--QLD-color-light-button__text);
+        }
+    }
+}

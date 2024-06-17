@@ -39,7 +39,7 @@ $args = array(
                                 </li>
                             <?php }
                         ?>
-                    </u>
+                    </ul>
                 </nav>
             </div>  
         </div>

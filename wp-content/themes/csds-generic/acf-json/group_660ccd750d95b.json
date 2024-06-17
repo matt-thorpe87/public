@@ -1,10 +1,10 @@
 {
     "key": "group_660ccd750d95b",
-    "title": "Card",
+    "title": "Card - Multi Action",
     "fields": [
         {
             "key": "field_660cdc0706250",
-            "label": "Card Colour",
+            "label": "Card Multi Action Colour",
             "name": "card_colour",
             "aria-label": "",
             "type": "select",
@@ -32,7 +32,7 @@
         },
         {
             "key": "field_660cd3046a716",
-            "label": "Card",
+            "label": "Card Multi Action",
             "name": "card",
             "aria-label": "",
             "type": "repeater",
@@ -78,7 +78,7 @@
                     "label": "Card Content",
                     "name": "card_content",
                     "aria-label": "",
-                    "type": "text",
+                    "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -88,10 +88,10 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0,
                     "parent_repeater": "field_660cd3046a716"
                 },
                 {
@@ -179,5 +179,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1717375820
+    "modified": 1718252522
 }
