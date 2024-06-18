@@ -10,6 +10,7 @@ function theme_post_types() {
   //Topics Post Type
   register_post_type('topics', array(
     'supports'=> array('title', 'editor', 'excerpt', 'thumbnail', 'page-attributes', 'category'),
+	'template' => array(),
     'rewrite' => array('slug' => 'topics'),
     'has_archive' => true,
     'public' => true,

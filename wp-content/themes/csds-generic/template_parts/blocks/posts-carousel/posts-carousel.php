@@ -30,6 +30,12 @@ if (!empty($color_settings)) {
     $color = 'qld__body--' . $color_settings;
 }
 
+function carousel_excerpt_length( $excerpt_length ) {
+    $excerpt_length = get_field('excerpt_length');
+
+    return $excerpt_length;
+    }
+add_filter( 'excerpt_length', 'carousel_excerpt_length', 999 );
 // get posts //
 $news_slider = new wp_query(
     array(
@@ -72,7 +78,7 @@ if (!$news_slider->have_posts()) {
                 $news_slider->the_post();
                 $post_ID = get_the_ID();
                 $post_title = get_the_title();
-                $post_exerpt = get_the_excerpt();
+                $post_excerpt = get_the_excerpt();
                 $post_featured_image = wp_get_attachment_image(get_post_thumbnail_id($post_ID), 'single-post-thumbnail');
                 $alt_text_image = get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true);
                 $post_link = get_post_permalink();
@@ -101,7 +107,13 @@ if (!$news_slider->have_posts()) {
                                     <h3 class="qld__card__title"><a href=" <?php echo $post_link; ?> "
                                             class="news-slider-link-title qld__card--clickable__link">
                                             <?php echo $post_title ?>
-                                        </a></h3>
+                                        </a>
+                                    </h3>
+                                    <?php if (!empty($post_excerpt)){ ?>
+                                        <p class="qld__card__description">
+                                            <?php echo $post_excerpt; ?>
+                                        </p>
+                                    <?php  } ?>
                                 </div>
                             </div>
                             <div class="qld__card__footer">

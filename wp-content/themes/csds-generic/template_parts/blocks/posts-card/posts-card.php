@@ -14,6 +14,7 @@ $number_posts = get_field('number_of_posts');
 $post_type = get_field('post_type_for_posts_card');
 $order = get_field('posts_card_order');
 $cat = get_field('posts_category');
+$excerpt_length = get_field('excerpt_length');
 // Support custom "anchor" values.
 $anchor = '';
 if (!empty($block['anchor'])) {
@@ -35,6 +36,12 @@ if (!empty($block['align'])) {
     $containerClassName = ' qld__card--' . $block['align'];
 }
 
+function custom_excerpt_length( $excerpt_length ) {
+    $excerpt_length = get_field('excerpt_length');
+
+    return $excerpt_length;
+    }
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 // get posts //
 $posts = new wp_query(
@@ -69,7 +76,7 @@ $posts = new wp_query(
                 <?php 
                     $post_ID = get_the_ID();
                     $post_title = get_the_title();
-                    $post_exerpt = get_the_excerpt();
+                    $post_excerpt = get_the_excerpt();
                     $post_featured_image = wp_get_attachment_image(get_post_thumbnail_id($post_ID), 'single-post-thumbnail');
                     $alt_text_image = get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true);
                     $post_link = get_post_permalink();
@@ -103,6 +110,12 @@ $posts = new wp_query(
                                                 <?php echo $post_title;
                                             } ?></a>
                                         </h3>
+                                        <?php if (!empty($post_excerpt)){ ?>
+                                            <p class="qld__card__description">
+                                                <?php echo $post_excerpt; ?>
+                                            </p>
+                                        <?php  } ?>
+
                                     </div>
                                     <div class="qld__card__footer">
                                         <hr class="qld__horizontal-rule">

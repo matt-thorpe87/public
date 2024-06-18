@@ -7,7 +7,7 @@
 //     }
 // }
 .qld__banner__content{
-    padding:2rem;
+    padding: 2rem 2rem 2rem 0rem !important;
 }
 .qld__banner--alt .qld__banner__hero{
     background-color: var(--QLD-color-light-alt-background) !important;
@@ -18,11 +18,9 @@
         background-repeat: no-repeat;
     }
 }
-.qld__banner{
-    margin: 1.5rem 0rem;
-    &.qld__banner__fullwidth{
-        left: 0px;
-        right: 0px;
-        min-width: 100%;
+.qld__body{
+    .qld__banner__content{
+        padding: 2rem !important;
     }
 }
+

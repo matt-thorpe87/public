@@ -23,7 +23,7 @@ if (!empty($block['className'])) {
 }
 
 // colour settings for block
-if ($color_settings) {
+if (!empty($color_settings)) {
     $className .= ' qld__page-alerts--' . $color_settings;
 }
 ?>

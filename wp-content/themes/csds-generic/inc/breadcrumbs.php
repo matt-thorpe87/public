@@ -15,12 +15,14 @@ function custom_breadcrumbs() {
         } elseif(is_single()) {
             echo '<li>';
             $cat = get_the_category();
+            if(!empty($cat)){
             echo '<a href=" ' . esc_url(get_category_link( $cat[0]->term_id)) . '">';
             echo $cat[0]->name;
             echo '</a></li>';
             echo '<li>';
             the_title();
             echo '</li>';
+            }
         } elseif (is_page()) {
             if ($post->post_parent) {
                 $anc = get_post_ancestors($post->ID);

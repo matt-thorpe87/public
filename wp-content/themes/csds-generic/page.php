@@ -5,10 +5,7 @@ get_header(); ?>
 <?php 
 $type = get_field('banner_type');
 
-if ($type  == 'none'){
-    echo '<div class="error">hey there its a no</div>';
-}
-elseif( $type == 'basic') {
+if( $type == 'basic') {
 include 'template_parts/blocks/banner-basic/banner-basic.php';
 } 
 elseif ( $type == 'int') {
@@ -16,6 +13,9 @@ include 'template_parts/blocks/banner-intermediate/banner-intermediate.php';
 }
 elseif ( $type == 'ad') {
 include 'template_parts/blocks/banner-advanced/banner-advanced.php';
+}  
+elseif ($type == 'default') { 
+    include 'inc/page-banner.php';
 } 
 
 
@@ -27,9 +27,13 @@ include 'template_parts/blocks/banner-advanced/banner-advanced.php';
                     <?php
                     while (have_posts()) {
                         the_post(); ?>
-                        <h1>
-                            <?php the_title(); ?>
-                        </h1>
+                        <?php if (!empty($type) && $type != 'none') { ?>
+                        <h2><?php the_title(); ?></h2>
+                        <?php } else {
+                        ?>
+                        <h1> <?php the_title(); ?> </h1>
+                        <?php }    
+                        ?>
                         <p>
                             <?php the_content(); ?>
                         </p>
