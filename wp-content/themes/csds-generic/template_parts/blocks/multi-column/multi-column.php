@@ -80,9 +80,9 @@ if ($color_settings == 'altdark') {
                         ?>
 
                         <div class="<?php echo esc_attr($columns) ?>">
+                            <?php if (!empty($colContent)) : ?>
                             <?php echo $colContent;
-                            echo $count;
-
+                            endif;
                             ?>
                         </div>
                     <?php endwhile ?>

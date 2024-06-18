@@ -47,14 +47,18 @@ echo esc_attr($bgColor) ?>" <?php echo esc_attr($anchor); ?>>
             <span class="material-icons qld-material-icons md-40 md-dark <?php echo esc_attr($bgColor) ?>">
             <?php if ( $icon ) {
                 echo $icon;
-            } else echo 'error'; ?>
+            } ?>
             </span>
             <div class="qld__global_alert__content">
                 <div class="qld__global_alert__message">
+                    <?php if (!empty($heading)) { ?>
                     <strong>
-                        <?php echo esc_attr($heading); ?>:
+                        <?php echo $heading; ?>&nbsp;
                     </strong>
-                    <?php echo esc_attr($content); ?>
+                    <?php } ?>
+                    <?php if (!empty($content)) { ?>
+                    <?php echo $content; ?>
+                    <?php } ?>
                 </div>
                 <?php if ($link): ?>
                     <div class="qld__global_alert__action">
@@ -62,8 +66,8 @@ echo esc_attr($bgColor) ?>" <?php echo esc_attr($anchor); ?>>
                         $link_url = $link['url'];
                         $link_title = $link['title'];
                         $link_target = $link['target'] ? $link['target'] : '_self'; ?>
-                        <a href="<?php echo esc_attr($link_url) ?>"
-                            target="<?php echo esc_attr($link_target) ?>"><span>Learn more
+                        <a href="<?php echo esc_url($link_url) ?>"
+                            target="<?php echo esc_attr($link_target) ?>"><span><?php echo $link_title; ?>
                             </span>
                         </a>
                     </div>

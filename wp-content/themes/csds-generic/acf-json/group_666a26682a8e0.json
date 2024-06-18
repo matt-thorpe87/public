@@ -236,7 +236,7 @@
         },
         {
             "key": "field_666a325a3b999",
-            "label": "Hero Image",
+            "label": "Feature Image",
             "name": "hero_image",
             "aria-label": "",
             "type": "image",
@@ -261,7 +261,7 @@
         },
         {
             "key": "field_666a32803b99a",
-            "label": "Hero Image Display",
+            "label": "Feature Image Display Style",
             "name": "hero_image_display",
             "aria-label": "",
             "type": "select",
@@ -302,9 +302,10 @@
             "choices": {
                 "button": "Button",
                 "link-list": "Link List",
-                "icon-tile": "Icon Tile"
+                "icon-tile": "Icon Tile",
+                "none": "None"
             },
-            "default_value": false,
+            "default_value": "button",
             "return_format": "value",
             "multiple": 0,
             "allow_null": 0,
@@ -415,6 +416,239 @@
                 "id": ""
             },
             "return_format": "array"
+        },
+        {
+            "key": "field_666fa5c4a8461",
+            "label": "Icon Tile Background Colour",
+            "name": "icon_tile_background_colour",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_666a33d73b99b",
+                        "operator": "==",
+                        "value": "icon-tile"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "light": "Light",
+                "dark": "Dark",
+                "alt": "Alternate",
+                "dark-alt": "Dark Alternate"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_666fa74cca0b8",
+            "label": "Icon Tile",
+            "name": "icon_tile",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_666a33d73b99b",
+                        "operator": "==",
+                        "value": "icon-tile"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 3,
+            "collapsed": "",
+            "button_label": "Add Icon Tile",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_666fa75dca0b9",
+                    "label": "Icon",
+                    "name": "icon",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Insert class from <a href=\"https:\/\/fontawesome.com\/search\" target=\"_blank\">Font Awesome<\/a>",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_666fa74cca0b8"
+                },
+                {
+                    "key": "field_666fa768ca0ba",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_666fa74cca0b8"
+                },
+                {
+                    "key": "field_666fa834152e9",
+                    "label": "Link",
+                    "name": "link",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "parent_repeater": "field_666fa74cca0b8"
+                }
+            ]
+        },
+        {
+            "key": "field_666fd145a158f",
+            "label": "Link List Background",
+            "name": "link_list_background",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_666a33d73b99b",
+                        "operator": "==",
+                        "value": "link-list"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "light": "Light",
+                "alt": "Alternate",
+                "dark": "Dark",
+                "dark-alt": "Dark Alternate"
+            },
+            "default_value": "light",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_666fd25813459",
+            "label": "Link List Item",
+            "name": "link_list_item",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_666a33d73b99b",
+                        "operator": "==",
+                        "value": "link-list"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 1,
+            "max": 3,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_666fd28179de1",
+                    "label": "Link Title",
+                    "name": "link_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_666fd25813459"
+                },
+                {
+                    "key": "field_666fd28b79de2",
+                    "label": "Link List Item Link",
+                    "name": "item_link",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "parent_repeater": "field_666fd25813459"
+                }
+            ]
         }
     ],
     "location": [
@@ -435,5 +669,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1718237837
+    "modified": 1718670380
 }

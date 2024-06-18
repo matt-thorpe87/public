@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_660c9f9f0056c",
-            "label": "Heading",
+            "label": "Image Group Heading",
             "name": "heading",
             "aria-label": "",
             "type": "text",
@@ -24,7 +24,7 @@
         },
         {
             "key": "field_660c9fb21ed81",
-            "label": "Subheading",
+            "label": "Image Group Subheading",
             "name": "subheading",
             "aria-label": "",
             "type": "text",
@@ -41,6 +41,34 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_666fca10ac1b2",
+            "label": "Image Group Background Colour",
+            "name": "background_colour",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "light": "Light",
+                "alt": "Alternate",
+                "dark": "Dark",
+                "dark-alt": "Dark Alternate"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
         },
         {
             "key": "field_660c9fc51ed82",
@@ -89,5 +117,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1712723943
+    "modified": 1718602299
 }

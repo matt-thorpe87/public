@@ -9,6 +9,7 @@
 $heading = get_field('heading');
 $sub = get_field('subheading');
 $images = get_field('images');
+$colour = get_field('background_colour');
 
 // Support custom "anchor" values.
 $anchor = '';
@@ -21,15 +22,18 @@ $className = 'qld__icon-group';
 if (!empty($block['className'])) {
     $className .= ' ' . $block['className'];
 }
+if(!empty($colour)) {
+    $className .= ' qld__body--' . $colour;
+}
 if (!empty($block['align'])) {
     $align = ' qld__align--' . $block['align'];
 }
 
 ?>
-<section class="qld__image__group__section <?php echo esc_attr($className) ?>" <?php echo esc_attr($anchor); ?>>
+<section class="qld__image__group__section <?php echo esc_attr($className); ?>" <?php echo esc_attr($anchor); ?> >
 
     <div class="container-fluid">
-        <div class="col icon-group-title-col <?php echo esc_attr($align); ?>">
+        <div class="col icon-group-title-col <?php if(!empty($align)) : echo esc_attr($align); endif; ?>">
             <?php if ($heading){ ?>
             <h3 class="qld_callout_heading">
                 <?php echo $heading ?>
@@ -42,7 +46,7 @@ if (!empty($block['align'])) {
             <?php } ?>
         </div>
 
-        <div class="row icon-group-row <?php echo esc_attr($align); ?>">
+        <div class="row icon-group-row <?php if(!empty($align)) : echo esc_attr($align); endif; ?>">
             <?php
             if ($images): ?>
                 <?php foreach ($images as $image): ?>

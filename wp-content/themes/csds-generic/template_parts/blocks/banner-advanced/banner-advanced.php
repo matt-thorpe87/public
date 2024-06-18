@@ -35,9 +35,6 @@ $className = 'banner';
 if (!empty($block['className'])) {
     $className .= ' ' . $block['className'];
 }
-// if (!empty($block['align'])) {
-//     $align = ' ' . $block['align'];
-// }
 if (!empty($hero_image)) {
     $className .= ' qld__banner--has-hero';
 }
@@ -47,17 +44,22 @@ if (!empty($bg_color)) {
 if( !empty($breadcrumbs) && $breadcrumbs == 'yes'){
     $className .= ' qld__banner--breadcrumbs';
 } 
+// if( !empty($cta) && $cta == 'icon-tile') {
+//     $className .= ' qld__banner--nav';
+// }
 
 // Background image //
 if (!empty($bg_type) && $bg_type == 'image'){
-    $img_url = $desktop_img['url'];
-    $bg = 'background-image: url(' . $img_url . ')';
+    if (!empty($desktop_img)){
+        $img_url = $desktop_img['url'];
+        $bg = 'background-image: url(' . $img_url . ')'; 
+    }
 }
 ?>
 
 <!--@@ Banner @@-->
-<section <?php echo esc_attr($anchor); ?> class="qld__banner qld__banner__advanced qld__banner--nav <?php echo esc_attr($className); ?>"
-    style="<?php echo esc_attr($bg); ?>">
+<section <?php echo esc_attr($anchor); ?> class="qld__banner qld__banner__advanced <?php echo esc_attr($className); ?>"
+    style="<?php if(!empty($bg)) echo esc_attr($bg);?>">
 
     <?php if (!empty($breadcrumbs && $breadcrumbs == 'yes')) { ?>
     <!--@@ Breadcrumbs - Mobile @@-->
@@ -75,7 +77,7 @@ if (!empty($bg_type) && $bg_type == 'image'){
             <div class="qld__banner__main row">
                 <!--@@ Hero image @@-->
                 
-                    <div class="qld__banner__hero col-xs-12 qld__banner__hero--scale col-md-6 col-lg-5 col-xl-4">
+                    <div class="qld__banner__hero col-xs-12 col-md-6 col-lg-5 col-xl-4 qld__banner__hero--<?php echo esc_attr($hero_image_display); ?>">
                         <?php if (!empty($hero_image)) { 
                             $hero_url = $hero_image['url']; ?>
                         <div class="qld__banner__image qld__banner__image--mobile-hide" style="background-image: url('<?php echo $hero_url; ?>');"></div>
@@ -138,6 +140,8 @@ if (!empty($bg_type) && $bg_type == 'image'){
                         $plink_url = $pbutton_link['url'];
                         $plink_title = $pbutton_link['title'];
                         $plink_target = $pbutton_link['target'] ? $pbutton_link['target'] : '_self'; ?>
+                        
+                        <!-- Primary button -->
                         <li class="qld__banner__buttons">
                             <a href="<?php echo esc_url($plink_url) ?>" target="<?php echo esc_attr($plink_target) ?>" class="qld__btn qld__btn--primary">
                                 <?php if ($pbutton_text) {
@@ -147,6 +151,9 @@ if (!empty($bg_type) && $bg_type == 'image'){
                                 } ?>
                             </a>
                         </li>
+                        <!-- End primary button  -->
+
+                        <!-- Secondary button -->
                         <?php } 
                         if(!empty($sbutton_link)){
                         $slink_url = $sbutton_link['url'];
@@ -161,32 +168,99 @@ if (!empty($bg_type) && $bg_type == 'image'){
                                 } ?>
                             </a>
                         </li>
+                        <!-- End secondary button -->
                         <?php }    ?>
                     </ul>
+                    <!-- end CTA buttons -->
 
+                    <!--@@ CTA Link List @@-->
+                    <?php } elseif ($cta == 'link-list' ) { ?>
+                        <ul class="qld__card-list qld__card-list--matchheight qld__banner__card-list">
+                            <?php 
+                            $link_list_bg = get_field('link_list_background');
+                            if (!empty($link_list_bg)){
+                                $bg_link_color = ' qld__card--' . $link_list_bg;
+                            } ?>
+                            <?php if (have_rows('link_list_item')) :
+                                while (have_rows('link_list_item')) : the_row(); 
+                                $item_title = get_sub_field('link_title');
+                                $item_link = get_sub_field('item_link');
+                                if(!empty($item_link)){
+                                    $ilink_url = $item_link['url'];
+                                    $ilink_target = $item_link['target'] ? $item_link['target'] : '_self'; 
+                                    $ilink_title = $item_link['title'];
+                                } ?>
+
+                                <!-- Individual link list items -->
+                                <li class="col-xs-12">
+                                    <div class="qld__card qld__card__action qld__card__arrow <?php echo esc_attr($bg_link_color); ?>">
+                                        <div class="qld__card__inner">
+                                            <div class="qld__card__content">
+                                                <h2 class="qld__card__title">
+                                                    <a href="<?php echo esc_url($ilink_url); ?>" class="qld__card--clickable__link" target="<?php echo esc_attr($ilink_target); ?>"><?php if (!empty($item_title)){
+                                                        echo $item_title; 
+                                                    } else {
+                                                        echo $ilink_title;
+                                                    }
+                                                    ?></a>
+                                                    <span class="material-icons qld-material-icons md-dark md-24">east</span>
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- End of individual link list items -->
+                                <?php endwhile;
+                                endif; ?>
+                        </ul>
+                  
                     <?php } ?>
-                    
+                    <!--@@ End of CTA Link List @@-->
 
-                     <!--@@ CTA Link List @@-->
-                    
                 </div>
             </div>
             
             <!--@@ Icon tile nav @@-->
+            <?php if ( $cta == 'icon-tile') { 
+                $tile_background = get_field('icon_tile_background_colour');
+                if (!empty($tile_background)){
+                    $color = ' qld__tile-nav--'. $tile_background;
+                }
+                ?>
                 <div class="qld__banner__nav ">
-                    <nav class="
-                        qld__tile-nav 
-                         
-                         
-                        qld__tile-nav--alt-dark
-                    ">
+                    <nav class="qld__tile-nav <?php echo esc_attr($color); ?>">
                         <ul class="qld__tile-nav__list"> 
-                            <li class="qld__tile-nav__item"><i class="fal fa-question-circle"></i><a href="#" class="qld__tile-nav__link">Brand</a></li>
-                            <li class="qld__tile-nav__item"><i class="fal fa-stethoscope"></i><a href="#" class="qld__tile-nav__link">Content</a></li>
-                            <li class="qld__tile-nav__item"><i class="fal fa-heart"></i><a href="#" class="qld__tile-nav__link">Components</a></li>
+                        <?php if (have_rows('icon_tile')) :
+                            while (have_rows('icon_tile')) : the_row(); 
+                            $icon = get_sub_field('icon');
+                            $title = get_sub_field('title');
+                            $link = get_sub_field('link'); 
+                            if(!empty($link)){
+                                $link_url = $link['url'];
+                                $link_target = $link['target'] ? $link['target'] : '_self'; 
+                                $link_title = $link['title'];
+                            } ?>
+
+                            <!-- Individual nav list items -->
+                            <li class="qld__tile-nav__item">
+                                <?php if (!empty($icon)) : ?>
+                                <i class="fal <?php echo esc_attr($icon); ?>"></i><?php endif; ?>
+                                <a href="<?php echo esc_html($link_url); ?>" class="qld__tile-nav__link" target="<?php echo esc_attr($link_target) ?>"><?php if (!empty($title)){
+                                    echo $title;
+                                } else {
+                                    echo $link_title;
+                                 } ?></a>
+                            </li>
+                            <!--  End of individual nav list items -->
+                            <?php
+                            endwhile;
+                            endif; ?>
                         </ul>
                     </nav>
+                    
                 </div>
+            <?php } ?>
+            <!--@@ End of icon tile nav @@-->
 
         </div>
     </div>

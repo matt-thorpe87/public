@@ -3,3 +3,10 @@
         padding: 0;
     }
 }
+.qld__multi-column__section{
+    &.qld__body--dark-alt, &.qld__body--dark{
+        h1, h2, h3, h4, h5, h6{
+            color: var(--QLD-color-dark-text);
+        }
+    }
+}

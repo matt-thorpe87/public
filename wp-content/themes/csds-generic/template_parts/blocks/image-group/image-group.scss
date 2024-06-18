@@ -20,6 +20,7 @@
 }
 .qld__image__group__section{
     margin:1.5rem 0;
+    padding: 2rem;
 }
 .qld__image__group__section{
     .container-fluid{
@@ -28,6 +29,13 @@
                 margin-left: -1rem;
                 margin-right: -1rem;
             }
+        }
+    }
+}
+.qld__image__group__section{
+    &.qld__body--dark, &.qld__body--dark-alt{
+        h3.qld_callout_heading{
+            color: var(--QLD-dark-color-text);
         }
     }
 }

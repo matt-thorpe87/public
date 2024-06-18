@@ -3,12 +3,26 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position-x: center;
-        @media screen and (max-width: 699px){
+        @media screen and (max-width: 992px){
             background-image: none !important;
+            .qld__banner__content{
+                min-height:250px;
+            }
+        }
+        .qld__banner__image{
+            &.qld__banner__image--background{
+                display:block;
+            }
         }
         .qld__banner__content{
             .qld__banner__heading--opaque{
                 display:table;
+            }
+            .material-icons{
+                background-color: inherit;
+                color: inherit;
+                float:right;
+                padding: 0rem 0rem 0rem 1rem;
             }
         }
     }

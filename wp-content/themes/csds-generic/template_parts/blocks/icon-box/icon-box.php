@@ -40,16 +40,20 @@ if (!empty($position)) {
         <div class="row icon-box-row <?php echo esc_attr($className) ?>">
 
             <div class=" col-xs-6 col-lg-3">
-                <img src="<?php echo esc_attr($icon) ?>">
+                <img src="<?php echo esc_url($icon) ?>">
             </div>
 
             <div class=" col-xs-6 col-lg-3">
+                <?php if (!empty($heading)) : ?>
                 <h3 class="qld_callout_heading">
-                    <?php echo $heading ?>
+                    <?php echo $heading; ?>
                 </h3>
+                <?php endif; ?>
+                <?php if(!empty($content)) : ?>
                 <p>
-                    <?php echo $content ?>
+                    <?php echo $content; ?>
                 </p>
+                <?php endif; ?>
             </div>
 
         </div>
