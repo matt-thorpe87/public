@@ -4,6 +4,7 @@ get_header(); ?>
 <main class="main" role="main">
 <?php 
 $type = get_field('banner_type');
+$show = get_field('show_title');
 
 if( $type == 'basic') {
 include 'template_parts/blocks/banner-basic/banner-basic.php';
@@ -17,7 +18,6 @@ include 'template_parts/blocks/banner-advanced/banner-advanced.php';
 elseif ($type == 'default') { 
     include 'inc/page-banner.php';
 } 
-
 
 ?>
     <section class="qld__body ">
@@ -42,7 +42,6 @@ elseif ($type == 'default') {
                 </div>
             </div>
         </div>
-        
     </section>
 
 

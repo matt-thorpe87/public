@@ -24,6 +24,11 @@
             }
         }
     }
+    .qld__card__content{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+    }
 }
 .qld__card--wrapper{
     margin-bottom: 2rem;

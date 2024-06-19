@@ -18,9 +18,14 @@
         background-repeat: no-repeat;
     }
 }
-.qld__body{
+section.qld__body{
     .qld__banner__content{
-        padding: 2rem !important;
+        padding: 1rem !important;
+    }
+}
+@media (max-width: 1440px){
+    section.qld__banner{
+        padding:1rem;
     }
 }
 

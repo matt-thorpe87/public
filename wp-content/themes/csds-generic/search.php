@@ -1,4 +1,8 @@
-<?php get_header(); 
+<?php 
+/*
+Template name: Search
+*/
+get_header(); 
 
 $search_term = $_GET["s"];
 $s = get_search_query();
@@ -8,6 +12,7 @@ $args = array(
     'post_type' => 'any',
     'orderby' => 'desc',
     'paged' => $paged,
+    'posts_per_page' => 10,
     'cat' => '',
     
     
@@ -113,6 +118,29 @@ $args = array(
                 
         <?php } 
         $search = get_field('multi_search', 'option'); 
+        if($search == 'no') :
+        ?>
+            <div class="row">
+                <div class="qld__pagination__row">
+                    <nav class="pagination qld__all_posts__link">
+                        <?php   
+                        global $paged;
+                        $big = 999999999; // need an unlikely integer
+                        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                        echo paginate_links( array(
+                            'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+                            'paged' => $paged,
+                            'format' => '?paged=%#%',
+                            'current' => max( 1, $paged ),
+                            'total' => $the_query->max_num_pages
+                        ) ); 
+                        wp_reset_query();
+                        ?>
+                    </nav>
+                </div>
+            </div>
+            <?php
+        endif ;
         if ($search != 'no') : 
         ?>
         
@@ -178,7 +206,7 @@ $args = array(
             <?php
         } else {
             ?>
-              <div class="qld__search__results qld__search__results--no-results">
+            <div class="qld__search__results qld__search__results--no-results">
                 <div class="qld__display-lg">Your search for <span class="qld__search__info-query-term"><?php echo $s; ?></span> across the network didn't return any results.</div>
                 <p class="qld__abstract">You could try: </p>
                 <ul>
@@ -188,25 +216,25 @@ $args = array(
             </div>
 
         <?php } ?>
-        <div class="row">
-        <div class="qld__pagination__row">
-            <nav class="pagination qld__all_posts__link">
-                <?php   
-                global $paged;
-                $big = 999999999; // need an unlikely integer
-                $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                echo paginate_links( array(
-                    'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-                    'paged' => $paged,
-                    'format' => '?paged=%#%',
-                    'current' => max( 1, $paged ),
-                    'total' => $the_query->max_num_pages
-                ) ); 
-                wp_reset_query();
-                ?>
-            </nav>
-        </div>
-    </div>
+            <div class="row">
+                <div class="qld__pagination__row">
+                    <nav class="pagination qld__all_posts__link">
+                        <?php   
+                        global $paged;
+                        $big = 999999999; // need an unlikely integer
+                        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                        echo paginate_links( array(
+                            'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+                            'paged' => $paged,
+                            'format' => '?paged=%#%',
+                            'current' => max( 1, $paged ),
+                            'total' => $the_query->max_num_pages
+                        ) ); 
+                        wp_reset_query();
+                        ?>
+                    </nav>
+                </div>
+            </div>
         </div>
     
     <?php endif ?>

@@ -13,6 +13,7 @@ $layout = get_field('layout');
 $caption = get_field('video_caption');
 $embed = get_field('video_embed');
 $position = get_field('video_position');
+$color = get_field('video_background_colour');
 
 // Support custom "anchor" values.
 $anchor = '';
@@ -36,10 +37,14 @@ if ($position == 'right') {
     $className .= ' qld__video--column-layout-left';
 }
 
+// background colour
 
+ if (!empty($color)){
+    $bg_color  = 'qld__body--' . $color;
+ }
 ?>
 
-<section class="qld__video__section">
+<section class="qld__video__section <?php echo esc_attr($bg_color); ?>">
     <div class="container-fluid">
         <div class="<?php echo esc_attr($className); ?> " <?php echo esc_attr($anchor) ?>>
             <div class="qld__video__vid-wrapper">

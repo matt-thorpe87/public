@@ -71,15 +71,11 @@
   .qld__header .qld__header__pre-header--alt{
     background-color: var(--QLD-color-light-alt-background);
   }
-  @media screen and (min-width:1025px) and (max-width:1400px ){
-    .qld__header__pre-header, .qld__header__main{
-      padding: 0 1rem;
-    }
-  }
-  @media screen and (max-width: 1024px) {
+
+  @media screen and (max-width: 1440px) {
     .qld__header .qld__header__main, .qld__header__pre-header, .qld__main-nav.qld__main-nav--dark .qld__link-list, .qld__banner__content
     {
-      padding: 0 1.5rem;
+      padding: 0 1rem;
     }
   
     .qld__banner__main .qld__banner__content {
@@ -91,8 +87,8 @@
       }
     }
   
-    .qld__footer.qld__footer--dark-alt{
-      padding: 0 1.5rem 2rem 1.5rem;
+    .qld__footer.qld__footer--dark-alt, .qld__footer.qld__footer--dark, .qld__footer.qld__footer--alt, .qld__footer.qld__footer--light{
+      padding: 1rem;
     }
   
     /* .qld__grid main>.qld__body>.container-fluid>.row{
@@ -112,7 +108,9 @@
     padding: 1rem;
   }
   
-  
+  .qld__footer.qld__footer--dark-alt, .qld__footer.qld__footer--dark, .qld__footer.qld__footer--alt, .qld__footer.qld__footer--light{
+    padding: 1rem;
+  }
   @media screen and (max-width: 991px) {
   .container-fluid.logo_navcontrol_wrapper {
     height: 72px;

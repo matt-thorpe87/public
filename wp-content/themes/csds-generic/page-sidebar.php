@@ -5,6 +5,7 @@ get_header(); ?>
 <?php 
 
 $type = get_field('banner_type');
+$show = get_field('show_title');
 
 if( $type == 'basic') {
 include 'template_parts/blocks/banner-basic/banner-basic.php';

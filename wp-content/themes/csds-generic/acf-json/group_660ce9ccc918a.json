@@ -155,6 +155,34 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_6672426e069b4",
+            "label": "Video Background Colour",
+            "name": "video_background_colour",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "light": "Light",
+                "alt": "Alternate",
+                "dark": "Dark",
+                "dark-alt": "Dark Alternate"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
         }
     ],
     "location": [
@@ -175,5 +203,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1712724021
+    "modified": 1718764177
 }
