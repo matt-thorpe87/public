@@ -35,22 +35,11 @@ $sub = get_field('page_banner_subtitle');
                                 ?>
                                 <div class="bannerImgWrapper">
                                     <img src="<?php echo $displayPgBannerImg ?>" alt="<?php echo esc_attr($img_alt);?>" title="<?php echo $img_title ?>">
-                                </div> <?php } }
-                                elseif (function_exists('z_taxonomy_image_url')){ 
-                                $cat = get_the_category();?>
-                                <?php if (!empty($cat)){ ?>
-                                <div class="qld__banner__hero col-xs-12 col-md-6 col-lg-5">
-                                    <div class="qld__banner__image">
-                                        <div class="bannerImgWrapper">
-                                            <img src="<?php echo z_taxonomy_image_url($cat[0]->term_id); ?>" /> 
-                                        </div> 
-                                    </div>
-                                </div>
+                                </div> <?php } ?>                                
                                 
                             </div>
                         </div>
-                        <?php 
-                                } } ?>
+                        <?php } ?>
                     <div class="qld__banner__content col-xs-12 col-md-6 col-lg-7">
                         <?php if (!is_front_page()) { ?>
                       <!--@@ Breadcrumbs - Desktop @@-->

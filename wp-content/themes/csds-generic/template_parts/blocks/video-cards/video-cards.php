@@ -41,7 +41,7 @@ if (!empty($block['align'])) {
                         $content = get_sub_field('card_content');
                         $video = get_sub_field('card_video');
                         $link = get_sub_field('card_link');
-                        if ($link) {
+                        if (!empty($link)) {
                             $className .= ' qld__card__action';
                         } else {
                             $className .= '';
@@ -59,23 +59,37 @@ if (!empty($block['align'])) {
 
                                 <div class="qld__card__inner">
                                     <div class="qld__card__content">
-                                        <div class="qld__card__content-inner">
-                                            <h3 class="qld__card__title">
-                                                <?php if (!empty($link)) {
+                                        <div class="qld__card__content-inner">                                            
+                                                <?php if (!empty($link)) { 
                                                     $link_url = $link['url'];
-                                                    $link_target = $link['target'] ? $link['target'] : '_self'; ?>
-                                                    <a href="<?php echo esc_url($link_url) ?>"
-                                                        target="<?php echo esc_attr($link_target); ?>">
-                                                        <?php echo $heading ?>
-                                                    </a>
-                                                <?php } else {
-                                                    echo $heading;
-                                                }
+                                                    $link_target = $link['target'] ? $link['target'] : '_self'; 
+                                                    $link_title = $link['title']; ?>
+                                                    <h3 class="qld__card__title">
+                                                        <a href="<?php echo esc_url($link_url) ?>"
+                                                            target="<?php echo esc_attr($link_target); ?>">
+                                                            <?php if (!empty ($heading)){
+                                                                echo $heading;
+                                                            } else {
+                                                                echo $link_title;
+                                                            } ?>
+                                                        
+                                                        </a>
+                                                    </h3>
+                                                <?php } else { ?>
+                                                    <h3 class="qld__card__title">
+                                                    <?php if (!empty($heading)){
+                                                        echo $heading;
+                                                    } ?> 
+                                                    </h3>
+                                                <?php }
                                                 ?>
                                             </h3>
-                                            <p class="qld__card__description">
+                                            <?php if (!empty($content)){ ?>
+                                                <p class="qld__card__description">
                                                 <?php echo $content; ?>
-                                            </p>
+                                                </p>
+                                            <?php } ?>
+                                           
                                         </div>
                                     </div>
                                 </div>

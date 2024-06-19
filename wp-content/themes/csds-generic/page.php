@@ -27,11 +27,11 @@ elseif ($type == 'default') {
                     <?php
                     while (have_posts()) {
                         the_post(); ?>
-                        <?php if (!empty($type) && $type != 'none') { ?>
-                        <h2><?php the_title(); ?></h2>
-                        <?php } else {
+                        <?php if (!empty($type) && $type == 'none') { ?>
+                        <h1 class="qld__page__title"><?php the_title(); ?></h1>
+                        <?php } elseif ($type == 'basic' || $type == 'int' || $type == 'ad') {
                         ?>
-                        <h1> <?php the_title(); ?> </h1>
+                        <h2 class="qld__page__title"> <?php the_title(); ?> </h2>
                         <?php }    
                         ?>
                         <p>
