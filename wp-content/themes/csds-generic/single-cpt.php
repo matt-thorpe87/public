@@ -1,7 +1,7 @@
 <?php
 /*
 Template Name: Custom Post Type Template
-Template Post Type: post, resources, topics, podcasts, courses
+Template Post Type: post, resources, topics, podcast, courses
 */
 ?>
 

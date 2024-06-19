@@ -12,7 +12,7 @@
     include 'colours.php';
         ?>
 </head>
-<body class="qld__grid">
+<body class="qld__grid" <?php body_class(); ?>>
     <header class="qld__header" role="banner">
         <nav class="qld__skip-link" aria-label="skip links" tabindex="-1">
             <a class="qld__skip-link__link" href="#content">Skip to main content</a>

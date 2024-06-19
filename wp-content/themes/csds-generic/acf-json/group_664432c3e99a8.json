@@ -138,6 +138,7 @@
                 "resources": "resources",
                 "hero_banner": "hero_banner",
                 "podcast": "podcast",
+                "courses": "courses",
                 "wpforms": "wpforms",
                 "wpforms-template": "wpforms-template",
                 "patterns_ai_data": "patterns_ai_data"
@@ -201,28 +202,6 @@
             "multiple": 0,
             "allow_null": 0,
             "bidirectional_target": []
-        },
-        {
-            "key": "field_6670dc88f4ea2",
-            "label": "Post Excerpt Length",
-            "name": "excerpt_length",
-            "aria-label": "",
-            "type": "number",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": 25,
-            "min": 0,
-            "max": 100,
-            "placeholder": "",
-            "step": "",
-            "prepend": "",
-            "append": ""
         }
     ],
     "location": [
@@ -243,5 +222,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1718672719
+    "modified": 1718756125
 }

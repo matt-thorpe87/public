@@ -36,12 +36,7 @@ if (!empty($block['align'])) {
     $containerClassName = ' qld__card--' . $block['align'];
 }
 
-function custom_excerpt_length( $excerpt_length ) {
-    $excerpt_length = get_field('excerpt_length');
-
-    return $excerpt_length;
-    }
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+// include custom_excerpt_length($excerpt_length);
 
 // get posts //
 $posts = new wp_query(

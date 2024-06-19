@@ -2,7 +2,7 @@
 
 /*
 Template Name: Default Post Template
-Template Post Type: post,resources, topics, podcasts,
+Template Post Type: post,resources, topics, podcast,
 */
 ?>
 <?php get_header(); ?>

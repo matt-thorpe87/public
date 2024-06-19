@@ -30,12 +30,12 @@ if (!empty($color_settings)) {
     $color = 'qld__body--' . $color_settings;
 }
 
-function carousel_excerpt_length( $excerpt_length ) {
-    $excerpt_length = get_field('excerpt_length');
+// function carousel_excerpt_length( $length ) {
+//     $excerpt_length = get_field('excerpt_length');
 
-    return $excerpt_length;
-    }
-add_filter( 'excerpt_length', 'carousel_excerpt_length', 999 );
+//     return $excerpt_length;
+//     }
+// add_filter( 'excerpt_length', 'carousel_excerpt_length', 999 );
 // get posts //
 $news_slider = new wp_query(
     array(

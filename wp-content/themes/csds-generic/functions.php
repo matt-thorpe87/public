@@ -210,3 +210,8 @@ function ip_search_filter($args) {
 add_filter('pre_get_posts', 'ip_search_filter');
 // end search filter function
 
+// function custom_excerpt_length( $excerpt_length ) {
+
+//     return $excerpt_length;
+//     }
+// add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

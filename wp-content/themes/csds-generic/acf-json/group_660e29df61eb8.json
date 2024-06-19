@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_660e2bc32ffdb",
-            "label": "Card Colour",
+            "label": "Video Card Colour",
             "name": "card_colour",
             "aria-label": "",
             "type": "select",
@@ -150,5 +150,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1712724015
+    "modified": 1718756226
 }
