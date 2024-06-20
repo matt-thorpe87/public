@@ -4,7 +4,7 @@ get_header(); ?>
 <main class="main" role="main">
 <?php 
 $type = get_field('banner_type');
-$show = get_field('show_title');
+$show = get_field('show_page_title');
 
 if( $type == 'basic') {
 include 'template_parts/blocks/banner-basic/banner-basic.php';
@@ -26,13 +26,14 @@ elseif ($type == 'default') {
                 <div class="col-xs-12 col-lg-12">
                     <?php
                     while (have_posts()) {
-                        the_post(); ?>
+                        the_post(); 
+                        if ($show == 'yes') { ?>
                         <?php if (!empty($type) && $type == 'none') { ?>
                         <h1 class="qld__page__title"><?php the_title(); ?></h1>
                         <?php } elseif ($type == 'basic' || $type == 'int' || $type == 'ad') {
                         ?>
                         <h2 class="qld__page__title"> <?php the_title(); ?> </h2>
-                        <?php }    
+                        <?php }  }  
                         ?>
                         <p>
                             <?php the_content(); ?>

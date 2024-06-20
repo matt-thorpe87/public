@@ -1,4 +1,4 @@
-<?php /* Template name: Theme template */
+<?php 
 
 $template_page = New wp_query([
     'post_type' => 'template_fields'

@@ -13,7 +13,7 @@ get_header(); ?>
 // $className = ' qld__banner--' . $banner_colour;
 // $bread = ' qld__breadcrumbs--' . $banner_colour;
 // if($display == 'yes') :
-
+$show = get_field('show_page_title');
 include 'template_parts/hero_banner.php'; 
 ?>
 

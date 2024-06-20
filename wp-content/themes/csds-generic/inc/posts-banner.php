@@ -57,9 +57,11 @@ if($display == 'yes') :
                   <div class="qld__banner__content col-xs-12 col-md-6 col-lg-7">
 
                       <!--@@ Breadcrumbs - Desktop @@-->
+                      <?php if (!is_front_page()) { ?>
                           <nav class="qld__breadcrumbs qld__banner__breadcrumbs qld__banner__breadcrumbs--desktop <?php echo esc_attr($bread); ?>" aria-label="breadcrumb">
                             <?php custom_breadcrumbs(); ?>
                           </nav>
+                        <?php } ?>
 
                       <!--@@ Heading(s) @@-->
                       <h1><?php the_title(); ?></h1>

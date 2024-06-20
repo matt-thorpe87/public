@@ -479,7 +479,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Queensland Government acknowledges the Traditional Owners of the land and pays respect to Elders past, present and future.",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -1293,5 +1293,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1718069915
+    "modified": 1718843353
 }

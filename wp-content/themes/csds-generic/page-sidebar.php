@@ -5,7 +5,7 @@ get_header(); ?>
 <?php 
 
 $type = get_field('banner_type');
-$show = get_field('show_title');
+$show = get_field('show_page_title');
 
 if( $type == 'basic') {
 include 'template_parts/blocks/banner-basic/banner-basic.php';
@@ -60,16 +60,19 @@ elseif ($type == 'default') {
             <div class="col-xs-12 col-lg-9"><!-- right pane content section -->
               <div class="container-fluid">
                 <?php
-                while(have_posts()){
-                    the_post(); ?>
+                while (have_posts()) {
+                    the_post(); 
+                    if ($show == 'yes') { ?>
                     <?php if (!empty($type) && $type == 'none') { ?>
                     <h1 class="qld__page__title"><?php the_title(); ?></h1>
                     <?php } elseif ($type == 'basic' || $type == 'int' || $type == 'ad') {
                     ?>
                     <h2 class="qld__page__title"> <?php the_title(); ?> </h2>
-                    <?php }    
+                    <?php }  }  
                     ?>
-                <p><?php the_content();?></p>
+                    <p>
+                        <?php the_content(); ?>
+                    </p>
                 <?php } ?>
 
               </div>

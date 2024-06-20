@@ -1,7 +1,7 @@
 <?php
 /*
 Template Name: Custom Post Type Template
-Template Post Type: post, resources, topics, podcast, courses
+Template Post Type: post, resources, topics, podcast, courses, podcasts, topic, resource, course
 */
 ?>
 
@@ -55,11 +55,9 @@ Template Post Type: post, resources, topics, podcast, courses
                 <?php
                 while(have_posts()){
                     the_post(); ?>
-                <?php if($display == 'yes') { ?>
-                <h2><?php the_title(); ?></h2> 
-                <?php } else {
-                    ?> <h1> <?php the_title(); ?> </h1> <?php
-                } ?>
+                <?php if($display == 'no') { ?>
+                <h1><?php the_title(); ?></h1> 
+                <?php } ?>
                 <p><?php the_content();?></p>
                 <?php } ?>
 
