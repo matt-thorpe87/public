@@ -41,7 +41,7 @@
                         if ( !empty(get_the_post_thumbnail_url())) {
                             $feature_img = get_the_post_thumbnail_url();
                         } 
-                        elseif (!empty(z_taxonomy_image_url())){
+                        elseif (function_exists('z_taxonomy_image_url') && !empty(z_taxonomy_image_url())){
                             $feature_img = z_taxonomy_image_url();
                         }
                         else {

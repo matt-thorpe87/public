@@ -55,9 +55,9 @@
                 ?>
 
                 <div class="qld__header__main-nav-controls">
-                    <a aria-controls="qld-header-search"
+                    <button aria-controls="qld-header-search"
                         class="qld__header__toggle-main-nav qld__main-nav__toggle-search qld__main-nav__toggle-search--open"
-                        aria-expanded="false" href="/?s=">
+                        aria-expanded="false" onclick=search();>
                         <?php
                         $search = content_url('/themes/csds-generic/dist/assets/images/img/svg-icons.svg#qld__icon__search');
                         $close = content_url('/themes/csds-generic/dist/assets/images/img/svg-icons.svg#qld__icon__close');
@@ -77,7 +77,7 @@
                             </use>
                         </svg>
                         <span class="qld__main-nav__toggle-text">Search</span>
-            </a>
+                    </button>
                     <button aria-controls="main-nav" class="qld__header__toggle-main-nav qld__main-nav__toggle--open">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                             class="qld__icon qld__icon--lg">
