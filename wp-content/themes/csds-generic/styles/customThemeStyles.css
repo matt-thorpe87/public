@@ -448,4 +448,7 @@
 img {
   width: 100%;
   height: auto;
-  }
+}
+.qld__banner__breadcrumbs--mobile{
+  padding-left: 0rem;
+}

@@ -45,6 +45,16 @@ if(!empty($width) && $width == 'full') {
 
 <!--@@ Banner @@-->
 <section <?php echo esc_attr($anchor); ?> class="qld__banner qld__banner__basic <?php echo esc_attr($className); ?>">
+<?php if (!empty($breadcrumbs && $breadcrumbs == 'yes')) { ?>
+    <!--@@ Breadcrumbs - Mobile @@-->
+    <nav class="qld__breadcrumbs qld__banner__breadcrumbs qld__banner__breadcrumbs--mobile" aria-label="breadcrumb">
+        <ul class="qld__link-list qld__link-list--inline">
+            <li>
+                <a href="/">Home</a>
+            </li>
+        </ul>
+    </nav>
+    <?php } ?>
     <div class="container-fluid">
         <div class="qld__banner__wrapper">
             <div class="qld__banner__main row">

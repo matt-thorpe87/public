@@ -45,7 +45,8 @@
                             $feature_img = z_taxonomy_image_url();
                         }
                         else {
-                            $feature_img = '/wp-content/themes/csds-generic/dist/assets/images/img/header-logo-qgov--dark.svg';
+                            $feature_img = '/wp-content/themes/csds-generic/dist/assets/images/img/qh-logo.jpg
+                            ';
                         }
                         ?>
                         <li class="col-xs-12 col-md-6 col-lg-4">
