@@ -21,6 +21,7 @@ $sub = get_field('page_banner_subtitle');
             <div class="qld__banner__wrapper">
                 <div class="qld__banner__main row">
                     <?php 
+                    $feature_img = get_the_post_thumbnail_url();
                     $pgBannerImg = get_field('page_banner_image');  
                     if(!empty($pgBannerImg)) { ?>
                     <!--@@ Hero image @@-->
@@ -39,7 +40,19 @@ $sub = get_field('page_banner_subtitle');
                                 
                             </div>
                         </div>
-                        <?php } ?>
+                        <?php } elseif(!empty($feature_img)){ 
+                            $thumbnail_id = get_post_thumbnail_id( $post->ID );
+                            $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);   
+                                ?>
+                            <div class="qld__banner__hero col-xs-12 col-md-6 col-lg-5">
+                                <div class="qld__banner__image ">
+                                    
+                                    <div class="bannerImgWrapper">
+                                        <img src="<?php echo $feature_img ?>" alt="<?php echo esc_attr($alt);?>" >
+                                    </div>
+                                </div>
+                            </div>
+                        <?php         } ?>
                     <div class="qld__banner__content col-xs-12 col-md-6 col-lg-7">
                         <?php if (!is_front_page()) { ?>
                       <!--@@ Breadcrumbs - Desktop @@-->

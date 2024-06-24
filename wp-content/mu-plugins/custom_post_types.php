@@ -9,7 +9,7 @@ function theme_post_types() {
 
   //Topics Post Type
   register_post_type('topics', array(
-    'supports'=> array('title', 'editor', 'excerpt', 'thumbnail', 'page-attributes', 'category'),
+    'supports'=> array('title', 'editor', 'excerpt', 'thumbnail', 'page-attributes', 'category', 'revisions'),
 	'template' => array(),
     'rewrite' => array('slug' => 'topics'),
     'has_archive' => true,
@@ -32,7 +32,7 @@ function theme_post_types() {
 
   //Resources Post Type
   register_post_type('resources', array(
-    'supports'=> array('title', 'editor', 'page-attributes', 'category', 'thumbnail', 'excerpt'),
+    'supports'=> array('title', 'editor', 'page-attributes', 'category', 'thumbnail', 'excerpt', 'revisions'),
     'rewrite' => array('slug' => 'resources'),
     'has_archive' => true,
     'public' => true,

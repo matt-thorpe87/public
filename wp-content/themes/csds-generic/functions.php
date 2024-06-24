@@ -157,15 +157,15 @@ add_filter('block_categories_all', 'example_block_category', 10, 2);
 
 
 // Function to show which template page is loaded  - delete before pushing live
-function meks_which_template_is_loaded() {
-	if ( is_super_admin() ) {
-		global $template;
-		print_r( $template );
-	}
-}
+// // function meks_which_template_is_loaded() {
+// 	if ( is_super_admin() ) {
+// 		global $template;
+// 		print_r( $template );
+// 	}
+// }
  
-add_action( 'wp_footer', 'meks_which_template_is_loaded' );
-// end function template page loaded
+// add_action( 'wp_footer', 'meks_which_template_is_loaded' );
+// // end function template page loaded
 
 
 function acf_load_field_choices( $field ) {

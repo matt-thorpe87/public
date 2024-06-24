@@ -25,11 +25,13 @@ if($display == 'yes') :
             <div class="qld__banner__main row">
                 <!--@@ Hero image @@-->
                 <?php 
+                    $feature_img = get_the_post_thumbnail_url();
                     $pgBannerImg = get_field('page_banner_image');  
                     if(!empty($pgBannerImg)) { ?>
                     <div class="qld__banner__hero col-xs-12 col-md-6 col-lg-5">
                         <div class="qld__banner__image ">
                             <?php
+
                             $displayPgBannerImg = $pgBannerImg['url'];
                             $img_alt = $pgBannerImg['alt'];
                             $img_title = $pgBannerImg['title'];
@@ -39,7 +41,19 @@ if($display == 'yes') :
                             </div>
                         </div>
                     </div>
-                    <?php } 
+                    <?php } elseif(!empty($feature_img)){ 
+                    $thumbnail_id = get_post_thumbnail_id( $post->ID );
+                    $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);   
+                        ?>
+                    <div class="qld__banner__hero col-xs-12 col-md-6 col-lg-5">
+                        <div class="qld__banner__image ">
+                            
+                            <div class="bannerImgWrapper">
+                                <img src="<?php echo $feature_img ?>" alt="<?php echo esc_attr($alt);?>" >
+                            </div>
+                        </div>
+                    </div>
+                    <?php }
                     elseif (function_exists('z_taxonomy_image_url')){ 
                     $cat = get_the_category();
                     if (!empty($cat)){
