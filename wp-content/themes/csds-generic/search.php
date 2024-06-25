@@ -23,12 +23,12 @@ $args = array(
     <div class="container-fluid qld__search__page">
         <!-- sidebar -->
         <div class="col-xs-12 col-lg-3">
-            <div class="qld__side-nav qld__accordion">
-                <h3 class="page-title">
+            <div class="qld__side-nav qld__accordion" >
+                <button class="qld__side-nav__toggle qld__accordion__title qld__accordion--closed" aria-controls="nav-default" aria-expanded="false" aria-selected="false">
                     Filter Results
-                </h3>
+                </button>
 
-                <nav class="qld__side-nav__content qld__accordion--closed qld__accordion__body">
+                <nav aria-label="side navigation" id="nav-default" class="qld__side-nav__content qld__accordion--closed qld__accordion__body">
                     <ul class="qld__link-list">
                         <li class="menu-item">
                             <a class="<?php echo (!isset($_GET['cat']) ? 'current' : false); ?>" href="<?php echo home_url(); ?>?s=<?php echo $s; ?>">

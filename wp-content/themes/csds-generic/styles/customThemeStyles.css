@@ -452,3 +452,8 @@ img {
 .qld__banner__breadcrumbs--mobile{
   padding-left: 0rem;
 }
+@media (min-width:992px){
+  .qld__grid.page-template-page-sidebar .col-lg-9 .container-fluid{
+    padding-left: 1rem;
+  }
+}

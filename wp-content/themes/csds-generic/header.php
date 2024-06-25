@@ -25,7 +25,7 @@
         ?>
         <div class="qld__header__pre-header <?php echo esc_attr($top_class) ?>">
             <div class="container-fluid logo_navcontrol_wrapper">
-                <a href="https://www.health.qld.gov.au/">
+                <a href="https://www.health.qld.gov.au/" target="_blank">
                     <span class="qld__header__pre-header-url">www.health.qld.gov.au</span>
 
                     <img class="qld__header__pre-header-brand-image" alt="Queensland Government" <?php
