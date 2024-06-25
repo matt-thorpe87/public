@@ -67,7 +67,7 @@ if (!empty($breadcrumbs && $breadcrumbs == 'yes')) {
 
                 <!--@@ Hero image @@-->
                 <?php if (!empty($image)) { ?>
-                    <div class="qld__banner__hero col-xs-12 qld__banner__hero--scale col-md-6 col-lg-5 col-xl-4">
+                    <div class="qld__banner__hero col-xs-12 qld__banner__hero--scale col-md-6 col-lg-5">
                         <div class="qld__banner__image " style="background-image: url('<?php echo $image; ?>');">
                         </div>
                     </div>
