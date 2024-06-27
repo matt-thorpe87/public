@@ -1,6 +1,6 @@
 {
     "name": "posts-card",
-    "title": "Posts Card",
+    "title": "Posts Card - QH",
     "description": "A custom block with a card with posts.",
     "icon": "id",
     "style": [ "file:./posts-card.scss"],

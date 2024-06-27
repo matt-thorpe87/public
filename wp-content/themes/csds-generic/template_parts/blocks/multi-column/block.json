@@ -1,6 +1,6 @@
 {
     "name": "multi-column",
-    "title": "Multi Column",
+    "title": "Multi Column - QH",
     "description": "A custom block with multi-column text.",
     "icon": "columns",
     "style": [  "file:./multi-column.scss"],

@@ -1,6 +1,6 @@
 {
     "name": "callout_with_image",
-    "title": "Callout with Image",
+    "title": "Callout with Image - QH",
     "description": "A custom block with a callout including an image.",
     "icon": "flag",
     "style": [ "file:./callout_with_image.scss"],

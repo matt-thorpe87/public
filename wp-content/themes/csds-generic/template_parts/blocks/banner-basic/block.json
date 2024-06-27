@@ -1,6 +1,6 @@
 {
     "name": "banner-basic",
-    "title": "Banner - Basic",
+    "title": "Banner Basic - QH",
     "description": "A custom block with a basic banner.",
     "icon": "star-filled",
     "style": [ "file:./banner-basic.scss"],

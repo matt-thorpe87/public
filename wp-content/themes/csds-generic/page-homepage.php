@@ -1,7 +1,7 @@
 <?php 
 
 /*
-Template name: Homepage
+Template name: QH Homepage
 */
 
 get_header(); ?>

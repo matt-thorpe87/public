@@ -1,5 +1,5 @@
 <?php 
-/* Template Name: Default With Sidebar */
+/* Template Name: QH Default With Sidebar */
 get_header(); ?>
 <main class="main" role="main">
 <?php 

@@ -1,6 +1,6 @@
 {
     "name": "posts-carousel",
-    "title": "Posts Carousel",
+    "title": "Posts Carousel - QH",
     "description": "A custom block with a carousel of posts.",
     "icon": "slides",
     "style": [  "file:./posts-carousel.scss"],

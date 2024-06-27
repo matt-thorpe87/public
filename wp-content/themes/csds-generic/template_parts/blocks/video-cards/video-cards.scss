@@ -1,6 +1,9 @@
 .qld__card{
     .qld__video_vid{
-            max-height: 230px !important;
+        iframe{
+            min-height: 230px;
+
+        }
     }
 }
 

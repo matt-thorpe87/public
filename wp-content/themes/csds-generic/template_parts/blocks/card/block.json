@@ -1,6 +1,6 @@
 {
     "name": "card",
-    "title": "Card Multi Action",
+    "title": "Card Multi Action - QH",
     "description": "A custom block with a card.",
     "icon": "id",
     "style": [ "file:./card.scss"],

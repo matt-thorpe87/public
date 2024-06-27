@@ -1,6 +1,6 @@
 {
     "name": "link-list",
-    "title": "Link List",
+    "title": "Link List - QH",
     "description": "A custom block with a list of links.",
     "icon": "editor-ul",
     "style": [  "file:./link-list.scss"],

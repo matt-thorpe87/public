@@ -11826,7 +11826,7 @@ li+li .qld__accordion {
 
 @media(min-width: 699px) {
     .qld__banner .qld__banner__image.qld__banner__image--desktop-hide {
-        display: none
+        display: none !important;
     }
 }
 
@@ -12166,15 +12166,15 @@ li+li .qld__accordion {
 
 @media(min-width: 992px) {
     .qld__banner.qld__banner__intermediate .qld__banner__wrapper {
-        min-height: 344px;
-        min-height: 21.5rem
+        min-height: auto;
+        min-height: auto;
     }
 }
 
 @media(min-width: 992px) {
     .qld__banner.qld__banner__advanced .qld__banner__wrapper {
-        min-height: 344px;
-        min-height: 21.5rem
+        min-height: auto;
+        min-height: auto;
     }
 }
 

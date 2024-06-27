@@ -1,6 +1,6 @@
 <?php 
 /*
-Template name: Search
+Template name: QH Search
 */
 get_header(); 
 

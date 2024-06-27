@@ -1,6 +1,6 @@
 {
     "name": "image-group",
-    "title": "Image Group",
+    "title": "Image Group - QH",
     "description": "A custom block with a group of images.",
     "icon": "images-alt",
     "style": [  "file:./image-group.scss"],

@@ -1,6 +1,6 @@
 {
     "name": "page-alert",
-    "title": "Page Alert",
+    "title": "Page Alert - QH",
     "description": "A custom block with page alert.",
     "icon": "sticky",
     "style": [ "file:./page-alert.scss"],

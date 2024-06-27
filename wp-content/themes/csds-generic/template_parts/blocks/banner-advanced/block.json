@@ -1,6 +1,6 @@
 {
     "name": "banner-advanced",
-    "title": "Banner - Advanced",
+    "title": "Banner Advanced - QH",
     "description": "A custom block with an advanced banner.",
     "icon": "star-empty",
     "style": [ "file:./banner-advanced.scss"],

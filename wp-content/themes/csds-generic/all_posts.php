@@ -1,7 +1,7 @@
 <?php 
 
 /*
-Template name: All Posts
+Template name: QH All Posts
 */
 
 get_header(); ?>

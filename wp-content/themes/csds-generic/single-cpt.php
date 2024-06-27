@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Custom Post Type Template
+Template Name:QH Custom Post Type Template
 Template Post Type: post, resources, topics, podcast, courses, podcasts, topic, resource, course
 */
 ?>

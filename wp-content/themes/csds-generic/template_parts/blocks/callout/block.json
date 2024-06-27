@@ -1,6 +1,6 @@
 {
     "name": "callout",
-    "title": "Callout",
+    "title": "Callout - QH",
     "description": "A custom block with a callout.",
     "icon": "flag",
     "style": [ "file:./callout.scss"],

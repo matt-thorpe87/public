@@ -1,6 +1,6 @@
 {
     "name": "banner-intermediate",
-    "title": "Banner - Intermediate",
+    "title": "Banner Intermediate - QH",
     "description": "A custom block with an intermediate banner.",
     "icon": "star-half",
     "style": [  "file:./banner-intermediate.scss"],

@@ -4,6 +4,12 @@
     }
   }
   .qld__callout{
+    &.qld__callout--dark{
+      background-color: var(--QLD-color-dark-background);
+    }
+    &.qld__callout--dark-alt{
+      background-color: var(--QLD-color-dark-alt-background);
+    }
     .qld__callout__heading{
       max-width:100%;
     }

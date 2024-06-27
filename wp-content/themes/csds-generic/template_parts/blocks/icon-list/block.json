@@ -1,6 +1,6 @@
 {
     "name": "icon-list",
-    "title": "Icon List",
+    "title": "Icon List - QH",
     "description": "A custom block with a list including icons.",
     "icon": "editor-ul",
     "style": [  "file:./icon-list.scss"],

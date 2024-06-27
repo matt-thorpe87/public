@@ -1,6 +1,6 @@
 {
     "name": "button",
-    "title": "Button",
+    "title": "Button - QH",
     "description": "A custom block with a button.",
     "icon": "button",
     "style": [  "file:./button.scss"],

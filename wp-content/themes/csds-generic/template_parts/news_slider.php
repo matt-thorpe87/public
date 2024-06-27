@@ -1,6 +1,6 @@
 <?php
 /*
-Template name: news_slider
+
 */
 ?>
 <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet"/> -->

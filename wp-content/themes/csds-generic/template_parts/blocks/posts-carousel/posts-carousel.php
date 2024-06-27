@@ -88,7 +88,7 @@ if (!$news_slider->have_posts()) {
                 <?php if (!empty($post_featured_image)) { 
                     $feature_img = get_the_post_thumbnail_url();
                     } 
-                    elseif (!empty(z_taxonomy_image_url())){
+                    elseif (function_exists('z_taxonomy_image_url')){
                     $feature_img = z_taxonomy_image_url();
                     }
                     else {

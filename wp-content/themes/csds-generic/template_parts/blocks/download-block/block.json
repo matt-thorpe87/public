@@ -1,6 +1,6 @@
 {
     "name": "download",
-    "title": "Download",
+    "title": "Download - QH",
     "description": "A custom block with a download callout.",
     "icon": "download",
     "style": [ "file:./download-block.scss"],

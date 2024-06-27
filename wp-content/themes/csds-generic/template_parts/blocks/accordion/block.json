@@ -1,6 +1,6 @@
 {
     "name": "accordion",
-    "title": "Accordion",
+    "title": "Accordion - QH",
     "description": "A custom block with an accordion.",
     "icon": "excerpt-view",
     "style": [ "file:./accordion.scss"],

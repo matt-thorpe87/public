@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: Default Post Template
+Template Name: QH Default Post Template
 Template Post Type: post, resources, topics, podcast, courses, course, podcasts, topic, resource
 */
 ?>

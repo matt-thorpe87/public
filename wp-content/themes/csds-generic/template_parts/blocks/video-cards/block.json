@@ -1,6 +1,6 @@
 {
     "name": "video-cards",
-    "title": "Video Cards",
+    "title": "Video Cards - QH",
     "description": "A custom block with video cards.",
     "icon": "video-alt2",
     "style": [ "file:./video-cards.scss"],

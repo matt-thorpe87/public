@@ -1,6 +1,6 @@
 {
-    "name": "video ",
-    "title": "Video",
+    "name": "video",
+    "title": "Video - QH",
     "description": "A custom block with a video.",
     "icon": "video-alt3",
     "style": [  "file:./video.scss"],

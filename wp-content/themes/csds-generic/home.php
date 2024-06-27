@@ -1,6 +1,6 @@
 <?php 
 /*
-Template name: Blog
+Template name: QH Blog Page
 */
 
 get_header(); ?>

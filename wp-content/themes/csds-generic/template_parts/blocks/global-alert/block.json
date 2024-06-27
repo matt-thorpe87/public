@@ -1,6 +1,6 @@
 {
     "name": "global-alert",
-    "title": "Global Alert",
+    "title": "Global Alert - QH",
     "description": "A custom block with global alert.",
     "icon": "warning",
     "style": [  "file:./global-alert.scss"],

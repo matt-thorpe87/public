@@ -1,6 +1,6 @@
 {
     "name": "carousel",
-    "title": "Carousel",
+    "title": "Carousel - QH",
     "description": "A custom block with a carousel.",
     "icon": "slides",
     "style": [  "file:./carousel.scss"],

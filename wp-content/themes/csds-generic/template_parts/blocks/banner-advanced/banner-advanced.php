@@ -77,18 +77,22 @@ if (!empty($bg_type) && $bg_type == 'image'){
             <div class="qld__banner__main row">
                 <!--@@ Hero image @@-->
                 
+                <?php if (!empty($hero_image)) {  
+                    $hero_url = $hero_image['url']; ?>
                     <div class="qld__banner__hero col-xs-12 col-md-6 col-lg-5 qld__banner__hero--<?php echo esc_attr($hero_image_display); ?>">
-                        <?php if (!empty($hero_image)) { 
-                            $hero_url = $hero_image['url']; ?>
                         <div class="qld__banner__image qld__banner__image--mobile-hide" style="background-image: url('<?php echo $hero_url; ?>');"></div>
+                    </div>
                         <?php } ?>
                         <?php if (!empty($bg_type) && $bg_type == 'image') { 
                             if (!empty($mobile_img['url'])){
                                 $mobile_url = $mobile_img['url']; ?>
+                                <div class="qld__banner__hero col-xs-12 col-md-6 col-lg-5 qld__banner__hero--<?php echo esc_attr($hero_image_display); ?>">
+
                                 <div class="qld__banner__image qld__banner__image--background qld__banner__image--desktop-hide" style="background-image: url('<?php echo $mobile_url; ?>')"></div>
+                            </div>
                             <?php }} ?>
                         
-                    </div>
+                    
                 
                 <div class="qld__banner__content col-xs-12 col-md-6 col-lg-7" >
         

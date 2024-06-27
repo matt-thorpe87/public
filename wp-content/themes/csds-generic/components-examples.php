@@ -1,5 +1,5 @@
 <?php 
-/* Template Name: Components Examples */
+/* Template Name: QH Components Examples */
 get_header(); ?>
 <main class="main" role="main">
 <!-- Banner Basic  -->

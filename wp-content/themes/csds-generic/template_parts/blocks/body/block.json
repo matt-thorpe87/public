@@ -1,6 +1,6 @@
 {
     "name": "body",
-    "title": "Body",
+    "title": "Body - QH",
     "description": "A custom block with body text.",
     "icon": "text",
     "style": [ "file:./body.scss"],

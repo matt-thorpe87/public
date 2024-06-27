@@ -1,6 +1,6 @@
 {
     "name": "icon-box",
-    "title": "Icon Box",
+    "title": "Icon Box - QH",
     "description": "A custom block with an Icon Box.",
     "icon": "awards",
     "style": [ "file:./icon-box.scss"],
