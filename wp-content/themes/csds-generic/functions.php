@@ -210,3 +210,6 @@ function ip_search_filter($args) {
 add_filter('pre_get_posts', 'ip_search_filter');
 // end search filter function
 
+@ini_set( 'upload_max_size' , '256M' );
+@ini_set( 'post_max_size', '256M');
+@ini_set( 'max_execution_time', '300' );
