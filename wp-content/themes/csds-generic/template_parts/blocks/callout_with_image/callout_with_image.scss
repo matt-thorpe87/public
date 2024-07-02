@@ -20,3 +20,15 @@
     }
   }
 }
+@media (max-width:699px){
+  .qld__callout__image{
+    justify-content: center;
+  }
+}
+@media (min-width:699px) and (max-width:992px){
+  .qld__callout__image{
+    .callout-image{
+      padding-right:1rem;
+    }
+  }
+}
