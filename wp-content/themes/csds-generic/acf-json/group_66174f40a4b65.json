@@ -407,7 +407,7 @@
         },
         {
             "key": "field_661de330aa28d",
-            "label": "Key Links One Header",
+            "label": "Footer Column One Header",
             "name": "col_one_header",
             "aria-label": "",
             "type": "text",
@@ -427,7 +427,7 @@
         },
         {
             "key": "field_661de35f268dd",
-            "label": "Key Links Two Header",
+            "label": "Footer Column Two Header",
             "name": "col_two_header",
             "aria-label": "",
             "type": "text",
@@ -520,7 +520,7 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 1
         },
         {
             "key": "field_661785e93755f",
@@ -578,7 +578,7 @@
         },
         {
             "key": "field_661785e937562",
-            "label": "Button",
+            "label": "Primary Button",
             "name": "button",
             "aria-label": "",
             "type": "color_picker",
@@ -596,7 +596,7 @@
         },
         {
             "key": "field_661785e937563",
-            "label": "Button Hover",
+            "label": "Primary Button Hover",
             "name": "button_hover",
             "aria-label": "",
             "type": "color_picker",
@@ -1293,5 +1293,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1718843353
+    "modified": 1719971339
 }

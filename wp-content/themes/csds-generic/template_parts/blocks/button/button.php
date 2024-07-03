@@ -27,9 +27,9 @@ if (!empty($block['align'])) {
 
 // build style attributes for button using QH theme design
 if ($color == 'secondary') {
-    $className .= ' qld__btn__secondary';
+    $className .= ' qld__btn--secondary';
 } else {
-    $className .= ' qld__btn__primary';
+    $className .= ' qld__btn--primary';
 }
 ?>
 <div class="qld__button__container">

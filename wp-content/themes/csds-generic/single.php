@@ -227,11 +227,17 @@ Template Post Type: post, resources, topics, podcast, courses, course, podcasts,
               <aside
                 class="qld__news-article__aside col-md-4 col-lg-3 col-lg-offset-1 col-xs-12"
               >
+              <h3>Related content</h3>
+              <h3
+                  class="qld__news-article__aside__sub-heading qld__display-md"
+                >
+                  <i class="far fa-newspaper"></i>News
+                </h3>
                 <?php 
                 $terms = get_the_terms( get_the_ID(), 'category' );
                 $term_list = wp_list_pluck( $terms, 'slug' );
                 $related_args = array(
-                    'post_type' => 'post',
+                    'post_type' => 'any',
                     'posts_per_page' => 3,
                     'post_status' => 'publish',
                     'post__not_in' => array( get_the_ID() ),
@@ -247,12 +253,7 @@ Template Post Type: post, resources, topics, podcast, courses, course, podcasts,
                 $related = new WP_Query( $related_args );
                 if($related->have_posts() ) :
                 ?>
-                <h3>Related content</h3>
-                <h3
-                  class="qld__news-article__aside__sub-heading qld__display-md"
-                >
-                  <i class="far fa-newspaper"></i>News
-                </h3>
+                
                 <ul class="qld__card-list qld__card-list--matchheight">
                     <?php
                     while ($related->have_posts()): $related->the_post();
@@ -276,7 +277,11 @@ Template Post Type: post, resources, topics, podcast, courses, course, podcasts,
                     </li>
                     <?php endwhile; ?>
                 </ul>
-                <?php endif; ?>
+                <?php else: 
+                ?> <h3
+                class="qld__news-article__aside__sub-heading qld__display-xs"
+              >No related News found</h3> <?php
+                endif; ?>
                 <?php 
                 // $terms_featured = get_the_terms( get_the_ID(), 'category' );
                 // $term_list_featured = wp_list_pluck( $terms, 'slug' );
@@ -296,15 +301,16 @@ Template Post Type: post, resources, topics, podcast, courses, course, podcasts,
                             'terms' => 'featured',
                         )
                     )
-                );
-                $featured = new WP_Query( $featured_args );
-                if($featured->have_posts() ) :
-                ?>
+                );?>
                 <h3
                   class="qld__news-article__aside__sub-heading qld__display-md"
                 >
                   <i class="far fa-newspaper"></i>Featured
-                </h3>
+                </h3><?php
+                $featured = new WP_Query( $featured_args );
+                if($featured->have_posts() ) :
+                ?>
+                
                 <ul class="qld__card-list qld__card-list--matchheight">
                     <?php
                     while ($featured->have_posts()): $featured->the_post();
@@ -328,7 +334,13 @@ Template Post Type: post, resources, topics, podcast, courses, course, podcasts,
                     </li>
                     <?php endwhile; ?>
                 </ul>
-                <?php endif; ?>
+                <?php
+                else: ?>
+                <h3
+                class="qld__news-article__aside__sub-heading qld__display-xs"
+              >No Featured posts found</h3>
+                <?php
+              endif; ?>
 
               </aside>
             </div>
