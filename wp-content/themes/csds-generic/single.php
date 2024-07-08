@@ -286,10 +286,7 @@ Template Post Type: post, resources, topics, podcast, courses, course, podcasts,
                 // $terms_featured = get_the_terms( get_the_ID(), 'category' );
                 // $term_list_featured = wp_list_pluck( $terms, 'slug' );
                 $featured_args = array(
-                    'post_type' => array(
-                        'post',
-                        'topics',
-                    ),
+                    'post_type' => 'any',
                     'posts_per_page' => 3,
                     'post_status' => 'publish',
                     'post__not_in' => array( get_the_ID() ),

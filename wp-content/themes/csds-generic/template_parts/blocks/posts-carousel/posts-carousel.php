@@ -42,7 +42,7 @@ $news_slider = new wp_query(
         'post_type' => $post_type,
         'post_status' => 'publish',
         'posts_per_page' => $number_posts,
-        'orderby' => 'date',
+        'orderby' => $order,
         'order' => 'ASC', 
         'cat' => $cat
     )
@@ -163,7 +163,7 @@ if (!$news_slider->have_posts()) {
 
             initiateCarousel() {
                 $('.posts-slick').slick({
-                    autoplay: false,
+                    autoplay: true,
                     autoplaySpeed: 7000,
                     slidesToShow: 3,
                     slidesToScroll: 1,

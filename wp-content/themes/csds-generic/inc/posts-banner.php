@@ -46,7 +46,7 @@ if($display == 'yes') :
                     $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);   
                         ?>
                     <div class="qld__banner__hero col-xs-12 col-md-6 col-lg-5">
-                        <div class="qld__banner__image ">
+                        <div class="qld__banner__image qld__banner__image--mobile-hide">
                             
                             <div class="bannerImgWrapper">
                                 <img src="<?php echo $feature_img ?>" alt="<?php echo esc_attr($alt);?>" >

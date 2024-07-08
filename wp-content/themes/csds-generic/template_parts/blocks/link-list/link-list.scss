@@ -62,3 +62,7 @@ li+li .qld__list__body-wrapper a {
         }
     }
 }
+.qld-link-list a:hover span.material-icons{
+    padding-right: 0.5rem;
+    transition: padding-right 0.3s;
+}
