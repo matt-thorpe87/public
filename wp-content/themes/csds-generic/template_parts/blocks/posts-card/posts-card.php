@@ -74,23 +74,22 @@ $posts = new wp_query(
                     $post_excerpt = get_the_excerpt();
                     $post_featured_image = wp_get_attachment_image(get_post_thumbnail_id($post_ID), 'single-post-thumbnail');
                     $alt_text_image = get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true);
-                    $post_link = get_post_permalink();
+                    $post_link = get_permalink();
                 ?>
                 <li class="col-sm-12 col-md-6 col-lg-4">
-                    <!-- <a class="qld__posts__card__link" href="<?php echo esc_url($post_link) ?>"> -->
 
                         <div class="<?php echo esc_attr($className); ?>">
 
                                 <?php if (!empty($post_featured_image)) { 
                                     $feature_img = get_the_post_thumbnail_url();
                                  } 
-                                 elseif (!empty(z_taxonomy_image_url())){
+                                 elseif (function_exists('z_taxonomy_image_url')){
                                     $feature_img = z_taxonomy_image_url();
                                 }
                                 else {
                                     $feature_img = '/wp-content/themes/csds-generic/dist/assets/images/img/header-logo-qgov--dark.svg';
                                 } ?>
-                                    <a href="<?php echo esc_url($post_link) ?>">
+                                    <a href="<?php echo esc_url($post_link) ?>" class="qld__posts__card__link">
                                         <div class="qld__responsive-media-img--bg"
                                             style="background-image: url(<?php echo $feature_img;  ?>">
                                         </div>
@@ -134,7 +133,6 @@ $posts = new wp_query(
                                 </div>
                             </div>
                         </div>
-                    <!-- </a> -->
                 </li>   
                 <?php endwhile;
                 endif;

@@ -386,15 +386,16 @@
   margin-left: 2rem;
   }
 }
-.qld__side-nav__content{
-  margin-right:2rem;
-}
+
 @media (min-width:699px){
   .qld__footer .container-fluid .qld__footer__row {
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 0px;
     padding-right: 0px;
+  }
+  .qld__side-nav__content{
+    margin-right:4rem;
   }
 }
 .qld__news-article__main, .qld__news-article__aside{
@@ -451,5 +452,15 @@ img {
 }
 .qld__banner__breadcrumbs--mobile{
   padding-left: 0rem;
+}
+section.qld__body--breadcrumb{
+  padding-top:3rem;
+  padding-bottom:2rem;
+}
+@media (max-width:699px){
+  section.qld__body--breadcrumb{
+    padding-top:1rem;
+    padding-bottom: 1.5rem;
+  }
 }
 
