@@ -28,7 +28,7 @@ if($display == 'yes') :
                     $feature_img = get_the_post_thumbnail_url();
                     $pgBannerImg = get_field('page_banner_image');  
                     if(!empty($pgBannerImg)) { ?>
-                    <div class="qld__banner__hero col-xs-12 col-md-6 col-lg-5">
+                    <div class="qld__banner__hero col-xs-12 col-md-6 col-lg-5 qld__banner__image--mobile-hide">
                         <div class="qld__banner__image ">
                             <?php
 
@@ -45,7 +45,7 @@ if($display == 'yes') :
                     $thumbnail_id = get_post_thumbnail_id( $post->ID );
                     $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);   
                         ?>
-                    <div class="qld__banner__hero col-xs-12 col-md-6 col-lg-5">
+                    <div class="qld__banner__hero col-xs-12 col-md-6 col-lg-5 qld__banner__image--mobile-hide">
                         <div class="qld__banner__image qld__banner__image--mobile-hide">
                             
                             <div class="bannerImgWrapper">
@@ -58,7 +58,7 @@ if($display == 'yes') :
                     $cat = get_the_category();
                     if (!empty($cat)){
                     ?>
-                    <div class="qld__banner__hero col-xs-12 col-md-6 col-lg-5">
+                    <div class="qld__banner__hero col-xs-12 col-md-6 col-lg-5 qld__banner__image--mobile-hide">
                         <div class="qld__banner__image">
                             <div class="bannerImgWrapper">
                                 <img src="<?php echo z_taxonomy_image_url($cat[0]->term_id); ?>" /> 
