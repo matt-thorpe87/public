@@ -463,8 +463,5 @@ section.qld__body--breadcrumb{
     padding-bottom: 1.5rem;
   }
 }
-.qld__posts__card__link .qld__responsive-media-img--bg{
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+
 
