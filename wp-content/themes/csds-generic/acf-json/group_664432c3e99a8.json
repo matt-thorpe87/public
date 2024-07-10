@@ -128,20 +128,13 @@
                 "acf-ui-options-page": "acf-ui-options-page",
                 "acf-field-group": "acf-field-group",
                 "acf-field": "acf-field",
-                "product": "product",
-                "product_variation": "product_variation",
-                "shop_order": "shop_order",
-                "shop_order_refund": "shop_order_refund",
-                "shop_coupon": "shop_coupon",
-                "shop_order_placehold": "shop_order_placehold",
                 "topics": "topics",
                 "resources": "resources",
                 "hero_banner": "hero_banner",
                 "podcast": "podcast",
                 "courses": "courses",
                 "wpforms": "wpforms",
-                "wpforms-template": "wpforms-template",
-                "patterns_ai_data": "patterns_ai_data"
+                "wpforms-template": "wpforms-template"
             },
             "default_value": false,
             "return_format": "value",
@@ -202,6 +195,32 @@
             "multiple": 0,
             "allow_null": 0,
             "bidirectional_target": []
+        },
+        {
+            "key": "field_668df3cbb3470",
+            "label": "Posts Card Order Direction",
+            "name": "posts_card_order_direction",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "asc": "Ascending",
+                "desc": "Descending"
+            },
+            "default_value": "asc",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
         }
     ],
     "location": [
@@ -222,5 +241,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1718756125
+    "modified": 1720579071
 }

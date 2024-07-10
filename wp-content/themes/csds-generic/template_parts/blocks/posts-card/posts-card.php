@@ -14,6 +14,7 @@ $number_posts = get_field('number_of_posts');
 $post_type = get_field('post_type_for_posts_card');
 $order = get_field('posts_card_order');
 $cat = get_field('posts_category');
+$orderdir = get_field('posts_card_order_direction');
 $excerpt_length = get_field('excerpt_length');
 // Support custom "anchor" values.
 $anchor = '';
@@ -45,7 +46,7 @@ $posts = new wp_query(
         'post_status' => 'publish',
         'posts_per_page' => $number_posts,
         'orderby' => $order,
-        'order' => 'desc',
+        'order' => $orderdir,
         'cat' => $cat
     )
 );
