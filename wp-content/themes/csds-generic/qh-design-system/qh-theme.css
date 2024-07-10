@@ -15795,7 +15795,10 @@ main .qld__body #content .qld__code .qld__code-preview-body.qld__body.qld__body-
 .qld__header .qld__header__pre-header a::-moz-focus-inner {
     border: 0
 }
-
+.qld__header .qld__header__pre-header .qld__header__toggle-main-nav{
+    height:100%;
+    justify-content: center;
+}
 .qld__header .qld__header__pre-header .qld__header__main-nav-controls {
     position: absolute;
     top: 0;
@@ -15810,7 +15813,9 @@ main .qld__body #content .qld__code .qld__code-preview-body.qld__body.qld__body-
     flex-direction: row;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
-    justify-content: end
+    justify-content: end;
+    align-items: center;
+    height:100%;
 }
 
 @media(min-width: 992px) {
@@ -15871,7 +15876,7 @@ main .qld__body #content .qld__code .qld__code-preview-body.qld__body.qld__body-
 
 .qld__header .qld__header__pre-header .qld__header__toggle-main-nav .qld__main-nav__toggle-text {
     font-size: 10px;
-    font-size: 0.625rem;
+    font-size: 0.75rem;
     margin-top: 2px;
     margin-top: 0.125rem
 }
@@ -15897,9 +15902,9 @@ main .qld__body #content .qld__code .qld__code-preview-body.qld__body.qld__body-
 .qld__header .qld__header__pre-header .qld__header__toggle-main-nav svg {
     color: var(--QLD-color-light-alt-button);
     height: 20px;
-    height: 1.25rem;
+    height: 1.75rem;
     width: 20px;
-    width: 1.25rem;
+    width: 1.75rem;
     margin: 1px auto
 }
 
