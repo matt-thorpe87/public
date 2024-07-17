@@ -27,6 +27,9 @@ $args = array(
                 <button class="qld__side-nav__toggle qld__accordion__title qld__accordion--closed" aria-controls="nav-default" aria-expanded="false" aria-selected="false">
                     Filter Results
                 </button>
+                <button class="qld__accordion__title qld__search__title">
+                    Filter Results
+                </button>
 
                 <nav aria-label="side navigation" id="nav-default" class="qld__side-nav__content qld__accordion--closed qld__accordion__body">
                     <ul class="qld__link-list">

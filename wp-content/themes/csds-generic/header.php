@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-compatible" content="ie-edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="/wp-content/themes/csds-generic/src/assets/js/search.js"></script>
+    <script src="/wp-content/themes/csds-generic/dist/assets/js/search.js"></script>
+    <script src="/wp-content/themes/csds-generic/dist/assets/js/accordion.js"></script>
     <link href="/wp-content/themes/csds-generic/style.css" rel="stylesheet">
     <?php wp_head();
     include 'colours.php';
