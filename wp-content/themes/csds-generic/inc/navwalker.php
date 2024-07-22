@@ -5,7 +5,7 @@ class walker_top_right_menu extends Walker_Nav_menu{
 
     function start_el(&$output, $item, $depth = 0, $args = null, $id = 0)
     {
-        $output .= "<a href='#' class='qld__header__cta-link'><span>" .$item->title;
+        $output .= "<a href=' " . $item->url . " ' class='qld__header__cta-link'><span>" .$item->title;
         // var_dump($depth);
     }
 
