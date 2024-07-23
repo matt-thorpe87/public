@@ -3,9 +3,11 @@
 
 class walker_top_right_menu extends Walker_Nav_menu{
 
-    function start_el(&$output, $item, $depth = 0, $args = null, $id = 0)
+    function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0)
     {
-        $output .= "<a href=' " . $item->url . " ' class='qld__header__cta-link'><span>" .$item->title;
+        $attributes = ! empty( $item->attr_title ) ? 'title="' . esc_attr($item->attr_title). '"' : '';
+        $attributes .= ! empty( $item->target ) ? 'target="' . esc_attr($item->target). '"' : '';
+        $output .= "<a href=' " . $item->url . " ' class='qld__header__cta-link' " . $attributes . "'><span>" .$item->title;
         // var_dump($depth);
     }
 

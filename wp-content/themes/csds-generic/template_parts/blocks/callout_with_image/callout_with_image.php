@@ -41,7 +41,7 @@ if ($color_settings == 'dark') {
     id="callout-123">
     <div class="container-fluid">
         <div class="qld__callout qld__callout__image row <?php echo esc_attr($style); ?>">
-            <div class="col-xs-3 col-md-3 col-lg-3">
+            <div class="col-xs-6 col-md-3 col-lg-3">
                 <img class="callout-image" src="<?php echo $image; ?>">
             </div>
             <div class="col-xs-12 col-md-9 col-lg-9 qld__callout__content">
