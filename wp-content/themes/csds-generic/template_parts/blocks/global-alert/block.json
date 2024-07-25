@@ -3,7 +3,8 @@
     "title": "Global Alert - QH",
     "description": "A custom block with global alert.",
     "icon": "warning",
-    "style": [  "file:./global-alert.scss"],
+    "editorStyle": [  "file:./global-alert.scss", "file:../../../dist/assets/customBlocks.css", "file:../../../dist/assets/customThemeStyle.css", "file:../../../qh-design-system/main.css", "file:../../../qh-design-system/qh-theme.css"],
+    "editorScript": [ "file::../../../qh-design-system/js/main.js", "file::../../../qh-design-system/externals/main-core.js"],
     "category": "qh-design",
     "keywords": ["global-alert", "global", "alert"],
     "acf": {

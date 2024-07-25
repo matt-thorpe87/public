@@ -3,7 +3,8 @@
     "title": "Link List - QH",
     "description": "A custom block with a list of links.",
     "icon": "editor-ul",
-    "style": [  "file:./link-list.scss"],
+    "editorStyle": [  "file:./link-list.scss", "file:../../../dist/assets/customBlocks.css", "file:../../../dist/assets/customThemeStyle.css", "file:../../../qh-design-system/main.css", "file:../../../qh-design-system/qh-theme.css"],
+    "editorScript": [ "file::../../../qh-design-system/js/main.js", "file::../../../qh-design-system/externals/main-core.js"],
     "category": "qh-design",
     "keywords": ["link list", "list", "link"],
     "acf": {

@@ -3,7 +3,8 @@
     "title": "Banner Intermediate - QH",
     "description": "A custom block with an intermediate banner.",
     "icon": "star-half",
-    "style": [  "file:./banner-intermediate.scss"],
+    "editorStyle": [  "file:./banner-intermediate.scss", "file:../../../qh-design-system/main.css", "file:../../../qh-design-system/qh-theme.css", "file:../../../dist/assets/customThemeStyle.css", "file:../../../dist/assets/customBlocks.css"],
+    "editorScript": [ "file::../../../qh-design-system/js/main.js", "file::../../../qh-design-system/externals/main-core.js"],
     "category": "qh-design",
     "keywords": ["banner", "basic intermediate", "cta", "hero"],
     "acf": {

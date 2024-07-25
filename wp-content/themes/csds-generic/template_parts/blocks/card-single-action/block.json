@@ -1,34 +1,20 @@
 {
     "name": "card-single",
-
     "title": "Card Single Action - QH",
-
     "description": "An example of a custom built single action card block.",
-
     "icon": "id",
-
-    "style": [ "file:./card-single.scss"],
-
+    "editorStyle": [ "file:./card-single.scss", "file:../../../dist/assets/customBlocks.css", "file:../../../dist/assets/customThemeStyle.css", "file:../../../qh-design-system/main.css", "file:../../../qh-design-system/qh-theme.css"],
+    "editorScript": [ "file::../../../qh-design-system/js/main.js", "file::../../../qh-design-system/externals/main-core.js"],
     "category": "qh-design",
-
     "keywords": ["card", "content", "text"],
-
     "acf": {
-
         "mode": "edit",
-
         "renderTemplate": "card-single.php"
-
     },
-
     "supports": {
-
         "anchor": true,
-
         "align": ["left", "right", "center"]
-
     }
-
 }
 
  

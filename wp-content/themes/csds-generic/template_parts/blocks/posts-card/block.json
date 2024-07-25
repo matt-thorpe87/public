@@ -3,7 +3,8 @@
     "title": "Posts Card - QH",
     "description": "A custom block with a card with posts.",
     "icon": "id",
-    "style": [ "file:./posts-card.scss"],
+    "editorStyle": [ "file:./posts-card.scss", "file:../../../dist/assets/customBlocks.css", "file:../../../dist/assets/customThemeStyle.css", "file:../../../qh-design-system/main.css", "file:../../../qh-design-system/qh-theme.css"],
+    "editorScript": [ "file::../../../qh-design-system/js/main.js", "file::../../../qh-design-system/externals/main-core.js"],
     "category": "qh-design",
     "keywords": ["card", "posts"],
     "acf": {
