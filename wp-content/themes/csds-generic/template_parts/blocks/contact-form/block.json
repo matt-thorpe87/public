@@ -3,7 +3,7 @@
     "title": "Contact Form - QH",
     "description": "A custom block with space for a contact form.",
     "icon": "forms",
-    "editorStyle": [  "file:./contact-form.scss", "file:../../../dist/assets/customBlocks.css", "file:../../../dist/assets/customThemeStyle.css", "file:../../../qh-design-system/main.css", "file:../../../qh-design-system/qh-theme.css"],
+    "editorStyle": [  "file:./contact-form.scss", "file:../../../dist/assets/css/customBlocks.css", "file:../../../dist/assets/css/customThemeStyle.css", "file:../../../qh-design-system/main.css", "file:../../../qh-design-system/qh-theme.css"],
     "editorScript": [ "file::../../../qh-design-system/js/main.js", "file::../../../qh-design-system/externals/main-core.js"],
     "category": "qh-design",
     "keywords": ["contact", "form", "contact-form"],

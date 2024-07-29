@@ -3,7 +3,7 @@
     "title": "Body - QH",
     "description": "A custom block with body text.",
     "icon": "text",
-    "editorStyle": [ "file:./body.scss", "file:../../../qh-design-system/main.css", "file:../../../qh-design-system/qh-theme.css", "file:../../../dist/assets/customThemeStyle.css", "file:../../../dist/assets/customBlocks.css"],
+    "editorStyle": [ "file:./body.scss", "file:../../../qh-design-system/main.css", "file:../../../qh-design-system/qh-theme.css", "file:../../../dist/assets/css/customThemeStyle.css", "file:../../../dist/assets/css/customBlocks.css"],
     "editorScript": [ "file::../../../qh-design-system/js/main.js", "file::../../../qh-design-system/externals/main-core.js"],
     "category": "qh-design",
     "keywords": ["body", "text", "content"],
