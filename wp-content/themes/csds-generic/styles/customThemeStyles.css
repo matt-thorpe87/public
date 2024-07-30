@@ -529,5 +529,35 @@ section.qld__body--breadcrumb{
     display:none;
   }
 }
- 
-
+.qld__header__search .qld__search__inner .qld__text-input{
+  width:auto;
+}
+.qld__search__title{
+  padding: 0rem 1rem 1rem 1rem;
+  font-size: 1.25rem;
+  font-weight:600;
+  margin-top:0rem !important;
+}
+.course-code{
+  opacity:50%;
+  text-decoration: none;
+}
+.qld__course__date{
+  display:block;
+  position:absolute;
+  top:1rem;
+  z-index: 100;
+}
+.qld__course__date > p{
+  text-decoration: none;
+} 
+.qld__card-list--matchheight .course-card{
+  margin-top:2rem !important;
+}
+.course-card a, .course-card:hover a{
+  text-decoration: none;
+}
+.course-card .qld__date__tag{
+  color:var(--QLD-color-light-button__text);
+  background-color: var(--QLD-color-light-button);
+}

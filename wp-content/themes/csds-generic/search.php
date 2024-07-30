@@ -27,9 +27,9 @@ $args = array(
                 <button class="qld__side-nav__toggle qld__accordion__title qld__accordion--closed" aria-controls="nav-default" aria-expanded="false" aria-selected="false">
                     Filter Results
                 </button>
-                <button class="qld__accordion__title qld__search__title">
+                <p class="qld__search__title">
                     Filter Results
-                </button>
+                </p>
 
                 <nav aria-label="side navigation" id="nav-default" class="qld__side-nav__content qld__accordion--closed qld__accordion__body">
                     <ul class="qld__link-list">
@@ -42,7 +42,7 @@ $args = array(
                             foreach ($categories as $category) {
                                 ?>
                                 <li class="menu-item"> 
-                                    <a class="<?php ip_search_filter_item_class($category->term_id); ?> qld__sidenav__link qld__main-nav__item-home qld__main-nav__item-link"  href="<?php echo home_url(); ?>?s=<?php echo $s; ?>&cat=<?php echo $category->term_id; ?>"><?php echo esc_html($category->name); ?>
+                                    <a class="<?php ip_search_filter_item_class($category->term_id); ?> qld__sidenav__link qld__main-nav__item-home qld__main-nav__item-link"  href="<?php echo home_url(); ?>?s=<?php echo $s; ?>&cat=<?php echo $category->term_id; ?>"><?php echo esc_html($category->name);?>
                                     </a>
                                 </li>
                             <?php }
@@ -57,8 +57,10 @@ $args = array(
 
             <?php
             $the_query = new WP_Query($args);
+            $numberResults = $the_query->found_posts > 1 ? 'Results' : 'Result';
             if ($the_query->have_posts()) {
-            echo "<div class='qld__search__info'><h4 class='qld__search__info-query'>Results in " .  get_bloginfo('name') ." for: <span class='qld__search__info-query-term'>" . get_query_var('s') . "</span></h4></div>";
+
+            echo "<div class='qld__search__info'><h4 class='qld__search__info-query'> " . $the_query->found_posts . " " .$numberResults .   " in " .  get_bloginfo('name') ." for: <span class='qld__search__info-query-term'>" . get_query_var('s') . "</span></h4></div>";
             ?>
             <div class="qld__search__results">
                 <ol class="qld__link-list qld__search__results-list">
@@ -149,6 +151,8 @@ $args = array(
         
             <?php
             $the_query = new WP_Query($args);
+          
+
             if ($the_query->have_posts()) {
             $blogs = get_last_updated();
             echo "<div class='qld__search__info'><h4 class='qld__search__info-query'>Search results across network for: <span class='qld__search__info-query-term'>" . get_query_var('s') . "</span></h4></div>"; ?>
