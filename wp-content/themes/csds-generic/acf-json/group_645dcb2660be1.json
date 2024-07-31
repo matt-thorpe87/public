@@ -168,6 +168,13 @@
                 "operator": "==",
                 "value": "page-sidebar.php"
             }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template-page-courses.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -179,5 +186,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1718676823
+    "modified": 1722392217
 }

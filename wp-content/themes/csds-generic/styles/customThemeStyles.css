@@ -561,3 +561,52 @@ section.qld__body--breadcrumb{
   color:var(--QLD-color-light-button__text);
   background-color: var(--QLD-color-light-button);
 }
+.course-card .qld__card__content-inner{
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.courses-section .qld__view__all > a{
+  float:right;
+}
+.courses-section .qld__view__all > a:hover .fa-circle-arrow-right{
+  margin-right:-5px;
+  transition: all .3s ease-in-out;
+}
+.qld__courses__wrapper{
+  margin-bottom:4rem;
+}
+.occupation-section .qld__card__title.course-name{
+text-align:center;
+color: var(--QLD-color-dark-text);
+}
+.qld__courses__wrapper .qld__card__title.course-name{
+  font-size:1.33rem;
+}
+.qld__courses__wrapper.qld__card--wrapper .container-fluid .row{
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+.occupation-section .qld__responsive-media-img--bg{
+  padding:0rem;
+  height: -webkit-fill-available;
+  height: 100%;
+}
+.occupation-section .qld__card__inner.occupation{
+  background-color: rgba(0,0,0,0.5);
+  padding:4rem 2rem;
+  height:100%;
+}
+@media (min-width:699px){
+.page-template-template-page-courses .qld__banner__advanced{
+  background-color: rgba(0,0,0,0.5);
+  background-blend-mode: color;
+  }
+}
+@media (min-width:992px){
+  .qld__body #courses .container-fluid{
+    padding-left:2rem;
+    padding-right:2rem;
+  }
+}
