@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-compatible" content="ie-edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="/wp-content/themes/csds-generic/src/assets/js/search.js"></script>
+    <script src="/wp-content/themes/csds-generic/dist/assets/js/search.js"></script>
+    <script src="/wp-content/themes/csds-generic/dist/assets/js/accordion.js"></script>
     <link href="/wp-content/themes/csds-generic/style.css" rel="stylesheet">
     <?php wp_head();
     include 'colours.php';
@@ -18,14 +19,14 @@
             <a class="qld__skip-link__link" href="#content">Skip to main content</a>
             <a class="qld__skip-link__link" href="#main-nav">Skip to main navigation</a>
         </nav>
-        <?php 
+        <?php
         $top_colour = get_field('header_top_colour', 'options');
         $top_class = "qld__header__pre-header--" . $top_colour;
 
         ?>
         <div class="qld__header__pre-header <?php echo esc_attr($top_class) ?>">
             <div class="container-fluid logo_navcontrol_wrapper">
-                <a href="https://www.health.qld.gov.au/">
+                <a href="https://www.health.qld.gov.au/" target="_blank">
                     <span class="qld__header__pre-header-url">www.health.qld.gov.au</span>
 
                     <img class="qld__header__pre-header-brand-image" alt="Queensland Government" <?php
@@ -55,9 +56,9 @@
                 ?>
 
                 <div class="qld__header__main-nav-controls">
-                    <button aria-controls="qld-header-search"
+                    <a aria-controls="qld-header-search"
                         class="qld__header__toggle-main-nav qld__main-nav__toggle-search qld__main-nav__toggle-search--open"
-                        aria-expanded="false" onclick=search();>
+                        aria-expanded="false" href="/?s=">
                         <?php
                         $search = content_url('/themes/csds-generic/dist/assets/images/img/svg-icons.svg#qld__icon__search');
                         $close = content_url('/themes/csds-generic/dist/assets/images/img/svg-icons.svg#qld__icon__close');
@@ -77,7 +78,7 @@
                             </use>
                         </svg>
                         <span class="qld__main-nav__toggle-text">Search</span>
-                    </button>
+            </a>
                     <button aria-controls="main-nav" class="qld__header__toggle-main-nav qld__main-nav__toggle--open">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                             class="qld__icon qld__icon--lg">

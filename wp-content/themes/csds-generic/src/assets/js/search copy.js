@@ -43,7 +43,7 @@ function search (e, t) {
               (e.querySelector(".qld__main-nav__toggle-text").innerHTML =
                 "Close"),
               (a.style.display = "block"),
-              (h.style.zIndex = "1"),
+              (h.style.display.zIndex = "1"),
               setTimeout(function () {
                 a.classList.add("qld__main-nav__search--open"),
                   a.querySelector(".qld__text-input").focus(),

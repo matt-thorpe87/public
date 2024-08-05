@@ -292,7 +292,7 @@ elseif ($type == 'default') {
 						<div class="container-fluid">
 							<div class="row">
 								<div class="col-sm-12">
-									<h3>Popular online courses</h3>
+									<h3>Popular face-to-face courses</h3>
 								</div>
 								<ul class="qld__card-list qld__card-list--matchheight">
 									<?php foreach ($courseData->popularF2f as $popF2f) : ?>
