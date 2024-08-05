@@ -53,7 +53,7 @@ if (!empty($block['align'])) {
 
 
                         ?>
-                        <li class="col-sm-12 col-md-6 col-lg-4">
+                        <li class="col-xs-12 col-md-6 col-lg-4">
                             <div class="<?php echo esc_attr($className); ?>">
 
                                 <?php if (!empty($image)) { 

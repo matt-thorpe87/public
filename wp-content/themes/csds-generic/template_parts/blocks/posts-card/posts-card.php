@@ -77,7 +77,7 @@ $posts = new wp_query(
                     $alt_text_image = get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true);
                     $post_link = get_permalink();
                 ?>
-                <li class="col-sm-12 col-md-6 col-lg-4">
+                <li class="col-xs-12 col-md-6 col-lg-4">
 
                         <div class="<?php echo esc_attr($className); ?>">
 
