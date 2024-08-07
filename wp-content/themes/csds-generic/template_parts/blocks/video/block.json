@@ -3,7 +3,7 @@
     "title": "Video - QH",
     "description": "A custom block with a video.",
     "icon": "video-alt3",
-    "editorStyle": [  "file:./video.scss", "file:../../../dist/assets/css/customBlocks.css", "file:../../../dist/assets/css/customThemeStyle.css", "file:../../../qh-design-system/main.css", "file:../../../qh-design-system/qh-theme.css"],
+    "editorStyle": [  "file:./video.scss", "file:../../../dist/assets/css/customBlocks.css"],
     "editorScript": [ "file::../../../qh-design-system/js/main.js", "file::../../../qh-design-system/externals/main-core.js"],
     "category": "qh-design",
     "keywords": ["video"],

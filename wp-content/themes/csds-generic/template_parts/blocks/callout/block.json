@@ -3,7 +3,7 @@
     "title": "Callout - QH",
     "description": "A custom block with a callout.",
     "icon": "flag",
-    "editorStyle": [ "file:./callout.scss", "file:../../../qh-design-system/main.css", "file:../../../qh-design-system/qh-theme.css", "file:../../../dist/assets/css/customThemeStyle.css", "file:../../../dist/assets/css/customBlocks.css"],
+    "editorStyle": [ "file:./callout.scss", "file:../../../dist/assets/css/customBlocks.css"],
     "editorScript": [ "file::../../../qh-design-system/js/main.js", "file::../../../qh-design-system/externals/main-core.js"],
     "category": "qh-design",
     "keywords": ["callout"],

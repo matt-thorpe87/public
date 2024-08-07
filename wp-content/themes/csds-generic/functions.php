@@ -13,12 +13,15 @@ function themeFiles()
     wp_enqueue_script('leaflet_esri_script', '//unpkg.com/esri-leaflet@3.0.1/dist/esri-leaflet.js');
     wp_enqueue_script('leaflet_esri_vector', '//unpkg.com/esri-leaflet-vector@3.0.0/dist/esri-leaflet-vector.js');
     wp_enqueue_script('qh_base_script_runtime', content_url('/themes/csds-generic/qh-design-system/js/runtime.js'));
+    wp_enqueue_script('search', content_url('/themes/csds-generic/dist/assets/js/search.js'));
     wp_enqueue_script('qh_base_main_core_script', content_url('/themes/csds-generic/qh-design-system/externals/main-core.js'));
     wp_enqueue_style('qh_base_main_core_style', content_url('/themes/csds-generic/qh-design-system/externals/main-core.css'));
     wp_enqueue_script('qh_base_script_main', content_url('/themes/csds-generic/qh-design-system/js/main.js'));
     wp_enqueue_style('qh_base_style', content_url('/themes/csds-generic/qh-design-system/main.css'));
     wp_enqueue_style('qh_base_styles', content_url('/themes/csds-generic/qh-design-system/qh-theme.css'));
     wp_enqueue_style('custom_theme_style', get_theme_file_uri('/styles/customThemeStyles.css'));
+    wp_enqueue_style('style', get_theme_file_uri('/style.css'));
+
 }
 add_action('wp_enqueue_scripts', 'themeFiles');
 
@@ -213,3 +216,5 @@ add_filter('pre_get_posts', 'ip_search_filter');
 @ini_set( 'upload_max_size' , '256M' );
 @ini_set( 'post_max_size', '256M');
 @ini_set( 'max_execution_time', '300' );
+
+

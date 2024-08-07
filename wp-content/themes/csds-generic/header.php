@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-compatible" content="ie-edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="/wp-content/themes/csds-generic/src/assets/js/search.js"></script>
-    <link href="/wp-content/themes/csds-generic/style.css" rel="stylesheet">
+    <!-- <script src="/wp-content/themes/csds-generic/src/assets/js/search.js"></script> -->
+    <!-- <link href="/wp-content/themes/csds-generic/style.css" rel="stylesheet"> -->
     <?php wp_head();
     include 'colours.php';
         ?>
@@ -55,9 +55,9 @@
                 ?>
 
                 <div class="qld__header__main-nav-controls">
-                    <button aria-controls="qld-header-search"
+                    <button aria-controls="qld-header-search" id="qld-search"
                         class="qld__header__toggle-main-nav qld__main-nav__toggle-search qld__main-nav__toggle-search--open"
-                        aria-expanded="false" onclick=search();>
+                        aria-expanded="false">
                         <?php
                         $search = content_url('/themes/csds-generic/dist/assets/images/img/svg-icons.svg#qld__icon__search');
                         $close = content_url('/themes/csds-generic/dist/assets/images/img/svg-icons.svg#qld__icon__close');

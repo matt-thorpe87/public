@@ -3,7 +3,7 @@
     "title": "Banner Basic - QH",
     "description": "A custom block with a basic banner.",
     "icon": "star-filled",
-    "editorStyle": [ "file:./banner-basic.scss", "file:../../../qh-design-system/main.css", "file:../../../css/qh-design-system/qh-theme.css", "file:../../../dist/assets/css/customThemeStyle.css", "file:../../../dist/assets/customBlocks.css"],
+    "editorStyle": [ "file:./banner-basic.scss", "file:../../../dist/assets/customBlocks.css"],
     "editorScript": [ "file::../../../qh-design-system/js/main.js", "file::../../../qh-design-system/externals/main-core.js"],
     "category": "qh-design",
     "keywords": ["banner", "basic banner", "cta", "hero"],

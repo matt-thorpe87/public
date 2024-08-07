@@ -3,7 +3,7 @@
     "title": "Accordion - QH",
     "description": "A custom block with an accordion.",
     "icon": "excerpt-view",
-    "editorStyle": [ "file:./accordion.scss", "file:../../../qh-design-system/main.css", "file:../../../qh-design-system/qh-theme.css", "file:../../../dist/assets/css/customThemeStyle.css", "file:../../../dist/assets/css/customThemeStyle.css"],
+    "editorStyle": [ "file:./accordion.scss", "file:../../../dist/assets/css/customThemeStyle.css"],
     "editorScript": [ "file::../../../qh-design-system/js/main.js", "file::../../../qh-design-system/externals/main-core.js", "file:../../../dist/assets/js/accordion.js"],
     "category": "qh-design",
     "keywords": ["accordion", "text", "content"],
