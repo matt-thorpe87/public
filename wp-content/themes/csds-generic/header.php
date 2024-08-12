@@ -28,7 +28,7 @@
                 <a href="https://www.health.qld.gov.au/">
                     <span class="qld__header__pre-header-url">www.health.qld.gov.au</span>
 
-                    <img class="qld__header__pre-header-brand-image" alt="Queensland Government" <?php
+                    <img class="qld__header__pre-header-brand-image" <?php
                     $mobile_logo = get_field('mobile_logo', 'option');
                     $svg_path =  content_url('/themes/csds-generic/dist/assets/images/img/header-logo-qgov--light.svg');
 

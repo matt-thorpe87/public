@@ -175,6 +175,13 @@
                 "operator": "==",
                 "value": "template-page-courses.php"
             }
+        ],
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "posts_page"
+            }
         ]
     ],
     "menu_order": 0,
@@ -186,5 +193,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1722392217
+    "modified": 1723437132
 }

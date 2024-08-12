@@ -15,7 +15,7 @@ get_header(); ?>
     </section>
 
 <!-- Start Our Stories Section -->
-    <section class="qld__card--wrapper qld__body qld__body--alt">
+    <section class="qld__card--wrapper qld__body qld__body--alt our-stories">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12 qld__card-intro qld__card-intro--sm">

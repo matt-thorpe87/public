@@ -6,7 +6,13 @@ Template name: QH All Posts
 
 get_header(); ?>
 <main class="main" role="main">
-
+<section class="qld__body qld__body--breadcrumb">
+    <div class="container-fluid">
+        <nav class="qld__breadcrumbs row" aria-label="breadcrumb">
+        <?php custom_breadcrumbs(); ?>
+        </nav>
+    </div>
+    </section>
 <section class="qld__body qld__card--wrapper ">
         <div class="container-fluid">
             <div class="row">
