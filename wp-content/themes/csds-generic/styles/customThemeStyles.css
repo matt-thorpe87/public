@@ -623,7 +623,19 @@ color: var(--QLD-color-dark-text);
   }
   
 }
-.our-stories{
+.our-stories, .latest-articles{
   margin-top:0px;
   margin-bottom:0px;
+}
+.qld__header__main--dark .qld__header__search .qld__text-input{
+  background-color: var(--QLD-color-dark-background);
+  border-color: var(--QLD-color-dark-alt-border);
+  color: var(--QLD-color-dark-text);
+
+}
+@media (max-width:698px){
+  .qld__header__main--dark .qld__header__search input[type=text]:focus, .qld__header__main--dark .qld__text-input:focus, .qld__header__main--dark .qld__header__search input[type=text]:hover, .qld__header__main--dark .qld__text-input:hover{
+    background-color: var(--QLD-color-dark-background);
+    color: var(--QLD-color-dark-text);
+  }
 }
