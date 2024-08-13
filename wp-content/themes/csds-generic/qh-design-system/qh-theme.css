@@ -2,7 +2,7 @@
     position: relative !important;
     height:20px;
   }
-  #link-selector .link-target input[type='checkbox']{
+  #link-selector .link-target input[type='checkbox'], .acf-checkbox-list input[type='checkbox']{
     position: relative !important;
     height:17px;
     width:17px;

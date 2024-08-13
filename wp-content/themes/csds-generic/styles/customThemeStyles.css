@@ -638,4 +638,8 @@ color: var(--QLD-color-dark-text);
     background-color: var(--QLD-color-dark-background);
     color: var(--QLD-color-dark-text);
   }
+  .qld__header__main--light .qld__header__search input[type=text]:focus, .qld__header__main--light .qld__text-input:focus, .qld__header__main--light .qld__header__search input[type=text]:hover, .qld__header__main--light .qld__text-input:hover{
+    border-color: var(--QLD-color-light-alt-border);
+
+  }
 }
