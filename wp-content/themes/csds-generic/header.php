@@ -55,14 +55,20 @@
                 ?>
 
                 <div class="qld__header__main-nav-controls">
+                <?php 
+                    $search_option = get_field('search_form', 'option');
+                    $hamburger = content_url('/themes/csds-generic/dist/assets/images/img/svg-icons.svg#qld__icon__mobile-menu');
+                    $close = content_url('/themes/csds-generic/dist/assets/images/img/svg-icons.svg#qld__icon__close');
+
+
+                    if ($search_option != 'no') {?>
                     <button aria-controls="qld-header-search" id="qld-search"
                         class="qld__header__toggle-main-nav qld__main-nav__toggle-search qld__main-nav__toggle-search--open"
                         aria-expanded="false">
                         <?php
                         $search = content_url('/themes/csds-generic/dist/assets/images/img/svg-icons.svg#qld__icon__search');
-                        $close = content_url('/themes/csds-generic/dist/assets/images/img/svg-icons.svg#qld__icon__close');
-                        $hamburger = content_url('/themes/csds-generic/dist/assets/images/img/svg-icons.svg#qld__icon__mobile-menu')
                         ?>
+
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                             class="qld__icon qld__icon--lg qld__main-nav__toggle-search-icon">
                             <use
@@ -78,6 +84,8 @@
                         </svg>
                         <span class="qld__main-nav__toggle-text">Search</span>
                     </button>
+                    <?php } 
+                    ?>
                     <button aria-controls="main-nav" class="qld__header__toggle-main-nav qld__main-nav__toggle--open">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                             class="qld__icon qld__icon--lg">
@@ -127,8 +135,8 @@
                 <div class="qld__header__search" id="qld-header-search">
                     <div class="qld__main-nav__focus-trap-top"></div>
                     <?php
-                    $search = get_field('search_form', 'option');
-                    if ($search != 'no') {
+                    $search_option = get_field('search_form', 'option');
+                    if ($search_option != 'no') {
                         ?>
                         <?php get_search_form(); ?>
                     <?php } ?>

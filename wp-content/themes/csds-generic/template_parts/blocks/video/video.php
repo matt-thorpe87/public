@@ -18,7 +18,7 @@ $color = get_field('video_background_colour');
 // Support custom "anchor" values.
 $anchor = '';
 if (!empty($block['anchor'])) {
-    $anchor = 'id="' . esc_attr($block['anchor']) . '" ';
+    $anchor = 'id='. esc_attr($block['anchor']);
 }
 
 // Create class attribute allowing for custom "className" and "layout" values.

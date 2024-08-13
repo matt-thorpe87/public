@@ -21,7 +21,7 @@ $layout = get_field('column_layout');
 // Support custom "anchor" values.
 $anchor = '';
 if (!empty($block['anchor'])) {
-    $anchor = 'id="' . esc_attr($block['anchor']) . '" ';
+    $anchor = 'id='. esc_attr($block['anchor']);
 }
 
 // Create class attribute allowing for custom "className" and "color" values.

@@ -14,7 +14,7 @@ $color_settings = get_field('colour_settings');
 // Support custom "anchor" values.
 $anchor = '';
 if (!empty($block['anchor'])) {
-    $anchor = 'id="' . esc_attr($block['anchor']) . '" ';
+    $anchor = 'id='. esc_attr($block['anchor']);
 }
 
 // Create class attribute allowing for custom "className" and "color" values.
