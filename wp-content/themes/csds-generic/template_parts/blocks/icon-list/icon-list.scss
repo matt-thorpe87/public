@@ -12,16 +12,18 @@
         padding: 1rem;
     }
 }
-.qld-icon-list {
-    .qld__accordion-list{
-        li:first-of-type {
-            border-top: 1px solid;
+.qld__link-list__section{
+    .qld-icon-list {
+        .qld__accordion-list{
+            li:first-of-type {
+                border-top: 1px solid;
+            }
         }
-    }
-}
-.qld-icon-list {
-    &.qld__accordion-group{
-        max-width: none;
+        &.qld__accordion-group{
+            max-width: none;
+            margin-top:1.5rem;
+
+        }
     }
 }
 .qld__accordion-group--dark .qld__accordion-list{

@@ -33,7 +33,7 @@ if ($color == 'secondary') {
 }
 ?>
 <div class="qld__button__container">
-    <div class="container-fluid button__container <?php if (!empty($containerClassName)) {
+    <div class="button__container <?php if (!empty($containerClassName)) {
         echo $containerClassName;
     }
     ; ?>">

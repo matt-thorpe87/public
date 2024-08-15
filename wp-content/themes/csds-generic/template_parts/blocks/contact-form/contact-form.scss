@@ -1,7 +1,16 @@
-.container-fluid{
-    &.qld__contact-details__row{
+.qld__contact{
+    margin-top:1.5rem;
+}
+@media (max-width:699px){
+    .qld__contact{
+        margin-top:1rem;
+    }
+}
+.qld__contact-details__row{
         .qld__contact-details, .contact-form{
             width:50%;
+            padding-left:0rem;
+            padding-right:0rem;
         }
         @media (max-width: 699px){
             .qld__contact-details, .contact-form{
@@ -32,4 +41,3 @@
             }
         }
     }
-}

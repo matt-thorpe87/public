@@ -28,12 +28,13 @@ if (!empty($color_settings)) {
 ?>
 
 <div class="<?php echo esc_attr($className) ?>" <?php echo esc_attr($anchor) ?>>
-    <div class="container-fluid">
+    <div>
 
         <!-- heading and subheading -->
         <div class="body__text">
             <div class="row">
-                <div class="col-xs-12">
+                <?php if(!empty($heading) || !empty($subheading)){ ?>
+                <div class="carousel__heading">
                      <?php if (!empty($heading)) { ?>
                         <h2 class="qld__carousel__heading">
                         <?php echo $heading; ?>
@@ -41,11 +42,12 @@ if (!empty($color_settings)) {
                     <?php } ?>
 
                     <?php if (!empty($subheading)) { ?>
-                        <p>
+                        <p class="qld__carousel__subheading">
                         <?php echo $subheading; ?>
                         </p>
                     <?php } ?>
                 </div>
+                <?php } ?>
 
             </div>
         </div>

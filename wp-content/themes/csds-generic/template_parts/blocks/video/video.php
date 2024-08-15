@@ -45,15 +45,19 @@ if ($position == 'right') {
 ?>
 
 <section class="qld__video__section <?php echo esc_attr($bg_color); ?>">
-    <div class="container-fluid">
+    <div>
         <div class="<?php echo esc_attr($className); ?> " <?php echo esc_attr($anchor) ?>>
             <div class="qld__video__vid-wrapper">
+                <?php if(!empty($embed)){ ?>
                 <div class="qld__video_vid">
                     <?php echo $embed; ?>
                 </div>
+                <?php }
+                if(!empty($caption)){ ?>
                 <div class="qld__video__caption">
                     <?php echo $caption ?>
                 </div>
+                <?php } ?>
             </div>
             <div class="qld__video__text_wrapper">
                 <h2 class="qld__video__header">

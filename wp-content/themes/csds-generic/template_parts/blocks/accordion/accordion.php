@@ -39,12 +39,12 @@ if ($color_settings == 'dark') {
 
 ?>
 <section class="qld__accordion__section">
-    <div class="container-fluid">  
+    <div>  
         <?php if (!empty($heading)){
-            ?> <h2> <?php echo $heading; ?> </h2> <?php
+            ?> <h2 class="accordion__title"> <?php echo $heading; ?> </h2> <?php
         } ?>
         <?php if ($content) { ?>
-            <p> <?php echo $content; ?> </p> <?php
+            <p class="accordion__subtitle"> <?php echo $content; ?> </p> <?php
         } ?>
         <div <?php echo esc_attr($anchor); ?> class="<?php echo esc_attr($className); ?>" id="accordion-123">
             <div class="qld__accordion__toggle">

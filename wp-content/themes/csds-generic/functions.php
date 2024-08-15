@@ -4,6 +4,8 @@ function themeFiles()
 {
     wp_enqueue_style('lato-font', '//fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900');
     wp_enqueue_script('fontawesome', '//kit.fontawesome.com/fb2f2d4cd6.js');
+    wp_enqueue_style('custom_theme_style', get_theme_file_uri('/styles/customThemeStyles.css'));
+    wp_enqueue_style('style', get_theme_file_uri('/style.css'));
     wp_enqueue_script('qh_base_script_handlebars', content_url('/themes/csds-generic/qh-design-system/externals/handlebars.min-v4.7.6.js'));
     wp_enqueue_script('qh_base_script_componentPreview', content_url('/themes/csds-generic/qh-design-system/externals/componentPreview.js'));
     wp_enqueue_script('qh_base_script_dsComponentLoader', content_url('/themes/csds-generic/qh-design-system/externals/dsComponentLoader.js'));
@@ -19,8 +21,7 @@ function themeFiles()
     wp_enqueue_script('qh_base_script_main', content_url('/themes/csds-generic/qh-design-system/js/main.js'));
     wp_enqueue_style('qh_base_style', content_url('/themes/csds-generic/qh-design-system/main.css'));
     wp_enqueue_style('qh_base_styles', content_url('/themes/csds-generic/qh-design-system/qh-theme.css'));
-    wp_enqueue_style('custom_theme_style', get_theme_file_uri('/styles/customThemeStyles.css'));
-    wp_enqueue_style('style', get_theme_file_uri('/style.css'));
+    
 
 }
 add_action('wp_enqueue_scripts', 'themeFiles');

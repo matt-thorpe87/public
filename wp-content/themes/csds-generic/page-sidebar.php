@@ -58,24 +58,24 @@ elseif ($type == 'default') {
             </div>
 
             <div class="col-xs-12 col-lg-9"><!-- right pane content section -->
-              <div class="container-fluid">
-                <?php
-                while (have_posts()) {
-                    the_post(); 
-                    if ($show == 'yes') { ?>
-                    <?php if (!empty($type) && $type == 'none') { ?>
-                    <h1 class="qld__page__title"><?php the_title(); ?></h1>
-                    <?php } elseif ($type == 'basic' || $type == 'int' || $type == 'ad') {
-                    ?>
-                    <h2 class="qld__page__title"> <?php the_title(); ?> </h2>
-                    <?php }  }  
-                    ?>
-                    <p>
-                        <?php the_content(); ?>
-                    </p>
-                <?php } ?>
+                <div class="container-flid">
+                    <?php
+                    while (have_posts()) {
+                        the_post(); 
+                        if ($show == 'yes') { ?>
+                        <?php if (!empty($type) && $type == 'none') { ?>
+                        <h1 class="qld__page__title"><?php the_title(); ?></h1>
+                        <?php } elseif ($type == 'basic' || $type == 'int' || $type == 'ad') {
+                        ?>
+                        <h2 class="qld__page__title"> <?php the_title(); ?> </h2>
+                        <?php }  }  
+                        ?>
+                        <p>
+                            <?php the_content(); ?>
+                        </p>
+                    <?php } ?>
 
-              </div>
+                </div>
             </div> <!-- end right pane content section -->
           </div>
         </div>

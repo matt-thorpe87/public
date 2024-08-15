@@ -1,5 +1,11 @@
 .qld__global_alert{
     padding: 1rem;
+    margin-top:1.5rem;
+}
+@media (max-width:699px){
+    .qld__global_alert{
+        margin-top:1rem;
+    }
 }
 .qld__body--dark{
     background: var(--QLD-color-dark-background);

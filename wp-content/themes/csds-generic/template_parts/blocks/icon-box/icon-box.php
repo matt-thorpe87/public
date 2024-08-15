@@ -35,7 +35,7 @@ if (!empty($position)) {
 ?>
 <section <?php echo esc_attr($anchor); ?> class="qld__icon__box__section">
 
-    <div class="container-fluid">
+    <div>
 
         <div class="row icon-box-row <?php echo esc_attr($className) ?>">
 

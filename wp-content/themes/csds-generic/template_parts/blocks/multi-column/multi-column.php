@@ -40,11 +40,12 @@ if ($color_settings == 'altdark') {
 
 <section class="<?php echo esc_attr($className) ?>" id="<?php echo esc_attr($anchor) ?>">
 
-    <div class="container-fluid">
+    <div>
         <div class="body__text">
+            <?php if(!empty($heading) || !empty($subheading)){ ?>
             <div class="row">
 
-                <div class="col-xs-12 col-lg-6">
+                <div class="qld__multi__heading">
 
                     <h2>
                         <?php if (!empty($heading)) {
@@ -58,7 +59,7 @@ if ($color_settings == 'altdark') {
                 </div>
 
             </div>
-            <?php
+            <?php }
             // Check rows exists.
             if (have_rows('columns')): ?>
                 <div class="row row--heading-paragraph-columns">

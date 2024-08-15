@@ -1,4 +1,12 @@
 .qld__video__section {
+    margin-top:1.5rem;
+    @media (max-width:699px){
+        margin-top:1rem;
+        }
+    
+    .qld__video.qld__video--video-layout-two_col{
+        padding:0rem;
+    }
     &.qld__body--dark, &.qld__body--dark-alt{
         h2.qld__video__header{
             color: var(--QLD-color-dark-text);

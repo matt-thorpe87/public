@@ -39,11 +39,11 @@ else {
 
 <section <?php echo esc_attr($anchor); ?> class="qld__callout--wrapper <?php echo esc_attr($className) ?>"
     id="callout-123">
-    <div class="container-fluid">
+    <div>
         <div class="qld__callout row <?php echo esc_attr($style); ?>">
             <div class="col-xs-12">
                 <?php if( !empty($heading)){ ?><h3 class="qld__callout__heading "><?php echo $heading; ?></h3> <?php } ?>
-                <?php if( !empty($content) ){ ?><p><?php echo $content; ?></p> <?php } ?>
+                <?php if( !empty($content) ){ ?><p class="qld__callout__content"><?php echo $content; ?></p> <?php } ?>
             </div>
         </div>
     </div>

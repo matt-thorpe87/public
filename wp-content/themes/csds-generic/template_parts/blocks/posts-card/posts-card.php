@@ -54,15 +54,16 @@ $posts = new wp_query(
 
 <!-- posts card -->
 <section class="qld__card--wrapper qld__card--wrapper-bg-colour" <?php echo esc_attr($anchor); ?>>
-    <div class="container-fluid">
+    <div>
         
-        <?php if (!empty($heading)) { ?>
+        <?php if (!empty($heading || $subheading) ) { ?>
         <div class="col-xs-12 qld__posts_card_header">
-            <h2> <?php echo esc_attr($heading); ?> </h2> <?php
+            <?php if(!empty($heading)){ ?>
+            <h2> <?php echo esc_attr($heading); ?> </h2><?php
             } ?>
             <?php if (!empty($subheading)) { ?>
-            <p> <?php   echo esc_attr($subheading); ?> </p> </div><?php 
-            } ?>
+            <p> <?php   echo esc_attr($subheading); ?> </p> <?php 
+            } ?></div><?php } ?>
         
         <div class="row">
             <ul class="qld__card-list qld__card-list--matchheight  <?php if(!empty($containerClassName)) : echo esc_attr($containerClassName); endif ?>">
@@ -92,7 +93,7 @@ $posts = new wp_query(
                                 } ?>
                                     <a href="<?php echo esc_url($post_link) ?>" class="qld__posts__card__link">
                                         <div class="qld__responsive-media-img--bg"
-                                            style="background-image: url(<?php echo $feature_img;  ?>">
+                                            style="background-image: url(<?php echo $feature_img;  ?>);">
                                         </div>
                                     </a>
 

@@ -33,7 +33,7 @@ if (!empty($color_settings)) {
 ?>
 
 <section class="qld__link-list__section">
-    <div class="container-fluid">
+    <div>
 
         <?php if ( !empty($heading) ){
             ?> <h2> <?php  echo $heading;  ?> </h2>

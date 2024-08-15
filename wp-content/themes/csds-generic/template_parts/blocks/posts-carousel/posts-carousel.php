@@ -54,11 +54,12 @@ if (!$news_slider->have_posts()) {
 
 ?>
 <div class="<?php echo esc_attr($className) ?>" <?php echo esc_attr($anchor) ?>>
-    <div class="container-fluid">
+    <div>
 
         <!-- heading and subheading -->
+         <?php if(!empty($heading) || !empty($subheading)){ ?>
         <div class="row">
-            <div class="col-xs-12">
+            <div class="qld__posts__carousel-heading">
 
                 <h2>
                     <?php if (!empty($heading)) {
@@ -71,6 +72,7 @@ if (!$news_slider->have_posts()) {
                 } ?>
             </div>
         </div>
+        <?php } ?>
         <div class="posts-slick px-5">
 
             <!-- News/Posts Slider   -->

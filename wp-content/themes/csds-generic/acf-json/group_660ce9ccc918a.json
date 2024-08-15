@@ -190,7 +190,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/video-"
+                "value": "acf\/video"
             }
         ]
     ],
@@ -203,5 +203,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1718764177
+    "modified": 1723701975
 }

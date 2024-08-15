@@ -29,13 +29,13 @@ if (!empty($color_settings)) {
 ?>
 
 <section class="qld__page__alert__section" <?php echo esc_attr($anchor) ?>>
-    <div class="container-fluid">
+    <div>
         <div class="qld__page-alerts <?php echo esc_attr($className) ?>">
             <?php if (!empty($heading)){?>
                 <div class="qld__page-alerts--heading qld__display-lg"> <h2> <?php echo $heading; ?> </h2></div> <?php
                 } ?>
             <?php if (!empty($content)){ ?>
-                <div><p> <?php echo $content; ?> </p></div> <?php
+                <div class="qld__page__alerts--content"><p> <?php echo $content; ?> </p></div> <?php
                 } ?>            
         </div>
     </div>

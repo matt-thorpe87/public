@@ -32,7 +32,8 @@ if (!empty($block['align'])) {
 ?>
 <section class="qld__image__group__section <?php echo esc_attr($className); ?>" <?php echo esc_attr($anchor); ?> >
 
-    <div class="container-fluid">
+    <div>
+        <?php if(!empty($heading) || !empty($sub)){ ?>
         <div class="col icon-group-title-col <?php if(!empty($align)) : echo esc_attr($align); endif; ?>">
             <?php if ($heading){ ?>
             <h3 class="qld_callout_heading">
@@ -45,6 +46,7 @@ if (!empty($block['align'])) {
             </p>
             <?php } ?>
         </div>
+        <?php }  ?>
 
         <div class="row icon-group-row <?php if(!empty($align)) : echo esc_attr($align); endif; ?>">
             <?php

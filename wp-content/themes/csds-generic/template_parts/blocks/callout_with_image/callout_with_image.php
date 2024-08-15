@@ -39,7 +39,7 @@ if ($color_settings == 'dark') {
 
 <section <?php echo esc_attr($anchor); ?> class="qld__callout--wrapper <?php echo esc_attr($className); ?>"
     id="callout-123">
-    <div class="container-fluid">
+    <div>
         <div class="qld__callout qld__callout__image row <?php echo esc_attr($style); ?>">
             <div class="col-xs-6 col-md-3 col-lg-3">
                 <img class="callout-image" src="<?php echo $image; ?>">
@@ -50,7 +50,7 @@ if ($color_settings == 'dark') {
                     <h3 class="qld__callout__heading "><?php echo $heading; ?> </h3>
                 <?php } ?>
                 <?php if( !empty($content) ){ ?>
-                    <p><?php echo $content; ?></p> <?php } ?>
+                    <p class="qld__callout__content"><?php echo $content; ?></p> <?php } ?>
             </div>
         </div>
     </div>

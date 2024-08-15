@@ -31,6 +31,7 @@ if (!empty($block['className'])) {
 }
 if ($layout == 'two') {
     $layoutClass = 'qld__contact-details__row';
+    $className .= ' col-lg-6 col-sm-12';
 } else {
     $layoutClass = 'qld__contact-details__col';
 }
@@ -41,7 +42,7 @@ if ($layout == 'two') {
 }
 ?>
 <section class="qld__contact" <?php echo esc_attr($anchor); ?>>
-    <div class="container-fluid <?php echo esc_attr($layoutClass); ?>">
+    <div class="<?php echo esc_attr($layoutClass); ?>">
         <div class="<?php echo esc_attr($className); ?>" id="contact-details-">
             <div class="<?php echo esc_attr($layoutInner); ?> ">
                 <div class="qld__contact-details__col qld__contact-details__first">
@@ -139,7 +140,7 @@ if ($layout == 'two') {
             </div>
         </div>
         <?php if (!empty($form)) { ?>
-        <div class="contact-form">
+        <div class="contact-form <?php echo esc_attr($className); ?>"">
             <?php echo do_shortcode($form); ?>
         </div>
         <?php } ?>

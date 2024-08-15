@@ -4,6 +4,10 @@
     }
 }
 .qld__multi-column__section{
+    margin-top:1.5rem;
+    @media (max-width:699px){
+        margin-top:1rem;
+    }
     &.qld__body--dark-alt, &.qld__body--dark{
         h1, h2, h3, h4, h5, h6{
             color: var(--QLD-color-dark-text);
