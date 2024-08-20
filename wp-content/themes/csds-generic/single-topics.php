@@ -46,7 +46,7 @@
                 <!-- end side navigation -->
 
             <div class="col-xs-12 col-lg-9" id="body-123">
-                <div class="container-fluid">
+                <div>
                 <?php
                 while(have_posts()){
                     the_post(); ?>
