@@ -1,0 +1,18 @@
+{
+    "name": "tag-list",
+    "title": "Tag List - QH",
+    "description": "A custom block with a list of tags.",
+    "icon": "ellipsis",
+    "editorStyle": [  "file:./tag-list.scss", "file:../../../dist/assets/css/customBlocks.css"],
+    "editorScript": [ "file:../../../qh-design-system/js/main.js", "file:../../../qh-design-system/externals/main-core.js"],
+    "category": "qh-design",
+    "keywords": ["tag", "list", "tag-list"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "tag-list.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align" : true
+    }
+}

@@ -134,6 +134,8 @@ function register_acf_blocks()
     register_block_type(__DIR__ . '/template_parts/blocks/contact-form');
     register_block_type(__DIR__ . '/template_parts/blocks/posts-card');
     register_block_type(__DIR__ . '/template_parts/blocks/download-block');
+    register_block_type(__DIR__ . '/template_parts/blocks/tag-list');
+    
 }
 
 if (function_exists('register_acf_blocks')) {

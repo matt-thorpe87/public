@@ -1,0 +1,36 @@
+.qld__tag-list-section{
+    margin-top: 1.5rem;
+    @media (min-width:699px){
+        margin-top: 1rem;
+    }
+    .qld__tag-list{
+        &.qld__tag-alt{
+            a, p{
+                background-color: var(--QLD-color-light-alt-background);
+            }
+            a:hover, p:hover{
+                background-color: var(--QLD-color-light-button__hover)
+            }
+        }
+        &.qld__tag-dark{
+            a, p{
+                background-color: var(--QLD-color-dark-background);
+                color: var(--QLD-color-light-button__text);
+            }
+            a:hover, p:hover{
+                background-color: var(--QLD-color-light-background);
+                color: var(--QLD-color-light-link);
+            }
+        }
+        &.qld__tag-dark-alt{
+            a, p{
+                background-color: var(--QLD-color-dark-alt-background);
+                color: var(--QLD-color-light-button__text);
+            }
+            a:hover, p:hover{
+                background-color: var(--QLD-color-light-background);
+                color: var(--QLD-color-light-link);
+            }
+        }
+    }
+}
