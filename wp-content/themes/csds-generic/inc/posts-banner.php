@@ -27,6 +27,7 @@ if($display == 'yes') :
                 <?php 
                     $feature_img = get_the_post_thumbnail_url();
                     $pgBannerImg = get_field('page_banner_image');  
+                    if(!empty(!empty($pgBannerImg)) || !empty($feature_img)){
                     if(!empty($pgBannerImg)) { ?>
                     <div class="qld__banner__hero col-xs-12 col-md-6 col-lg-5 qld__banner__image--mobile-hide">
                         <div class="qld__banner__image ">
@@ -54,6 +55,7 @@ if($display == 'yes') :
                         </div>
                     </div>
                     <?php }
+                    }
                     elseif (function_exists('z_taxonomy_image_url')){ 
                     $cat = get_the_category();
                     if (!empty($cat)){

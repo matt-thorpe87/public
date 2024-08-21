@@ -102,8 +102,8 @@ $hero_banner = new wp_query([
 
             initiateCarousel() {
                 $('.posts-carousel').slick({
-                    autoplay: false,
-                    autoplaySpeed: 7000,
+                    autoplay: true,
+                    autoplaySpeed: 8000,
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     dots: true,

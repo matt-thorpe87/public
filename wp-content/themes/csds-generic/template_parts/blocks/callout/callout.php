@@ -9,6 +9,7 @@
 $heading = get_field('callout_heading');
 $content = get_field('callout_content');
 $color_settings = get_field('callout_colour_settings');
+$link = get_field('callout_link');
 
 // Support custom "anchor" values.
 $anchor = '';
@@ -27,12 +28,14 @@ if (!empty($block['align'])) {
 
 // build style attributes for background and text colours using QH theme design
 if ($color_settings == 'dark') {
-    $style = ' qld__callout--dark';
+    $style = 'qld__callout--dark';
 } elseif($color_settings == 'dark-alt') {
-    $style = ' qld__callout--dark-alt';
+    $style = 'qld__callout--dark-alt';
+} elseif($color_settings == 'white'){
+    $style = 'qld__callout--white';
 }
 else {
-    $style = ' qld__callout--light';
+    $style = 'qld__callout--light';
 }
 
 ?>
@@ -42,7 +45,29 @@ else {
     <div>
         <div class="qld__callout row <?php echo esc_attr($style); ?>">
             <div class="col-xs-12">
-                <?php if( !empty($heading)){ ?><h3 class="qld__callout__heading "><?php echo $heading; ?></h3> <?php } ?>
+                <?php if (!empty($link)) {
+                    
+                $link_url = $link['url'];
+                $link_target = $link['target'] ? $link['target'] : '_self'; 
+                $link_title = $link['title']; ?>
+                <h3 class="qld__callout__heading ">
+                    <a href="<?php echo esc_url($link_url) ?>"
+                        target="<?php echo esc_attr($link_target); ?>" >
+                        <?php if($heading) {
+                            echo $heading;
+                        } else {
+                            echo $link_title;
+                        } ?>
+                    </a>
+                </h3>
+                <?php } else {
+                ?>
+                <h3 class="qld__callout__heading "> <?php
+                echo $heading; ?>
+                </h3>
+                <?php
+                }
+                ?>
                 <?php if( !empty($content) ){ ?><p class="qld__callout__content"><?php echo $content; ?></p> <?php } ?>
             </div>
         </div>

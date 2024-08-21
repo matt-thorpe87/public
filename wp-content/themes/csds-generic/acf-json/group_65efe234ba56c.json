@@ -1,6 +1,6 @@
 {
     "key": "group_65efe234ba56c",
-    "title": "Callout with image",
+    "title": "Callout with Image",
     "fields": [
         {
             "key": "field_65efe23590cc6",
@@ -21,6 +21,22 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_66c53837701b4",
+            "label": "Callout Heading Link",
+            "name": "callout_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         },
         {
             "key": "field_65efe2a97fec5",
@@ -83,7 +99,9 @@
             },
             "choices": {
                 "light": "Light",
-                "dark": "Dark"
+                "white": "White",
+                "dark": "Dark",
+                "dark-alt": "Dark Alternate"
             },
             "default_value": "light",
             "return_format": "value",
@@ -112,5 +130,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1718251721
+    "modified": 1724209921
 }

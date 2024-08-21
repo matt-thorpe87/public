@@ -23,8 +23,24 @@
             "append": ""
         },
         {
+            "key": "field_66c529b0d7ebd",
+            "label": "Callout Heading Link",
+            "name": "callout_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
             "key": "field_6600ed2e68ce2",
-            "label": "Callout content",
+            "label": "Callout Content",
             "name": "callout_content",
             "aria-label": "",
             "type": "wysiwyg",
@@ -58,10 +74,11 @@
             },
             "choices": {
                 "light": "Light",
+                "white": "White",
                 "dark": "Dark",
                 "dark-alt": "Dark Alternate"
             },
-            "default_value": "dark",
+            "default_value": "light",
             "return_format": "value",
             "multiple": 0,
             "allow_null": 0,
@@ -88,5 +105,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1718251319
+    "modified": 1724209396
 }

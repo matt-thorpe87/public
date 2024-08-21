@@ -16,6 +16,7 @@ function themeFiles()
     wp_enqueue_script('leaflet_esri_vector', '//unpkg.com/esri-leaflet-vector@3.0.0/dist/esri-leaflet-vector.js');
     wp_enqueue_script('qh_base_script_runtime', content_url('/themes/csds-generic/qh-design-system/js/runtime.js'));
     wp_enqueue_script('search', content_url('/themes/csds-generic/dist/assets/js/search.js'));
+    wp_enqueue_script('accordion_sidebar', content_url('/themes/csds-generic/dist/assets/js/accordion.js'));
     wp_enqueue_script('qh_base_main_core_script', content_url('/themes/csds-generic/qh-design-system/externals/main-core.js'));
     wp_enqueue_style('qh_base_main_core_style', content_url('/themes/csds-generic/qh-design-system/externals/main-core.css'));
     wp_enqueue_script('qh_base_script_main', content_url('/themes/csds-generic/qh-design-system/js/main.js'));

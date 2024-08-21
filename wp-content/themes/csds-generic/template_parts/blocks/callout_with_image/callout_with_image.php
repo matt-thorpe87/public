@@ -11,6 +11,8 @@ $heading = get_field('callout_with_image_heading');
 $content = get_field('callout_with_image_content');
 $image = get_field('callout_with_image_image');
 $color_settings = get_field('callout_with_image_colour_settings');
+$link = get_field('callout_link');
+
 
 
 // Support custom "anchor" values.
@@ -30,9 +32,13 @@ if (!empty($block['align'])) {
 
 // build style attributes for background and text colours using QH theme design
 if ($color_settings == 'dark') {
-    $style = ' qld__callout--dark';
+    $style = 'qld__callout--dark';
+} elseif($color_settings == 'dark-alt') {
+    $style = 'qld__callout--dark-alt';
+} elseif($color_settings == 'white'){
+    $style = 'qld__callout--white';
 } else {
-    $style = ' qld__callout--light';
+    $style = 'qld__callout--light';
 }
 
 ?>
@@ -45,10 +51,29 @@ if ($color_settings == 'dark') {
                 <img class="callout-image" src="<?php echo $image; ?>">
             </div>
             <div class="col-xs-12 col-md-9 col-lg-9 qld__callout__content">
-                <?php 
-                if( !empty($heading)){ ?>
-                    <h3 class="qld__callout__heading "><?php echo $heading; ?> </h3>
-                <?php } ?>
+                  <?php if (!empty($link)) {
+                    
+                    $link_url = $link['url'];
+                    $link_target = $link['target'] ? $link['target'] : '_self'; 
+                    $link_title = $link['title']; ?>
+                    <h3 class="qld__callout__heading ">
+                        <a href="<?php echo esc_url($link_url) ?>"
+                            target="<?php echo esc_attr($link_target); ?>" >
+                            <?php if($heading) {
+                                echo $heading;
+                            } else {
+                                echo $link_title;
+                            } ?>
+                        </a>
+                    </h3>
+                    <?php } else {
+                    ?>
+                    <h3 class="qld__callout__heading "> <?php
+                    echo $heading; ?>
+                    </h3>
+                    <?php
+                    }
+                    ?>
                 <?php if( !empty($content) ){ ?>
                     <p class="qld__callout__content"><?php echo $content; ?></p> <?php } ?>
             </div>

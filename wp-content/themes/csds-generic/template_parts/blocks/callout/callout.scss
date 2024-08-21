@@ -1,19 +1,35 @@
 .qld__callout--dark, .qld__callout--dark-alt {
     .qld__callout__heading{
       color:var(--QLD-color-dark-heading) !important;
+      a{
+        color: var(--QLD-color-dark-heading) !important;
+      }
+      a:visited{
+        color: var(--QLD-color-dark-link__visited);
+        text-decoration-color: var(--QLD-color-dark-link__visited);
+      }
+      a:hover{
+        text-decoration-color: var(--QLD-color-dark-link__visited);
+      }
+      a:hover:visited{
+        text-decoration-color: var(--QLD-color-dark-link__visited);
+      }
     }
   }
-  .qld__callout{
-    &.qld__callout--dark{
-      background-color: var(--QLD-color-dark-background);
-    }
-    &.qld__callout--dark-alt{
-      background-color: var(--QLD-color-dark-alt-background);
-    }
-    .qld__callout__heading{
-      max-width:100%;
-    }
+.qld__callout{
+  &.qld__callout--dark{
+    background-color: var(--QLD-color-dark-background);
   }
-  .qld__callout--wrapper{
-    margin: 1.5rem 0rem;
+  &.qld__callout--dark-alt{
+    background-color: var(--QLD-color-dark-alt-background);
   }
+  &.qld__callout--white{
+    background-color: var(--QLD-color-light-background);
+  }
+  .qld__callout__heading{
+    max-width:100%;
+  }
+}
+.qld__callout--wrapper{
+  margin: 1.5rem 0rem;
+}
