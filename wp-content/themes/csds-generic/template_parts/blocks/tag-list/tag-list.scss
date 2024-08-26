@@ -3,6 +3,9 @@
     @media (min-width:699px){
         margin-top: 1rem;
     }
+    .tag__list__content, .tag__list__title{
+        padding-bottom:1rem;
+    }
     .qld__tag-list{
         &.qld__tag-alt{
             a, p{

@@ -217,8 +217,24 @@ function ip_search_filter($args) {
 add_filter('pre_get_posts', 'ip_search_filter');
 // end search filter function
 
-@ini_set( 'upload_max_size' , '256M' );
-@ini_set( 'post_max_size', '256M');
-@ini_set( 'max_execution_time', '300' );
+// // Adds support for editor color palette.
+// function qh_theme_colors() {
+//     // The new colors we are going to add
 
-
+//     $newColorPalette = [
+//         [
+//             'name' => esc_attr__('Light Background', 'QH'),
+//             'slug' => 'light-bg',
+//             'color' => get_field('background', 'option'),
+//         ],
+//         [
+//             'name' => esc_attr__('Dark Background', 'QH'),
+//             'slug' => 'dark-bg',
+//             'color' => get_field('dark_background', 'option'),
+//         ],
+//     ];
+//     // Apply the color palette containing the original colors and 2 new colors:
+//     add_theme_support( 'editor-color-palette', $newColorPalette);
+//     add_editor_style( 'styles/customThemeStyles.css');
+// }
+// add_action( 'after_setup_theme', 'qh_theme_colors' );

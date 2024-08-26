@@ -1,4 +1,3 @@
-
 <style>
     :root {
         --QLD-color-light-background:

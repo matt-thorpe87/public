@@ -45,7 +45,7 @@ if(!empty($size)){
             ?> <h2 class="tag__list__title"> <?php echo $heading; ?> </h2> <?php
         } ?>
         <?php if (!empty($content)) { ?>
-            <p class="tag__list__content"> <?php echo $content; ?> </p> <?php
+            <div class="tag__list__content" > <?php echo $content; ?> </div> <?php
         } ?>
         <div class="qld__tab_panel" <?php echo esc_attr($anchor); ?> >
             <ul class="qld__tag-list <?php echo esc_attr($className); ?>">
