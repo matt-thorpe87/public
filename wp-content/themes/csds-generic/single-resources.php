@@ -56,6 +56,41 @@
                 <?php } ?>
 
                 </div>
+                <?php
+                $related = get_field('related_topic');
+                if( !empty($related) ): ?>
+                    <section class="qld__card--wrapper">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <h3 class="qld__related__title">Related Resources</h3>
+                                <ul class="qld__card-list qld__card-list--matchheight">
+                                <?php foreach( $related as $related_post ):
+                                    $permalink = get_permalink( $related_post->ID );
+                                    $title = get_the_title( $related_post->ID );
+                                    $custom_field = get_field( 'field_name', $related_post->ID );
+                                    ?>
+                                    <li class="col-xs-12 col-md-6 col-lg-4">
+                                        <div class="qld__card qld__card__action">
+                                            <div class="qld__card__content-inner">
+                                                <div class="qld__card__content">
+                                                    <div class="qld__card__inner">
+                                                        <h4 class="qld__card__title">
+                                                            <a href="<?php echo esc_url( $permalink ); ?>" class="qld__card--clickable__link"><?php echo esc_html( $title ); ?></a>
+                                                        </h4>
+                                                        <!-- <span>A custom field from this post: <?php echo esc_html( $custom_field ); ?></span> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                <?php endforeach; ?>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                <?php endif; ?>
+
+
             </div>
         </div>
     </div>
