@@ -134,10 +134,7 @@ get_header(); ?>
             <div class="row">
             <?php 
                 $latest_args = array(
-                    'post_type' => array(
-                        'post',
-                        'topics',
-                    ),
+                    'post_type' =>  'post',
                     'posts_per_page' => 9,
                     'post_status' => 'publish',
                     'order' => 'DESC',
@@ -193,7 +190,6 @@ get_header(); ?>
                             </div>
                         </li>
                     <?php endwhile; ?>
-                    <div class="qld__search-pagination__list"><?php  the_posts_pagination(); ?></div>
 
                 </ul>
 
@@ -206,13 +202,13 @@ get_header(); ?>
                 $link_url = $link['url'];
                 $link_title = $link['title'];
                 $link_target = $link['target'] ? $link['target'] : '_self';?>
-            <div class="qld__card-intro row">
+            <div class="qld__card-intro row qld__all__links">
                <a href="<?php echo esc_url($link_url); ?>" class="all-links" target="<?php echo esc_attr( $link_target ); ?>">
                <h3 class="qld__card__title qld__all_posts__link"><?php if(!empty($link_title)){
                     echo esc_html($link_title);
                 } else {
                     echo "View All Posts";
-                }  ?></h3></a>
+                }  ?>  <i class="fa-light fa-circle-arrow-right"></i></h3></a>
             </div>
                 <?php }  ?>
         </div>

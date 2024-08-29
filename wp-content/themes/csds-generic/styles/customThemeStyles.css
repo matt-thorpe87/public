@@ -646,3 +646,13 @@ color: var(--QLD-color-dark-text);
 h3.qld__related__title{
   margin:1rem 0rem !important;
 }
+.qld__all__links{
+  float:right;
+}
+.qld__all__links .qld__all_posts__link{
+  color: var(--QLD-color-light-link);
+}
+.all-links:hover .fa-circle-arrow-right::before{
+  margin-right:-.5rem;
+  transition: all .3s ease-in-out;
+}

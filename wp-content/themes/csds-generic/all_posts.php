@@ -23,12 +23,7 @@ get_header(); ?>
             <div class="row">
             <?php 
                 $all_args = array(
-                    'post_type' => array(
-                        'post',
-                        'topics',
-                        'resources',
-                        'podcast',
-                    ),
+                    'post_type' => 'post',
                     'paged' => $paged,
                     'post_status' => 'publish',
                     'order' => 'DESC',
