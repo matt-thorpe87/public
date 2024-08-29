@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 <main class="main" role="main">
 <?php 
-  include 'inc/posts-banner.php';
+    include 'inc/posts-banner.php';
 ?>
 
 <section class="qld__body ">
@@ -54,7 +54,6 @@
                 <?php }  ?>
                 <p><?php the_content();?></p>
                 <?php } ?>
-
                 </div>
                 <?php
                 $related = get_field('related_topic');
@@ -96,9 +95,6 @@
     </div>
 
 </section>
-
-
-
 </main>
 <?php
 get_footer();

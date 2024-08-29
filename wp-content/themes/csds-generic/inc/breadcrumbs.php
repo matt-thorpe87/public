@@ -35,6 +35,10 @@ function custom_breadcrumbs() {
             echo '<li>';
             the_title();
             echo '</li>';
+            } else{
+                
+                the_title();
+                echo '</li>';
             }
         } elseif (is_page()) {
             if ($post->post_parent) {
