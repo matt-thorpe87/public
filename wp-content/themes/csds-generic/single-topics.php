@@ -50,14 +50,26 @@
                 <?php
                 while(have_posts()){
                     the_post(); ?>
-                <?php if($display == 'no') { ?>
-                <h1><?php the_title(); ?></h1> 
-                <?php }  ?>
-                <p><?php the_content();?></p>
-                <?php } ?>
+                    <?php if($display == 'no') { ?>
+                    <h1><?php the_title(); ?></h1> 
+                    <?php }  ?>
+                    <p><?php the_content();?></p>
+                    <?php } ?>
 
                 </div>
+                <hr>
+                <!-- updated date -->
+                <?php 
+                $mod_date = get_the_modified_date();
+                if(!empty($mod_date)){
+                ?>
+                <div class="qld__last__modified">
+                    <p class="last__modified__date"><strong>Last updated:</strong> <?php echo $mod_date ?></p>
+                </div>
+                <?php } ?>
+                <!-- end updated date -->
             </div>
+            
         </div>
     </div>
 

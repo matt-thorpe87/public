@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Courses
+ * Template Name: CSDS Courses
  */
 // localdev = 'https://localdev.central.sdc.qld.edu.au'
 // prod = 'https://central.csds.qld.edu.au'
@@ -164,7 +164,7 @@ elseif ($type == 'default') {
 									
 								</ul>
 								<h3 class="qld__view__all col-sm-12">
-									<a href="<?= $courseUrl.'/calendar' ?>" onClick="gtag('event', 'click', { event_category: 'coursesLandingClick', event_label: 'upcomingCoursesCalendar'});">Browse calendar on Central  &nbsp;<i class="fa-light fa-circle-arrow-right" style="color:var(--QLD-color-dark-background);"></i></a>
+									<a href="<?= $courseUrl.'/calendar' ?>" target="_blank" onClick="gtag('event', 'click', { event_category: 'coursesLandingClick', event_label: 'upcomingCoursesCalendar'});">Browse calendar on Central  &nbsp;<i class="fa-light fa-circle-arrow-right" style="color:var(--QLD-color-dark-background);"></i></a>
 								</h3>
 							</div>
 						</div>
@@ -184,7 +184,7 @@ elseif ($type == 'default') {
 								<ul class="qld__card-list qld__card-list--matchheight">
 									<li class="col-sm-12 col-md-6 col-lg-3 col-xl-3 course-card">
 										<a class="qld__card qld__card--image qld__card__action" href='<?= $courseUrl.'?per-page=10&filters=%5B%7B"name":"courseCategories","value":%5B2%5D,"operator":"IN"%7D%5D&page=1&sort=courseNameSort' ?>' target="_blank" onClick="gtag('event', 'click', { event_category: 'coursesLandingClick', event_label: 'occupationAllied'});">
-											<div class="qld__responsive-media-img--bg image" style="background-image: url('wp-content/themes/csds-generic/src/assets/images/category-allied-health.jpg')">
+											<div class="qld__responsive-media-img--bg image" style="background-image: url(' <?php echo content_url("/themes/csds-generic/src/assets/images/category-allied-health.jpg"); ?>')">
 												<div class="qld__card__inner occupation">
 													<div class="qld__card__content">
 														<div class="qld__card__content-inner">
@@ -197,7 +197,7 @@ elseif ($type == 'default') {
 									</li>
 									<li class="col-sm-12 col-md-6 col-lg-3 col-xl-3 course-card">
 										<a class="qld__card qld__card--image qld__card__action" href='<?= $courseUrl.'?per-page=10&filters=%5B%7B"name":"courseCategories","value":%5B3%5D,"operator":"IN"%7D%5D&page=1&sort=courseNameSort#_ga=2.48657838.967872739.1722207076-1771258261.1721351324&_gl=1*1e8n1td*_ga*MTc3MTI1ODI2MS4xNzIxMzUxMzI0*_ga_VYT0QC26KX*MTcyMjM4NTk4MC4yMC4wLjE3MjIzODU5ODAuMC4wLjA.' ?>' target="_blank" onClick="gtag('event', 'click', { event_category: 'coursesLandingClick', event_label: 'occupationAllied'});">
-											<div class="qld__responsive-media-img--bg image" style="background-image: url('wp-content/themes/csds-generic/src/assets/images/category-nursing.jpg')">
+											<div class="qld__responsive-media-img--bg image" style="background-image: url(' <?php echo content_url("/themes/csds-generic/src/assets/images/category-nursing.jpg"); ?>')">
 												<div class="qld__card__inner occupation">
 													<div class="qld__card__content">
 														<div class="qld__card__content-inner">
@@ -210,7 +210,7 @@ elseif ($type == 'default') {
 									</li>
 									<li class="col-sm-12 col-md-6 col-lg-3 col-xl-3 course-card">
 										<a class="qld__card qld__card--image qld__card__action" href='<?= $courseUrl.'?per-page=10&filters=%5B%7B"name":"courseCategories","value":%5B5%5D,"operator":"IN"%7D%5D&page=1&sort=courseNameSort#_ga=2.86597136.967872739.1722207076-1771258261.1721351324&_gl=1*1gh00dm*_ga*MTc3MTI1ODI2MS4xNzIxMzUxMzI0*_ga_VYT0QC26KX*MTcyMjM4NTk4MC4yMC4wLjE3MjIzODU5ODQuMC4wLjA.' ?>' target="_blank" onClick="gtag('event', 'click', { event_category: 'coursesLandingClick', event_label: 'occupationAllied'});">
-											<div class="qld__responsive-media-img--bg image" style="background-image: url('wp-content/themes/csds-generic/src/assets/images/category-simulation-provider.jpg')">
+											<div class="qld__responsive-media-img--bg image" style="background-image: url(' <?php echo content_url("wp-content/themes/csds-generic/src/assets/images/category-simulation-provider.jpg"); ?>')">
 												<div class="qld__card__inner occupation">
 													<div class="qld__card__content">
 														<div class="qld__card__content-inner">
@@ -223,7 +223,7 @@ elseif ($type == 'default') {
 									</li>
 									<li class="col-sm-12 col-md-6 col-lg-3 col-xl-3 course-card">
 										<a class="qld__card qld__card--image qld__card__action" href='<?= $courseUrl.'?per-page=10&filters=%5B%7B"name":"courseCategories","value":%5B4%5D,"operator":"IN"%7D%5D&page=1&sort=courseNameSort#_ga=2.258498050.967872739.1722207076-1771258261.1721351324&_gl=1*1p1nojp*_ga*MTc3MTI1ODI2MS4xNzIxMzUxMzI0*_ga_VYT0QC26KX*MTcyMjM4NTk4MC4yMC4xLjE3MjIzODYxNjYuMC4wLjA.' ?>' target="_blank" onClick="gtag('event', 'click', { event_category: 'coursesLandingClick', event_label: 'occupationAllied'});">
-											<div class="qld__responsive-media-img--bg image" style="background-image: url('wp-content/themes/csds-generic/src/assets/images/category-medical.jpg')">
+											<div class="qld__responsive-media-img--bg image" style="background-image: url(' <?php echo content_url("wp-content/themes/csds-generic/src/assets/images/category-medical.jpg"); ?>')">
 												<div class="qld__card__inner occupation">
 													<div class="qld__card__content">
 														<div class="qld__card__content-inner">

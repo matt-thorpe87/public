@@ -49,7 +49,7 @@ if ($width == 'half') {
 <section <?php echo esc_attr($anchor); ?> class="<?php echo esc_attr($className) ?>">
     <div class="qld__body__text container-fluid">
         <div class="body__text <?php echo esc_attr($containerName) ?>">
-            <?php echo ($text); ?>
+            <?php echo $text; ?>
         </div>
     </div>
 </section>

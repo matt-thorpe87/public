@@ -50,11 +50,12 @@
                 while(have_posts()){
                     the_post(); ?>
                 <?php if($display == 'no') { ?>
-                <h1><?php the_title(); ?></h1> 
-                <?php }  ?>
-                <p><?php the_content();?></p>
+                    <h1><?php the_title(); ?></h1> 
+                    <?php }  ?>
+                    <p><?php the_content();?></p>
                 <?php } ?>
                 </div>
+                <!-- related resoureces -->
                 <?php
                 $related = get_field('related_topic');
                 if( !empty($related) ): ?>
@@ -88,13 +89,26 @@
                         </div>
                     </section>
                 <?php endif; ?>
-
-
+                <!-- end related resources -->
+                <hr>
+                <!-- updated date -->
+                <?php 
+                $mod_date = get_the_modified_date();
+                if(!empty($mod_date)){
+                ?>
+                <div class="qld__last__modified">
+                    <p class="last__modified__date"><strong>Last updated:</strong> <?php echo $mod_date ?></p>
+                </div>
+                <?php } ?>
+                <!-- end updated date -->
             </div>
+            
         </div>
     </div>
 
 </section>
+
+
 </main>
 <?php
 get_footer();

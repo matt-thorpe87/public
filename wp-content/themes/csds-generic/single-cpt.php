@@ -95,8 +95,19 @@ Template Post Type: post, resources, topics, podcast, courses, podcasts, topic, 
                         </div>
                     </section>
                 <?php endif; ?>
-
+                <hr>
+                <!-- updated date -->
+                <?php 
+                $mod_date = get_the_modified_date();
+                if(!empty($mod_date)){
+                ?>
+                <div class="qld__last__modified">
+                    <p class="last__modified__date"><strong>Last updated:</strong> <?php echo $mod_date ?></p>
+                </div>
+                <?php } ?>
+                <!-- end updated date -->
             </div>
+
         </div>
     </div>
 
