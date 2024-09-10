@@ -12,6 +12,21 @@
         "renderTemplate": "posts-carousel.php"
     },
     "supports": {
-        "anchor": true
+        "anchor": true,
+        "color": {
+            "background" : true,
+            "text" : false
+        }        
+    },
+    "attributes": {
+        "style": {
+            "type": "object",
+            "default": {
+                "color":{
+                    "background": "red"
+                }
+            }
+        }
     }
+
 }

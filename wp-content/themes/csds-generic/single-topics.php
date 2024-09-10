@@ -71,6 +71,19 @@
             </div>
             
         </div>
+        <!-- print/download pdf -->
+        <div class="print-share">
+            <a href="javascript:void(0)" onclick="generatePDF()">
+                <span class="dcs-icons material-icons notranslate qld-material-icons" aria-hidden="true" tab-index="-1">download</span>
+                Download to PDF
+            </a>
+
+            <a href="javascript:void(0)" alt="print screen" onClick="window.print()"; target="_blank">
+                <span class="dcs-icons material-icons notranslate qld-material-icons" aria-hidden="true" tab-index="-1">print</span>
+                Print this page
+            </a>
+        </div>
+        <!-- end print/download pdf -->
     </div>
 
 </section>

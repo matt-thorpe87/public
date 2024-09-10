@@ -656,3 +656,20 @@ h3.qld__related__title{
   margin-right:-.5rem;
   transition: all .3s ease-in-out;
 }
+/* fullwidth page */
+.qld__body__fullwidth{
+  padding: 0rem !important;
+}
+.qld__grid .qld__body__fullwidth .container-fluid{
+  max-width: 100%;
+  padding-left: 0rem !important;
+  padding-right: 0rem !important;
+}
+.qld__body__fullwidth .container-fluid .col-lg-12 section > div:not(.container-fluid) {
+  max-width:86rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+

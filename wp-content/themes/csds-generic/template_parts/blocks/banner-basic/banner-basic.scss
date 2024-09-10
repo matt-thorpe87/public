@@ -28,4 +28,24 @@ section.qld__body{
         padding:1rem;
     }
 }
+section.qld__body__fullwidth{
+    section.qld__banner{
+        @media (max-width: 1440px){
+            padding: 1rem 0rem;
+        }
+        .qld__banner__wrapper{
+            max-width:86rem;
+            margin-left: auto;
+            margin-right: auto;
+            // padding-left: 1rem;
+            // padding-right: 1rem;
+        }
+        .qld__banner__hero{
+            padding-right:0rem;
+        }
+        .qld__banner__content{
+            padding-left:0rem !important;
+        }
+    }
+}
 

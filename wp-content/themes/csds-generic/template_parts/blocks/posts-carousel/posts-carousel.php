@@ -13,7 +13,7 @@ $number_posts = get_field('number_of_posts');
 $post_type = get_field('post_type_for_posts_carousel');
 $order = get_field('posts_order');
 $cat = get_field('posts_category');
-
+$attrs = $is_preview ? ' ' : get_block_wrapper_attributes();
 
 // Support custom "anchor" values.
 $anchor = '';
@@ -53,7 +53,7 @@ if (!$news_slider->have_posts()) {
 
 
 ?>
-<div class="<?php echo esc_attr($className) ?>" <?php echo esc_attr($anchor) ?>>
+<section class="<?php echo esc_attr($className); ?>" <?php echo esc_attr($anchor); ?> <?php echo $attrs; ?>>
     <div>
 
         <!-- heading and subheading -->
@@ -154,7 +154,7 @@ if (!$news_slider->have_posts()) {
         </div>
 
     </div>
-</div>
+                                        </section>
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 <script>(function ($) {
         class SlickCarousel {

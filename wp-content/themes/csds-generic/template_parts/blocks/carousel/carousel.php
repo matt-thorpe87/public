@@ -27,8 +27,8 @@ if (!empty($color_settings)) {
 }
 ?>
 
-<div class="<?php echo esc_attr($className) ?>" <?php echo esc_attr($anchor) ?>>
-    <div>
+<section  <?php echo esc_attr($anchor); ?> class="<?php echo esc_attr($className); ?>">
+    <div >
 
         <!-- heading and subheading -->
         <div class="body__text">
@@ -101,7 +101,7 @@ if (!empty($color_settings)) {
         </div>
 
     </div>
-</div>
+</section>
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 <script>(function ($) {
         class SlickCarousel {

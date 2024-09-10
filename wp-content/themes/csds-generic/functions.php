@@ -4,6 +4,7 @@ function themeFiles()
 {
     wp_enqueue_style('lato-font', '//fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900');
     wp_enqueue_script('fontawesome', '//kit.fontawesome.com/fb2f2d4cd6.js');
+    wp_enqueue_script('html2pdf', '//cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js');
     wp_enqueue_style('custom_theme_style', get_theme_file_uri('/styles/customThemeStyles.css'));
     wp_enqueue_style('style', get_theme_file_uri('/style.css'));
     wp_enqueue_script('qh_base_script_handlebars', content_url('/themes/csds-generic/qh-design-system/externals/handlebars.min-v4.7.6.js'));
@@ -22,6 +23,8 @@ function themeFiles()
     wp_enqueue_script('qh_base_script_main', content_url('/themes/csds-generic/qh-design-system/js/main.js'));
     wp_enqueue_style('qh_base_style', content_url('/themes/csds-generic/qh-design-system/main.css'));
     wp_enqueue_style('qh_base_styles', content_url('/themes/csds-generic/qh-design-system/qh-theme.css'));
+    wp_enqueue_script('download-pdf', content_url('/themes/csds-generic/src/assets/js/download-pdf.js'));
+
     
 
 }
@@ -217,24 +220,71 @@ function ip_search_filter($args) {
 add_filter('pre_get_posts', 'ip_search_filter');
 // end search filter function
 
-// // Adds support for editor color palette.
-// function qh_theme_colors() {
-//     // The new colors we are going to add
+// Adds support for editor color palette.
+function qh_theme_colors() {
 
-//     $newColorPalette = [
-//         [
-//             'name' => esc_attr__('Light Background', 'QH'),
-//             'slug' => 'light-bg',
-//             'color' => get_field('background', 'option'),
-//         ],
-//         [
-//             'name' => esc_attr__('Dark Background', 'QH'),
-//             'slug' => 'dark-bg',
-//             'color' => get_field('dark_background', 'option'),
-//         ],
-//     ];
-//     // Apply the color palette containing the original colors and 2 new colors:
-//     add_theme_support( 'editor-color-palette', $newColorPalette);
-//     add_editor_style( 'styles/customThemeStyles.css');
-// }
-// add_action( 'after_setup_theme', 'qh_theme_colors' );
+    $oldColorPalette = current( (array) get_theme_support( 'editor-color-palette' ) );
+    // Get default core color palette from wp-includes/theme.json
+
+    if (false === $oldColorPalette && class_exists('WP_Theme_JSON_Resolver')) {
+        $settings = WP_Theme_JSON_Resolver::get_core_data()->get_settings();
+        if (isset($settings['color']['palette']['default'])) {
+            $oldColorPalette = $settings['color']['palette']['default']; // there is no need to apply translations to color names - they are translated already
+        }
+    }
+    // The new colors we are going to add
+
+    $newColorPalette = [
+        [
+            'name' => esc_attr__('Light', 'QH'),
+            'slug' => 'light-bg',
+            'color' => get_field('background', 'option'),
+        ],
+        [
+            'name' => esc_attr__('Light Alt', 'QH'),
+            'slug' => 'light-alt-bg',
+            'color' => get_field('alt_background', 'option'),
+        ],
+        [
+            'name' => esc_attr__('Dark', 'QH'),
+            'slug' => 'dark-bg',
+            'color' => get_field('dark_background', 'option'),
+        ],
+        [
+            'name' => esc_attr__('Dark Alt', 'QH'),
+            'slug' => 'dark-alt-bg',
+            'color' => get_field('dark_alt_background', 'option'),
+        ],
+        [
+            'name' => esc_attr__('Light Accent', 'QH'),
+            'slug' => 'light-accent',
+            'color' => get_field('accent', 'option'),
+        ],
+        [
+            'name' => esc_attr__('Dark Accent', 'QH'),
+            'slug' => 'dark-accent',
+            'color' => get_field('dark_accent', 'option'),
+        ],
+        [
+            'name' => esc_attr__('Light Alt Accent', 'QH'),
+            'slug' => 'light-alt-accent',
+            'color' => get_field('alt_button', 'option'),
+        ],
+        [
+            'name' => esc_attr__('Dark Alt Accent', 'QH'),
+            'slug' => 'dark-alt-accent',
+            'color' => get_field('dark_alt_button', 'option'),
+        ],
+
+    ];
+
+    if (!empty($oldColorPalette)) {
+        $newColorPalette = array_merge( $newColorPalette, $oldColorPalette);
+    }
+
+    // Apply the color palette containing the original colors and 2 new colors:
+    add_theme_support( 'editor-color-palette', $newColorPalette);
+    add_editor_style( 'styles/customThemeStyles.css');
+}
+add_action( 'after_setup_theme', 'qh_theme_colors' );
+

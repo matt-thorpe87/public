@@ -116,3 +116,23 @@
         ;
     }
 </style>
+<?php 
+// $bglight = the_field('background', 'option'); 
+
+// function add_theme_colors() {
+//     $newColors = [
+//         [
+//             'name' => esc_attr__( 'Light Background', 'default' ),
+//             'slug' => 'lightbg',
+//             'color' => '#f5f5f5',
+    
+//         ]
+    
+//         ];
+
+//     add_theme_support( 'editor-color-palette', $newColors);
+// }
+// add_action ('after_setup_theme', 'add_theme_colors');
+
+
+
