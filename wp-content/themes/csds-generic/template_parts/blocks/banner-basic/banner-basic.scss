@@ -1,11 +1,8 @@
-// .qld__banner__content--body, .qld__banner__content--title{
-//     padding-left:1rem;
-// }
-// .qld__banner__content{
-//     .qld__banner__breadcrumbs{
-//         padding-left:1rem;
-//     }
-// }
+.qld__banner__wrapper{
+    max-width: 86rem;
+    margin-left: auto;
+    margin-right: auto;
+}
 .qld__banner__content{
     padding: 2rem 2rem 2rem 0rem !important;
 }
@@ -37,14 +34,22 @@ section.qld__body__fullwidth{
             max-width:86rem;
             margin-left: auto;
             margin-right: auto;
-            // padding-left: 1rem;
-            // padding-right: 1rem;
+            padding-left:0rem;
         }
         .qld__banner__hero{
             padding-right:0rem;
         }
         .qld__banner__content{
             padding-left:0rem !important;
+        }
+    }
+}
+section:not(.qld__body__fullwidth){
+    .qld__banner__wrapper{
+        padding-left:2rem;
+        padding-right:2rem;
+        .qld__banner__hero{
+            padding-right:2rem;
         }
     }
 }

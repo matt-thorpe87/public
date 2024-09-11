@@ -55,7 +55,7 @@ if(!empty($width) && $width == 'full') {
         </ul>
     </nav>
     <?php } ?>
-    <div class="-fluid">
+    <div>
         <div class="qld__banner__wrapper">
             <div class="qld__banner__main row">
 

@@ -17,7 +17,7 @@ $sub = get_field('page_banner_subtitle');
                 </li>
           </ul>
       </nav>
-        <div class="container-fluid">
+        <div>
             <div class="qld__banner__wrapper">
                 <div class="qld__banner__main row">
                     <?php 

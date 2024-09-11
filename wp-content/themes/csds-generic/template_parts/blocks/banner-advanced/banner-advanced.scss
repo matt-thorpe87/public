@@ -21,6 +21,18 @@
                 width:100%;
             }
         }
+        .qld__tile-nav--dark, .qld__tile-nav--dark-alt{
+            .qld__tile-nav__list{
+                .qld__tile-nav__item{
+                    a.qld__tile-nav__link{
+                        color: var(--QLD-color-dark-link) !important;
+                    }
+                    a.qld__tile-nav__link:visited:hover{
+                        text-decoration-color: var(--QLD-color-dark-link) ;
+                    }
+                }
+            } 
+        } 
         .qld__banner__image{
             &.qld__banner__image--background{
                 display:block;

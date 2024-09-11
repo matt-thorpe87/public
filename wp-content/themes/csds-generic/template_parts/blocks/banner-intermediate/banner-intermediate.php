@@ -61,7 +61,7 @@ if (!empty($breadcrumbs && $breadcrumbs == 'yes')) {
         </ul>
     </nav>
     <?php } ?>
-    <div class="container-fluid">
+    <div>
         <div class="qld__banner__wrapper">
             <div class="qld__banner__main row">
 

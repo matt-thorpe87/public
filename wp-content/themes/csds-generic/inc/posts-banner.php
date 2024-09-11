@@ -20,7 +20,7 @@ if($display == 'yes') :
                 </li>
           </ul>
       </nav>
-      <div class="container-fluid">
+      <div>
           <div class="qld__banner__wrapper">
             <div class="qld__banner__main row">
                 <!--@@ Hero image @@-->
