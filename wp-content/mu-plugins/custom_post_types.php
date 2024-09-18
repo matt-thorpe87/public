@@ -37,6 +37,7 @@ function theme_post_types() {
     'has_archive' => true,
     'public' => true,
     'show_in_rest' => true,
+    'hierarchical' => true,
     'labels' => array(
       'name' => 'Resources',
 	  'add_new' => 'Add New Resource',

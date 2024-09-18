@@ -1,11 +1,10 @@
 /*
 Theme Name: CSDS QH Theme
 Author: CSDS Digital and Design
-Version: 1.021
+Version: 1.3
 */
 @import url("dist/assets/css/customThemeStyles.css");
 @import url("dist/assets/css/customBlocks.css");
 
 
 /* below line can be removed when moving to production build */
-@import url("styles/customThemeStyles.css");

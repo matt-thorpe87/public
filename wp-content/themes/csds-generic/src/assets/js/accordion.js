@@ -1,36 +1,22 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Select all menu items that have children
-    const menuItems = document.querySelectorAll(".qld__side-nav__content .menu-item-has-children");
-
-    menuItems.forEach(item => {
-        // Create a span element for the indicator
-        const trigger = document.createElement('span');
-        trigger.classList.add('accordion-trigger');
-        
-        // Append the span element after the link
-        const link = item.querySelector('.qld__sidenav__link');
-        link.parentNode.insertBefore(trigger, link.nextSibling);
-
-        // Add click event listener to the trigger
-        trigger.addEventListener("click", function(event) {
-            event.preventDefault(); // Prevent any default behavior
-
-            const parentItem = this.parentElement;
-
-            // Toggle the acc-active class on the clicked item
-            parentItem.classList.toggle("acc-active");
-
-            // Get the nested list
-            const subMenu = parentItem.querySelector("ul");
-
-            // Toggle the display of the nested list
-            if (subMenu.style.display === "block") {
-                subMenu.style.display = "none";
-            } else {
-                subMenu.style.display = "block";
-            }
+    document.querySelectorAll(".qld__side-nav__content .menu-item-has-children").forEach(e => {
+        var t = document.createElement("span");
+        t.classList.add("accordion-trigger");
+        var link = e.querySelector(".qld__sidenav__link");
+        e.insertBefore(t, link.nextSibling);
+ 
+        t.addEventListener("click", function(event) {
+            event.preventDefault();
+            var parentLi = this.parentElement;
+            parentLi.classList.toggle("acc-active");
+            var nestedUl = parentLi.querySelector("ul");
+            nestedUl.style.display = nestedUl.style.display === "block" ? "none" : "block";
         });
+ 
+        if (e.querySelector("ul .current-menu-item")) {
+            e.classList.add("acc-active");
+            var nestedUl = e.querySelector("ul");
+            nestedUl.style.display = "block";
+        }
     });
 });
-
-

@@ -110,8 +110,9 @@ Template Post Type: post, resources, topics, podcast, courses, course, podcasts,
                 <hr />
                 <div class="qld__news-article__body">
                   <?php 
+                  $feature = get_field('show_feature_image');
                   $image_id = get_post_thumbnail_id();
-                  if (!empty($image_id)){ ?>
+                  if (!empty($image_id) && $feature == 'yes'){ ?>
                   <div class="qld__news-article__hero">
                     <?php    
                       $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
@@ -237,7 +238,7 @@ Template Post Type: post, resources, topics, podcast, courses, course, podcasts,
                 $terms = get_the_terms( get_the_ID(), 'category' );
                 $term_list = wp_list_pluck( $terms, 'slug' );
                 $related_args = array(
-                    'post_type' => 'any',
+                    'post_type' => 'post',
                     'posts_per_page' => 3,
                     'post_status' => 'publish',
                     'post__not_in' => array( get_the_ID() ),

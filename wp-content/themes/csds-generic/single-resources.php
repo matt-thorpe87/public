@@ -1,8 +1,11 @@
 
-<?php get_header(); ?>
+<?php 
+get_header(); ?>
 <main class="main" role="main">
 <?php 
     include 'inc/posts-banner.php';
+
+
 ?>
 
 <section class="qld__body ">
@@ -55,7 +58,8 @@
                     <p><?php the_content();?></p>
                 <?php } ?>
                 </div>
-                <!-- related resoureces -->
+
+                <!-- related resources -->
                 <?php
                 $related = get_field('related_topic');
                 if( !empty($related) ): ?>
