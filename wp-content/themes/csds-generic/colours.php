@@ -57,6 +57,12 @@
         --QLD-color-light-button__text:
             <?php the_field('button_text', 'option'); ?>
         ;
+        --QLD-color-light-hover-underline:
+            <?php the_field('light_underline', 'option'); ?>
+        ;
+        --QLD-color-light-underline:
+            <?php the_field('light_underline', 'option'); ?>
+        ;
         --QLD-color-light-focus:
             <?php the_field('focus', 'option'); ?>
         ;
@@ -74,6 +80,12 @@
         ;
         --QLD-color-dark-link:
             <?php the_field('dark_text_link', 'option'); ?>
+        ;
+        --QLD-color-dark-hover-underline:
+            <?php the_field('dark_underline', 'option'); ?>
+        ;
+        --QLD-color-dark-underline:
+            <?php the_field('dark_underline', 'option'); ?>
         ;
         --QLD-color-dark-link__visited:
             <?php the_field('dark_text_link_visited', 'option'); ?>

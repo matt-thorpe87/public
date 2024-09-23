@@ -22,10 +22,11 @@ function themeFiles()
     wp_enqueue_script('qh_base_script_main', content_url('/themes/csds-generic/qh-design-system/js/main.js'));
     wp_enqueue_style('qh_base_style', content_url('/themes/csds-generic/qh-design-system/main.css'));
     wp_enqueue_style('qh_base_styles', content_url('/themes/csds-generic/qh-design-system/qh-theme.css'));
-    
+    wp_enqueue_script('jspdf', 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js', array(), null, true);   
 
 }
 add_action('wp_enqueue_scripts', 'themeFiles');
+
 
 
 /* Register menu locations */

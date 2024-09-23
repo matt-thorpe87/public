@@ -159,6 +159,47 @@ $className = ' qld__footer--' . $footer_colour;
 </footer>
 
 <?php wp_footer(); ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+<script>
+document.getElementById('download-pdf').onclick = function () {
+    const element = document.getElementById('pdf-content');
+    const siteTitle = document.title || 'Default Site Title';
+
+    const opt = {
+        margin:       10,
+        filename:     document.title || 'document.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2, logging: true, dpi: 192, letterRendering: true },
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    };
+
+    html2pdf()
+        .from(element)
+        .set(opt)
+        .toPdf()
+        .get('pdf')
+        .then(function (pdf) {
+            const totalPages = pdf.internal.getNumberOfPages();
+
+            // Add header and footer to each page
+            for (let i = 1; i <= totalPages; i++) {
+                pdf.setPage(i);
+                pdf.setFontSize(10);
+                
+                // Header: Site title
+                pdf.text(siteTitle, pdf.internal.pageSize.getWidth() / 2, 10, { align: 'center' });
+
+                // Footer: Page number
+                const pageHeight = pdf.internal.pageSize.getHeight();
+                pdf.text(`Page ${i} of ${totalPages}`, pdf.internal.pageSize.getWidth() / 2, pageHeight - 5, { align: 'center' });
+            }
+            pdf.save(document.title || 'document.pdf');
+        })
+        .catch(function (error) {
+            console.error('Error generating PDF:', error);
+        });
+};
+</script>
 
 </body>
 </html>

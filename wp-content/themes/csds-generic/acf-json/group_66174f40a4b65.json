@@ -1041,6 +1041,24 @@
             "return_format": "string"
         },
         {
+            "key": "field_661785e93756b",
+            "label": "Text Link Visited",
+            "name": "text_link_visited",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#551A8B",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
             "key": "field_661785e937568",
             "label": "Text Paragraph",
             "name": "text_paragraph",
@@ -1091,24 +1109,6 @@
                 "id": ""
             },
             "default_value": "#636363",
-            "enable_opacity": 0,
-            "return_format": "string"
-        },
-        {
-            "key": "field_661785e93756b",
-            "label": "Text Link Visited",
-            "name": "text_link_visited",
-            "aria-label": "",
-            "type": "color_picker",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "#551A8B",
             "enable_opacity": 0,
             "return_format": "string"
         },
@@ -1185,6 +1185,24 @@
             "return_format": "string"
         },
         {
+            "key": "field_66178507928b1",
+            "label": "Dark Text Link Visited",
+            "name": "dark_text_link_visited",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#A668F4",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
             "key": "field_661784525bf30",
             "label": "Dark Text Paragraph",
             "name": "dark_text_paragraph",
@@ -1239,24 +1257,6 @@
             "return_format": "string"
         },
         {
-            "key": "field_66178507928b1",
-            "label": "Dark Text Link Visited",
-            "name": "dark_text_link_visited",
-            "aria-label": "",
-            "type": "color_picker",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "#A668F4",
-            "enable_opacity": 0,
-            "return_format": "string"
-        },
-        {
             "key": "field_6617852f928b2",
             "label": "Dark Focus",
             "name": "dark_focus",
@@ -1293,5 +1293,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1719971339
+    "modified": 1726785829
 }

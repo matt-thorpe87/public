@@ -48,7 +48,7 @@ get_header(); ?>
                 <!-- end side navigation -->
 
             <div class="col-xs-12 col-lg-9" id="body-123">
-                <div>
+                <div id="pdf-content">
                 <?php
                 while(have_posts()){
                     the_post(); ?>
@@ -58,6 +58,9 @@ get_header(); ?>
                     <p><?php the_content();?></p>
                 <?php } ?>
                 </div>
+                <button id="download-pdf" class="qld__btn--primary qld__btn">Download as PDF</button>
+                
+
 
                 <!-- related resources -->
                 <?php
