@@ -657,7 +657,7 @@ h3.qld__related__title{
   transition: all .3s ease-in-out;
 }
 /* fullwidth page */
-.qld__body__fullwidth{
+/* .qld__body__fullwidth{
   padding: 0rem !important;
 }
 .qld__grid .qld__body__fullwidth .container-fluid{
@@ -671,6 +671,14 @@ h3.qld__related__title{
   margin-right: auto;
   padding-left: 2rem;
   padding-right: 2rem;
+} */
+@media (min-width:992px){
+  #courses-search-form #search-input{
+  width:50%;
+  }
+}
+#courses-search-form .qld__btn--search{
+  padding: 0.75rem 1.5rem;
 }
 
 

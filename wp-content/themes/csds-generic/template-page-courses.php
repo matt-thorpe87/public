@@ -56,9 +56,35 @@ elseif ($type == 'default') {
 					<div class="row">
 						<div class="col-lg-12">
 							<div class="content">
-								<form action="">
-									<h3>What course are you looking for?</h3>
-									<!-- <input type="text" class="qld__text-input"> -->
+								<h3>What course are you looking for?</h3>
+								<form id="courses-search-form">
+									<input type="text" id="search-input" placeholder="Search courses..." required>
+									<button type="submit" class="qld__btn qld__btn--search">Search</button>
+								</form>
+
+							<script>
+								document.querySelector('#courses-search-form').addEventListener('submit', function (e) {
+									e.preventDefault(); // Prevent the form from submitting the usual way
+									
+									var searchValue = document.querySelector('#search-input').value;
+									
+									// Construct the filters JSON and encode it
+									var filters = encodeURIComponent(JSON.stringify([{
+										"name": "searchField",
+										"value": searchValue,
+										"operator": "="
+									}]));
+
+									// Construct the full URL
+									var url = "https://central.csds.qld.edu.au/central/courses?per-page=20&filters=" + filters + "&page=1&sort=courseNameSort";
+
+									// Redirect the user to the constructed URL
+									window.open(url, 'blank');
+								});
+							</script>
+
+
+
 								</form>
 							</div>
 						</div>

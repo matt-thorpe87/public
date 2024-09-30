@@ -1,4 +1,29 @@
+.qld__card-list{
+    li{
+        @media (min-width:992px){
+            &:first-of-type{
+                padding-left:0rem !important;
+            }
+            &:last-of-type{
+                padding-right:0rem !important;
+            }
+        }
+        @media (min-width:699px) and (max-width:991px){
+            &:first-of-type, &:last-of-type{
+                padding-left:0rem !important;
+            }
+            &:nth-of-type(even){
+                padding-right:0rem !important
+            }
+        }
+        @media (max-width:698px){
+            padding-left:0rem !important;
+            padding-right:0rem !important;
+        }
+    }
+}
 .qld__card{
+    
     &.qld__body--alt{
         background-color: var(--QLD-color-light-alt-background);
     }

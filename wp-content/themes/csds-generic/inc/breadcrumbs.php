@@ -1,7 +1,4 @@
-
 <?php
-
-
 
 function custom_breadcrumbs() {
     global $post;
@@ -15,9 +12,8 @@ function custom_breadcrumbs() {
             single_cat_title();
             echo '</li>';
         } elseif(is_single()) {
-            echo '<li>';
             $cat = get_the_category();
-            if(!empty($cat)){
+            if(!empty($cat)){   
                 $post_type = get_post_type();
                 $id        = get_the_ID();
                 $taxonomy  = current( get_object_taxonomies( $post_type, 'objects' ) )->name ?? false;
@@ -28,19 +24,47 @@ function custom_breadcrumbs() {
                 if ( $primary_term_id ) {
                     $term = get_term( $primary_term_id, $taxonomy );
                 }
+            echo '<li>';
+
             echo '<a href=" ' . esc_url(get_category_link( $term->term_id)) . '">';
             
             echo $term->name;
             echo '</a></li>';
+            
+            if($post->post_parent){
+                $parent = get_post_ancestors($post->ID);
+                $parent = array_reverse($parent);
+                foreach($parent as $par){
+                    $output = '<li><a href="';
+                    $output .= get_permalink($par);
+                    $output .= '">';
+                    $output .= get_the_title($par);
+                    $output .= '</a></li>';
+                    echo $output;
+                }
             echo '<li>';
             the_title();
             echo '</li>';
-            } else{
-                
+            }
+        } else{
+                if($post->post_parent){
+                    $parent = get_post_ancestors($post->ID);
+                    $parent = array_reverse($parent);
+                    foreach($parent as $par){
+                        $output = '<li><a href="';
+                        $output .= get_permalink($par);
+                        $output .= '">';
+                        $output .= get_the_title($par);
+                        $output .= '</a></li>';
+                        echo $output;
+                    }
+                echo '<li>';
                 the_title();
                 echo '</li>';
             }
-        } elseif (is_page()) {
+        }
+     }
+      elseif (is_page()) {
             if ($post->post_parent) {
                 $anc = get_post_ancestors($post->ID);
                 $anc = array_reverse($anc);

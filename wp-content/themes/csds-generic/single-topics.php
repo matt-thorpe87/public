@@ -46,7 +46,7 @@
                 <!-- end side navigation -->
 
             <div class="col-xs-12 col-lg-9" id="body-123">
-                <div>
+                <div id="pdf-content">
                 <?php
                 while(have_posts()){
                     the_post(); ?>
@@ -54,9 +54,10 @@
                     <h1><?php the_title(); ?></h1> 
                     <?php }  ?>
                     <p><?php the_content();?></p>
-                    <?php } ?>
-
+                <?php } ?>
                 </div>
+                <button id="download-pdf" class="qld__btn--primary qld__btn">Download as PDF</button>
+
                 <hr>
                 <!-- updated date -->
                 <?php 
@@ -71,19 +72,6 @@
             </div>
             
         </div>
-        <!-- print/download pdf -->
-        <div class="print-share">
-            <a href="javascript:void(0)" onclick="generatePDF()">
-                <span class="dcs-icons material-icons notranslate qld-material-icons" aria-hidden="true" tab-index="-1">download</span>
-                Download to PDF
-            </a>
-
-            <a href="javascript:void(0)" alt="print screen" onClick="window.print()"; target="_blank">
-                <span class="dcs-icons material-icons notranslate qld-material-icons" aria-hidden="true" tab-index="-1">print</span>
-                Print this page
-            </a>
-        </div>
-        <!-- end print/download pdf -->
     </div>
 
 </section>
