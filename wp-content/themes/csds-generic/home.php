@@ -208,7 +208,7 @@ get_header(); ?>
                     echo esc_html($link_title);
                 } else {
                     echo "View All Posts";
-                }  ?>  <i class="fa-light fa-circle-arrow-right"></i></h3></a>
+                }  ?>  <i class="fas fa-circle-arrow-right"></i></h3></a>
             </div>
                 <?php }  ?>
         </div>

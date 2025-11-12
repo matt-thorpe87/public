@@ -18,8 +18,9 @@ include 'template_parts/blocks/banner-advanced/banner-advanced.php';
 elseif ($type == 'default') { 
     include 'inc/page-banner.php';
 } 
-
+$pass = 1;
 ?>
+<script>    console.log(<?php echo $pass; ?>);</script>
     <section class="qld__body ">
         <div class="container-fluid">
             <div class="row">
