@@ -17,7 +17,6 @@ function custom_breadcrumbs() {
                 $post_type = get_post_type();
                 $id        = get_the_ID();
                 $taxonomy  = current( get_object_taxonomies( $post_type, 'objects' ) )->name ?? false;
-
                 $primary_term_id = function_exists( 'tsf' ) ? tsf()->data()->plugin()->post()->get_primary_term( $id, $taxonomy ) : 0;
                 $primary_term_id = $primary_term_id ?: ( get_the_terms( $id, $taxonomy )[0]->term_id ?? null );
 
@@ -25,9 +24,7 @@ function custom_breadcrumbs() {
                     $term = get_term( $primary_term_id, $taxonomy );
                 }
             echo '<li>';
-
             echo '<a href=" ' . esc_url(get_category_link( $term->term_id)) . '">';
-            
             echo $term->name;
             echo '</a></li>';
             

@@ -164,13 +164,16 @@ $className = ' qld__footer--' . $footer_colour;
 document.getElementById('download-pdf').onclick = function () {
     const element = document.getElementById('pdf-content');
     const siteTitle = document.title || 'Default Site Title';
+    const testHeader = "<?php echo get_field('header_text'); ?>";
+    const testFooter = "<?php echo get_field('footer_text'); ?>";
 
     const opt = {
-        margin:       10,
+        margin:       [20, 20],
         filename:     document.title || 'document.pdf',
-        image:        { type: 'jpeg', quality: 0.98 },
-        html2canvas:  { scale: 2, logging: true, dpi: 192, letterRendering: true },
-        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        image:        { type: 'jpeg', quality: 0.90 },
+        html2canvas:  { scale: 2, logging: true, dpi: 192, letterRendering: true, imageTimeout: 0 },
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait', compress: 'true' },
+        pagebreak:    { mode: 'avoid-all', before: 'h2' }
     };
 
     html2pdf()
@@ -184,14 +187,15 @@ document.getElementById('download-pdf').onclick = function () {
             // Add header and footer to each page
             for (let i = 1; i <= totalPages; i++) {
                 pdf.setPage(i);
-                pdf.setFontSize(10);
+                pdf.setFontSize(8);
+                // pdf.text(20, 40, test)
                 
                 // Header: Site title
-                pdf.text(siteTitle, pdf.internal.pageSize.getWidth() / 2, 10, { align: 'center' });
+                pdf.text(testHeader, pdf.internal.pageSize.getWidth() / 2, 10, { align: 'center' });
 
                 // Footer: Page number
                 const pageHeight = pdf.internal.pageSize.getHeight();
-                pdf.text(`Page ${i} of ${totalPages}`, pdf.internal.pageSize.getWidth() / 2, pageHeight - 5, { align: 'center' });
+                pdf.text(`Clinical Skills Development Service - Page ${i} of ${totalPages}`, pdf.internal.pageSize.getWidth() / 2, pageHeight - 5, { align: 'center' });
             }
             pdf.save(document.title || 'document.pdf');
         })

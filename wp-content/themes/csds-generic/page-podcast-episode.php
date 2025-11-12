@@ -112,7 +112,7 @@ get_header(); ?>
                                 <span class="sr-only">
                                     Close modal
                                 </span>
-                                <i class="fal fa-times" aria-hidden="true"></i>
+                                <i class="fas fa-times" aria-hidden="true"></i>
                             </button>
                         </div>
                     </div>

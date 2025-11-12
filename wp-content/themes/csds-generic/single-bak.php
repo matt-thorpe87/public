@@ -92,7 +92,7 @@
                           data-action="close"
                         >
                           <span class="sr-only"> Close modal </span>
-                          <i class="fal fa-times"></i>
+                          <i class="fas fa-times"></i>
                         </button>
                       </div>
                     </div>

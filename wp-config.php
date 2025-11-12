@@ -88,12 +88,17 @@ define( 'WP_ALLOW_MULTISITE', true );
 define( 'MULTISITE', true );
 define( 'SUBDOMAIN_INSTALL', true );
 $base = '/';
-define( 'DOMAIN_CURRENT_SITE', 'localhost:10008' );
+define( 'DOMAIN_CURRENT_SITE', 'multisite-dev.local');
 define( 'PATH_CURRENT_SITE', '/' );
 define( 'SITE_ID_CURRENT_SITE', 1 );
 define( 'BLOG_ID_CURRENT_SITE', 1 );
 
 define( 'WP_ENVIRONMENT_TYPE', 'local' );
+
+define('ADMIN_COOKIE_PATH', '/');
+define('COOKIE_DOMAIN', false);
+define('COOKIEPATH', '/');
+define('SITECOOKIEPATH', '/');
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */

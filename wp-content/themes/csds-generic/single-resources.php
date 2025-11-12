@@ -57,9 +57,62 @@ get_header(); ?>
                     <?php }  ?>
                     <p><?php the_content();?></p>
                 <?php } ?>
-                </div>
-                <button id="download-pdf" class="qld__btn--primary qld__btn">Download as PDF</button>
                 
+                <!-- related resource links -->
+                    <?php
+                    $related_links = get_field('resource_related_links');
+                    if(have_rows('resource_related_links')) : ?>
+                    <section class="qld__link-list__section resources-related-links">
+
+                        <div class="qld-link-list qld__accordion-group">
+                            <h3 class="qld__related__title">Related Resource links</h3>
+
+                            <ul class="qld__accordion-list">
+                            <?php
+                                while(have_rows('resource_related_links')) : the_row();
+                                    $resource_link = get_sub_field('related_link');
+                                    $resource_title = get_sub_field('related_link_title');
+                                    if(!empty($resource_link)) {
+                                        $resource_link_url = $resource_link['url'];
+                                        $resource_link_target = $resource_link['target'] ? $resource_link['target'] : '_self';
+                                        $resource_link_title = $resource_link['title'];
+                                    }
+                                    ?>
+                                    <li>
+                                        <div class="qld__list__body-wrapper">
+                                            <a href="<?php echo esc_url($resource_link_url); ?>" target="<?php echo esc_attr($resource_link_target); ?>">
+                                                <?php 
+                                                if($resource_title) { ?>
+                                                <span class="qld__link__list__title">
+                                                    <?php echo $resource_title; ?>
+                                                </span>
+                                                <?php } elseif($resource_link_title) { ?>
+                                                    <span class="qld__link__list__title">
+                                                        <?php echo $resource_link_title; ?>
+                                                    </span>
+                                                <?php } else { ?>
+                                                    <span class="qld__link__list__title">
+                                                        <?php echo $resource_link_url;  ?>
+                                                    </span>
+                                                <?php } ?>
+                                                <span class="material-icons qld-material-icons md-dark md-24">east</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <?php
+                            endwhile;
+                                ?> </ul>
+                        </div>
+                    </section>
+                    <?php endif;
+                    ?>
+                </div>
+                <?php 
+                $downloadable = get_field('download_button');
+                if($downloadable){
+                echo    '<button id="download-pdf" class="qld__btn--primary qld__btn">Download as PDF</button>';
+                }
+                ?>
 
 
                 <!-- related resources -->

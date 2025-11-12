@@ -190,7 +190,7 @@ elseif ($type == 'default') {
 									
 								</ul>
 								<h3 class="qld__view__all col-sm-12">
-									<a href="<?= $courseUrl.'/calendar' ?>" target="_blank" onClick="gtag('event', 'click', { event_category: 'coursesLandingClick', event_label: 'upcomingCoursesCalendar'});">Browse calendar on Central  &nbsp;<i class="fa-light fa-circle-arrow-right" style="color:var(--QLD-color-dark-background);"></i></a>
+									<a href="<?= $courseUrl.'/calendar' ?>" target="_blank" onClick="gtag('event', 'click', { event_category: 'coursesLandingClick', event_label: 'upcomingCoursesCalendar'});">Browse calendar on Central  &nbsp;<i class="fas fa-circle-arrow-right" style="color:var(--QLD-color-dark-background);"></i></a>
 								</h3>
 							</div>
 						</div>

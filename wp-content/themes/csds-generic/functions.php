@@ -215,6 +215,13 @@ function ip_search_filter($args) {
 	// Return query
 	return $args;
 }
+
+// add_filter( 'auth_cookie_expiration', 'wpdev_login_session' );
+// function wpdev_login_session( $expire ) {
+// // Set login session limit in seconds
+// return 300; // (Seconds)
+// }
+
 add_filter('pre_get_posts', 'ip_search_filter');
 // end search filter function
 
